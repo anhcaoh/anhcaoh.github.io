@@ -1,1 +1,164 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+	<title>Bao Chau & Hoang Anh's September 1 2014</title>
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="stylesheets/main.css"/>
+	<link rel="stylesheet" href="stylesheets/animate.css"/>
+	<!-- <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/> -->
+	<script src="javascripts/jquery-1.11.0.js"></script>
+	<!-- <script src="javascripts/jquery.mobile-1.4.2.min.js"></script> -->
+	<!--<script src="javascripts/jquery-ui.js"></script> -->
+	<script src="javascripts/init.js"></script>
+	<script>
+		
+	</script>
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<header id="page-header">
+	<nav id="menu" class="animated fadeInDown">
+		<ul>
+			<li><a href="#" title="home">home</a></li>
+			<li><a href="#first" title="first">our story</a></li>
+			<li><a href="#rsvp" title="reservation">rsvp</a></li>
+			<li><a href="#info" title="information">Information</a></li>
+		</ul>
+	</nav>
+
+</header>
+<!-- <article id="bg"></article> -->
+<article>
+
+	<section class="invited">
+		
+		<div id="navigator" class="center"> 
+			<span class="pre">pre</span> 
+			<span class="next">next</span>
+			
+		</div>
+
+		<section class="slides center">
+
+			<div class="one active">
+				<p id="invited"> your are invited </p>
+			
+			</div>
+			
+			<div class="two slitem" style="display:none">
+				<p>to Bao Chau&Hoang Anh's wedding</p>
+			</div>	
+
+			<div class="three slitem" style="display:none">
+				<p>thank you!</p>
+			</div>	
+
+		</section>
+		<!-- <div class="context animated bounceInDown">!</div> -->
+	</section>
+
+	<section id="rsvp" class="joinUs">
+
+		<iframe id="no-redirect" style="display:none"></iframe>
+		
+		<form class="rsvp-form" method="POST" action="https://script.google.com/macros/s/AKfycbwOws7zyt8ImIrdhewn2178aZbbn3fETxLbybZyem0YfFekSg/exec" id="rsvp-form" target="no-redirect">
+			<h1>save yourself a seat</h1>
+
+			<input type="text" name="FirstName" placeholder="first name" id="fName" required>
+			
+			<input type="text" name="LastName" placeholder="last name" id="lName" required>
+		
+			<label id="bring-guest">
+
+			<span>bring guest? </span>
+				<div>
+					<div id="guest-confirm"> no </div><input type="checkbox" id="ckb-guest">
+					<div class="plus1">plus 1</div>
+
+				</div>
+			</label>
+			<button type="submit" class="submit" onclick="checkBeforeSubmit()">reserve</button>
+		</form>
+
+
+	</section>
+
+	<section class="information">
+		
+		<div id="info">
+			<h1>@ happy valley</h1>
+			<p class="addr rightAlign">5495 Jimmy Carter Blvd, Norcross, GA 30093 </p> 
+			<p class="date leftAlign">monday, september 1, 2014 </p>
+			<p class="time">at 5:30 p.m.</p>
+		</div>
+
+	</section>
+<div id="top"><a href="#"> back to top </a> <div>
+</article>
+
+
+
+<script>
+		
+
+	$(document).ready(function(){
+		
+		$(" li a ").on("click", function(){
+			
+			var currentUrl = document.location.href;
+
+			if ( currentUrl.indexOf("/#") > -1 ){
+				$("#top").fadeIn();
+			};
+		});
+
+		$("#top").on("click", function(){
+
+			$("#top").fadeOut();
+			
+		})
+	})
+
+
+	$("#bring-guest").click(function(){
+		document.getElementById("ckb-guest").checked == true ? checkedIsYes() : checkedIsNo();
+
+		function checkedIsYes(){
+			$("#guest-confirm").empty().append("yes");
+			$(".plus1").show();
+		};
+
+		function checkedIsNo(){
+			
+			$("#guest-confirm").empty().append("no");
+			$(".plus1").hide();
+		};
+	
+	});
+
+	function checkBefsoreSubmit(){
+
+		console.log("submitted");
+		var Time = new Date();
+		var UA = window.navigator.userAgent;
+		console.log(Time + UA);
+
+
+		guest = '<input type="text" name="FirstName" placeholder="guest first name" id="fName" required><input type="text" name="LastName" placeholder="guest last name" id="lName" required>';
+
+			$("button").prepend(guest);
+		
+
+		// document.getElementById("rsvp-form").submit(Time,UA);
+	};
+
+
+</script>
+</body>
+</html>
+
