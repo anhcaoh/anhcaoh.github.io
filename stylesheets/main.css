@@ -56,12 +56,12 @@
 	}
 
 	p.addr::after{
-		content: url(/bigDate/images/map.png);
+		content: url(/images/map.png);
 	
 	}
 
 	p.date::after{
-		content: url(/bigDate/images/date.png);
+		content: url(/images/date.png);
 	}
 
 	.context{
