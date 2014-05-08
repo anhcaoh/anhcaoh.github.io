@@ -50,8 +50,7 @@
 		text-align: right;
 	}
 	#info p{
-		padding-left: 10px;
-		padding-right: 10px;
+		
 		opacity: .5;
 		margin-bottom: 70px;
 	}
@@ -73,6 +72,7 @@
 	h1{
 
 		font-weight: 500;
+		margin-top: 0px;
 
 	}
 
@@ -145,7 +145,7 @@
 	}
 	input{
 
-		width: 80%;
+		width: 88%;
 		padding: 15px;
 		font: inherit;
 	}
@@ -155,6 +155,8 @@
 		text-align: center;
 		color: #C7C7C7;
 		border: 1px solid #e1e1e1;
+		margin-left: 0px;
+		margin-right: 0px;
 
 	}
 
@@ -244,8 +246,9 @@
 	}
 	#invited{
 
-		/*background-color: #f1f1f1;*/
 		font-size: 2em;
+		padding: 0px;
+		margin: 0 auto;	
 	}
 
 	.joinUs{
@@ -263,6 +266,7 @@
 		top: 35%;
 		position: relative;	
 		padding: 20px;
+		padding-top: 0px;
 		/*background-color: #FFECEC;*/
 
 	}
@@ -276,7 +280,7 @@
 		opacity: 0.5;
 		background-color: #E2CDCD;
 		width: 100%;
-		padding: 5px 0px 5px 0px;
+		padding: 15px 0px 15px 0px;
 	}
 	footer{
 

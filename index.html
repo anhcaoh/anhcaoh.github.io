@@ -50,13 +50,13 @@
 			
 			</div>
 			
-			<div class="two slitem" style="display:none">
+			<!-- <div class="two slitem" style="display:none">
 				<p>to Bao Chau&Hoang Anh's wedding</p>
 			</div>	
 
 			<div class="three slitem" style="display:none">
 				<p>thank you!</p>
-			</div>	
+			</div>	-->
 
 		</section>
 		<!-- <div class="context animated bounceInDown">!</div> -->
@@ -92,13 +92,13 @@
 		
 		<div id="info">
 			<h1>@ happy valley</h1>
-			<p class="addr rightAlign">5495 Jimmy Carter Blvd, Norcross, GA 30093 </p> 
-			<p class="date leftAlign">monday, september 1, 2014 </p>
+			<p class="addr">5495 jimmy carter blvd, norcross, ga 30093</p> 
+			<p class="date">monday, september 1, 2014 </p>
 			<p class="time">at 5:30 p.m.</p>
 		</div>
 
 	</section>
-<div id="top"><a href="#"> back to top </a> <div>
+<div id="top"> back to top  </div>
 </article>
 
 
@@ -119,8 +119,13 @@
 
 		$("#top").on("click", function(){
 
+			document.location.href = "#";
 			$("#top").fadeOut();
 			
+		});
+		
+		$("p.addr").on("click", function(){
+			window.open("https://maps.google.be/maps?saddr=My Location&daddr=5495 jimmy carter blvd, norcross, ga 30093", "_blank");
 		})
 	})
 
