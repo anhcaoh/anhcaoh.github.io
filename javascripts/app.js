@@ -1,14 +1,15 @@
 
-$(function(){
+// $(function(){
 
-	$(window).on("scroll",function(){
+	// $(window).on("scroll",function(){
 		
-		// if ( $(this).scrollTop() >= 120 ) {
-		// 	$(".hero").addClass("faded");
+		// if ( $(window).scrollTop() + $(window).height() == $(document).height() ) {
+		// 	$(".top").addClass("showTop");
+		// 	console.log('bottom');
 		// }
 		// else { 
-		// 	$(".hero").removeClass("faded"); 
-		// }
+		// 	$(".top").removeClass("showTop"); 
+		// };
 
 		// if ( $(this).scrollTop() >= 355 ){
 		// 	$("#invited").addClass("faded");
@@ -16,6 +17,6 @@ $(function(){
 		// else {
 		// 	$("#invited").removeClass("faded");
 		// }
-	});
+// 	});
 
-});
+// });

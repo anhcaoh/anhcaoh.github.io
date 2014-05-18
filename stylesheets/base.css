@@ -31,7 +31,7 @@ body{
 			margin: 0px;
 			color: #f1f1f1;
 			font-size: 12pt;
-			opacity: .5;
+			opacity: .9;
 			font-weight: lighter;
 		}
 
@@ -106,7 +106,7 @@ body{
 	}
 		#menu li{
 			display: inline-block;
-			padding: 5px;
+			padding: 10px;
 		}
 		#menu li:nth-child(4){
 			margin-right: 0px;
@@ -159,7 +159,13 @@ body{
 	margin-bottom: 15%;
 }
 
-.test{
-	background-color: red;
+.top{
+
+	padding: 5px;
+	cursor: pointer;
+}
+footer{
+	bottom: 0;
+	position: fixed;
 }
 
