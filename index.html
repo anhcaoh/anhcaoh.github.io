@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+		<title>Bao Chau & Hoang Anh's September 1 2014</title>
+		<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="stylesheets/base.css"/>
+		<link rel="stylesheet" href="stylesheets/animate.css"/>
+		<script src="javascripts/jquery-1.11.0.js"></script>
+		<script src="javascripts/jquery.touchSwipe.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+		<script>
+			
+			$(function(){
+
+				$("section").swipe({
+					    swipe:function( event, direction, distance, duration, fingerCount ){
+					      $(this).text("swiped" + direction)
+					    }, threshold: 0
+				});
+			});
+
+		</script>
+	</head>
+
+	<body>
+
+	<header>
+		<p class="date hero">monday, september 1, 2014</p>
+	</header>
+
+	<section id="container">
+
+	<article>
+		<h3 class="invited">you are invited</h3>
+		<section>
+			to join Bao Chau & Hoang Anh's big wedding day on monday, september 1, 2014.
+		</section>
+	
+	</article>
+	
+	<article>
+		<h3 class="date">information</h3>
+
+		<section class="info">
+			<div>
+				<p>@ happy valley</p>
+				<p class="addr">5495 jimmy carter blvd, norcross, ga 30093</p>
+			</div>
+
+			<div>
+				<p class="">monday, september 1, 2014 </p>
+				<p class="time">at 5:30 p.m.</p>
+			</div>
+
+			<div>
+				<p class="BcNo">Bao Chau<br/> (404) 374-4638</p>
+				<p class="HaNo">Hoang Anh<br/> (678) 602-1591</p>
+			</div>
+		</section>
+	
+	</article>
+
+</section>
+
+<ul id="menu" class="contrast">
+	<li><a href="#" title="home">home</a></li>
+	<li><a href="#first" title="first">our story</a></li>
+	<li><a href="#rsvp" title="reservation">rsvp</a></li>
+	<li><a href="#info" title="information">information</a></li>
+</ul>

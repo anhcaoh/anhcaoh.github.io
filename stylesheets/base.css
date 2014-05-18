@@ -1,0 +1,84 @@
+
+body{
+	outline: 0;
+	margin: 0 auto;
+	color: #000;
+	text-align: center;
+	font-family: Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 1.25em;
+}
+	header{
+		background: url(https://scontent-b-atl.xx.fbcdn.net/hphotos-prn2/t31.0-8/10258031_10203856326193180_6518095142190928559_o.jpg) 50% 0 no-repeat fixed;
+		-webkit-background-size: cover;
+ 	 	-moz-background-size: cover;
+  		-o-background-size: cover;
+		background-size: cover;
+		height: 225px;
+		width: 100%;
+	}
+		.hero{
+			position: absolute;
+			width: 200px;
+			top: 10%;
+			left: 5%;
+		}
+
+	#container{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	article{
+		margin-bottom: 25%;
+	}
+
+	a:link, a:active, a:visited{
+		text-decoration: none;
+		color: inherit;
+	}
+
+	a:hover{
+		background-color: #f1f1f1;
+	}
+
+	ul{
+	    list-style: none;
+	    margin-left: -40px;
+	    text-align: center;
+	}
+	
+	#menu{
+		width: 100%;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		bottom: 0;
+		position: fixed;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+		#menu li{
+			display: inline-block;
+			margin-right: 15%;
+		}
+		#menu li:nth-child(4){
+			margin-right: 0px;
+		}
+
+.date::before{
+	content: url("/images/date.png");
+	padding-right: 5px;
+}
+
+.contrast{
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
+}
+
+section.info div{
+	margin-bottom: 15%;
+}
+
+.test{
+	background-color: red;
+}
+
