@@ -14,12 +14,13 @@ body{
 		-webkit-background-size: cover;
  	 	-moz-background-size: cover;
   		-o-background-size: cover;
-		background-size: cover;
 		background-size: 380px auto;
-		height: 50%;
+		height: 285px;
 		width: 100%;
 		position: fixed;
-		margin: 0px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		padding: 0px;
 	}
 
 		.hero{
@@ -36,12 +37,14 @@ body{
 		}
 
 	#container{
-		top: 50%;
+		top: 42%;
 		width: 96%;
 		padding-left: 2%;
 		padding-right: 2%;
 		position: absolute;
 		background-color: #fff;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
 	}
 
 	article{
