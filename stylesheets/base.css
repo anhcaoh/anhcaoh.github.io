@@ -7,7 +7,7 @@ body{
 	color: rgba(0, 0, 0, 0.5);
 	background-color: #FFECEC;
 	text-align: center;
-	font-family: Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-family: 'Lato', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
 	font-size: 1.25em;
 }
 	header{
@@ -87,7 +87,7 @@ body{
 	}
 	h1, h2, h3{
 		font-size: 1.75em;
-		/*color: #000;*/
+		font-weight: 500;
 	}
 	ul{
 	    list-style: none;
