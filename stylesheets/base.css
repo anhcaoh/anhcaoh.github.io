@@ -43,8 +43,7 @@ body{
 		padding-right: 2%;
 		position: absolute;
 		background-color: #fff;
-		border-top-left-radius: 50px;
-		border-top-right-radius: 50px;
+		border-top-right-radius: 80px;
 	}
 
 	article{
