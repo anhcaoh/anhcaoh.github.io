@@ -1,7 +1,9 @@
 
-// $(function(){
-
-	// $(window).on("scroll",function(){
+$(function(){
+	
+	var initialScrollPosition = 0;
+		
+	$(window).on("scroll",function(){
 		
 		// if ( $(window).scrollTop() + $(window).height() == $(document).height() ) {
 		// 	$(".top").addClass("showTop");
@@ -10,13 +12,17 @@
 		// else { 
 		// 	$(".top").removeClass("showTop"); 
 		// };
+		var currentScrollPosition = $(this).scrollTop();
 
-		// if ( $(this).scrollTop() >= 355 ){
-		// 	$("#invited").addClass("faded");
-		// }
-		// else {
-		// 	$("#invited").removeClass("faded");
-		// }
-// 	});
+		if ( currentScrollPosition < initialScrollPosition ){
+			$("#menu li").show();
+		}
+		else {
+			$("#menu li").hide();
+		
+		}
 
-// });
+		initialScrollPosition = currentScrollPosition;
+	});
+
+});
