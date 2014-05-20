@@ -25,4 +25,13 @@ $(function(){
 		initialScrollPosition = currentScrollPosition;
 	});
 
+	$("img").on("click",function(){
+
+		// $("#container").css({"background-color":"red", "opacity":".2"});
+		$("img.expanded").not(this).removeClass("expanded").addClass("min");
+		$(this).toggleClass("expanded").toggleClass("min");
+
+		
+	});
+
 });
