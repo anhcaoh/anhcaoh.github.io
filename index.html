@@ -27,31 +27,42 @@
 	<article>
 		<h3>you are invited</h3>
 		<section>
-			to join BAO CHAU & HOANG ANH to celebrate their happiest date monday, september 1st, 2014.
+			<p style="padding: 50px">to join BAO CHAU & HOANG ANH to celebrate their happiest date monday, september 1st, 2014.</p>
 		</section>
 	
 	</article>
 	
-	<article id="our-story">
+	<article id="us">
 		<h3>us</h2>
-		<div class="album">
-		<li class="one min" data-lightbox="example-1">
-			<img class="min" src="https://scontent-b-atl.xx.fbcdn.net/hphotos-frc3/t1.0-9/387778_10200563562002498_287452065_n.jpg">
-		</li>
-		<li class="two">
-			<img  class="min" src="https://scontent-a-atl.xx.fbcdn.net/hphotos-ash2/t1.0-9/523309_3561393684489_1456646679_n.jpg">
-		</li>
-		<li class="two">
-			<img class="min" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/t1.0-9/944538_10201283010901906_828486808_n.jpg">
-		</li>
-		<li class="two">
-			<img class="min" src="https://scontent-b.xx.fbcdn.net/hphotos-ash3/t1.0-9/10299581_10202192021621967_1500973712756777409_n.jpg">
-		</li>
-		<li class="two">
-			<img class="min" src="https://scontent-b.xx.fbcdn.net/hphotos-ash3/t1.0-9/45760_417552877030_7785425_n.jpg">
-		</li>
-		</div>
+		
+		 <div id='scrolly'>
+     	<img class="min" src="https://scontent-b-atl.xx.fbcdn.net/hphotos-frc3/t1.0-9/387778_10200563562002498_287452065_n.jpg">
 	
+
+		<img class="expanded" src="https://scontent-a-atl.xx.fbcdn.net/hphotos-ash2/t1.0-9/523309_3561393684489_1456646679_n.jpg">
+	
+
+
+		<img class="min" src="https://scontent-b.xx.fbcdn.net/hphotos-ash3/t1.0-9/10299581_10202192021621967_1500973712756777409_n.jpg">
+		
+		<img class="min" src="https://scontent-b.xx.fbcdn.net/hphotos-ash3/t1.0-9/45760_417552877030_7785425_n.jpg">
+	
+
+		<img class="min" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/t1.0-9/944538_10201283010901906_828486808_n.jpg">
+				<img class="min" src="https://scontent-b-atl.xx.fbcdn.net/hphotos-frc3/t1.0-9/387778_10200563562002498_287452065_n.jpg">
+	
+
+		<img class="min" src="https://scontent-a-atl.xx.fbcdn.net/hphotos-ash2/t1.0-9/523309_3561393684489_1456646679_n.jpg">
+	
+
+
+		<img class="min" src="https://scontent-b.xx.fbcdn.net/hphotos-ash3/t1.0-9/10299581_10202192021621967_1500973712756777409_n.jpg">
+		
+		<img class="min" src="https://scontent-b.xx.fbcdn.net/hphotos-ash3/t1.0-9/45760_417552877030_7785425_n.jpg">
+	
+
+		<img class="min" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/t1.0-9/944538_10201283010901906_828486808_n.jpg">
+    </div>
 	</article>
 
 	<article id="info">
@@ -60,8 +71,12 @@
 		<section>
 			<div class="addr">
 				<p>@ happy valley<br/>
-				<span class="addr">5495 jimmy carter blvd <br/>norcross, ga 30093</span></p>
-			</div>
+				<span>5495 jimmy carter blvd <br/>norcross, ga 30093</span></p>
+			
+				<iframe id="g-map" frameborder="0" style="border:0"
+				src="https://www.google.com/maps/embed/v1/place?q=Happy%20Valley%20Seafood%2C%20Jimmy%20Carter%20Boulevard%2C%20Norcross%2C%20GA%2C%20United%20States&key=AIzaSyBWnbDqaL36Nqe7h166Z9FiwO6UUg8w4Gc"></iframe>
+				
+				</div>
 
 			<div class="wrapper">
 				<p class="date">monday september 1st 2014 </p>
@@ -73,15 +88,48 @@
 				<p class="HaNo">HOANG ANH <br/>(678) 602-1591</p>
 			</div>
 		</section>
-	
+
 	</article>
+
+	<article id="rsvp">
+		
+		<h3>save yourself a seat</h3>
+
+		<section class="joinUs">
+
+			<iframe id="no-redirect" style="display:none"></iframe>
+			
+			<form class="rsvp-form" method="POST" action="https://script.google.com/macros/s/AKfycbwOws7zyt8ImIrdhewn2178aZbbn3fETxLbybZyem0YfFekSg/exec" id="rsvp-form" target="no-redirect">
+				
+
+				<input type="text" name="FirstName" placeholder="first name" id="fName" required="">
+				
+				<input type="text" name="LastName" placeholder="last name" id="lName" required="">
+			
+				<label id="bring-guest">
+
+				<span>bring guest? </span>
+					<div>
+						<div id="guest-confirm"> no </div><input type="checkbox" id="ckb-guest">
+						<div class="plus1">plus 1</div>
+
+					</div>
+				</label>
+				<button type="submit" class="submit" onclick="checkBeforeSubmit()">reserve</button>
+			</form>
+
+		</section>
+	</article>
+
 <a class="top" href="#" title="home">back to top</a>
 </section>
 
 <footer>
-<ul id="menu" class="contrast">
-	<a href="#our-story" title="first"><li>our story</li></a>
-	<a href="#rsvp" title="reservation"><li>rsvp</li></a>
-	<a href="#info" title="information"><li>information</li></a>
-</ul>
+	<nav id="menu" class="animated fadeInDown">
+		<ul>
+			<li><a href="#us" title="first">us</a></li>
+			<li><a href="#rsvp" title="reservation">rsvp</a></li>
+			<li><a href="#info" title="information">info</a></li>
+		</ul>
+	</nav>
 </footer>

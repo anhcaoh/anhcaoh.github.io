@@ -8,7 +8,8 @@ body{
 	background-color: #F6E2E0;
 	text-align: center;
 	font-family: 'Lato', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
-	font-size: 1.25em;
+	font-size: 1.5em;
+	font-weight: 300;
 }
 	header{
 		background: url(https://scontent-a-atl.xx.fbcdn.net/hphotos-ash2/t1.0-9/523309_3561393684489_1456646679_n.jpg) 50% 0 no-repeat fixed;
@@ -60,6 +61,10 @@ body{
 		margin-bottom: 30%;
 	}
 
+	#us{
+		height: 480px;
+	}
+
 	a:link, a:active, a:visited{
 		text-decoration: none;
 		color: #000;
@@ -72,34 +77,14 @@ body{
 	}
 
 	h1, h2, h3{
-		font-size: 1.75em;
-		font-weight: 500;
+		font-size: 2em;
+		font-weight: bold;
 	}
 
 	ul{
 	    list-style: none;
 	    margin-left: -40px;
 	    text-align: center;
-	}
-
-	.album li{
-		display: inline;
-	}
-
-	.expanded{
-		z-index: 99;
-		display: block;
-		width: 96% !important;
-		position: absolute;
-		z-index: 97;
-		top: 25%;
-		box-shadow: inset 0 0 8px rgba(0,0,0,.6);
-		-moz-box-shadow: inset 0 0 8px rgba(0,0,0,.6);
-		-webkit-box-shadow: inset 0 0 8px rgba(0,0,0,.6);
-	}
-	.album li img.min {
-		max-width: 138px;
-		max-height: 207px;
 	}
 
 .date{
@@ -122,20 +107,29 @@ body{
 .wrapper{
 	overflow: hidden;
 }
-/*	.left{
-		float: left;
-		padding-left: 10px;
+
+    #scrolly{
+        height: 200px;
+        overflow: auto;
+        overflow-y: hidden;
+        margin: 0 auto;
+        white-space: nowrap
+    }
+
+    .min{
+		max-height: 120px;
+        display: inline;
+    }
+    .expanded{
+		display: block;
+		width: 96% !important;
+		position: absolute;
+		z-index: 97;
+		box-shadow: inset 0 0 8px rgba(0,0,0,.6);
+		-moz-box-shadow: inset 0 0 8px rgba(0,0,0,.6);
+		-webkit-box-shadow: inset 0 0 8px rgba(0,0,0,.6);
 	}
-	.right{
-		padding-right: 10px;
-		float: right;
-	}
-	.time{
-		margin-top: 50px;
-	}
-	.phone{
-		width: 140px;
-	}*/
+
 	.BcNo{}
 
 	.HaNo{}
@@ -144,38 +138,139 @@ body{
 	margin-bottom: 15%;
 }
 
-	#menu{
-		width: 100%;
-		margin-top: 0px;
-		margin-bottom: 0px;
-		bottom: 0;
-		background-color: #FFE6E4;
-		opacity: .9;
+#g-map{
+	display: none;
+}
+.shown{
+	display: block;
+}
+
+
+form.rsvp-form{
+
+		text-align: center;
+		z-index: 2;
+		position: relative;
+		display: inline-block;
+		padding: 40px;
+		padding-top: 0px;
 	}
-		#menu li{
-			display: inline-block;
-			padding: 15px;
-			padding-left: 16px;
-			border-bottom: 5px solid #969494;
-			opacity: .5;
-		}
+	input{
+
+		width: 88%;
+		padding: 15px;
+		font: inherit;
+	}
+
+	input[type=text], input[type=email]{
+		display: block;
+		margin: 15px auto;
+		text-align: center;
+		color: #C7C7C7;
+		opacity: 1;
+		border: 0px;
+		border-bottom: 2px solid #C7C7C7;
+		margin-left: 0px;
+		margin-right: 0px;
+		background-color: transparent;
+		outline: 0;
+
+	}
+	
+	input[type=checkbox]{
+		display: inline-block;
+		zoom: 1.5;
+		width: 15px;
+	}
+
+	button{
+
+		padding: 10px;
+		font-size: inherit;
+		font-family: inherit;
+		font-weight: 100;
+		width: auto;
+		margin: 30px auto;
+		background-color: #04709B;
+		border: 1px solid #e1e1e1;
+		color: #fff;
+		cursor: pointer;
+
+	}
+	input[type=submit]:hover{
+
+		background-color: #035272;
+	}
+
+	label#bring-guest{
+	
+		cursor: pointer;
+		display: block;
+	}
+	
+	#guest-confirm{
+		width: 100px;
+		display: inline;
+	}
+	.plus1{
+		display: none;
+	}
+
+	#menu{
+		bottom: 0;
+		background-color: rgba(246, 226, 224, 0.8);
+	}
 		#menu li:nth-child(3){
 			margin-right: 0px;
 		}
-		#menu li:hover {
-			background-color: #969494;
-			color:#fff;
-			-webkit-transition: color .25s linear;
-		}
+		
+		nav {
+
+		z-index: 99;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		background-color: transparent;
+			}
+			
+			nav ul {
+				margin: 0px 0px 0px -40px;
+				width: 100%;
+			}
+			nav ul li {
+
+				list-style: none;
+				display: inline-block;
+				padding: 10px;
+				width: 25%;
+			}
+
+
+			a:link, a:visited, a:active {
+				color: inherit;
+				outline: 0;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #000;
+				border-bottom: 1px dotted #000;
+				/*border-bottom: 1px dotted #7B838A;*/
+				/*text-decoration: underline;*/
+
+			}
+
 
 .top{
 
-	padding: 15px;
+	padding: 30px;
 	opacity: .5;
 }
 
 footer{
+	width: 100%;
 	bottom: 0;
 	position: fixed;
+	z-index: 99;
 }
 

@@ -102,6 +102,33 @@ src="https://www.google.com/maps/embed/v1/place?q=Happy%20Valley%20Seafood%2C%20
 		</div>
 
 	</section>
+
+	<section id="rsvp" class="joinUs">
+
+		<iframe id="no-redirect" style="display:none"></iframe>
+		
+		<form class="rsvp-form" method="POST" action="https://script.google.com/macros/s/AKfycbwOws7zyt8ImIrdhewn2178aZbbn3fETxLbybZyem0YfFekSg/exec" id="rsvp-form" target="no-redirect">
+			<h1>save yourself a seat</h1>
+
+			<input type="text" name="FirstName" placeholder="first name" id="fName" required="">
+			
+			<input type="text" name="LastName" placeholder="last name" id="lName" required="">
+		
+			<label id="bring-guest">
+
+			<span>bring guest? </span>
+				<div>
+					<div id="guest-confirm"> no </div><input type="checkbox" id="ckb-guest">
+					<div class="plus1">plus 1</div>
+
+				</div>
+			</label>
+			<button type="submit" class="submit" onclick="checkBeforeSubmit()">reserve</button>
+		</form>
+
+
+	</section>
+	
 <div id="top"> back to top  </div>
 </article>
 
