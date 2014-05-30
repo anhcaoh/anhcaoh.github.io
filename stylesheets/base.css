@@ -109,7 +109,6 @@ body{
 }
 
     #scrolly{
-        height: 200px;
         overflow: auto;
         overflow-y: hidden;
         margin: 0 auto;
