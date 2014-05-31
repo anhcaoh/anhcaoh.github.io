@@ -30,6 +30,11 @@ $(function(){
 		$("img.expanded").not(this).removeClass("expanded").addClass("min");
 		$(this).toggleClass("expanded").toggleClass("min");
 
+		if( $("img").is(".expanded") ) {
+			$(".smiley").hide();
+		} else{
+			$(".smiley").show();
+		}
 		
 	});
 
