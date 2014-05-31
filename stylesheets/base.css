@@ -97,13 +97,13 @@ body{
 	}
 
 	.date::before{
-		content: url("/images/small_date.png");
+		content: url("/images/date.png");
 		padding-right: 5px;
 		opacity: .5;
 	}
 	.small::before{
 
-		content: url("/images/small_date.png");
+		content: url("/images/date.png");
 		padding-right: 5px;
 		opacity: .5;
 	}
@@ -167,7 +167,6 @@ body{
 
 #g-map{
 	display: none;
-	height: 200px;
 }
 .shown{
 	display: block;
