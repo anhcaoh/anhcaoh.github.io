@@ -41,11 +41,6 @@ $(function(){
 		}
 	});
 
-
-	$(".addr").on("click", function(){
-		$("#g-map").toggle();
-	})
-
 	$("#bring-guest").click(function(){
 		document.getElementById("ckb-guest").checked == true ? checkedIsYes() : checkedIsNo();
 

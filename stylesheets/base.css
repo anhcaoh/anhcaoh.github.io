@@ -167,6 +167,7 @@ body{
 
 #g-map{
 	display: none;
+	height: 300px;
 }
 .shown{
 	display: block;
