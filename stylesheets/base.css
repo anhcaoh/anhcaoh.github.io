@@ -111,7 +111,16 @@ body{
 .wrapper{
 	overflow: hidden;
 }
-
+	#ss{
+		z-index: 99;
+		position: absolute;
+		right: 0;
+		margin-right: 25px;
+		margin-top: -30px;
+		cursor: pointer;
+		font-size: 0.75em;
+		padding: 0;
+	}
     .scrolly{
         overflow: auto;
         overflow-y: hidden;

@@ -65,8 +65,31 @@ $(function(){
 });
 
 $(document).ready(function(){
-	setInterval(function(){
-		$("img.expanded").toggleClass("expanded min", 225).next("img").toggleClass("expanded min").delay(550).fadeIn(550);
-	},8000);
 	
+	var autoStart = true;
+
+	var start = function(){
+		
+		if( autoStart == true && $("#ss").not(".stop") ){
+			$("img.expanded").toggleClass("expanded min", 225).next("img").toggleClass("expanded min").delay(550).fadeIn(550);
+		};
+	};
+
+	setInterval(function(){
+		start();
+	},1000);
+
+	$("div#ss").on("click", function(){
+		
+		if( $(this).is(".start")){
+			autoStart = false;
+			$(this).html("&#9658;");
+		}else{
+			autoStart = true;
+			$(this).html("&#9616;&#9616;");
+		}
+
+		$(this).toggleClass("start stop");
+
+	});
 });
