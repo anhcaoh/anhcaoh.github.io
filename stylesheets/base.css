@@ -112,7 +112,7 @@ body{
 	overflow: hidden;
 }
 
-    #scrolly{
+    .scrolly{
         overflow: auto;
         overflow-y: hidden;
         margin: 0 auto;
