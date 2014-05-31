@@ -125,8 +125,13 @@ body{
 		margin-right: 25px;
 		margin-top: -30px;
 		cursor: pointer;
-		font-size: 0.75em;
+		font-size: small;
 		padding: 0;
+		opacity: .2;
+	}
+	#ss:hover{
+		opacity: 1;
+		-webkit-transition: color .25s linear;
 	}
     .scrolly{
         overflow: auto;
