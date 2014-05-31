@@ -86,7 +86,7 @@ $(document).ready(function(){
 			$(this).html("&#9658;");
 		}else{
 			autoStart = true;
-			$(this).html("&#9616;&#9616;");
+			$(this).html("▐▐");
 		}
 
 		$(this).toggleClass("start stop");
