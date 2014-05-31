@@ -27,7 +27,7 @@
 	<article>
 		<h3>you are invited</h3>
 		<section>
-			<p style="padding: 50px">to join BAO CHAU & HOANG ANH to celebrate their big date of monday, september 1st, 2014.</p>
+			<p class="invited">to join BAO CHAU & HOANG ANH to celebrate their big date of monday, september 1st, 2014.</p>
 		</section>
 	
 	</article>
@@ -81,7 +81,7 @@
 				</div>
 
 			<div class="wrapper">
-				<p class="date">monday september 1st 2014 </p>
+				<p class="date">monday <br> september 1st <br> 2014 </p>
 				<p class="time">at 5:30 p.m.</p>
 			</div>
 
@@ -95,7 +95,7 @@
 
 	<article id="rsvp">
 		
-		<h3>save yourself a seat</h3>
+		<h3>save your seats</h3>
 
 		<section class="joinUs">
 
@@ -117,7 +117,7 @@
 
 					</div>
 				</label>
-				<button type="submit" class="submit" onclick="checkBeforeSubmit()">reserve</button>
+				<button type="submit" class="submit" onclick="checkBeforeSubmit()">I'm coming</button>
 			</form>
 
 		</section>
@@ -135,3 +135,20 @@
 		</ul>
 	</nav>
 </footer>
+
+<script>
+
+var isNotMobile = navigator.appVersion.indexOf("Mobile") == -1;
+
+	if ( isNotMobile == true ){
+		
+		$("section#container").css({"top":"90%","border-top-left-radius":"0px"});
+		$(".hero").css({"top":"20%","left":"20%"});
+		$(".small").css("width","150px");
+		$("nav ul li").css("padding","25px");
+
+	} else{
+	};
+
+</script>
+
