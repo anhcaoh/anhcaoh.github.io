@@ -26,8 +26,11 @@ $(function(){
 		initialScrollPosition = currentScrollPosition;
 	});
 
-	$("img").on("click",function(){
 
+
+
+	$("img").on("click",function(){
+		
 		$("img.expanded").not(this).removeClass("expanded").addClass("min");
 		$(this).toggleClass("expanded").toggleClass("min");
 
@@ -36,8 +39,8 @@ $(function(){
 		} else{
 			$(".smiley").show();
 		}
-		
 	});
+
 
 	$(".addr").on("click", function(){
 		$("#g-map").toggle();
@@ -61,5 +64,9 @@ $(function(){
 
 });
 
-
-
+$(document).ready(function(){
+	setInterval(function(){
+		$("img.expanded").toggleClass("expanded min", 225).next("img").toggleClass("expanded min").delay(550).fadeIn(550);
+	},8000);
+	
+});
