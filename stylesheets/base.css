@@ -127,7 +127,7 @@ body{
 		cursor: pointer;
 		font-size: small;
 		padding: 0;
-		opacity: .2;
+		opacity: .5;
 	}
 	#ss:hover{
 		opacity: 1;
