@@ -77,7 +77,7 @@ $(document).ready(function(){
 
 	setInterval(function(){
 		start();
-	},1000);
+	},10000);
 
 	$("div#ss").on("click", function(){
 		

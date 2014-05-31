@@ -95,8 +95,15 @@ body{
 		width: 100px;
 		padding: 0px;
 	}
+
 	.date::before{
-		content: url("/images/date.png");
+		content: url("/images/small_date.png");
+		padding-right: 5px;
+		opacity: .5;
+	}
+	.small::before{
+
+		content: url("/images/small_date.png");
 		padding-right: 5px;
 		opacity: .5;
 	}
@@ -221,6 +228,7 @@ form.rsvp-form{
 	
 		cursor: pointer;
 		display: block;
+		padding: 15px;
 	}
 	
 	#guest-confirm{
@@ -233,7 +241,7 @@ form.rsvp-form{
 
 	#menu{
 		bottom: 0;
-		background-color: rgba(246, 226, 224, 0.8);
+		background-color: rgba(246, 226, 224, 0.9);
 	}
 		#menu li:nth-child(3){
 			margin-right: 0px;
