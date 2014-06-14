@@ -1,5 +1,6 @@
 
 body{
+
 	outline: 0;
 	margin: 0 auto;
 	min-height: 1136px;
@@ -7,11 +8,12 @@ body{
 	color: rgba(0, 0, 0, 0.5);
 	background-color: #F6E2E0;
 	text-align: center;
-	font-family: 'Lato', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
-	font-size: 1.5em;
+	font-family: "Lato", Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
 	font-weight: 300;
+	font-size: 1.5em;
 }
 	header{
+
 		background: url(https://scontent-a-atl.xx.fbcdn.net/hphotos-ash2/t1.0-9/523309_3561393684489_1456646679_n.jpg) 50% 0 no-repeat fixed;
 		-webkit-background-size: cover;
  	 	-moz-background-size: cover;
@@ -25,16 +27,22 @@ body{
 	}
 
 	.hero{
+
 		position: relative;
 		top: 5%;
 		left: 5%;
-		padding: 0px;
 		margin: 0px;
-		color: #f1f1f1;
+		font-size: 10pt;
 		font-weight: lighter;
 	}
 
+	.small{
+		width: 100px;
+		float: left;
+	}
+
 	#container{
+
 		top: 40%;
 		width: 96%;
 		padding-left: 2%;
@@ -45,12 +53,12 @@ body{
 	}
 
 	@media (max-width: 720px){
+
 		header{
 			background-size: 360px auto;
 		}
 		.hero{
-			font-size: 12pt;
-			width: 100px;
+			
 		}
 		#container{
 			top: 40%;
@@ -58,16 +66,30 @@ body{
 	}
 	
 	article{
-		margin-bottom: 30%;
+
+		margin-bottom: 50%;
 	}
+	
+	/*section{
+		background-color: rgba(255, 255, 255, 0.3);
+		border-radius: 5px;
+	} */
 
 	#us{
+
 		height: 650px;
+	}
+	#last{
+		background: url(https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/t1.0-9/10313093_10204083288307091_1290948268668078793_n.jpg) 50% 0 no-repeat fixed;
+		-webkit-background-size: cover;
+ 	 	-moz-background-size: cover;
+  		-o-background-size: cover;
+		background-size: cover;
 	}
 
 	a:link, a:active, a:visited{
 		text-decoration: none;
-		color: #000;
+		color: #F6E2E0;
 		cursor: pointer;
 		-webkit-transition: color .25s linear;
 	}
@@ -77,8 +99,8 @@ body{
 	}
 
 	h1, h2, h3{
-		font-size: 2em;
-		font-weight: bold;
+		font-size: 2.25em;
+		font-weight: 100;
 	}
 
 	ul{
@@ -88,15 +110,7 @@ body{
 	}
 
 
-.date{
-
-}
-	.small{
-		width: 100px;
-		padding: 0px;
-	}
-
-	.date::before{
+	/*.date::before{
 		content: url("/images/date.png");
 		padding-right: 5px;
 		opacity: .5;
@@ -106,7 +120,7 @@ body{
 		content: url("/images/date.png");
 		padding-right: 5px;
 		opacity: .5;
-	}
+	}*/
 
 .invited{
 	padding: 50px;

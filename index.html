@@ -18,8 +18,8 @@
 	<body>
 
 	<header>
-		<p class="small date hero">
-			<a href="#info" style="color: #F6E2E0; font-weight: 300">monday september 1st 2014</a></p>
+		<p class="small hero">
+			<a href="#info">monday september 1st 2014</a></p>
 	</header>
 
 	<section id="container">
@@ -27,7 +27,7 @@
 	<article>
 		<h3>you are invited</h3>
 		<section>
-			<p class="invited">to join BAO CHAU & HOANG ANH to celebrate their big date of monday, september 1st, 2014.</p>
+			<p class="invited">to join Bao Chau & Hoang Anh to celebrate their big date of monday, september 1st, 2014.</p>
 		</section>
 	
 	</article>
@@ -45,7 +45,6 @@
 		<img class="expanded" src="https://scontent-a-atl.xx.fbcdn.net/hphotos-ash2/t1.0-9/523309_3561393684489_1456646679_n.jpg">
 	
 
-
 		<img class="min" src="https://scontent-b.xx.fbcdn.net/hphotos-ash3/t1.0-9/10299581_10202192021621967_1500973712756777409_n.jpg">
 		
 		<img class="min" src="https://scontent-b.xx.fbcdn.net/hphotos-ash3/t1.0-9/45760_417552877030_7785425_n.jpg">
@@ -53,7 +52,6 @@
 
 		<img class="min" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/t1.0-9/944538_10201283010901906_828486808_n.jpg">
 		
-
 
 		<img class="min" src="https://scontent-a.xx.fbcdn.net/hphotos-xaf1/t1.0-9/250792_10151819438525693_44058330_n.jpg">
 	
@@ -100,12 +98,12 @@
 
 		<section>
 			<div class="addr">
-				<p>@ happy valley<br/>
+				<p id="maps-addr">@ happy valley<br/>
 				<span>5495 jimmy carter blvd <br/>norcross, ga 30093</span></p>
 					
-					<iframe src="https://www.google.com/maps/embed?pb=!1m25!1m8!1m3!1d72481119.06013282!2d126.716447!3d-56.330723665543516!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x88f5a0f8cafe4a7f%3A0x2f337f20956bccc7!2sNorcross%2C+GA+30092!3m2!1d33.9851868!2d-84.238417!4m5!1s0x88f5a6bf0f354d07%3A0x779a63da17039134!2s5495+Jimmy+Carter+Blvd%2C+Norcross%2C+GA+30093!3m2!1d33.908947!2d-84.204908!5e0!3m2!1sen!2sbe!4v1401519122708" height="300" frameborder="0" style="border:0"></iframe>
-	
-				</div>
+					<iframe id="g-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3311.2506897015123!2d-84.204908!3d33.90894699999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a6bf0f354d07%3A0x779a63da17039134!2s5495+Jimmy+Carter+Blvd!5e0!3m2!1sen!2sus!4v1402774322326" height="300" frameborder="0" style="border:0; display: none"></iframe>
+			
+			</div>
 
 			<div class="wrapper">
 				<p class="date">monday <br> september 1st <br> 2014 </p>
@@ -113,8 +111,8 @@
 			</div>
 
 			<div class="wrapper">
-				<p class="BcNo">BAO CHAU <br/>(404) 374-4638</p>
-				<p class="HaNo">HOANG ANH <br/>(678) 602-1591</p>
+				<p class="BcNo">Bao Chau<br/>(404) 374-4638</p>
+				<p class="HaNo">Hoang Anh <br/>(678) 602-1591</p>
 			</div>
 		</section>
 
@@ -170,7 +168,7 @@ var isNotMobile = navigator.appVersion.indexOf("Mobile") == -1;
 	if ( isNotMobile == true ){
 		
 		$("section#container").css({"top":"90%","border-top-left-radius":"0px"});
-		$(".hero").css({"top":"20%","left":"20%"});
+		$(".hero").css({"top":"25%","left":"15%"});
 		$(".small").css("width","150px");
 		$("nav ul li").css("padding","25px");
 
