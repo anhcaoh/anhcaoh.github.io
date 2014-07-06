@@ -221,7 +221,7 @@ form.rsvp-form{
 	
 	input[type=checkbox]{
 		display: inline-block;
-		zoom: 1.5;
+		zoom: 1;
 		width: 15px;
 	}
 
