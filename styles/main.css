@@ -197,6 +197,8 @@ section{
 					background-color: #e1e1e1;
 					padding-bottom: 10px;
 					vertical-align: text-top;
+					-webkit-margin-start: 10px;
+					-webkit-margin-end: 10px;
 				}
 
 	
