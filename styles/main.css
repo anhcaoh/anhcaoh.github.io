@@ -229,7 +229,9 @@ section{
 						#client-works figure figcaption p{
 						
 							padding: 0px;
-							margin-bottom: 20px;						
+							margin-bottom: 20px;	
+							z-index: 99;
+							position: absolute;					
 						}
 
 						#client-works figure figcaption p span{
