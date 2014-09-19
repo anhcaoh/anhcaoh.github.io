@@ -185,9 +185,6 @@ section{
 
 				margin: 10% auto;
 				background-color: #f1f1f1;
-				padding-top: 25px;
-				padding-bottom: 25px;
-
 			}
 
 				#client-works figure{
@@ -197,8 +194,8 @@ section{
 					background-color: #fff;
 					padding-bottom: 10px;
 					vertical-align: text-top;
-					-webkit-margin-start: 10px;
-					-webkit-margin-end: 10px;
+					-webkit-margin-start: 5px;
+					-webkit-margin-end: 5px;
 				}
 
 	
