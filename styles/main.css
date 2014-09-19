@@ -231,8 +231,9 @@ section{
 							padding: 0px;
 							margin-bottom: 20px;	
 							z-index: 99;
-							position: absolute;					
+							position: fixed;
 						}
+
 
 						#client-works figure figcaption p span{
 
@@ -242,12 +243,15 @@ section{
 						
 						.hidden{
 
-							display: none;
+							opacity: 0 !important;
+								-webkit-transition: opacity .4s ease-in;
+				 -moz-transition: opacity .4s ease-in;
+				         	-o-transition: opacity .4s ease-in;
+			            	transition: position 4s ease-in;	
 
 						}
-
 					
-						#client-works figure.active {
+						#client-works figure.active{
 
 							width: 100%;
 							z-index: 98;
@@ -257,6 +261,8 @@ section{
 							bottom: 0;
 							left: 0;
 							margin: auto;
+							-webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+   							transition: width .5s;
 						}
 
 						#client-works figure.active img{
@@ -433,6 +439,8 @@ ul li{
 		margin-bottom: 25px;
 		margin: auto;
 		position: absolute;
+		opacity: 1;
+		
 	}
 
 	.bottomCenter{
