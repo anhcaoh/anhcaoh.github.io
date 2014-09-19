@@ -24,11 +24,6 @@
 
 $(document).ready( function(){
 	
-	$("#slider div p").on("click", function(){
-    
-    	$(this).next("div.more").slideToggle("fast");
-
-	});
 
 	$("#services div h3").on("click", function(){
 
@@ -128,8 +123,8 @@ $(document).ready( function(){
 	// $("#previous").on("click", goBack );
 
 		// Bind the swipeleftHandler callback function to the swipe event on div.box
- 	$( "#slider div" ).on( "swipeleft", swipeleftHandler );
- 	$( "#slider div" ).on( "swiperight", swipeRightHandler );
+ 	$( "figure" ).on( "swipeleft", swipeleftHandler );
+ 	$( "figure" ).on( "swiperight", swipeRightHandler );
 	 
   	// Callback function references the event target and adds the 'swipeleft' class to it
   	function swipeleftHandler( event ){
@@ -169,10 +164,10 @@ $(document).ready( function(){
 
 	$("#client-works figure").on("click", function(){
 
-
-		$(".mask").toggle();
-		$(this).toggleClass("active").find("figcaption p").toggleClass("hidden bottom");
+		$(this).toggleClass("active");
+		$(this).find("figcaption p").toggleClass("hidden bottom");
 		$(this).find("figcaption span.headCaption").toggle();
+		
 	})
 
 	$("input[type='submit']").on("click", function(){

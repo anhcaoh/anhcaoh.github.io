@@ -244,17 +244,13 @@ section{
 						.hidden{
 
 							opacity: 0 !important;
-								-webkit-transition: opacity .4s ease-in;
-				 -moz-transition: opacity .4s ease-in;
-				         	-o-transition: opacity .4s ease-in;
-			            	transition: position 4s ease-in;	
-
 						}
 					
 						#client-works figure.active{
 
 							width: 100%;
-							z-index: 98;
+							height: 100%;
+							z-index: 99;
 							position: fixed;
 							top: 0;
 							right: 0;
@@ -264,12 +260,22 @@ section{
 							-webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
    							transition: width .5s;
 						}
-
-						#client-works figure.active img{
+							
+							#client-works figure.active img{
 
 								width: 100%;
 								-webkit-filter: none;
-						}
+							}
+
+							#client-works figure.active p{
+
+								right: 0;
+								left: 0;
+								bottom: 0;
+							}
+
+						
+
 
 			#work ul{
 
@@ -439,8 +445,7 @@ ul li{
 		margin-bottom: 25px;
 		margin: auto;
 		position: absolute;
-		opacity: 1;
-		
+		opacity: 1;	
 	}
 
 	.bottomCenter{
