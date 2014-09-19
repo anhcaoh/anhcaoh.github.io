@@ -184,14 +184,13 @@ section{
 			#client-works{
 
 				margin: 10% auto;
-				background-color: #000;
 			}
 
 				#client-works figure{
 
 					display: inline-block;
 					width: 160px;
-					background-color: #fff;
+					background-color: #f8f8f8;
 					padding-bottom: 10px;
 					vertical-align: text-top;
 					-webkit-margin-start: 5px;
@@ -448,7 +447,6 @@ ul li{
 	border: 0px;
 	margin-top: 0px;	
 	height: 320px;
-	background-color: #FAFAFA;
 }
 
 	#Anh-Cao{
