@@ -19,8 +19,20 @@
 
 	}
 
-
 	}];
+
+	var closeFigure = function closeFigure(){
+
+		$("#close-figure").on("click", function(){
+
+			$(this).hide();
+			$(".disable").toggleClass("disable");
+			$("figure.active").removeClass("active");
+			$(".bottom").toggleClass("bottom hidden");
+
+		});
+
+	}
 
 $(document).ready( function(){
 	
@@ -162,16 +174,27 @@ $(document).ready( function(){
 	
 	// });
 
+
+
 	$("#client-works figure").on("click", function(){
 
+		$("#client-works figure").removeClass("active").toggleClass("disable");
 		$(this).toggleClass("active");
 		$(this).find("figcaption p").toggleClass("hidden bottom");
 		$(this).find("figcaption span.headCaption").toggle();
-		
-	})
+		$("#close-figure").show();
 
-	$("input[type='submit']").on("click", function(){
-	
+		closeFigure();
+
+
+	});
+
+
+
+	$("input[type='submit']").on("click", function(event){
+		
+		event.preventDefault();
+
 		alert("We received your message. We will contact you within 24 hours.");
 	
 		return false;

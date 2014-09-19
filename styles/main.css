@@ -245,7 +245,33 @@ section{
 
 							opacity: 0 !important;
 						}
-					
+						.disable{
+
+							pointer-events: none;
+
+						}
+
+						#close-figure{
+
+							display: none;
+							border: 0;
+							z-index: 100;
+							position: fixed;
+							margin: auto;
+							color: #000;
+							padding: 10px;
+							bottom: 0;
+							height: 30px;
+							width: 30px;
+							margin-bottom: 50%;
+							margin-left: 45%;
+						}
+
+						#close-figure img{
+
+							max-width: 35%;
+						}
+
 						#client-works figure.active{
 
 							width: 100%;
