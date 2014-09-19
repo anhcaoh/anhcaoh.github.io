@@ -176,7 +176,7 @@ $(document).ready( function(){
 
 	$("input[type='submit']").on("click", function(){
 	
-		alert("We got your message. We will contact you within 24 hours.");
+		alert("We received your message. We will contact you within 24 hours.");
 	
 		return false;
 	

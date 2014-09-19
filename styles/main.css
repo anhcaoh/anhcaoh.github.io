@@ -238,6 +238,7 @@ section{
 
 						}
 
+					
 						#client-works figure.active {
 
 							width: 100%;
@@ -414,6 +415,16 @@ ul li{
 		bottom: 5%;
 		right: 10%;
 		font-weight: bold;
+	}
+
+	.bottom{
+
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin-bottom: 25px;
+		margin: auto;
+		position: absolute;
 	}
 
 	.bottomCenter{
