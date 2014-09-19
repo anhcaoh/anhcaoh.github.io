@@ -229,8 +229,14 @@ section{
 						#client-works figure figcaption p{
 						
 							padding: 0px;
-							margin-top: 2px;						
+							margin-bottom: 20px;						
 						}
+
+						#client-works figure figcaption p span{
+
+							display: block;
+							text-align: center;
+						}						
 						
 						.hidden{
 

@@ -170,8 +170,8 @@ $(document).ready( function(){
 	$("#client-works figure").on("click", function(){
 
 		$(".mask").toggle();
-		$(this).toggleClass("active").find("figcaption p").toggleClass("hidden");
-
+		$(this).toggleClass("active").find("figcaption p").toggleClass("hidden bottom");
+		$(this).find("figcaption span.headCaption").toggle();
 	})
 
 	$("input[type='submit']").on("click", function(){
