@@ -184,7 +184,7 @@ section{
 			#client-works{
 
 				margin: 10% auto;
-				background-color: #f1f1f1;
+				background-color: #000;
 			}
 
 				#client-works figure{
@@ -196,6 +196,7 @@ section{
 					vertical-align: text-top;
 					-webkit-margin-start: 5px;
 					-webkit-margin-end: 5px;
+					margin-top: 7px;
 				}
 
 	
@@ -206,7 +207,7 @@ section{
 						-moz-filter: grayscale(100%);
 						filter: grayscale(100%);
 						
-						opacity: .8;
+						/*opacity: .8;*/
 
 						/* IE 8 */
 						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
