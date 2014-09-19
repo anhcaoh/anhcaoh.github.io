@@ -23,7 +23,7 @@
 
 	var closeFigure = function closeFigure(){
 
-		$("#close-figure:is('visible').on("click", function(){
+		$("#close-figure").on("click", function(){
 
 			$(this).hide();
 			$(".disable").toggleClass("disable");
@@ -60,6 +60,7 @@ $(document).ready( function(){
 	$("nav a, .mask, #close").on("click", function(){
 		
 		$("nav, .mask, #close, .absolutelyCenter").hide();
+		$(".shownFigure").removeClass("shownFigure");
 
 	});
 
@@ -162,34 +163,6 @@ $(document).ready( function(){
   		goBack();
   	}
 
- //  	$("#client-works figure").on("click", function(){
-	
-	// 	var match = $(this).context.id;
-
-	// 	$("#client-works figure figcaption").css("font-weight","regular");
-	// 	$(this).find("figcaption").css({"color":"#000"});
-
-	// 	$("#slider div").removeClass("active");
-	// 	$("#slider div#" + match + ", li#"+match).addClass("active");
-	
-	// });
-
-
-
-	$("#client-works figure").on("click", function(){
-
-		$("#client-works figure").removeClass("active").toggleClass("disable");
-		$(this).toggleClass("active");
-		$(this).find("figcaption p").toggleClass("hidden bottom");
-		$(this).find("figcaption span.headCaption").toggle();
-		$("#close-figure").show();
-
-		closeFigure();
-
-
-	});
-
-
 
 	$("input[type='submit']").on("click", function(event){
 		
@@ -200,8 +173,6 @@ $(document).ready( function(){
 		return false;
 	
 	});
-
-
 
 });
 
