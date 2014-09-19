@@ -23,7 +23,7 @@
 
 	var closeFigure = function closeFigure(){
 
-		$("#close-figure").on("click", function(){
+		$("#close-figure:is('visible').on("click", function(){
 
 			$(this).hide();
 			$(".disable").toggleClass("disable");
