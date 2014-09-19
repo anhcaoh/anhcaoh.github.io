@@ -155,17 +155,24 @@ $(document).ready( function(){
   		goBack();
   	}
 
-  	$("#client-works figure").on("click", function(){
+ //  	$("#client-works figure").on("click", function(){
 	
-		var match = $(this).context.id;
+	// 	var match = $(this).context.id;
 
-		$("#client-works figure figcaption").css("font-weight","regular");
-		$(this).find("figcaption").css({"color":"#000","font-weight":"bolder"});
+	// 	$("#client-works figure figcaption").css("font-weight","regular");
+	// 	$(this).find("figcaption").css({"color":"#000"});
 
-		$("#slider div").removeClass("active");
-		$("#slider div#" + match + ", li#"+match).addClass("active");
+	// 	$("#slider div").removeClass("active");
+	// 	$("#slider div#" + match + ", li#"+match).addClass("active");
 	
-	});
+	// });
+
+	$("#client-works figure").on("click", function(){
+
+		$(".mask").toggle();
+		$(this).toggleClass("active");
+
+	})
 
 	$("input[type='submit']").on("click", function(){
 	

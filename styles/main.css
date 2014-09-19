@@ -183,19 +183,26 @@ section{
 
 			#client-works{
 
-				display: table;
 				margin: 10% auto;
+				background-color: #f1f1f1;
+				padding-top: 25px;
+				padding-bottom: 25px;
+
 			}
 
 				#client-works figure{
 
-					display: table-cell;
-					width: 30%;
+					display: inline-block;
+					width: 160px;
+					background-color: #e1e1e1;
+					padding-bottom: 10px;
+					vertical-align: text-top;
 				}
 
+	
 					#client-works figure img{
 						
-						height: 47px;
+						width: 160px;
 						-webkit-filter: grayscale(100%);
 						-moz-filter: grayscale(100%);
 						filter: grayscale(100%);
@@ -216,10 +223,27 @@ section{
 
 					#client-works figure figcaption{
 						
-						font-weight: regular;
-						margin: 10% auto 0 auto;
+						font-weight: normal;
 
 					}
+
+						#client-works figure.active {
+
+							width: 100%;
+							z-index: 98;
+							position: fixed;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: 0;
+							margin: auto;
+						}
+
+						#client-works figure.active img{
+
+								width: 100%;
+								-webkit-filter: none;
+						}
 
 			#work ul{
 
