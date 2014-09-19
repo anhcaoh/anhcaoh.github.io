@@ -225,7 +225,21 @@ section{
 						
 						font-weight: normal;
 
-					}
+						}
+				
+						#client-works figure figcaption p{
+						
+							padding: 0px;
+							margin-top: 2px;
+							overflow-y: scroll;
+						
+						}
+						
+						.hidden{
+
+							display: none;
+
+						}
 
 						#client-works figure.active {
 

@@ -170,7 +170,7 @@ $(document).ready( function(){
 	$("#client-works figure").on("click", function(){
 
 		$(".mask").toggle();
-		$(this).toggleClass("active");
+		$(this).toggleClass("active").find("figcaption p").toggleClass("hidden");
 
 	})
 
