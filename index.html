@@ -56,7 +56,6 @@
 				 <figcaption><span class="headCaption">Wedding</span>
 					
 					<p class="hidden">
-					<span>Wedding</span>
 					A personalized wedding website for Bao Chau & Hoang Anh. Guests can RSVP and view wedding information.
 					</p>
 
@@ -156,7 +155,7 @@
 		<p>When Anh is not designing, he is dancing. He dances to express his feelings, to appreciate the music rhythm, to re-focus for a purpose, and to test his ultimate potential. <a href="http://youtu.be/EhWxvWB0e5g?t=6m24s" target="_blank">Watch Anh dance</a> ›</p>
 		</div>
 		
-		<div class="arrow-down-down" onClick="$('#Anh-Cao').toggleClass('viewFull'); $(this).addClass('arrow-down-down').removeClass('arrow-up-up'); return false;"></div>
+		<div class="arrow-down-down" onClick="readAboutAnhCao(); return false;"></div>
 		
 		<div class="mask"></div>
 
@@ -209,16 +208,14 @@
 			
 			</span>
 
-			<form id="contact-form">
+			<form id="contact-form" action="inquiry.php" method="get">
 				<label>E-mail</label>
 				<input type="email" name="email" placeholder="Your e-mail">
 				
 				<label>Messages</label>				
 				<textarea name="Messages" style="height: 75px" row="5" placeholder="Hi, I need a website for my business..."></textarea>
 				
-				<input type="submit">
-				
-				</div>
+				<button type="submit" form="contact-button" value="submit">Send</button>
 			</form>
 
 	</section>

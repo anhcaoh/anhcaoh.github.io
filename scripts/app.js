@@ -1,5 +1,7 @@
 	
-	var toggles = [{ mobileFocused : function toggleMobileFocused(){
+	var toggles = [{ 
+
+		mobileFocused : function toggleMobileFocused(){
 
 		$('.mask').show("fast", "linear");
 		$('#mobile-focused').fadeIn('fast');
@@ -16,23 +18,19 @@
 		$('.mask').show("fast");
 		$('#simply-aesthetic').fadeIn('fast');
 		$('#close').css('display','table');
+			
+	},	clientWorks: function toggleClientWorks(event){
 
+		$(".expanded").removeClass("expanded");
+		$(".shown").removeClass("shown");
+		var targetedClient = $( event.target ).parent();
+		$(targetedClient).addClass("expanded");
+		$(targetedClient).find(".hidden").addClass("shown");
 	}
-
+	
 	}];
 
-	var closeFigure = function closeFigure(){
 
-		$("#close-figure").on("click", function(){
-
-			$(this).hide();
-			$(".disable").toggleClass("disable");
-			$("figure.active").removeClass("active");
-			$(".bottom").toggleClass("bottom hidden");
-
-		});
-
-	}
 
 $(document).ready( function(){
 	
@@ -44,6 +42,12 @@ $(document).ready( function(){
 	});
 
 	$("#menu").on( "click", toggleMenu );
+
+	$("figure img").on("click", function(event){
+
+		toggles[0].clientWorks(event);
+
+	});
 
 	function toggleMenu( event ){
 
@@ -60,10 +64,8 @@ $(document).ready( function(){
 	$("nav a, .mask, #close").on("click", function(){
 		
 		$("nav, .mask, #close, .absolutelyCenter").hide();
-		$(".shownFigure").removeClass("shownFigure");
 
 	});
-
 
   	var initialScrollPosition = 0;
 	
@@ -112,8 +114,6 @@ $(document).ready( function(){
 		// 	$("#next").fadeOut();
 		// }
 	}
-
-
 
 	var goBack = function(){
 
@@ -164,7 +164,7 @@ $(document).ready( function(){
   	}
 
 
-	$("input[type='submit']").on("click", function(event){
+	$("button").on("click", function(event){
 		
 		event.preventDefault();
 

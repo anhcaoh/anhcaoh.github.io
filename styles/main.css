@@ -202,10 +202,17 @@ section{
 					
 				}
 
+					#client-works figure.expanded{
+						width: 100%;
+					}
+					#client-works figure.expanded p{
+
+						opacity: 1;
+					}
 	
 					#client-works figure img{
 						
-						width: 160px;
+						width: 100%;
 				
 					}
 
@@ -218,9 +225,7 @@ section{
 						#client-works figure figcaption p{
 						
 							padding: 0px;
-							margin-bottom: 20px;	
-							z-index: 99;
-							position: fixed;
+							background-color: #fafafa;
 						}
 
 
@@ -232,7 +237,12 @@ section{
 						
 						.hidden{
 
-							opacity: 0 !important;
+							opacity: 0;
+							display: none;
+						}
+						.shown{
+							display: block !important;
+							opacity: 1 !important;
 						}
 						.disable{
 
@@ -281,10 +291,13 @@ section{
 							margin-left: 45%;
 						}
 
+					
+
 						#close-figure img{
 
 							max-width: 35%;
 						}
+
 
 						#client-works figure.active{
 
@@ -665,13 +678,17 @@ ul li{
 		width: 248px;
 	}
 
-	input[type="submit"]{
-
+	 button{
+	 	outline: 0;
+		background-color: transparent;
+		padding: 20px;
+		cursor: pointer;
 		width: 280px !important;
-		border: 2px solid #000 !important;
+		border: 2px solid #000;
 		color: #000 !important;
 		border-radius: 10px;
-		margin-bottom: 0px !important;
+		margin-bottom: 0px;
+		font-size: 15pt;
 	}
 		.shadow {
 		
