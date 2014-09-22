@@ -508,6 +508,12 @@ ul li{
 	height: 320px;
 }
 
+	#about p{
+
+		width: 300px;
+		margin: auto;
+	}
+
 	#Anh-Cao{
 
 		height: 150px;
