@@ -267,6 +267,7 @@ section{
 
 		text-decoration: none;
 		color: #000;
+		border-bottom: 1px dotted #000;
 	}
 
 nav{
@@ -294,6 +295,7 @@ nav a {
 	border-top: 1px solid #e1e1e1;
 	background-color: #fff;
 	font-weight: 700;
+	border: 0 !important;
 
 }
 	nav a:hover{
