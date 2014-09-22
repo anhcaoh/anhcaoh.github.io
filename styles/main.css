@@ -239,8 +239,9 @@ section{
 					#client-works figure figcaption{
 						
 						font-weight: normal;
-						padding: 5px;
+						padding: 10px;
 						font-size: medium;
+						line-height: initial;
 					}
 				
 						#client-works figure figcaption p{
