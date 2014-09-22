@@ -3,10 +3,9 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
  <url>
    <loc>http://beyondelement.com</loc>
-   <image:image>
-<image:loc>http://beyondelement.com/images/Works/BuckShotsPromoLogo.jpg</image:loc>
+   <image:image><image:loc>http://beyondelement.com/images/Works/BuckShotsPromoLogo.jpg</image:loc>
    </image:image>
-   <image:image>     <image:loc>beyondelement.com/images/Works/PowerShootPromo.jpg</image:loc>
+   <image:image><image:loc>beyondelement.com/images/Works/PowerShootPromo.jpg</image:loc>
    </image:image>
  </url> 
-</urlset> </sitemapindex>
+</urlset>
