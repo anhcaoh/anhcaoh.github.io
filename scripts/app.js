@@ -6,26 +6,39 @@
 		$('.mask').show("fast", "linear");
 		$('#mobile-focused').fadeIn('fast');
 		$('#close').css('display','table');
+		$("html").addClass("fixed");
 
 	}, goalOriented: function toggleGoalOriented(){
 
 		$('.mask').show("fast");
 		$('#goal-oriented').fadeIn('fast');
 		$('#close').css('display','table');
+		$("html").addClass("fixed");
 
 	},	simplyAesthetic: function toggleSimplyAesthetic(){
 
 		$('.mask').show("fast");
 		$('#simply-aesthetic').fadeIn('fast');
 		$('#close').css('display','table');
+		$("html").addClass("fixed");
 			
 	},	clientWorks: function toggleClientWorks(event){
 
-		$(".expanded").removeClass("expanded");
-		$(".shown").removeClass("shown");
 		var targetedClient = $( event.target ).parent();
+
 		$(targetedClient).addClass("expanded");
-		$(targetedClient).find(".hidden").addClass("shown");
+
+		$("html").addClass("fixed");
+		
+		$(".mask").show();
+
+		$("#close").css("display","table");
+
+		// $(".expanded").removeClass("expanded");
+		// $(".shown").removeClass("shown");
+		// var targetedClient = $( event.target ).parent();
+		// $(targetedClient).addClass("expanded");
+		// $(targetedClient).find(".hidden").addClass("shown");
 	}
 	
 	}];
@@ -53,17 +66,18 @@ $(document).ready( function(){
 
 		window.scrollTo(0,0);
 
-		console.log($("this"));
-
 		$(".mask").show();
 
 		$("nav").slideToggle("fast");
 		$("#close").css("display","table");
+		$("html").toggleClass("fixed");
 	}
 
 	$("nav a, .mask, #close").on("click", function(){
 		
 		$("nav, .mask, #close, .absolutelyCenter").hide();
+		$("html").removeAttr("class");
+		$(".expanded").removeAttr("class");
 
 	});
 
@@ -164,15 +178,15 @@ $(document).ready( function(){
   	}
 
 
-	$("button").on("click", function(event){
+	// $("button").on("click", function(event){
 		
-		event.preventDefault();
+	// 	event.preventDefault();
 
-		alert("We received your message. We will contact you within 24 hours.");
+	// 	alert("We received your message. We will contact you within 24 hours.");
 	
-		return false;
+	// 	submit();
 	
-	});
+	// });
 
 });
 

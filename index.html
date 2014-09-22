@@ -37,6 +37,8 @@
 				
 	</nav>
 
+	<div class="mask"></div>
+
 	<section id="header">
 
 		<div class="branding">
@@ -50,8 +52,6 @@
 		<div id="client-works">
 
 			<figure id="1">
-
-				<img src="./slider/HoangChauWeddingWebsite.png">
 				 
 				 <figcaption><span class="headCaption">Wedding</span>
 					
@@ -60,27 +60,29 @@
 					</p>
 
 				 </figcaption>
+
+				 <img src="./slider/HoangChauWeddingWebsite.png">
 			
-		
 			</figure>
 
 			<figure id="2">
 
-				<img src="./images/Works/PowerShootPromo.jpg">
 			  
 				<figcaption style="padding-top: 10px;"><span class="headCaption">PowerShoot</span>
 
 					<p class="hidden">
 					An promo for open photography shootings
 
-					</p></figcaption>
-			
+					</p>
+
+				</figcaption>
+				
+				<img src="./images/Works/PowerShootPromo.jpg">
+
 			</figure>
 			
 			<figure id="3">
 
-				<img src="./images/Works/Training-Class-Sign-Up.png">
-			  
 				<figcaption>
 
 					<span class="headCaption">Class Signup</span>
@@ -91,13 +93,14 @@
 					</p>
 				
 				</figcaption>
-			
+
+				<img src="./images/Works/Training-Class-Sign-Up.png" style="max-height: 260px; width: auto;">
+			  
+		
 			</figure>
 
 			<figure id="4">
 
-				<img src="./images/Works/Inventory-e-Store.png">
-			  
 				<figcaption><span class="headCaption">Inventory Store</span>
 					
 					<p class="hidden">
@@ -106,13 +109,14 @@
 					</p>
 
 				</figcaption>
+
+				<img src="./images/Works/Inventory-e-Store.png" style="max-height: 260px; width: auto;">
+			  
 			
 			</figure>
 
 			<figure id="5">
 
-				<img src="./images/Works/BuckShotsPromoLogo.jpg">
-			
 				<figcaption><span class="headCaption">B-boy</span>
 
 					<p class="hidden">
@@ -120,13 +124,15 @@
 
 					</p>
 
-			</figcaption>
+				</figcaption>
+
+				<img src="./images/Works/BuckShotsPromoLogo.jpg">
+
 			
 			</figure>
 
 			<figure id="6">
 
-				<img src="./images/Works/LaunchPromo.jpg">
 			  
 				<figcaption><span class="headCaption">Beyondeed promo</span>
 					
@@ -135,7 +141,10 @@
 					</p>
 
 				</figcaption>
-			
+				
+				<img src="./images/Works/LaunchPromo.jpg">
+
+
 			</figure>
 
 
@@ -155,10 +164,6 @@
 		<p>When Anh is not designing, he is dancing. He dances to express his feelings, to appreciate the music rhythm, to re-focus for a purpose, and to test his ultimate potential. <a href="http://youtu.be/EhWxvWB0e5g?t=6m24s" target="_blank">Watch Anh dance</a> ›</p>
 		</div>
 		
-		<div class="arrow-down-down" onClick="readAboutAnhCao(); return false;"></div>
-		
-		<div class="mask"></div>
-
 		<div id="mobile-focused" class="absolutelyCenter shadow"><p><b>Mobile-focused.</b> Mobile devices become part of our life, part of your and our business. We design website with mobile-first apporach just for that reason.</p></div>
 
 		<div id="goal-oriented" class="absolutelyCenter shadow"><p><b>Goal-oriented.</b> We don't always design websites. But when we do, we do it for a purpose.</p></div>
@@ -208,15 +213,16 @@
 			
 			</span>
 
-			<form id="contact-form" action="inquiry.php" method="get">
+			<form id="contact-form" action="Feedback Form.php" method="POST">
 				<label>E-mail</label>
 				<input type="email" name="email" placeholder="Your e-mail">
 				
 				<label>Messages</label>				
-				<textarea name="Messages" style="height: 75px" row="5" placeholder="Hi, I need a website for my business..."></textarea>
+				<textarea name="messages" style="height: 75px" row="5" placeholder="Hi, I need a website for my business..."></textarea>
 				
-				<button type="submit" form="contact-button" value="submit">Send</button>
 			</form>
+			<button type="submit" form="contact-button" value="submit">Send</button>
+
 
 	</section>
 	
@@ -230,6 +236,8 @@
 <script type="text/javascript" src="./scripts/jquery-ui.min.js"></script>
 
 <script type="text/javascript" src="./scripts/app.js"></script>
+
+<script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>
 
 <script>
 
