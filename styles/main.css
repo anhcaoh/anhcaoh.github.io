@@ -191,19 +191,20 @@ section{
 
 					display: inline-block;
 					width: 40%;
-					background-color: #f8f8f8;
-					vertical-align: text-top;
+/*					background-color: #f8f8f8;
+*/					vertical-align: text-top;
 					-webkit-margin-start: 5px;
 					-webkit-margin-end: 5px;
-					border-bottom: 1px solid #E1E1EA;
+			/*		border-bottom: 1px solid #E1E1EA;
 					border-bottom-left-radius: 10px;
-					border-bottom-right-radius: 10px;
+					border-bottom-right-radius: 10px;*/
 					
 				}
 			
 		
 					#client-works figure.expanded{
-
+						
+						background-color: #f8f8f8;
 						width: auto;
 						position: fixed;
 						z-index: 2;
