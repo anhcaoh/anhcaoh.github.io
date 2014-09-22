@@ -1,15 +1,19 @@
 	
+	var currentY = window.scrollY;
+
 	var toggles = [{ 
 
 		mobileFocused : function toggleMobileFocused(){
 
+		currentY = window.scrollY;
 		$('.mask').show("fast", "linear");
 		$('#mobile-focused').fadeIn('fast');
 		$('#close').css('display','table');
 		$("window, html, body").addClass("fixed");
 
 	}, goalOriented: function toggleGoalOriented(){
-
+		
+		currentY = window.scrollY;
 		$('.mask').show("fast");
 		$('#goal-oriented').fadeIn('fast');
 		$('#close').css('display','table');
@@ -17,6 +21,7 @@
 
 	},	simplyAesthetic: function toggleSimplyAesthetic(){
 
+		currentY = window.scrollY;
 		$('.mask').show("fast");
 		$('#simply-aesthetic').fadeIn('fast');
 		$('#close').css('display','table');
@@ -24,26 +29,17 @@
 			
 	},	clientWorks: function toggleClientWorks(event){
 
+		currentY = window.scrollY;
+
 		var targetedClient = $( event.target ).parent();
 
 		$(targetedClient).addClass("expanded");
-
-		$("window, html, body").addClass("fixed");
-		
+		$("window, html, body").addClass("fixed");	
 		$(".mask").show();
-
 		$("#close").css("display","table");
-
-		// $(".expanded").removeClass("expanded");
-		// $(".shown").removeClass("shown");
-		// var targetedClient = $( event.target ).parent();
-		// $(targetedClient).addClass("expanded");
-		// $(targetedClient).find(".hidden").addClass("shown");
 	}
 	
 	}];
-
-
 
 $(document).ready( function(){
 	
@@ -51,6 +47,7 @@ $(document).ready( function(){
 	$("#services div h3").on("click", function(){
 
 		$(this).next("ul").slideToggle("fast");
+
 		$(this).find(".arrow-down").toggleClass("getInline");
 	});
 
@@ -59,6 +56,7 @@ $(document).ready( function(){
 	$("figure img").on("click", function(event){
 
 		toggles[0].clientWorks(event);
+		console.log(currentY);
 
 	});
 
@@ -71,6 +69,8 @@ $(document).ready( function(){
 		$("nav").slideToggle("fast");
 		$("#close").css("display","table");
 		$("window, html, body").toggleClass("fixed");
+
+		currentY = window.scrollY;
 	}
 
 	$("nav a, .mask, #close").on("click", function(){
@@ -78,6 +78,9 @@ $(document).ready( function(){
 		$("nav, .mask, #close, .absolutelyCenter").hide();
 		$("window, html, body").removeAttr("class");
 		$(".expanded").removeAttr("class");
+
+		window.scrollTo(0, currentY);
+
 
 	});
 

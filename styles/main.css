@@ -190,14 +190,17 @@ section{
 				#client-works figure{
 
 					display: inline-block;
-					width: 40%;
-/*					background-color: #f8f8f8;
-*/					vertical-align: text-top;
+					width: 30%;
+					padding: 0px 20px 20px 20px;
+					vertical-align: text-top;
 					-webkit-margin-start: 5px;
 					-webkit-margin-end: 5px;
-			/*		border-bottom: 1px solid #E1E1EA;
+
+					border: 1px solid #f1f1f1;
+					border-top-right-radius: 10px;
+					border-top-left-radius: 10px;
 					border-bottom-left-radius: 10px;
-					border-bottom-right-radius: 10px;*/
+					border-bottom-right-radius: 10px;
 					
 				}
 			
@@ -236,8 +239,8 @@ section{
 					#client-works figure figcaption{
 						
 						font-weight: normal;
-						padding: 10px;
-
+						padding: 5px;
+						font-size: medium;
 					}
 				
 						#client-works figure figcaption p{
