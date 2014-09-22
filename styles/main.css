@@ -558,32 +558,6 @@ ul li{
 			position: absolute;
 			display: none;
 		}
-		
-		.arrow-down-down {
-
-			display: block; 
-			width: 0;
-			height: 0;
-			position: relative;
-			border-top: 15px solid rgb(223, 223, 223); 
-			border-right: 15px solid transparent;
-			border-left: 15px solid transparent;
-			margin-left: 50%;
-			margin-top: 15px;
-		}
-		
-		.arrow-up-up {
-			width: 0;
-			height: 0;
-
-			display: block;
-			border-left: 15px solid transparent !important;
-			border-right: 15px solid transparent !important;
-			border-bottom: 15px solid rgb(223, 223, 223) !important;
-			margin-top: 15px;
-			margin-left: 50%;
-			position: relative;
-		}
 
 			.getInline{
 
@@ -595,7 +569,7 @@ ul li{
 			height: 0; 
 			border-left: 12px solid transparent;
 			border-right: 12px solid transparent;
-			border-bottom: 12px solid #106CCF;
+			border-bottom: 12px solid #000;
 			left: 0;
 			right: 0;
 			margin: auto;

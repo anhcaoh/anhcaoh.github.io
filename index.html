@@ -158,12 +158,17 @@
 		
 		<p><be>Beyond element</be> is a <a href="" onClick="toggles[0].mobileFocused(); return false"><b>mobile-focused</b></a>, <a href="" onClick="toggles[0].goalOriented(); return false"><b>goal-oriented</b></a> and <a href="" onclick="toggles[0].simplyAesthetic(); return false"><b>simply-aesthetic</b></a> graphic & website design agency founded by Anh Cao in 2014. We are based in Atlanta and Athens, GA.
 		</p>
-		<div id="Anh-Cao" onClick="$(this).addClass('viewFull').next('.arrow-down-down').addClass('arrow-up-up').removeClass('arrow-down-down'); return false;">
+		<div id="Anh-Cao" onClick="$(this).addClass('viewFull'); $('.viewMoreOrLess').show(); return false;">
 		<p><b>Anh Cao</b>, designer, developer, and user experience professional, <br/> has more than 8 years of experience of working with the web technologies. Anh specializes in content management system, SharePoint, front-end development, and website design. His passion for contributing to a more beautiful world wide web is the motivation drives him to work everyday.</p>
 
-		<p>When Anh is not designing, he is dancing. He dances to express his feelings, to appreciate the music rhythm, to re-focus for a purpose, and to test his ultimate potential. <a href="http://youtu.be/EhWxvWB0e5g?t=6m24s" target="_blank">Watch Anh dance</a> ›</p>
+		<p>When Anh is not designing, he is dancing. He dances to express his feelings, to appreciate the music rhythm, to re-focus for a purpose, and to test his ultimate potential.</p>
 		</div>
 		
+		<div class="viewMoreOrLess" style="display: none;">
+		<a href="http://youtu.be/EhWxvWB0e5g?t=6m24s" target="_blank" >Watch Anh dance </a>›
+		</div>
+		<span class="arrow-up viewMoreOrLess" style="display: none;" onClick="$('.viewFull, .viewMoreOrLess').removeClass('viewFull, viewMoreOrLess'); return false"></span>
+
 		<div id="mobile-focused" class="absolutelyCenter shadow"><p><b>Mobile-focused.</b> Mobile devices become part of our life, part of your and our business. We design website with mobile-first apporach just for that reason.</p></div>
 
 		<div id="goal-oriented" class="absolutelyCenter shadow"><p><b>Goal-oriented.</b> We don't always design websites. But when we do, we do it for a purpose.</p></div>
