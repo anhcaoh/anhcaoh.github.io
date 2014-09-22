@@ -6,21 +6,21 @@
 		$('.mask').show("fast", "linear");
 		$('#mobile-focused').fadeIn('fast');
 		$('#close').css('display','table');
-		$("window").addClass("fixed");
+		$("window, html, body").addClass("fixed");
 
 	}, goalOriented: function toggleGoalOriented(){
 
 		$('.mask').show("fast");
 		$('#goal-oriented').fadeIn('fast');
 		$('#close').css('display','table');
-		$("window").addClass("fixed");
+		$("window, html, body").addClass("fixed");
 
 	},	simplyAesthetic: function toggleSimplyAesthetic(){
 
 		$('.mask').show("fast");
 		$('#simply-aesthetic').fadeIn('fast');
 		$('#close').css('display','table');
-		$("window").addClass("fixed");
+		$("window, html, body").addClass("fixed");
 			
 	},	clientWorks: function toggleClientWorks(event){
 
@@ -28,7 +28,7 @@
 
 		$(targetedClient).addClass("expanded");
 
-		$("window").addClass("fixed");
+		$("window, html, body").addClass("fixed");
 		
 		$(".mask").show();
 
@@ -70,13 +70,13 @@ $(document).ready( function(){
 
 		$("nav").slideToggle("fast");
 		$("#close").css("display","table");
-		$("window").toggleClass("fixed");
+		$("window, html, body").toggleClass("fixed");
 	}
 
 	$("nav a, .mask, #close").on("click", function(){
 		
 		$("nav, .mask, #close, .absolutelyCenter").hide();
-		$("window").removeAttr("class");
+		$("window, html, body").removeAttr("class");
 		$(".expanded").removeAttr("class");
 
 	});
