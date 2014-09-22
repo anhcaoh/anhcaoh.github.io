@@ -662,12 +662,12 @@ ul li{
 		margin-bottom: 0px;
 		font-size: 15pt;
 	}
-	button:active{
+/*	button:active{
 
 		background-color: #2E82DD;
 	}
 
-	.shadow {
+*/	.shadow {
 	
 		-webkit-box-shadow: 0 8px 6px -6px black;
  		-moz-box-shadow: 0 8px 6px -6px black;
