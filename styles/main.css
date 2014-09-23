@@ -458,7 +458,7 @@ ul li{
 
 	#about p{
 
-		width: 300px;
+		width: 80%;
 		margin: auto;
 	}
 
@@ -535,7 +535,8 @@ ul li{
 		}
 
 #contact{
-
+	
+	height: auto;
 }
 
 	#contact .number{
