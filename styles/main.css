@@ -15,6 +15,7 @@ html, body{
 	-webkit-font-smoothing: subpixel-antialiased;
 
 }
+
 .ui-page-active{
 
 	outline: 0;
@@ -186,6 +187,7 @@ section{
 				margin: 10% auto;
 			}
 
+
 				#client-works figure{
 
 					display: inline-block;
@@ -201,7 +203,12 @@ section{
 					border-bottom-right-radius: 10px;
 					
 				}
-			
+
+					#client-works figure.2ColsSpan{
+
+						width: 66% !important;
+						background-color: red;
+					}			
 		
 					#client-works figure.expanded{
 
