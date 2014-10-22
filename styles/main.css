@@ -11,7 +11,7 @@ html, body{
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: subpixel-antialiased;
 
 }
@@ -75,13 +75,27 @@ section{
 	margin: auto;
 	padding: 0px;
 	border: 0px;
-	height: 160px;
+	height: 50%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	
 }
-	#header .branding{
+	header{
 		
-		display: table-cell;
-		font-weight: 400;
+		height: 30%;
+	}
+
+	.branding{
+		
+		font-weight: 200;
+		text-align: center;
+		padding: 10%;
+		margin: 0;
+		line-height: initial;
+		background-color: rgb(226, 226, 226);
+
 	}
 	
 	.branding img{
@@ -459,12 +473,14 @@ ul li{
 	border: 0px;
 	margin-top: 0px;	
 	height: 320px;
+	background-color: rgb(226, 226, 226);
 }
 
 	#about p{
 
 		width: 80%;
 		margin: auto;
+		background-color: inherit;
 	}
 
 	#Anh-Cao{
