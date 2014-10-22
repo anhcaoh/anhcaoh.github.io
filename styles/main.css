@@ -94,7 +94,7 @@ section{
 		padding: 10%;
 		margin: 0;
 		line-height: initial;
-		background-color: rgb(226, 226, 226);
+		background-color: #F5F5F5;;
 
 	}
 	
@@ -473,7 +473,7 @@ ul li{
 	border: 0px;
 	margin-top: 0px;	
 	height: 320px;
-	background-color: rgb(226, 226, 226);
+	background-color: #F5F5F5;
 }
 
 	#about p{
