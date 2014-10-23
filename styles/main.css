@@ -254,8 +254,8 @@ section{
 					#client-works figure img{
 						
 						width: 125px;
-						-webkit-filter: grayscale(100%);
-						filter: grayscale(100%);				
+						/*-webkit-filter: grayscale(100%);
+						filter: grayscale(100%);				*/
 					}
 
 					#client-works figure figcaption{
