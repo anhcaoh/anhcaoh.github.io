@@ -89,12 +89,11 @@ section{
 
 	.branding{
 		
-		font-weight: 200;
+		font-weight: 100;
 		text-align: center;
 		padding: 10%;
 		margin: 0;
 		line-height: initial;
-		background-color: #F5F5F5;;
 
 	}
 	
@@ -116,6 +115,7 @@ section{
 	padding: 0px;
 	border: 0px;
 	height: 320px;
+	background-color: #E4E4E4;;
 }	
 	#work #slider{
 
@@ -204,7 +204,7 @@ section{
 
 				#client-works figure{
 
-					display: inline-block;
+			/*		display: inline-block;
 					width: 30%;
 					padding: 0px 20px 20px 20px;
 					vertical-align: text-top;
@@ -215,18 +215,19 @@ section{
 					border-top-left-radius: 10px;
 					border-bottom-left-radius: 10px;
 					border-bottom-right-radius: 10px;
+*/
+					display: inline-block;
+					margin: 0;
+					padding: 10px;
+					vertical-align: text-top;
+					-webkit-margin-start: 0px;
+					-webkit-margin-end: 0px;
 					
 				}
-
-					#client-works figure.2ColsSpan{
-
-						width: 66% !important;
-						background-color: red;
-					}			
 		
 					#client-works figure.expanded{
 
-						background-color: #f8f8f8;
+						background-color: #fff;
 						width: auto;
 						position: fixed;
 						z-index: 2;
@@ -234,10 +235,9 @@ section{
 						right: 0;
 						left: 0;
 					}
-
 						#client-works figure.expanded figcaption {
 
-							padding: 20px;
+							padding-bottom: 20px;
 
 						}
 		
@@ -247,28 +247,30 @@ section{
 							text-align: left;
 							line-height: initial;
 							margin-top: 10px;
+							margin-bottom: 10px;
 						}
 						
 	
 					#client-works figure img{
 						
-						width: 100%;
-				
+						width: 125px;
+						-webkit-filter: grayscale(100%);
+						filter: grayscale(100%);				
 					}
 
 					#client-works figure figcaption{
 						
 						font-weight: normal;
 						padding: 10px;
-						font-size: medium;
+						font-size: large;
 						line-height: initial;
 					}
 				
 						#client-works figure figcaption p{
 						
 							padding: 0px;
-							background-color: #fafafa;
-							font-size: medium;
+							background-color: #fff;
+							font-size: large;
 						}				
 						
 						.hidden{
@@ -473,7 +475,6 @@ ul li{
 	border: 0px;
 	margin-top: 0px;	
 	height: 320px;
-	background-color: #F5F5F5;
 }
 
 	#about p{
@@ -500,8 +501,7 @@ ul li{
 #services{
 
 	height: 320px;
-	background-color: #2E82DD;
-	color: #fff;
+	background-color: #E4E4E4;
 
 }
 
@@ -513,7 +513,8 @@ ul li{
 		#services div ul{
 
 			display: none;
-			background-color: #106CCF;
+			background-color: #fff;
+			color: #000;
 			margin: 0px;
 			padding: 5px;
 		}
@@ -522,7 +523,7 @@ ul li{
 
 			display: block;
 			margin: 20px;
-			color: #FFF;
+			color: #000;
 		}
 
 		.arrow-down {
@@ -531,7 +532,7 @@ ul li{
 			height: 0;
 			border-left: 5px solid transparent;
 			border-right: 5px solid transparent;
-			border-top: 5px solid #fff;
+			border-top: 5px solid #000;
 			margin-top: 15px;
 			margin-left: 20px;
 			position: absolute;
@@ -542,17 +543,24 @@ ul li{
 
 				display: inline-block;
 			}
+		.readMore{
+			
+			position: absolute;
+			left: 0;
+			right: 0;
+		}
 
 		.arrow-up {
-			width: 0; 
-			height: 0; 
-			border-left: 12px solid transparent;
-			border-right: 12px solid transparent;
-			border-bottom: 12px solid #106CCF;
+
+			width: 0;
+			height: 0;
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
+			border-bottom: 7px solid #fff;
 			left: 0;
 			right: 0;
 			margin: auto;
-			margin-top: -17px;
+			margin-top: -11px;
 		}
 
 #contact{
@@ -642,7 +650,7 @@ ul li{
 	bottom: 5%;
 	position: relative;
 	padding: 50px;
-	background-color: #FAFAFA;
+	background-color: #E4E4E4;;
 }
 
 
