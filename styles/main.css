@@ -218,7 +218,7 @@ section{
 */
 					display: inline-block;
 					margin: 0;
-					padding: 10px;
+					padding-bottom: 10px;
 					vertical-align: text-top;
 					-webkit-margin-start: 0px;
 					-webkit-margin-end: 0px;
@@ -254,6 +254,7 @@ section{
 					#client-works figure img{
 						
 						width: 125px;
+						float: left;
 						/*-webkit-filter: grayscale(100%);
 						filter: grayscale(100%);				*/
 					}
