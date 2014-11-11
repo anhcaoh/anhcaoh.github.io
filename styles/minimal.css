@@ -22,12 +22,16 @@ body, html{
     position: static;
     display: flex;
     width: 90%;
-    height: 100%;
+    height: 50%;
     margin: auto;
     text-align: center;
     transition: opacity 500ms;
   }
 
+  section:nth-child(1){
+
+    height: 100%;
+  }
 
   section:nth-child(odd){
 

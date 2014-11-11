@@ -34,8 +34,8 @@ angular.module("meApp", [])
       $("section").css("opacity","1");
     };
 
-    $("section:first").css({"opacity": (100 - windowScrollPosition) / 100 });
-    
+    $("section:first").css({"opacity": (300 - windowScrollPosition) / 300 });
+
     });
 
   });
