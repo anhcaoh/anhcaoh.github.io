@@ -9,10 +9,9 @@ angular.module("meApp", [])
 
     {"nameId":"i-am-vietnamese","content":"I am Vietnamese."},
 
-    {"nameId":"i-am-a", "content":"I am a designer, creator, and dancer."},
+    {"nameId":"i-speak", "content":"I speak JavaScript, HTML, and CSS."},
 
-    {"nameId":"i-speak", "content":"I speak JavaScript, HTML, and CSS."}
-
+    {"nameId":"i-am-a", "content":"I am a designer, creator, and dancer."}
   ];
 
 }]);
