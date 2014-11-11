@@ -23,4 +23,21 @@ angular.module("meApp", [])
     "phone":"(678) 602-1591"
   }
 
+  $(function(){
+
+    $(window).on("scroll", function(){
+
+    var windowScrollPosition = $(window).scrollTop();
+
+    if (windowScrollPosition == 0){
+
+      $("section").css("opacity","1");
+    };
+
+    $("section:first").css({"opacity": (100 - windowScrollPosition) / 100 });
+    
+    });
+
+  });
+
 }]);
