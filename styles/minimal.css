@@ -14,24 +14,25 @@ body, html{
   h2{
 
     font-size: 28pt;
-    margin-bottom: 20%;
   }
 
   a:link, a:visited, a:active{
 
-  color: inherit;
-  text-decoration: none;
-  /*border-bottom: 1px dotted;*/
-  margin: 5% 0;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  #works div p{
+
+    padding: 5% 0;
 
   }
 
-  #works a{
+    #works div p a{
 
-    display: block;
-    font-size: 24px;
-
-  }
+      display: block;
+      font-size: 24px;
+    }
 
   section{
 
@@ -73,14 +74,18 @@ body, html{
         margin: auto;
       }
 
+
       section div img[name='brand']{
 
           width: 100%;
+          margin-bottom: 25%;
+
       }
 
       section div img[name='globe']{
 
           width: 70%;
+          margin-bottom: 15%;
       }
 
       section div p{
@@ -89,13 +94,14 @@ body, html{
         font-weight: 500;
         display: block;
         margin: 0;
-        margin-top: 15%;
+
       }
 
     section#contact-me div p{
 
       font-size: 24px;
       text-align: left;
+      padding: 5% 0;
     }
 
     i{
@@ -114,7 +120,7 @@ body, html{
 
           section div img[name='globe']{
 
-              width: 90%;
+              width: 50%;
           }
 
       }

@@ -7,13 +7,13 @@ angular.module("meApp", [])
 
     {"nameId":"hi-im-Anh", "name":"brand", "imgSrc": "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/20f/0d6/1eba86d.jpg","content":"Hi, I'm Anh"},
 
-    {"nameId":"i-am-vietnamese", "name":"globe", "imgSrc":"http://upload.wikimedia.org/wikipedia/en/4/40/USA_Vietnam_Locator.svg", "content":"I flew from Vietnam to the USA nine years ago."},
+    {"nameId":"i-am-vietnamese", "name":"globe", "imgSrc":"http://upload.wikimedia.org/wikipedia/en/4/40/USA_Vietnam_Locator.svg", "content":""},
 
     {"nameId":"i-speak", "content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
 
     {"nameId":"i-breathe", "content":"I breathe User Experience."},
 
-    {"nameId":"i-dance", "content":"When not designing, I'm playing soccer and (break)-dancing."}
+    {"nameId":"i-dance", "content":"I design things, and I break-dance."}
 
   ];
 
