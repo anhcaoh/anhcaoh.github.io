@@ -5,6 +5,7 @@
   <title>Hi, I'm Anh</title>
   <meta name="viewport" content="width:device-width, initial-scale=1, user-scalable=no">
   <link rel="stylesheet" href="./styles/minimal.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="./scripts/jquery-1.11.0.js"></script>
   <script src="./scripts/angular.min.js"></script>
   <script src="./scripts/init.js"></script>
@@ -13,7 +14,7 @@
 
 <body data-ng-controller="ContentController">
 
-  <section data-ng-repeat="aboutMe in allAboutMe" id="{{aboutMe.nameId}}">
+  <section data-ng-repeat="aboutMe in allAboutMe" id="{{aboutMe.nameId}}" style="background-color:{{aboutMe.bgColor}}; color:{{aboutMe.color}}">
 
     <div>
 
@@ -28,8 +29,8 @@
 
     <div>
 
-      <span>E-mail: <a href="mailto:{{contactMe.email}}">{{contactMe.email}}</a></span>
-      <span>Phone: <a href="tel:{{contactMe.phone}}">{{contactMe.phone}}</a></span>
+      <span><i class="fa fa-envelope"></i> <a href="mailto:{{contactMe.email}}">{{contactMe.email}}</a></span>
+      <span><i class="fa fa-phone"></i> <a href="tel:{{contactMe.phone}}">{{contactMe.phone}}</a></span>
 
     </div>
 
