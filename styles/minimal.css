@@ -43,15 +43,15 @@ body, html{
     margin: auto;
     padding: 10%;
     text-align: center;
-    -webkit-transition: opacity 100ms;
-    transition: opacity 100ms;
+    -webkit-transition: opacity 50ms;
+    transition: opacity 50ms;
     opacity: .5;
   }
 
   .hero{
 
     opacity: 1;
-    transition: opacity 100ms;
+    transition: opacity 50ms;
   }
 
     section:nth-child(even){
@@ -90,7 +90,8 @@ body, html{
       section div img[name='brand']{
 
           width: 100%;
-          margin-bottom: 50%;
+          margin-top: -35%;
+          margin-bottom: 15%;
 
       }
 
@@ -136,12 +137,12 @@ body, html{
           }
 
       }
-
+/*
       @media screen and (max-width: 370px){
 
           section{
 
-            height: 80%;
+            height: 100%;
 
           }
 
@@ -154,4 +155,4 @@ body, html{
 
               width: 100%;
           }
-      }
+      }*/
