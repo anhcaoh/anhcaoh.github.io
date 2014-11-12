@@ -60,26 +60,36 @@ body, html{
 
     }
 
+      img{
+
+        display: block;
+        border-radius: 50%;
+        margin: auto;
+      }
+
       section div img[name='brand']{
 
-          display: block;
-          border-radius: 50%;
           width: 100%;
       }
 
-      section div span{
+      section div img[name='globe']{
+
+          width: 50%;
+      }
+
+      section div p{
 
         font-size: 26pt;
         font-weight: 500;
         display: block;
-        padding: 15% 0;
+        margin: 0;
+        margin-top: 15%;
       }
 
-    section#contact-me div span{
+    section#contact-me div p{
 
       font-size: 24px;
       text-align: left;
-      padding: 8% 0;
     }
 
     i{

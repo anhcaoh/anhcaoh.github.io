@@ -5,9 +5,9 @@ angular.module("meApp", [])
 
   $scope.allAboutMe = [
 
-    {"nameId":"hi-im-Anh", "imgSrc": "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/20f/0d6/1eba86d.jpg","content":"Hi, I'm Anh"},
+    {"nameId":"hi-im-Anh", "name":"brand", "imgSrc": "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/20f/0d6/1eba86d.jpg","content":"Hi, I'm Anh"},
 
-    {"nameId":"i-am-vietnamese", "imgSrc":"https://www.google.com/maps/vt/data=U4aSnIyhBFNIJ3A8fCzUmaVIwyWq6RtIfB4QKiGq_w,tjDmVR8DxV2rfDmvA5f3h2AMo5_TxQMojS_3yWc16VowmSkl6FBPaGXiVLlH9Kjw3BbP9i0nUFUv9uoFnj-MHUCayabIhPHHlt6FSQgyawLr7ovkVqcd_peIp6_LoLDDOY-j_L9MVwUnWgqeX22AX7Tt3E0_Zk3Cv0HwVIlL0A8viZ-FQ-ZvAqcRt3T9NBelojhxDp1SWvg5kOfhY4Q7TKuxKzwYepoTK9yoBZ9zFBmTIVdN8F9sP4Te7bGdlv-c3bDcBSOOSVdv9BpnggAyD7gR", "content":"I flew from Vietnam to the USA nine years ago."},
+    {"nameId":"i-am-vietnamese", "name":"globe", "imgSrc":"http://upload.wikimedia.org/wikipedia/en/4/40/USA_Vietnam_Locator.svg", "content":"I flew from Vietnam to the USA nine years ago."},
 
     {"nameId":"i-speak", "content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
 
