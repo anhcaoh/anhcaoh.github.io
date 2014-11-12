@@ -14,20 +14,20 @@
 
 <body data-ng-controller="ContentController">
 
-  <section data-ng-repeat="aboutMe in allAboutMe" id="{{aboutMe.nameId}}" style="background-color:{{aboutMe.bgColor}};">
+  <section data-ng-repeat="aboutMe in allAboutMe" id="{{aboutMe.nameId}}">
 
     <div>
 
-      <img name="brand" src="{{aboutMe.imgSrc}}">
-      <span id="{{aboutMe.nameId}}">{{aboutMe.content}}</span>
+      <img name="brand" src="{{aboutMe.imgSrc}}" data-ng-if="!null">
+      <span id="{{aboutMe.nameId}}" style="font-family: {{aboutMe.fontFamily}}" data-ng-if="!null">{{aboutMe.content}}</span>
 
     </div>
 
   </section>
 
-  <section>
+  <section id="contact-me">
 
-    <div>
+    <div><h2>Let's Talk</h2>
 
       <span><i class="fa fa-envelope"></i> <a href="mailto:{{contactMe.email}}">{{contactMe.email}}</a></span>
       <span><i class="fa fa-phone"></i> <a href="tel:{{contactMe.phone}}">{{contactMe.phone}}</a></span>

@@ -3,7 +3,6 @@ body, html{
   outline: 0;
   height: 100%;
   font-family: sans-serif, Helvetica;
-  font-size: 24pt;
   color: #2A2A2A;
   -webkit-font-smoothing: antialiased;
   background-color: #EAEAEA;
@@ -11,6 +10,10 @@ body, html{
 
 }
 
+  h2{
+
+    font-size: 28pt;
+  }
 
   a:link, a:visited, a:active{
 
@@ -33,6 +36,11 @@ body, html{
     transition: opacity 200ms;
   }
 
+    section:nth-child(even){
+
+      background-color: lightskyblue;
+    }
+
     section div{
 
       margin: auto;
@@ -52,12 +60,24 @@ body, html{
 
       section div span{
 
-        font-size: 24pt;
+        font-size: 28pt;
         font-weight: 500;
         display: block;
         padding: 15% 0;
       }
 
+    section#contact-me div span{
+
+      font-size: 24px;
+      text-align: left;
+      padding: 8% 0;
+    }
+
+    i{
+
+      width: 25px;
+      height: 25px;
+    }
 
       @media screen and (min-width: 1000px) {
 
