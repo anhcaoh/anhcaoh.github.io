@@ -54,7 +54,7 @@ body, html{
         font-size: 22pt;
         font-weight: 500;
         display: block;
-        padding: 20% 0;
+        padding: 15% 0;
       }
 
 
@@ -80,12 +80,4 @@ body, html{
 
             height: 100%;
           }
-
-          section:nth-child(2){
-
-            height: 50%;
-
-          }
-
-
       }
