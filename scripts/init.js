@@ -29,36 +29,42 @@ angular.module("meApp", [])
     $("#i-am-vietnamese div p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> nine years ago.");
 
 
-    $(window).on("scroll", function(){
+    $(window).bind("scroll", function(){
 
     var windowScrollPosition = $(window).scrollTop();
 
     if (windowScrollPosition == 0){
 
       $("section#hi-im-Anh").css("opacity","1");
+
     };
 
     $("section#hi-im-Anh").css({"opacity": (300 - windowScrollPosition) / 300 });
 
+
+    $("section").each(function(){
+
+      var currentSection = $(this);
+      var currentSectionPosition = currentSection.position().top - $(window).scrollTop();
+
+      console.log(currentSectionPosition);
+
+      if (currentSectionPosition <= 0){
+
+          $(currentSection).addClass("hero");
+
+    } else{
+
+          $(currentSection).removeClass("hero");
+      }
+
     });
 
 
-
-$(window).bind("scroll", function(){
-
-$("section").each(function(){
-var currentSection = $(this);
-var currentSectionPosition = currentSection.position().top - $(window).scrollTop();
-if (currentSectionPosition <= 0){
-    $(currentSection).addClass("hero");
-} else{
-    $(currentSection).removeClass("hero");
-}
-});
-
-});
+    });
 
 
   });
+
 
 }]);

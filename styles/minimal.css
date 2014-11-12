@@ -43,20 +43,25 @@ body, html{
     margin: auto;
     padding: 10%;
     text-align: center;
-    -webkit-transition: opacity 200ms;
-    transition: opacity 200ms;
+    -webkit-transition: opacity 100ms;
+    transition: opacity 100ms;
     opacity: .5;
   }
 
   .hero{
 
     opacity: 1;
-    transition: opacity 200ms;
+    transition: opacity 100ms;
   }
 
     section:nth-child(even){
 
       background-color: lightskyblue;
+    }
+
+    section#hi-im-Anh{
+
+      opacity: 1;
     }
 
     section#i-am-vietnamese{
@@ -85,7 +90,7 @@ body, html{
       section div img[name='brand']{
 
           width: 100%;
-          margin-bottom: 25%;
+          margin-bottom: 50%;
 
       }
 
