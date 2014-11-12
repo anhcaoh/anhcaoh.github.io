@@ -42,23 +42,23 @@ angular.module("meApp", [])
     $("section#hi-im-Anh").css({"opacity": (300 - windowScrollPosition) / 300 });
 
 
-    $("section").each(function(){
-
-      var currentSection = $(this);
-      var currentSectionPosition = currentSection.position().top - $(window).scrollTop();
-
-      console.log(currentSectionPosition);
-
-      if (currentSectionPosition <= 0){
-
-          $(currentSection).addClass("hero");
-
-    } else{
-
-          $(currentSection).removeClass("hero");
-      }
-
-    });
+        // $("section").each(function(){
+        //
+        //   var currentSection = $(this);
+        //   var currentSectionPosition = currentSection.position().top - $(window).scrollTop();
+        //
+        //   console.log(currentSectionPosition);
+        //
+        //   if (currentSectionPosition <= 0){
+        //
+        //       $(currentSection).addClass("hero");
+        //
+        // } else{
+        //
+        //       $(currentSection).removeClass("hero");
+        //   }
+        //
+        // });
 
 
     });
