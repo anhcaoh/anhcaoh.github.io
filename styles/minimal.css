@@ -1,3 +1,4 @@
+
 body, html{
 
   outline: 0;
@@ -53,6 +54,17 @@ body, html{
     opacity: 1;
     transition: opacity 50ms;
 
+  }
+
+  .compressed{
+
+    transform: scale(.5, .5);
+    height: 40%;
+  }
+
+  .smaller{
+
+    font-size: small;
   }
 
     section:nth-child(even){

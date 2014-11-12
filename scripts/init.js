@@ -66,5 +66,20 @@ angular.module("meApp", [])
 
   });
 
-
 }]);
+
+function compress(){
+
+  if ( $("button i").is(".fa-expand") ) {
+
+    $("button i").removeClass("fa-expand").addClass("fa-compress")
+
+  } else if ( $("button i").is(".fa-compress") ){
+
+    $("button i").removeClass("fa-compress").addClass("fa-expand")
+
+  };
+
+  $("section").toggleClass("compressed");
+  $("*").toggleClass("smaller");
+}
