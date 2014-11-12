@@ -35,12 +35,29 @@ angular.module("meApp", [])
 
     if (windowScrollPosition == 0){
 
-      $("section").css("opacity","1");
+      $("section#hi-im-Anh").css("opacity","1");
     };
 
-    $("section:first").css({"opacity": (300 - windowScrollPosition) / 300 });
+    $("section#hi-im-Anh").css({"opacity": (300 - windowScrollPosition) / 300 });
 
     });
+
+
+
+$(window).bind("scroll", function(){
+
+$("section").each(function(){
+var currentSection = $(this);
+var currentSectionPosition = currentSection.position().top - $(window).scrollTop();
+if (currentSectionPosition <= 0){
+    $(currentSection).addClass("hero");
+} else{
+    $(currentSection).removeClass("hero");
+}
+});
+
+});
+
 
   });
 

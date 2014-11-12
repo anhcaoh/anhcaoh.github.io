@@ -45,6 +45,13 @@ body, html{
     text-align: center;
     -webkit-transition: opacity 200ms;
     transition: opacity 200ms;
+    opacity: .5;
+  }
+
+  .hero{
+
+    opacity: 1;
+    transition: opacity 200ms;
   }
 
     section:nth-child(even){
