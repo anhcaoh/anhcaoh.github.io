@@ -45,13 +45,14 @@ body, html{
     text-align: center;
     -webkit-transition: opacity 50ms;
     transition: opacity 50ms;
-    opacity: .5;
+
   }
 
   .hero{
 
     opacity: 1;
     transition: opacity 50ms;
+
   }
 
     section:nth-child(even){
