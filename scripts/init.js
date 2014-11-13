@@ -11,7 +11,7 @@ angular.module("meApp", [])
 
     {"nameId":"my-wife", "content":"This is my smart, beautiful wife."},
 
-    {"nameId":"xalieo", "content":"We have two dogs: Xali & Leo; and, we don't have plan for children (two) yet."},
+    {"nameId":"xalieo", "content":"Meet Xali & Leo"},
 
     {"nameId":"i-speak", "content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
 
