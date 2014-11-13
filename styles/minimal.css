@@ -83,9 +83,8 @@ body, html{
 
       background-image: url(https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1932467_10202595019856671_228129343314517639_n.jpg?oh=c263fb8324a0fd07398ea8cff42f5efd&oe=54DB2336&__gda__=1424370154_6de43b8d53ddab731019b6c228634e3d), url(https://scontent-b-atl.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/486315_4777182798457_981972487_n.jpg?oh=b830f673f3a0cc902b139aaaf60a9e53&oe=54E64E39);
       background-repeat: no-repeat;
-      background-position: left bottom, right bottom;
-      background-size: auto 155px;
-      color: #fff;
+      background-position: left center, right center;
+      background-size: auto 150px;
     }
 
     section:nth-child(even){
