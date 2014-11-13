@@ -183,7 +183,9 @@ body, html{
 
             section#my-wife div p{
 
-              margin-top: 100%;;
+              margin-top: 100%;
+              color: #fff;
+              text-shadow: 2px 2px #999;
             }
 
           section#xalieo div p{
