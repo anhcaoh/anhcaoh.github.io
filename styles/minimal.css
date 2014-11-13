@@ -67,6 +67,27 @@ body, html{
     font-size: small;
   }
 
+    section#my-wife{
+
+      background-image: url(https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10671399_10204523623401558_7897548015356898251_n.jpg?oh=30f0e13ab16ed607137112d15df54d6d&oe=54D2AADB&__gda__=1423214222_041ab13f50cd57d0c6e570311202114e);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
+      section#my-wife div{
+
+        margin: auto 0;
+      }
+
+    section#xalieo{
+
+      background-image: url(https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1932467_10202595019856671_228129343314517639_n.jpg?oh=c263fb8324a0fd07398ea8cff42f5efd&oe=54DB2336&__gda__=1424370154_6de43b8d53ddab731019b6c228634e3d), url(https://scontent-b-atl.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/486315_4777182798457_981972487_n.jpg?oh=b830f673f3a0cc902b139aaaf60a9e53&oe=54E64E39);
+      background-repeat: no-repeat;
+      background-position: left bottom, right bottom;
+      background-size: auto 155px;
+      color: #fff;
+    }
+
     section:nth-child(even){
 
       background-color: lightskyblue;
@@ -150,8 +171,17 @@ body, html{
           }
 
       }
-/*
+
       @media screen and (max-width: 370px){
+
+          section#my-wife{
+
+            text-shadow: 1px 1px #000;
+            color: #FFF;
+            background-position: center;
+            background-size: cover;
+
+          }
 
           section{
 
@@ -168,4 +198,4 @@ body, html{
 
               width: 100%;
           }
-      }*/
+      }

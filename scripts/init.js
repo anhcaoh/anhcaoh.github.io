@@ -9,9 +9,15 @@ angular.module("meApp", [])
 
     {"nameId":"i-am-vietnamese", "name":"globe", "imgSrc":"http://upload.wikimedia.org/wikipedia/en/4/40/USA_Vietnam_Locator.svg", "content":""},
 
+    {"nameId":"my-wife", "content":"This is my smart, beautiful wife."},
+
+    {"nameId":"xalieo", "content":"We have two dogs: Xali & Leo; and, we don't have plan for children (two) yet."},
+
     {"nameId":"i-speak", "content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
 
     {"nameId":"i-breathe", "content":"I breathe User Experience."},
+
+    {"nameId":"i-make", "content":"I make data talks."},
 
     {"nameId":"i-dance", "content":"I design things, and I break-dance."}
 
@@ -26,7 +32,7 @@ angular.module("meApp", [])
   $(function(){
 
     //Added color to #i-am-vietnamese
-    $("#i-am-vietnamese div p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> nine years ago.");
+    $("#i-am-vietnamese div p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> in 2005.");
 
 
     $(window).bind("scroll", function(){

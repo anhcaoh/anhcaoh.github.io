@@ -21,9 +21,10 @@ html, body{
 	outline: 0;
 }
 .ui-loader{
-	
+
 	display: none;
 }
+
 h2{
 
 	font-size: 1.5em;
@@ -46,16 +47,16 @@ h3{
 }
 
 section{
-	
+
 	margin: 0 auto;
 	display: table;
 	width: 100%;
-	height: 640px;	
+	height: 640px;
 	padding-bottom: 80px;
 }
 
 	section div p, section p{
-	
+
 		padding: 20px;
 		margin: 0;
 		background-color: #fff;
@@ -65,7 +66,7 @@ section{
 	#be{
 
 		width: 50px;
-		height: 50px;	
+		height: 50px;
 		border: 2px solid #000;
 
 	}
@@ -80,15 +81,15 @@ section{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	
+
 }
 	header{
-		
+
 		height: 30%;
 	}
 
 	.branding{
-		
+
 		font-weight: 100;
 		text-align: center;
 		padding: 10%;
@@ -96,7 +97,7 @@ section{
 		line-height: initial;
 
 	}
-	
+
 	.branding img{
 
 		max-width: 125px;
@@ -116,12 +117,12 @@ section{
 	border: 0px;
 	height: 320px;
 	background-color: #F7F7F7;
-}	
+}
 	#work #slider{
 
 		height: 200px;
 
-	}	
+	}
 		ul#controls li{
 			cursor: pointer;
 		}
@@ -151,7 +152,7 @@ section{
 		    -moz-transition: opacity 0.4s ease-out;
 		    -webkit-transition: opacity 0.4s ease-out;
 		}
-	
+
 		#work #slider div p{
 
 			position: relative;
@@ -222,9 +223,9 @@ section{
 					vertical-align: text-top;
 					-webkit-margin-start: 0px;
 					-webkit-margin-end: 0px;
-					
+
 				}
-		
+
 					#client-works figure.expanded{
 
 						background-color: #fff;
@@ -240,7 +241,7 @@ section{
 							padding: 20px;
 
 						}
-		
+
 						#client-works figure.expanded figcaption p{
 
 							display: block;
@@ -251,15 +252,15 @@ section{
 						}
 
 						#client-works figure.expanded img{
-							
+
 							float: inherit;
 							width: 50%;
 						}
-					
-						
-	
+
+
+
 					#client-works figure img{
-						
+
 						width: 125px;
 						float: left;
 						/*-webkit-filter: grayscale(100%);
@@ -267,20 +268,20 @@ section{
 					}
 
 					#client-works figure figcaption{
-						
+
 						font-weight: normal;
 						padding-bottom: 10px;
 						font-size: large;
 						line-height: initial;
 					}
-				
+
 						#client-works figure figcaption p{
-						
+
 							padding: 0px;
 							background-color: #fff;
 							font-size: large;
-						}				
-						
+						}
+
 						.hidden{
 
 							display: none;
@@ -290,8 +291,8 @@ section{
 							display: block !important;
 							opacity: 1 !important;
 						}
-				
-					
+
+
 	a:link, a:visited, a:active{
 
 		text-decoration: none;
@@ -335,7 +336,7 @@ nav a {
 ul{
 
 	padding-left: 0px;
-	
+
 }
 
 ul li{
@@ -344,7 +345,7 @@ ul li{
 	margin: 15px auto;
 	display: inline-block;
 
-}	
+}
 	#close{
 
 		z-index: 3;
@@ -363,7 +364,7 @@ ul li{
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-	
+
 	}
 
 	#menu{
@@ -374,11 +375,11 @@ ul li{
 	}
 
 	#menu:hover, #menu:active, #menu:visited, #close:hover, #close:active, #close:visited{
-		
+
 		background-color: #9CD7F1;
 	}
 		.float-right{
-			
+
 			float: right;
 			right: 20px;
 			position: absolute;
@@ -386,18 +387,18 @@ ul li{
 		}
 
 		#menu span, #close span{
-			
+
 			display: table-cell;
 			vertical-align: middle;
 		}
-	
+
 		.center{
-			
+
 			margin: 0 auto !important;
 		}
 
 		.mask{
-			
+
 			display: none;
 			background-color: #424242;
 			position: fixed;
@@ -416,9 +417,9 @@ ul li{
 			display: none;
 			margin-top: 0;
 			padding-top: 0;
-			
+
 		}
-			
+
 	.absolutelyCenter{
 
 		top: 0;
@@ -450,7 +451,7 @@ ul li{
 		margin-bottom: 25px;
 		margin: auto;
 		position: absolute;
-		opacity: 1;	
+		opacity: 1;
 	}
 
 	.bottomCenter{
@@ -473,7 +474,7 @@ ul li{
 	}
 
 	#close span img{
-		
+
 		max-width: 25%;
 		margin-top: 5px;
 	}
@@ -481,7 +482,7 @@ ul li{
 #about{
 
 	border: 0px;
-	margin-top: 0px;	
+	margin-top: 0px;
 	height: 320px;
 }
 
@@ -552,7 +553,7 @@ ul li{
 				display: inline-block;
 			}
 		.readMore{
-			
+
 			position: absolute;
 			left: 0;
 			right: 0;
@@ -572,7 +573,7 @@ ul li{
 		}
 
 #contact{
-	
+
 	height: auto;
 }
 
@@ -594,7 +595,7 @@ ul li{
 	margin-right: auto;
 	width: 280px;
 }
-	
+
 
 	#contact-form div{
 
@@ -638,15 +639,15 @@ ul li{
 	}
 
 */	.shadow {
-	
+
 		-webkit-box-shadow: 0 8px 6px -6px black;
  		-moz-box-shadow: 0 8px 6px -6px black;
     	box-shadow: 0 8px 6px -6px black;
 	}
 		.effect4{
-	 	
+
 	 		position: relative;
-		
+
 		}
 
 
