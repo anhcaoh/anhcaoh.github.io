@@ -155,6 +155,8 @@ body, html{
 
       width: 25px;
       height: 25px;
+      text-align: right;
+      margin-right: 15px;
     }
 
       @media screen and (min-width: 1000px) {
