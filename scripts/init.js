@@ -26,7 +26,7 @@ angular.module("meApp", [])
   $(function(){
 
     //Added color to #i-am-vietnamese
-    $("#i-am-vietnamese div p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> nine years ago.");
+    $("#i-am-vietnamese div p").html("I flighted from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> nine years ago.");
 
 
     $(window).bind("scroll", function(){
