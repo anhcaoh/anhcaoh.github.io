@@ -15,38 +15,58 @@ angular.module("meApp", [])
 
     {"nameId":"i-speak", "content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
 
+  ];
+  $scope.whatIDo = [
+
     {"nameId":"i-breathe", "content":"I breathe User Experience."},
 
     {"nameId":"i-make", "content":"I make data talks."},
 
     {"nameId":"i-dance", "content":"I design things, and I break-dance."}
 
-  ];
-
+  ]
   $scope.contactMe = {
 
     "email":"AnhCaoH@gmail.com",
     "phone":"(678) 602-1591"
   }
 
+  $scope.slideLeft = function(){
+
+        var more = -33.3;
+
+        $("section#window").css('transform','translate(-' + more + '%,0)');
+
+
+  };
+
+
+  $scope.slideRight = function(){
+
+      var more = +33.3;
+
+      $("section#window").css('transform','translate(-' + more + '%,0)');
+
+  };
+
   $(function(){
 
     //Added color to #i-am-vietnamese
     $("#i-am-vietnamese div p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> in 2005.");
 
-
-    $(window).bind("scroll", function(){
-
-    var windowScrollPosition = $(window).scrollTop();
-
-    if (windowScrollPosition == 0){
-
-      $("section#hi-im-Anh").css("opacity","1");
-
-    };
-
-    $("section#hi-im-Anh").css({"opacity": (300 - windowScrollPosition) / 300 });
-
+    //
+    // $(window).bind("scroll", function(){
+    //
+    // var windowScrollPosition = $(window).scrollTop();
+    //
+    // if (windowScrollPosition == 0){
+    //
+    //   $("section#hi-im-Anh").css("opacity","1");
+    //
+    // };
+    //
+    // $("section#hi-im-Anh").css({"opacity": (300 - windowScrollPosition) / 300 });
+    //
 
         // $("section").each(function(){
         //
@@ -67,25 +87,25 @@ angular.module("meApp", [])
         // });
 
 
-    });
+    // });
 
 
   });
 
 }]);
-
-function compress(){
-
-  if ( $("button i").is(".fa-expand") ) {
-
-    $("button i").removeClass("fa-expand").addClass("fa-compress")
-
-  } else if ( $("button i").is(".fa-compress") ){
-
-    $("button i").removeClass("fa-compress").addClass("fa-expand")
-
-  };
-
-  $("section").toggleClass("compressed");
-  $("*").toggleClass("smaller");
-}
+//
+// function compress(){
+//
+//   if ( $("button i").is(".fa-expand") ) {
+//
+//     $("button i").removeClass("fa-expand").addClass("fa-compress")
+//
+//   } else if ( $("button i").is(".fa-compress") ){
+//
+//     $("button i").removeClass("fa-compress").addClass("fa-expand")
+//
+//   };
+//
+//   $("section").toggleClass("compressed");
+//   $("*").toggleClass("smaller");
+// }

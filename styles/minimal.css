@@ -144,6 +144,74 @@ body, html{
 
       }
 
+    section#what-i-do{
+
+      position: absolute;
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      padding: 0;
+
+    }
+
+      section#what-i-do section#window{
+
+        background-color: #fff;
+        width: 300%;
+        margin: 0;
+        padding: 0;
+        transform: translate(-0%,0);
+        transition: transform 1s;
+
+      }
+
+
+      section#what-i-do article{
+
+        float: left;
+        width: 98%;
+        overflow: hidden;
+        background-color: rgb(18, 192, 215);
+        margin: 0 1% 0 1%;
+        color: #fff;
+        display: flex;
+
+    }
+
+      div#arrows{
+
+
+      }
+
+        div#arrows i{
+
+            font-size: 40pt;
+            position: absolute;
+            z-index:99;
+            top:47%;
+            color: lightskyblue;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 0;
+
+        }
+
+        div#arrows i.leftArrow{
+
+          float: left;
+          left:0;
+        }
+
+
+        div#arrows i.rightArrow{
+
+          float: right;
+          right:0;
+        }
+
     section#contact-me div p{
 
       font-size: 24px;
