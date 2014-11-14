@@ -263,7 +263,11 @@ body, html{
             margin: -85% 0;
 
           }
+          section#what-i-do article{
 
+            margin: 0;
+            width: 100%;
+          }
           section#what-i-do div#arrows i{
 
             top: 0%;

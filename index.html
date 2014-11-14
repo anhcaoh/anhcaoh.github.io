@@ -26,27 +26,6 @@
 
   </section>
 
-  <section id="what-i-do">
-
-    <section id="window">
-
-      <article data-ng-repeat="IDo in whatIDo" id="{{IDo.nameId}}">
-
-            <div>{{IDo.content}}</div>
-
-      </article>
-
-    </section>
-
-    <div id="arrows">
-
-      <i class="fa fa-angle-left leftArrow" data-ng-click="slideLeft();"></i>
-      <i class="fa fa-angle-right rightArrow" data-ng-click="slideRight();"></i>
-
-    </div>
-
-  </section>
-
   <section id="works">
 
       <div>
@@ -59,6 +38,28 @@
     </div>
 
   </section>
+
+  <section id="what-i-do">
+
+    <section id="window">
+
+      <article data-ng-repeat="IDo in whatIDo" id="{{IDo.nameId}}">
+
+            <div>{{IDo.content}}</div>
+
+      </article>
+
+      </section>
+
+    <div id="arrows">
+
+      <i class="fa fa-angle-left leftArrow" data-ng-click="slideLeft();"></i>
+      <i class="fa fa-angle-right rightArrow" data-ng-click="slideRight();"></i>
+
+    </div>
+
+  </section>
+
 
   <section id="contact-me">
 
