@@ -265,9 +265,17 @@ body, html{
 
           section#xalieo{
 
-            backgroun-positon: top, bottom;
+            background-position: top left, bottom right;
 
           }
+
+            section#xalieo div p{
+
+              margin-top: 35%;
+              color: #2A2A2A;
+              text-shadow: none;
+            }
+
           section#what-i-do article{
 
             margin: 0;
