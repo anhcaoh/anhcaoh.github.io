@@ -49,13 +49,6 @@ body, html{
 
   }
 
-  .hero{
-
-    opacity: 1;
-    transition: opacity 50ms;
-
-  }
-
   .compressed{
 
     transform: scale(.5, .5);
@@ -95,8 +88,18 @@ body, html{
 
     section#hi-im-Anh{
 
-      opacity: 1;
+      opacity: 0;
+      transition: opacity 1.5s;
     }
+
+
+    .hero{
+
+      opacity: 1 !important;
+      transition: opacity 1.5s;
+
+    }
+
 
     section#i-am-vietnamese{
 
@@ -170,7 +173,7 @@ body, html{
         float: left;
         width: 98%;
         overflow: hidden;
-        background-color: rgb(18, 192, 215);
+        background-color: #000;
         margin: 0 1% 0 1%;
         color: #fff;
         display: flex;

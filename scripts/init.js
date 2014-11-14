@@ -54,6 +54,12 @@ angular.module("meApp", [])
     //Added color to #i-am-vietnamese
     $("#i-am-vietnamese div p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> in 2005.");
 
+    setTimeout(function(){
+
+      $("#hi-im-Anh").addClass("hero");
+
+    }, 100);
+
     //
     // $(window).bind("scroll", function(){
     //

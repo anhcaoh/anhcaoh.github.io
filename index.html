@@ -5,6 +5,7 @@
   <title>Hi, I'm Anh</title>
   <meta name="viewport" content="width:device-width, initial-scale=1, user-scalable=no">
   <link rel="stylesheet" href="./styles/minimal.css">
+  <link rel="stylesheet" href="./styles/animate.css">
   <link rel="shortcut icon" href="./images/AnhIcon.jpg">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="./scripts/jquery-1.11.0.js"></script>
@@ -20,7 +21,7 @@
     <div>
 
       <img name="{{aboutMe.name}}" src="{{aboutMe.imgSrc}}" data-ng-if="!null">
-      <p id="{{aboutMe.nameId}}" style="font-family: {{aboutMe.fontFamily}}" data-ng-if="!null">{{aboutMe.content}}</p>
+      <p style="font-family: {{aboutMe.fontFamily}}" data-ng-if="!null">{{aboutMe.content}}</p>
 
     </div>
 
@@ -51,12 +52,12 @@
 
       </section>
 
-    <div id="arrows">
+    <!-- <div id="arrows">
 
       <i class="fa fa-angle-left leftArrow" data-ng-click="slideLeft();"></i>
       <i class="fa fa-angle-right rightArrow" data-ng-click="slideRight();"></i>
 
-    </div>
+    </div> -->
 
   </section>
 
