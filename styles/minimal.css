@@ -264,6 +264,12 @@ body, html{
 
           }
 
+          section#what-i-do div#arrows i{
+
+            top: 0%;
+            border-radius: inherit;
+          }
+
           section{
 
             height: 100%;
