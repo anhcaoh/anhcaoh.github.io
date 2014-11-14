@@ -263,9 +263,9 @@ body, html{
               text-shadow: 2px 2px #999;
             }
 
-          section#xalieo div p{
+          section#xalieo{
 
-            margin: -85% 0;
+            backgroun-positon: top, bottom;
 
           }
           section#what-i-do article{
