@@ -16,7 +16,7 @@ body, html{
 
     font-size: 26pt;
     margin: 0;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
   }
 
 
@@ -24,6 +24,7 @@ body, html{
 
     color: inherit;
     text-decoration: none;
+    display: block;
   }
 
 
@@ -81,7 +82,7 @@ body, html{
 
     }
 
-    #iSpeak p{
+    #i-speak p{
 
       font-weight: 600;
     }
@@ -216,12 +217,11 @@ body, html{
           right:0;
         }
 
-    i {
+    i{
 
-      width: 25px;
-      height: 25px;
-      text-align: right;
-      margin-right: 15px;
+      font-size: smaller !important;
+      margin: 0 15px 10px 20px;
+
     }
 
     @media screen and (min-width: 1000px) {
@@ -229,7 +229,7 @@ body, html{
 
     }
 
-      @media screen and (max-width: 400px){
+      @media screen and (max-width: 414px){
 
           div{
 
@@ -238,17 +238,18 @@ body, html{
 
           img{
 
-            width: 55%;
+            max-width: 55%;
           }
 
           p {
 
-            padding-bottom: 10%;
+            padding: 30px;
+
           }
 
           #iAmVietnamese img {
 
-            width: 70%;
+            width: 100% !important;
 
           }
 
@@ -262,19 +263,28 @@ body, html{
           section#xalieo{
 
               background-size: 51%;
-
-
           }
 
             #xalieo p{
 
-              padding: 15%;
+              padding: 14%;
 
             }
 
-          #contact-me p{
+          #contact-me a{
 
-            font-size: 19pt !important;
+            text-align: center;
+            margin-bottom: 20%;
+          }
+
+          #contact-me a i{
+
+            display: block !important;
+          }
+
+          #contact-me span{
+
+            font-size: 18pt !important;
 
           }
           section#what-i-do article{

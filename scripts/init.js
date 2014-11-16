@@ -7,13 +7,17 @@ angular.module("meApp", [])
 
     {"nameId":"hiImAnh","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"Hi, I'm Anh"},
 
-    {"nameId":"i-speak","content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
+    {"nameId":"i-speak", "imgSrc":"./images/blank.jpg","content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
+
+    {"nameId":"i-make", "imgSrc":"./images/blank.jpg","content":"I make data talks."},
+
+    {"nameId":"i-dance", "imgSrc":"./images/blank.jpg","content":"I design things, and I break-dance."},
 
     {"nameId":"iAmVietnamese","name":"globe", "imgSrc":"./images/Vietnam-to-USA.jpg", "content":""},
 
-    {"nameId":"myWife", "name":"BaoChau", "content":"This is my smart, beautiful wife."},
+    {"nameId":"myWife", "name":"BaoChau", "imgSrc":"./images/blank.jpg", "imgSrc":".image/blank.png","content":"This is my smart, beautiful wife."},
 
-    {"nameId":"xalieo" ,"name":"Xalieo","content":"Meet Xali & Leo"}
+    {"nameId":"xalieo" ,"name":"Xalieo","imgSrc":"./images/blank.jpg","content":"Meet Xali & Leo"}
 
   ];
 
