@@ -16,16 +16,53 @@
 
 <body data-ng-controller="ContentController">
 
+  <section data-ng-repeat="(key, value) in aboutMe | orderObjectBy: ''">
+
+    <div id="{{value.nameId}}">
+
+        <img src="{{value.imgSrc}}" data-ng-if="!null">
+        <p style="font-family: {{value.fontFamily}}" data-ng-if="!null">{{value.content}}</p>
+
+    </div>
+
+  </section>
+
+<!--
   <section data-ng-repeat="aboutMe in allAboutMe" id="{{aboutMe.nameId}}">
 
     <div>
 
       <img name="{{aboutMe.name}}" src="{{aboutMe.imgSrc}}" data-ng-if="!null">
-      <p style="font-family: {{aboutMe.fontFamily}}" data-ng-if="!null">{{aboutMe.content}}</p>
+      <p style="font-family: {{aboutMe.fontFamily}}" data-ng-if="!null">
+
+        {{aboutMe.content}}
+
+      </p>
 
     </div>
 
-  </section>
+  </section> -->
+<!--
+  <section id="what-i-do">
+
+    <section id="window">
+
+      <article data-ng-repeat="IDo in whatIDo" id="{{IDo.nameId}}">
+
+            <div>{{IDo.content}}</div>
+
+      </article>
+
+      </section>
+
+    <div id="arrows">
+
+      <i class="fa fa-angle-left leftArrow" data-ng-click="slideLeft();"></i>
+      <i class="fa fa-angle-right rightArrow" data-ng-click="slideRight();"></i>
+
+    </div>
+
+  </section> -->
 
   <section id="works">
 
@@ -40,28 +77,6 @@
 
   </section>
 
-  <section id="what-i-do">
-
-    <section id="window">
-
-      <article data-ng-repeat="IDo in whatIDo" id="{{IDo.nameId}}">
-
-            <div>{{IDo.content}}</div>
-
-      </article>
-
-      </section>
-
-    <!-- <div id="arrows">
-
-      <i class="fa fa-angle-left leftArrow" data-ng-click="slideLeft();"></i>
-      <i class="fa fa-angle-right rightArrow" data-ng-click="slideRight();"></i>
-
-    </div> -->
-
-  </section>
-
-
   <section id="contact-me">
 
     <div><h2>Let's Talk</h2>
@@ -72,18 +87,6 @@
     </div>
 
   </section>
-
-  <!-- <button style="
-      position: fixed;
-      right: 10%;
-      bottom: 10%;
-      width: 50px;
-      height: 50px;
-  " onclick="javascript:compress();">
-
-  <i class="fa fa-compress" style="width: initial; height: initial; font-size: x-large"></i>
-
-  </button> -->
 
   <section style="height: 25%;"><div style="font-size:small">@2015</div></section>
 

@@ -3,19 +3,21 @@ angular.module("meApp", [])
 
 .controller("ContentController", ["$scope",function($scope){
 
-  $scope.allAboutMe = [
+  $scope.aboutMe = [
 
-    {"nameId":"hi-im-Anh", "name":"brand", "imgSrc": "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/20f/0d6/1eba86d.jpg","content":"Hi, I'm Anh"},
+    {"nameId":"hiImAnh","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"Hi, I'm Anh"},
 
-    {"nameId":"i-am-vietnamese", "name":"globe", "imgSrc":"http://upload.wikimedia.org/wikipedia/en/4/40/USA_Vietnam_Locator.svg", "content":""},
+    {"nameId":"i-speak","content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
 
-    {"nameId":"my-wife", "content":"This is my smart, beautiful wife."},
+    {"nameId":"iAmVietnamese","name":"globe", "imgSrc":"./images/Vietnam-to-USA.jpg", "content":""},
 
-    {"nameId":"xalieo", "content":"Meet Xali & Leo"},
+    {"nameId":"myWife", "name":"BaoChau", "content":"This is my smart, beautiful wife."},
 
-    {"nameId":"i-speak", "content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
+    {"nameId":"xalieo" ,"name":"Xalieo","content":"Meet Xali & Leo"}
 
   ];
+
+
   $scope.whatIDo = [
 
     {"nameId":"i-breathe", "content":"I breathe User Experience."},
@@ -51,14 +53,17 @@ angular.module("meApp", [])
 
   $(function(){
 
-    //Added color to #i-am-vietnamese
-    $("#i-am-vietnamese div p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> in 2005.");
+    $("#iAmVietnamese p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> in 2005.");
+    $("#xalieo").prepend("<img src='./images/Xali.jpg'>");
+    $("#xalieo").append("<img src='./images/Leo.jpg'>");
 
     setTimeout(function(){
 
-      $("#hi-im-Anh").addClass("hero");
+      $("#hiImAnh").addClass("fadingIn");
 
-    }, 100);
+    },1000);
+
+
 
     //
     // $(window).bind("scroll", function(){
@@ -98,7 +103,38 @@ angular.module("meApp", [])
 
   });
 
-}]);
+}])
+
+.filter("orderObjectBy", function(){
+
+    return function ( input, attribute ){
+
+      if (!angular.isObject(input)) return input;
+
+      var array = [];
+
+      for (var objectKey in input){
+
+         array.push(input[objectKey]);
+      }
+
+      array.sort(function(a, b){
+
+          a = parseInt(a[attribute]);
+          b = parseInt(b[attribute]);
+          return a - b;
+
+      });
+
+      console.log(array);
+
+      return array;
+
+    }
+
+});
+
+
 //
 // function compress(){
 //

@@ -3,19 +3,22 @@ body, html{
 
   outline: 0;
   height: 100%;
-  font-family: sans-serif, Helvetica;
-  font-size: 26pt;
+  font-family: Sans-serif, Helvetica;
+  font-size: 24pt;
+  background-color: #fff;
   color: #2A2A2A;
   -webkit-font-smoothing: antialiased;
-  background-color: #EAEAEA;
   margin: 0;
 
 }
 
   h2{
 
-    font-size: 28pt;
+    font-size: 26pt;
+    margin: 0;
+    padding-bottom: 10%;
   }
+
 
   a:link, a:visited, a:active{
 
@@ -23,91 +26,109 @@ body, html{
     text-decoration: none;
   }
 
-  #works div p{
 
-    padding: 5% 0;
+  #hero{
 
+      opacity: 0;
   }
-
-    #works div p a{
-
-      display: block;
-      font-size: 24px;
-    }
 
   section{
 
-    position: static;
-    display: flex;
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: auto;
-    padding: 10%;
     text-align: center;
-    -webkit-transition: opacity 50ms;
-    transition: opacity 50ms;
+    display: table;
 
   }
 
-  .compressed{
-
-    transform: scale(.5, .5);
-    height: 40%;
-  }
-
-  .smaller{
-
-    font-size: small;
-  }
-
-    section#my-wife{
-
-      background-image: url(https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10671399_10204523623401558_7897548015356898251_n.jpg?oh=30f0e13ab16ed607137112d15df54d6d&oe=54D2AADB&__gda__=1423214222_041ab13f50cd57d0c6e570311202114e);
-      background-repeat: no-repeat;
-      background-position: right;
-      background-size: contain;
-    }
-      section#my-wife div{
-
-        margin: auto 0;
-      }
-
-    section#xalieo{
-
-      background-color: #fff;
-      background-image: url(https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1932467_10202595019856671_228129343314517639_n.jpg?oh=c263fb8324a0fd07398ea8cff42f5efd&oe=54DB2336&__gda__=1424370154_6de43b8d53ddab731019b6c228634e3d), url(https://scontent-b-atl.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/486315_4777182798457_981972487_n.jpg?oh=b830f673f3a0cc902b139aaaf60a9e53&oe=54E64E39);
-      background-repeat: no-repeat;
-      background-position: top left, top right;
-      background-size: contain;
-      -webkit-filter: grayscale(.9);
-      color: #fff;
-      text-shadow: 2px 2px #000;
-    }
-
-    section:nth-child(even){
-
-      background-color: lightskyblue;
-    }
-
-    section#hi-im-Anh{
+    #hiImAnh{
 
       opacity: 0;
-      transition: opacity 1.5s;
-    }
-
-
-    .hero{
-
-      opacity: 1 !important;
-      transition: opacity 1.5s;
 
     }
 
+    #hiImAnh.fadingIn{
 
-    section#i-am-vietnamese{
+      opacity: 1;
+      background-color: #f7f7f7;
+      color: #000;
+      -webkit-transition: opacity 1s, background-color 4s, color 2s;
+      transition: opacity 1s, background-color 4s, color 2s;
+
+    }
+
+      #hiImAnh p{
+
+          margin-top: 5%;
+
+      }
+    #iAmVietnamese img{
+
+      width: 50%;
+    }
+
+    #iAmVietnamese p{
+
+      margin-top: 5%;
+      margin: 5% 10% 0 15%;
+
+    }
+
+    #iSpeak{
+
+      background-color: #f7f7f7;
+
+    }
+
+    #iSpeak p{
+
+      font-weight: 600;
+    }
+
+    .css-typing {
+
+        width: 30em;
+        white-space:nowrap;
+        overflow:hidden;
+        -webkit-animation: type 5s steps(50, end);
+        animation: type 5s steps(50, end);
+    }
+
+    @keyframes type{
+        from { width: 0; }
+    }
+
+    @-webkit-keyframes type{
+        from { width: 0; }
+    }
+
+
+    #myWife{
+
+      background-image: url(../images/Bao-Chau.jpg);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: cover;
+    }
+
+      #xalieo{
 
       background-color: #fff;
+      /*background-image: url(../images/Xali.jpg), url(../images/Leo.jpg);
+      background-repeat: no-repeat;
+      background-position: left, right;
+      background-size: 40%;
+      width: 80%;*/
+
     }
+
+      #xalieo p{
+
+        display: -webkit-inline-box;
+
+      }
+
 
     section div{
 
@@ -116,7 +137,8 @@ body, html{
       right: 0;
       bottom: 0;
       left: 0;
-
+      display: table-cell;
+      vertical-align: middle;
     }
 
       img{
@@ -126,24 +148,9 @@ body, html{
         margin: auto;
       }
 
-
-      section div img[name='brand']{
-
-          width: 100%;
-          margin-top: -35%;
-          margin-bottom: 15%;
-
-      }
-
-      section div img[name='globe']{
-
-          width: 70%;
-          margin-bottom: 15%;
-      }
-
       section div p{
 
-        font-size: 26pt;
+        font-size: 24pt;
         font-weight: 500;
         display: block;
         margin: 0;
@@ -156,6 +163,7 @@ body, html{
       width: 100%;
       overflow: hidden;
       padding: 0;
+      height: auto;
 
     }
 
@@ -163,30 +171,21 @@ body, html{
 
         background-color: #fff;
         width: 300%;
-        margin: 0;
-        padding: 0;
         transform: translate(-0%,0);
         transition: transform 1s;
-
       }
 
 
       section#what-i-do article{
 
         float: left;
-        width: 98%;
-        overflow: hidden;
         background-color: #000;
-        margin: 0 1% 0 1%;
         color: #fff;
-        display: flex;
+      }
+
+    section#contact-me p{
 
     }
-
-      div#arrows{
-
-
-      }
 
         div#arrows i{
 
@@ -217,14 +216,7 @@ body, html{
           right:0;
         }
 
-    section#contact-me div p{
-
-      font-size: 24px;
-      text-align: left;
-      padding: 5% 0;
-    }
-
-    i{
+    i {
 
       width: 25px;
       height: 25px;
@@ -232,31 +224,35 @@ body, html{
       margin-right: 15px;
     }
 
-      @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1000px) {
 
-          section {
 
-            width: 80%;
-            padding: 0 10%;
+    }
+
+      @media screen and (max-width: 400px){
+
+          div{
+
+            background-position: center !important;
           }
 
-          section div img[name='globe']{
+          img{
 
-              width: 50%;
+            width: 55%;
           }
 
-      }
+          p {
 
-      @media screen and (max-width: 415px){
+            padding-bottom: 10%;
+          }
 
-          section#my-wife{
+          #iAmVietnamese img {
 
-            background-position: center;
-            background-size: cover;
+            width: 70%;
 
           }
 
-            section#my-wife div p{
+            #myWife p{
 
               margin-top: 100%;
               color: #fff;
@@ -265,17 +261,22 @@ body, html{
 
           section#xalieo{
 
-            background-position: top left, bottom right;
+              background-size: 51%;
+
 
           }
 
-            section#xalieo div p{
+            #xalieo p{
 
-              margin-top: 35%;
-              color: #2A2A2A;
-              text-shadow: none;
+              padding: 15%;
+
             }
 
+          #contact-me p{
+
+            font-size: 16pt !important;
+
+          }
           section#what-i-do article{
 
             margin: 0;
@@ -293,11 +294,10 @@ body, html{
 
           }
 
-
-
           section:nth-child(1){
 
             height: 100%;
+
           }
 
           section div img[name='globe']{
