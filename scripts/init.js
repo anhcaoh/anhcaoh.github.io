@@ -5,7 +5,7 @@ angular.module("meApp", [])
 
   $scope.aboutMe = [
 
-    {"nameId":"","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"Hi, I'm Anh"},
+    {"nameId":"hello","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"Hi, I'm Anh"},
 
     {"nameId":"what", "imgSrc":"","content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
 
@@ -20,17 +20,6 @@ angular.module("meApp", [])
     {"nameId":"other", "imgSrc":"","content":"I design things, and I break-dance."}
 
   ];
-
-
-  $scope.whatIDo = [
-
-    {"nameId":"i-breathe", "content":"I breathe User Experience."},
-
-    {"nameId":"i-make", "content":"I make data talks."},
-
-    {"nameId":"i-dance", "content":"I design things, and I break-dance."}
-
-  ]
 
   $scope.contactMe = {
 
@@ -64,7 +53,7 @@ angular.module("meApp", [])
     $("#other p").html("I design things, and <a href='http://youtu.be/EhWxvWB0e5g?t=6m23s' target='_blank'>I break-dance. <i class='fa fa-angle-right'></i> </a>");
     setTimeout(function(){
 
-      $("#hiImAnh").addClass("fadingIn");
+      $("#hello").addClass("fadingIn");
 
     },1000);
 

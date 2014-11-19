@@ -21,7 +21,7 @@
 
   <section id="{{value.nameId}}" data-ng-repeat="(key, value) in aboutMe | orderObjectBy: ''">
 
-    <h2 class="heading">{{value.nameId | uppercase}}</h2>
+    <h2 class="heading">{{value.nameId.replace('-',' ').replace('-', ' ') | uppercase}}</h2>
 
     <div>
 
@@ -31,43 +31,6 @@
     </div>
 
   </section>
-
-<!--
-  <section data-ng-repeat="aboutMe in allAboutMe" id="{{aboutMe.nameId}}">
-
-    <div>
-
-      <img name="{{aboutMe.name}}" src="{{aboutMe.imgSrc}}" data-ng-if="!null">
-      <p style="font-family: {{aboutMe.fontFamily}}" data-ng-if="!null">
-
-        {{aboutMe.content}}
-
-      </p>
-
-    </div>
-
-  </section> -->
-<!--
-  <section id="what-i-do">
-
-    <section id="window">
-
-      <article data-ng-repeat="IDo in whatIDo" id="{{IDo.nameId}}">
-
-            <div>{{IDo.content}}</div>
-
-      </article>
-
-      </section>
-
-    <div id="arrows">
-
-      <i class="fa fa-angle-left leftArrow" data-ng-click="slideLeft();"></i>
-      <i class="fa fa-angle-right rightArrow" data-ng-click="slideRight();"></i>
-
-    </div>
-
-  </section> -->
 
   <section id="all-things-design">
 

@@ -24,6 +24,7 @@ body, html{
     color: inherit;
     text-decoration: none;
     display: block;
+    padding: 10px;
   }
 
   p{
@@ -42,6 +43,7 @@ body, html{
     position:fixed;
     margin-top:100%;
   }
+
   section{
 
     width: 100%;
@@ -58,42 +60,23 @@ body, html{
     color: #fff;
   }
 
-    #hiImAnh{
+    #hello{
 
       opacity: 0;
+      background-color: #f7f7f7;
+      color: initial;
 
     }
 
-    #hiImAnh.fadingIn{
+    #hello.fadingIn{
 
       opacity: 1;
-      -webkit-transition: opacity 1s, background-color 4s, color 2s;
-      transition: opacity 1s, background-color 4s, color 2s;
+      -webkit-transition: opacity 1s, background-color 3s, color 2s;
+      transition: opacity 1s, background-color 3s, color 2s;
 
     }
 
-    #iAmVietnamese img{
 
-      width: 50%;
-    }
-
-    #iAmVietnamese p{
-
-      margin-top: 5%;
-      margin: 5% 10% 0 15%;
-
-    }
-
-    #iSpeak{
-
-      background-color: #f7f7f7;
-
-    }
-
-    #iSpeak p{
-
-      font-weight: 600;
-    }
 
     .css-typing {
 
@@ -135,7 +118,7 @@ body, html{
 
     #xalieo{
 
-      margin-top: 10%;
+      margin: 10% auto;
 
     }
 
