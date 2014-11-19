@@ -3,10 +3,9 @@ body, html{
 
   outline: 0;
   height: 100%;
-  font-family: Sans-serif, Helvetica;
-  font-size: 24pt;
+  font-family: 'Lato', Sans-serif, Helvetica;
+  font-size: 17pt;
   background-color: #fff;
-  color: #2A2A2A;
   -webkit-font-smoothing: antialiased;
   margin: 0;
 
@@ -14,9 +13,9 @@ body, html{
 
   h2{
 
-    font-size: 26pt;
+    font-size: 20pt;
     margin: 0;
-    padding-bottom: 20%;
+    padding-bottom: 50px;
   }
 
 
@@ -27,12 +26,22 @@ body, html{
     display: block;
   }
 
+  p{
+
+    padding: 20px;
+
+  }
 
   #hero{
 
       opacity: 0;
   }
 
+  header{
+
+    position:fixed;
+    margin-top:100%;
+  }
   section{
 
     width: 100%;
@@ -41,6 +50,12 @@ body, html{
     text-align: center;
     display: table;
 
+  }
+
+  section:nth-child(odd){
+
+    background-color: #339DDF;
+    color: #fff;
   }
 
     #hiImAnh{
@@ -52,18 +67,11 @@ body, html{
     #hiImAnh.fadingIn{
 
       opacity: 1;
-      background-color: #f7f7f7;
-      color: #000;
       -webkit-transition: opacity 1s, background-color 4s, color 2s;
       transition: opacity 1s, background-color 4s, color 2s;
 
     }
 
-      #hiImAnh p{
-
-          margin-top: 5%;
-
-      }
     #iAmVietnamese img{
 
       width: 50%;
@@ -82,7 +90,7 @@ body, html{
 
     }
 
-    #i-speak p{
+    #iSpeak p{
 
       font-weight: 600;
     }
@@ -105,32 +113,6 @@ body, html{
     }
 
 
-    #myWife{
-
-      background-image: url(../images/Bao-Chau.jpg);
-      background-repeat: no-repeat;
-      background-position: right;
-      background-size: cover;
-    }
-
-      #xalieo{
-
-      background-color: #fff;
-      /*background-image: url(../images/Xali.jpg), url(../images/Leo.jpg);
-      background-repeat: no-repeat;
-      background-position: left, right;
-      background-size: 40%;
-      width: 80%;*/
-
-    }
-
-      #xalieo p{
-
-        display: -webkit-inline-box;
-
-      }
-
-
     section div{
 
       margin: auto;
@@ -138,9 +120,40 @@ body, html{
       right: 0;
       bottom: 0;
       left: 0;
-      display: table-cell;
+      display: table-row;
       vertical-align: middle;
     }
+
+    #who{
+
+      background-image: url(../images/Bao-Chau.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    #xalieo{
+
+      margin-top: 10%;
+
+    }
+
+      #xalieo h2{
+
+        display: none;
+      }
+
+      section h2.heading {
+
+        position: relative;
+        font-size: x-small;
+        font-weight: bold;
+        margin-top: 3%;
+        left: 3%;
+        float: left;
+        padding:0;
+      }
 
       img{
 
@@ -151,41 +164,18 @@ body, html{
 
       section div p{
 
-        font-size: 24pt;
+        font-size: 17pt;
         font-weight: 500;
         display: block;
         margin: 0;
 
       }
 
-    section#what-i-do{
+    footer{
 
-      display: block;
-      width: 100%;
-      overflow: hidden;
-      padding: 0;
-      height: auto;
-
-    }
-
-      section#what-i-do section#window{
-
-        background-color: #fff;
-        width: 300%;
-        transform: translate(-0%,0);
-        transition: transform 1s;
-      }
-
-
-      section#what-i-do article{
-
-        float: left;
-        background-color: #000;
-        color: #fff;
-      }
-
-    section#contact-me p{
-
+      height: 25%;
+      text-align: center;
+      line-height: 13;
     }
 
         div#arrows i{
@@ -224,11 +214,6 @@ body, html{
 
     }
 
-    @media screen and (min-width: 1000px) {
-
-
-    }
-
       @media screen and (max-width: 414px){
 
           div{
@@ -238,12 +223,12 @@ body, html{
 
           img{
 
-            max-width: 55%;
+            max-width: 50%;
           }
 
-          p {
+          a {
 
-            padding: 30px;
+            padding-bottom: 5%;
 
           }
 
@@ -267,7 +252,7 @@ body, html{
 
             #xalieo p{
 
-              padding: 14%;
+              padding: 5%;
 
             }
 
@@ -284,7 +269,7 @@ body, html{
 
           #contact-me span{
 
-            font-size: 18pt !important;
+            /*font-size: 18pt !important;*/
 
           }
           section#what-i-do article{
@@ -298,15 +283,9 @@ body, html{
             border-radius: inherit;
           }
 
-          section{
-
-            height: 100%;
-
-          }
-
           section:nth-child(1){
 
-            height: 100%;
+            //height: 100%;
 
           }
 

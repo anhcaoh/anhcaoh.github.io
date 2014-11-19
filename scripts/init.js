@@ -5,19 +5,19 @@ angular.module("meApp", [])
 
   $scope.aboutMe = [
 
-    {"nameId":"hiImAnh","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"Hi, I'm Anh"},
+    {"nameId":"","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"Hi, I'm Anh"},
 
-    {"nameId":"i-speak", "imgSrc":"./images/blank.jpg","content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
+    {"nameId":"what", "imgSrc":"","content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
 
-    {"nameId":"i-make", "imgSrc":"./images/blank.jpg","content":"I make data talks."},
+    {"nameId":"why","name":"globe", "imgSrc":"", "content":"I breathe User Experience."},
 
-    {"nameId":"i-dance", "imgSrc":"./images/blank.jpg","content":"I design things, and I break-dance."},
+    {"nameId":"where-and-when","name":"globe", "imgSrc":"./images/Vietnam-to-USA.jpg", "content":""},
 
-    {"nameId":"iAmVietnamese","name":"globe", "imgSrc":"./images/Vietnam-to-USA.jpg", "content":""},
+    {"nameId":"who", "name":"BaoChau", "imgSrc":"", "imgSrc":"","content":"This is my smart, beautiful wife."},
 
-    {"nameId":"myWife", "name":"BaoChau", "imgSrc":"./images/blank.jpg", "imgSrc":".image/blank.png","content":"This is my smart, beautiful wife."},
+    {"nameId":"xalieo" ,"name":"Xalieo","imgSrc":"","content":"Meet Xali & Leo"},
 
-    {"nameId":"xalieo" ,"name":"Xalieo","imgSrc":"./images/blank.jpg","content":"Meet Xali & Leo"}
+    {"nameId":"other", "imgSrc":"","content":"I design things, and I break-dance."}
 
   ];
 
@@ -31,6 +31,7 @@ angular.module("meApp", [])
     {"nameId":"i-dance", "content":"I design things, and I break-dance."}
 
   ]
+
   $scope.contactMe = {
 
     "email":"AnhCaoH@gmail.com",
@@ -57,7 +58,7 @@ angular.module("meApp", [])
 
   $(function(){
 
-    $("#iAmVietnamese p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> in 2005.");
+    $("#where-and-when p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> in 2005.");
     $("#xalieo").prepend("<img src='./images/Xali.jpg'>");
     $("#xalieo").append("<img src='./images/Leo.jpg'>");
 
@@ -129,8 +130,6 @@ angular.module("meApp", [])
           return a - b;
 
       });
-
-      console.log(array);
 
       return array;
 
