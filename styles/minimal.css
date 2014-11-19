@@ -106,6 +106,10 @@ body, html{
       display: table-row;
       vertical-align: middle;
     }
+    #hello h2{
+
+      opacity: 0;
+    }
 
     #who{
 
@@ -122,7 +126,7 @@ body, html{
 
     }
 
-      #xalieo h2{
+    #xalieo h2{
 
         display: none;
       }
