@@ -7,15 +7,15 @@ angular.module("meApp", [])
 
     {"nameId":"hello","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"Hi, I'm Anh"},
 
-    {"nameId":"what", "imgSrc":"","content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
-
-    {"nameId":"why","name":"globe", "imgSrc":"", "content":"I breathe User Experience."},
-
-    {"nameId":"where-and-when","name":"globe", "imgSrc":"./images/Vietnam-to-USA.jpg", "content":""},
-
     {"nameId":"who", "name":"BaoChau", "imgSrc":"", "imgSrc":"","content":"This is my smart, beautiful wife."},
 
     {"nameId":"xalieo" ,"name":"Xalieo","imgSrc":"","content":"Meet Xali & Leo"},
+
+    {"nameId":"where-and-when","name":"globe", "imgSrc":"./images/Vietnam-to-USA.jpg", "content":""},
+
+    {"nameId":"what", "imgSrc":"","content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
+
+    {"nameId":"why","name":"globe", "imgSrc":"", "content":"I breathe User Experience."},
 
     {"nameId":"other", "imgSrc":"","content":"I design things, and I break-dance."}
 
