@@ -61,7 +61,7 @@ angular.module("meApp", [])
     $("#where-and-when p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> in 2005.");
     $("#xalieo").prepend("<img src='./images/Xali.jpg'>");
     $("#xalieo").append("<img src='./images/Leo.jpg'>");
-
+    $("#other p").html("I design things, and <a href='http://youtu.be/EhWxvWB0e5g?t=6m23s' target='_blank'>I break-dance. <i class='fa fa-angle-right'></i> </a>");
     setTimeout(function(){
 
       $("#hiImAnh").addClass("fadingIn");
