@@ -117,22 +117,35 @@ body, html{
       background-image: url(../images/Bao-Chau.jpg);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
+      color: #fff;
 
+    }
+
+    #who h2{
+
+      color: initial;
     }
 
     #xalieo{
 
-      padding: 10% 0;
+      padding: 10% 0 0;
       background-color: whitesmoke;
       color: initial;
 
     }
 
-    #xalieo h2{
 
-        display: none;
+      #xalieo h2{
+
+          display: none;
       }
+
+      #xalieo img{
+
+        width: 200px;
+      }
+
 
       section h2.heading {
 
@@ -157,7 +170,8 @@ body, html{
         font-size: 17pt;
         font-weight: 500;
         display: block;
-        margin: 0;
+        width: 66%;
+        margin: auto
 
       }
 
@@ -228,12 +242,10 @@ body, html{
 
           }
 
-            #myWife p{
+          #who{
 
-              margin-top: 100%;
-              color: #fff;
-              text-shadow: 2px 2px #999;
-            }
+              background-size: cover;
+          }
 
           section#xalieo{
 
