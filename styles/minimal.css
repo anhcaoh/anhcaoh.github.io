@@ -242,12 +242,6 @@ body, html{
 
           }
 
-          #iAmVietnamese img {
-
-            width: 100% !important;
-
-          }
-
           #who{
 
               background-size: cover;
@@ -260,9 +254,10 @@ body, html{
 
             }
 
-          section#xalieo{
+          #xalieo{
 
               background-size: 51%;
+              padding-top: 10%;
           }
 
             #xalieo p{
@@ -270,6 +265,11 @@ body, html{
               padding: 5%;
 
             }
+
+          #where-and-when div img{
+
+            width: 50%;
+          }
 
           #contact-me a{
 
