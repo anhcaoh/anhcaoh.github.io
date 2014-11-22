@@ -119,6 +119,7 @@ body, html{
       background-repeat: no-repeat;
       background-size: contain;
       color: #fff;
+      height: 100%;
 
     }
 
@@ -130,7 +131,7 @@ body, html{
     #xalieo{
 
       padding: 10% 0 0;
-      background-color: whitesmoke;
+      background-color: #fff;
       color: initial;
 
     }
@@ -213,7 +214,6 @@ body, html{
 
     i{
 
-      font-size: smaller !important;
       margin: 0 15px 10px 20px;
 
     }
@@ -227,7 +227,7 @@ body, html{
 
           img{
 
-            max-width: 50%;
+            max-width: 66%;
           }
 
           a {
@@ -245,7 +245,14 @@ body, html{
           #who{
 
               background-size: cover;
+              color: initial;
           }
+
+            #who div p{
+
+              padding-top: 100%;
+
+            }
 
           section#xalieo{
 
