@@ -114,6 +114,7 @@ body, html{
 
     #who{
 
+      background-color: #EAEAEA;
       background-image: url(../images/Bao-Chau.jpg);
       background-position: center;
       background-repeat: no-repeat;
@@ -130,8 +131,8 @@ body, html{
 
     #xalieo{
 
-      padding: 10% 0 0;
-      background-color: #fff;
+      padding: 3% 0 0;
+      background-color: #EAEAEA;
       color: initial;
 
     }
@@ -145,6 +146,11 @@ body, html{
       #xalieo img{
 
         width: 200px;
+      }
+
+      #where-and-when img{
+
+        width: 35%;
       }
 
 
@@ -276,27 +282,6 @@ body, html{
             display: block !important;
           }
 
-          #contact-me span{
-
-            /*font-size: 18pt !important;*/
-
-          }
-          section#what-i-do article{
-
-            margin: 0;
-            width: 100%;
-          }
-          section#what-i-do div#arrows i{
-
-            top: 0%;
-            border-radius: inherit;
-          }
-
-          section:nth-child(1){
-
-            //height: 100%;
-
-          }
 
           section div img[name='globe']{
 
