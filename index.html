@@ -3,7 +3,7 @@
 <head>
 
   <title>Hi, I'm Anh</title>
-  <meta name="viewport" content="width:device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="stylesheet" href="./styles/minimal.css">
   <link rel="stylesheet" href="./styles/animate.css">
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -19,14 +19,14 @@
 
   <!-- <header><img src="{{aboutMe.hiImAnh.imgSrc}}"></header> -->
 
-  <section id="{{value.nameId}}" class="animated slideInUp" data-ng-repeat="(key, value) in aboutMe | orderObjectBy: ''">
+  <section id="{{value.nameId}}" class="animated fadeIn" data-ng-repeat="(key, value) in aboutMe">
 
-    <h2 class="heading">{{value.nameId.replace('-',' ').replace('-', ' ') | uppercase}}</h2>
+    <h2 class="heading">{{value.nameId.replace('-',' ').replace('-', ' ')}}</h2>
 
     <div>
 
         <img src="{{value.imgSrc}}" data-ng-if="!null">
-        <p style="font-family: {{value.fontFamily}}" data-ng-if="!null">{{value.content}}</p>
+        <p style="font-family: {{value.fontFamily}}" class="animated fadeInRight" data-ng-if="!null">{{value.content}}</p>
 
     </div>
 

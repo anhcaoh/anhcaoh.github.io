@@ -5,17 +5,17 @@ angular.module("meApp", [])
 
   $scope.aboutMe = [
 
-    {"nameId":"hello","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"Hi, I'm Anh"},
+    {"nameId":"hello","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"hi, I'm Anh"},
 
-    {"nameId":"who", "name":"BaoChau", "imgSrc":"", "imgSrc":"","content":"I and my smart, beautiful wife"},
+    {"nameId":"who", "name":"BaoChau", "imgSrc":"", "imgSrc":"","content":"I and my smart, beautiful wife, Brenny."},
 
-    {"nameId":"xalieo" ,"name":"Xalieo","imgSrc":"","content":"Meet Xali & Leo"},
+    {"nameId":"xalieo" ,"name":"Xalieo","imgSrc":"","content":"meet Xali & Leo"},
 
     {"nameId":"where-and-when","name":"globe", "imgSrc":"./images/Vietnam-to-USA.jpg", "content":""},
 
     {"nameId":"what", "imgSrc":"","content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
 
-    {"nameId":"why","name":"globe", "imgSrc":"", "content":"I breathe User Experience."},
+    {"nameId":"why","name":"globe", "imgSrc":"", "content":"I breathe user experience."},
 
     {"nameId":"other", "imgSrc":"","content":"I design things, and I break-dance."}
 
