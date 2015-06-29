@@ -21,10 +21,13 @@ body, html{
 
   a:link, a:visited, a:active{
 
-    color: inherit;
+     color: inherit;
     text-decoration: none;
     display: block;
-    padding: 10px 0;
+    padding: 4px 0;
+    border: 1px solid;
+    margin: 8px 28px;
+    border-radius: 5px;
   }
 
   p{
@@ -49,7 +52,7 @@ body, html{
   }
 
   section{
-
+    opacity: 0;
     width: 100%;
     height: 100%;
     margin: auto;
@@ -57,6 +60,13 @@ body, html{
     display: table;
 
   }
+
+    section.fadingIn{
+      opacity: 1;
+      -webkit-transition: opacity 1.5s, background-color 3s, color 2s;
+      transition: opacity 1.5s, background-color 3s, color 2s;
+
+    }
 
   section:nth-child(odd){
 
@@ -79,7 +89,7 @@ body, html{
       transition: opacity 1s, background-color 3s, color 2s;
 
     }
-
+  
 
 
     .css-typing {
@@ -123,8 +133,6 @@ body, html{
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      background-color: #0E0E0E;
-
       height: 100%;
 
     }
@@ -171,7 +179,7 @@ body, html{
 
         position: relative;
         font-size: x-small;
-        font-weight: bold;
+        font-weight: 500;
         margin-top: 10%;
         left: 10%;
         float: left;
@@ -264,7 +272,7 @@ body, html{
             #who div p{
 
               float: none;
-              text-align: center;
+              text-align: right;
               padding: 0;
               padding-top: 100%;
             }
