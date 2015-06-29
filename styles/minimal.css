@@ -52,7 +52,6 @@ body, html{
   }
 
   section{
-    opacity: 0;
     width: 100%;
     height: 100%;
     margin: auto;
@@ -61,12 +60,7 @@ body, html{
 
   }
 
-    section.fadingIn{
-      opacity: 1;
-      -webkit-transition: opacity 1.5s, background-color 3s, color 2s;
-      transition: opacity 1.5s, background-color 3s, color 2s;
 
-    }
 
   section:nth-child(odd){
 
