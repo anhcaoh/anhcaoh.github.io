@@ -69,7 +69,7 @@ body, html{
       opacity: 0;
       background-color: #f7f7f7;
       color: initial;
-
+      height: 50%;
     }
 
     #hello.fadingIn{
@@ -123,6 +123,7 @@ body, html{
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+      background-color: #0E0E0E;
 
       height: 100%;
 
