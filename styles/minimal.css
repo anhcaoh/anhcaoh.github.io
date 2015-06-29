@@ -150,22 +150,22 @@ body, html{
 
       }
 
-    #xalieo{
+    #meet-Xali-Leo{
   height: 50%;
 
 
     }
 
 
-      #xalieo h2{
+      #meet-Xali-Leo h2{
+  margin: 0;;;
 
-          display: none;
       }
 
-      #xalieo img{;
-  padding: 32px;
-  /* clear: both; */
-  width: 200px;;;
+      #meet-Xali-Leo img{;
+  width: 200px;
+  margin: 30px 32px;;
+  /* clear: both; */;;;
 
       }
 
@@ -288,12 +288,11 @@ body, html{
               background-color: rgba(222, 222, 222, 0.5);
             }
 
-          #xalieo{
-
-          }
-
+        
             #xalieo p{
-            padding: 0;;
+            margin: 0;
+            padding: 24px;
+            display: block;;;;;
 
 
             }
@@ -321,7 +320,11 @@ body, html{
           }
       }
 
-#xalieo div img{
+#meet-Xali-Leo div img{
+  display: none;
+
+}
+section#meet-Xali-Leo > div{
   display: none;
 
 }
