@@ -268,6 +268,8 @@ body, html{
               float: none;
               text-align: right;
               padding: 0;
+              width: 65%;
+              margin: 0 20%;
               padding-top: 100%;
             }
 

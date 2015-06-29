@@ -7,7 +7,7 @@ angular.module("meApp", [])
 
     {"nameId":"hello","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"Hi, I'm Anh"},
 
-    {"nameId":"who", "name":"BaoChau", "imgSrc":"", "imgSrc":"","content":"This is my smart, beautiful wife."},
+    {"nameId":"who", "name":"BaoChau", "imgSrc":"", "imgSrc":"","content":"I and my smart, beautiful wife"},
 
     {"nameId":"xalieo" ,"name":"Xalieo","imgSrc":"","content":"Meet Xali & Leo"},
 
