@@ -4,38 +4,86 @@ body, html{
   outline: 0;
   height: 100%;
   font-family: "Helvetica Neue", 'Lato', Sans-serif;
-  font-size: 20pt;
+  font-size: 32pt;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   color: #6F6F6F;
 
 }
+  header,section{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+    height: 100%;
+
+  }
+figure{
+  height: 50%;
+
+}
 
   h2{
 
-    font-size: 20pt;
     margin: 0;
-    padding-bottom: 50px;
   }
-
-
+  .monospace{
+    font-family: "monospace";
+    font-size: medium;
+    height: 50%;
+    background-color: #DEDEDE;;
+  }
+  .bao-chau{
+    background-image: url("/images/Bao-Chau.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .relativelyCenter{
+    position: relative;
+    top: 35%;
+    margin: 0;
+    padding: 0;
+  }
+  .absolutelyCenter{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .verticallyCenter{
+    position: absolute;
+    top: 0;
+    height: 150px;
+    bottom: 0;
+    margin: auto
+  }
   a:link, a:visited, a:active{
 
      color: inherit;
+     font-size: initial;
     text-decoration: none;
     display: block;
-    border-bottom: 1px dashed #000;
     margin: 16px 24px;
-    padding: 16px;
+    height: 30px;
+    line-height: 30px;
+    padding: 8px;;;
   }
-
+  a:hover{
+    color: #000;
+    transition: all 50ms;
+    -webkit-transition: all 50ms;
+    -moz-transition: all 50ms;
+  }
   p{
-
-    padding: 20px;
+  font-size: inherit;
 
   }
-
+  .small{
+    font-size: small;
+  }
   #hero{
 
       opacity: 0;
@@ -45,26 +93,13 @@ body, html{
       margin: 0;
 
   }
-  header{
 
-    position:fixed;
-    margin-top:100%;
-  }
-
-  section{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    display: table;
-    height: 100%;
-
-  }
 
 
 
   section:nth-child(odd){
 
-    background-color: #EEEEEE;
+    background-color: #DEDEDE;
   }
 
     #hello{
@@ -165,7 +200,7 @@ body, html{
       #meet-Xali-Leo img{;
   width: 200px;
   margin: 30px 32px;;
-  /* clear: both; */;;;
+
 
       }
 
@@ -184,6 +219,8 @@ body, html{
         padding:0;
         margin-top:32px;
         color:inherit;
+        font-size:initial;
+        z-index:1;
       }
 
       img{
@@ -191,15 +228,11 @@ body, html{
         border-radius: 50%;
         top: 0;
         bottom: 0;
-
-        /* height: 200px; */
-
-
-        /* height: 200px; */
-
         right: 0;
         left: 0;
-        vertical-align: middle;;;;;;
+        vertical-align: middle;
+        height: 200px;
+        margin: 0 32px;;;;;;
       }
 
       section div p{
@@ -253,7 +286,13 @@ body, html{
       margin: 0 15px 10px 20px;
 
     }
+    @media screen and (min-width: 1280px){
+      
+      .bao-chau{
+          background-position-y: -250px;
+      }
 
+    }
       @media screen and (max-width: 414px){
 
           div{
@@ -326,5 +365,11 @@ body, html{
 }
 section#meet-Xali-Leo > div{
   display: none;
+
+}
+
+figcaption{
+  margin-top: 32px;
+  font-size: initial;
 
 }
