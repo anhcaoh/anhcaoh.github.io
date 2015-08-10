@@ -41,7 +41,7 @@ figure{
   }
   .bao-chau{
     background-image: url("/images/Bao-Chau.jpg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 100%;
   }
@@ -98,9 +98,6 @@ figure{
       margin: 0;
 
   }
-
-
-
 
   section:nth-child(odd){
 
