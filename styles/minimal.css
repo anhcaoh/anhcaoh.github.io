@@ -24,6 +24,7 @@ figure{
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 
 }
 
@@ -35,7 +36,8 @@ figure{
     font-family: "monospace";
     font-size: medium;
     height: 30%;
-    background-color: #DEDEDE;;
+    background-color: #62A3E6;
+    color: #FFF;;
   }
   .bao-chau{
     background-image: url("/images/Bao-Chau.jpg");
@@ -102,7 +104,8 @@ figure{
 
   section:nth-child(odd){
 
-    background-color: #DEDEDE;
+    background-color: #62A3E6;
+    color: #FFF;
   }
 
     #hello{
@@ -229,13 +232,13 @@ figure{
       img{
 
         border-radius: 50%;
+        position: absolute;
+        margin: auto;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
-        vertical-align: middle;
-        height: 200px;
-        margin: 24px;;;;;;
+        height: 200px;;;;;;
       }
 
       section div p{
@@ -316,5 +319,9 @@ section#meet-Xali-Leo > div{
 
 figcaption{
   font-size: initial;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
 
 }
