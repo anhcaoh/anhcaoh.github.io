@@ -11,6 +11,11 @@ body, html{
   color: #6F6F6F;
 
 }
+header{
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
   header,section{
     width: 100%;
     margin: 0 auto;
@@ -18,6 +23,13 @@ body, html{
     display: table;
     height: 100%;
 
+  }
+  section#all-things-design{
+    margin-top: 80%;
+  }
+  section{
+    z-index: 1;
+    background-color: #FFF;
   }
 figure{
   height: 70%;
@@ -249,11 +261,10 @@ figure{
       }
 
     footer{
-
-      height: 25%;
       text-align: center;
-      line-height: 13;
-    }
+      background-color: #FFF;
+      padding: 8px;
+      }
 
         div#arrows i{
 
