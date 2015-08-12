@@ -331,7 +331,7 @@ ul{
   padding: 0;
   position: absolute;
   margin: auto;
-  height: 132px;
+  height: 155px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -347,7 +347,9 @@ ul li{
 #talks article div a{
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
   height: 20px;
   margin: auto;
 
