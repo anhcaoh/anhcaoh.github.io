@@ -25,7 +25,8 @@ header{
 
   }
   section#all-things-design{
-    margin-top: 70%;
+    background-color: #F1F1F1;
+    margin-top: 80%;
   }
   section{
     z-index: 0;
@@ -300,6 +301,11 @@ figure{
           background-position-y: -250px;
       }
 
+    }
+    @media screen and (max-width: 593px){
+      section#all-things-design {
+        margin-top: 125%;
+      }
     }
     @media screen and (max-width: 523px){
 
