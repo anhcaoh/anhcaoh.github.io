@@ -25,8 +25,12 @@ header{
 
   }
   section#all-things-design{
-    background-color: #F1F1F1;
     margin-top: 100%;
+    background-image: url(https://static.pexels.com/photos/6565/apple-desk-laptop-working.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -200px;
+    color: #FFF;
   }
   section{
     z-index: 0;
@@ -46,11 +50,9 @@ figure{
     margin: 0;
   }
   .monospace{
-    font-family: "monospace";
     font-size: medium;
     height: 30%;
-    background-color: #62A3E6;
-    color: #FFF;;
+    font-family: "monospace";;
   }
   .bao-chau{
     background-image: url("/images/Bao-Chau.jpg");
@@ -108,8 +110,6 @@ figure{
 
   section:nth-child(odd){
 
-    background-color: #62A3E6;
-    color: #FFF;
   }
 
     #hello{
@@ -365,5 +365,38 @@ ul li{
 img:after{
   content: attr(title);
   position: absolute;
+
+}
+.backgroundHero{
+  height: 100%;
+  background-image: url(../images/Anh-Cao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+  -moz-filter: blur(15px);
+
+}
+.colorMasked{
+height: 100%;
+    background-color: rgba(251, 249, 250, 0.2);
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+
+}
+.darkMask{
+  overflow: hidden;
+  height: 100%;
+  background-color: rgb(65, 65, 61);
+
+}
+#talks{
+  background-image: url(https://static.pexels.com/photos/6663/desk-white-black-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
 
 }
