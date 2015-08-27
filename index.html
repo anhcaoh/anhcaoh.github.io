@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Xali Your Collections</title>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="copyright" content="Xali is the yet-registered trademark of Xalieo, Inc." />
+<meta name="description" content="Your collections" />
+<meta name="keywords" content="xali, sally, personalized, collections" />
+<meta name="robots" content="index, follow" />
+<meta name="DC.title" content="Xali Your Personalized Collections" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- <script src="/libraries/react.js"></script> -->
+<!-- <script src="/libraries/JSXTransformer.js"></script> -->
+
+</head>
+
+<body>
+<section>
+
+
+<article id="collections" class="active">
+<header>
+    <span class="title">Xali Collections</span>
+    <i class="fa fa-plus"></i>
+</header>
+<div>
+<img data-original="/images/brenny.jpg" alt="Thailand 2015">
+<img data-original="/images/anh_and_brenny.jpg" alt="Thailand 2015">
+<img data-original="/images/anh_gives_a_hand.jpg" alt="">
+<img data-original="/images/brenny_bows.jpg" alt="">
+<img data-original="/images/us.jpg" alt="">
+<img data-original="/images/anh_and_monkey.jpg" alt="">
+<img data-original="/images/brenny_on_top_of_the_world.jpg" alt="">
+<img data-original="/images/us_at_palace.jpg" alt="">
+<img data-original="/images/brenny_and_puppy.jpg" alt=""><img data-original="/images/brenny_on_boat.jpg" alt="">
+
+<img data-original="/images/anh_in_bangkok.jpg" alt=""><img data-original="/images/us_on_top_of_the_world.jpg" alt="">
+
+<img data-original="/images/us_at_thailand_tallest_hotel.jpg" alt="">
+<img data-original="/images/anh_on_top_of_the_world.jpg" alt="">
+
+</div>
+</article> 
+<article id="camera">
+<header>
+<span class="title">Camera</span>
+<i class="fa fa-camera"></i>
+</header>
+<div class="absolutelyCenter">Sample</div>
+</article>
+<article id="discover">
+<header>
+<span class="title">Discover</span>
+<i class="fa fa-search"></i>
+</header>
+<div class="absolutelyCenter">Sample</div>
+</article>
+<article id="profile">
+<header>
+<span class="title">Profile</span>
+<i class="fa fa-user"></i>
+</header>
+<div class="absolutelyCenter">Sample</div>
+</article>
+</section>
+<footer>
+	<ul>
+		<li name="collections" class="active" ><i class="fa fa-home"></i></li>
+		<li name="camera"><i class="fa fa-camera"></i></li>
+		<li name="discover"><i class="fa fa-search"></i></li>
+		<li name="profile"><i class="fa fa-user"></i></li>
+	</ul>
+</footer>
+
+<script src="/libraries/jquery-1.11.3.min.js"></script>
+<script src="/libraries/lazyload.js"></script>
+
+<script>
+
+$(function() {
+    $("img").width("296").css("vertical-align","top").lazyload({
+    	threshold: 500
+    });
+    
+    $("footer ul li").on("click", function(){
+    	$(".active").removeClass("active");
+    	$(this).addClass("active");
+    	var name = "#" + $(this).attr("name");
+    	$("article" + name).addClass("active");
+    });
+
+});
+</script>
+<!-- <script type="text/jsx" src="/scripts/jsx.js"></script> -->
+
+</body>
+</html>
