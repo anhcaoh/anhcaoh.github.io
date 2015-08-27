@@ -37,13 +37,15 @@ section article img:last-child{
 header{
 
 	position: fixed;
-	height: 66px;
-	line-height: 66px;
-	text-align: center;
 	width: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgb(238, 238, 238);
+	background-color: rgb(83, 191, 143);
+	color: #FFF;
+	text-align: center;
+	padding: 8px 0;
+	line-height: 36px;
+	height: 36px;
 }
 header span.title{
 	font-weight: 200;
@@ -55,12 +57,11 @@ footer{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	background-color: rgba(65, 185, 132, 0.9);
-	height: 50px;
-	line-height: 50px;
-	color: #FFF;
+	height: 40px;
+	line-height: 40px;
 	padding: 8px 0;
 	left: 0;
+	background-color: rgba(238, 238, 238, 0.9);
 }
 footer ul{
 margin: 0;
@@ -72,34 +73,23 @@ display: inline-block;
 cursor: pointer;
 font-size: x-large;
 border-radius: 8px;
-width: 50px;
+width: 40px;
 margin: 0 5%;
+height: 40px;
+line-height: 40px;
 }
 footer ul li:active{
 	background-color: red;
 }
-footer ul li:hover,
-footer ul li:active,
-footer ul li:focus,
-footer ul li.active,
-header i.fa:hover,
-header i.fa:active,
-header i.fa:focus{
-background-color: #FFF;
-color: rgba(65, 185, 132, 0.9);
-border-radius: 8px;
-}
-
 header i.fa{
 float: right;
-height: 50px;
-line-height: 50px;
-width: 50px;
+height: 40px;
+line-height: 40px;
+width: 40px;
 font-size: 20pt;
 border-radius: 8px;
-margin-right: 8px;
-cursor: pointer;
-margin-top: 8px;;
+margin-right: 16px;
+cursor: pointer;;
 
 }
 
@@ -132,3 +122,14 @@ overflow: hidden;;;
 	}
 }
 
+
+footer ul li:hover, footer ul li:active, footer ul li:focus, footer ul li.active{
+background-color: #FFF;
+color: rgba(65, 185, 132, 0.9);
+border-radius: 8px;;
+
+}
+header i.fa:hover, header i.fa:active, header i.fa:focus{
+opacity: .7;;
+
+}
