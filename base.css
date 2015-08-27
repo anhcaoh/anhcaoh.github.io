@@ -15,6 +15,22 @@ body{
 	touch-action: pan-y;
 }
 
+button[name='menu']{
+z-index: 99999;
+float: left;
+position: absolute;
+left: 0;
+background-color: #53BF8F;
+border: 0;
+width: 40px;
+height: 40px;
+line-height: 40px;
+margin-left: 8px;
+outline: none;
+color: #FFF;
+cursor: pointer;
+}
+
 section article{
 	background-color: #FFF;
 	border-radius: 2px;
@@ -46,6 +62,9 @@ header{
 	padding: 8px 0;
 	line-height: 36px;
 	height: 36px;
+	box-shadow: 0 2px 2px #878787;
+	-webkit-box-shadow: 0 2px 2px #878787;
+	-moz-box-shadow: 0 2px 2px #878787;
 }
 header span.title{
 	font-weight: 200;
@@ -129,7 +148,8 @@ color: rgba(65, 185, 132, 0.9);
 border-radius: 8px;;
 
 }
-header i.fa:hover, header i.fa:active, header i.fa:focus{
+
+header i.fa:hover, header i.fa:active, header i.fa:focus, button[name='menu']:hover, button[name='menu']:active, button[name='menu']:focus{
 opacity: .7;;
 
 }
