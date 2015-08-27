@@ -58,7 +58,7 @@ header{
 	width: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgb(83, 191, 143);
+	background-color: rgba(83, 191, 143, 0.9);
 	color: #FFF;
 	text-align: center;
 	padding: 8px 0;
@@ -109,7 +109,7 @@ line-height: 40px;
 width: 40px;
 font-size: 20pt;
 border-radius: 8px;
-margin-right: 16px;
+margin-right: 8px;
 cursor: pointer;;
 
 }
