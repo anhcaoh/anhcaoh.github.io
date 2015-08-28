@@ -10,6 +10,7 @@
 <meta name="robots" content="index, follow" />
 <meta name="DC.title" content="Xaleo Your Personalized Collections" />
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="animate.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!-- <script src="/libraries/react.js"></script> -->
 <!-- <script src="/libraries/JSXTransformer.js"></script> -->
@@ -17,9 +18,19 @@
 </head>
 
 <body>
-<section>
+<section class="mask">
+    <div class="absolutelyCenter animated zoomIn">Xaleo</div>
+</section>
+<section id="main">
 
 <button type="button" name="menu"><i class="fa fa-bars fa-2x"></i></button>
+<nav class="animated">
+    <ul>
+        <li id="close">Close</li>
+        <li>Settings</li>
+        <li>Sign Out</li>
+    </ul>
+</nav>
 <article id="collections" class="active">
 <header>
     <span class="title">Xaleo</span>
@@ -35,9 +46,7 @@
 <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_on_top_of_the_world.jpg" alt="">
 <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_palace.jpg" alt="">
 <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_and_puppy.jpg" alt=""><img data-original="/images/brenny_on_boat.jpg" alt="">
-
 <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_in_bangkok.jpg" alt=""><img data-original="/images/us_on_top_of_the_world.jpg" alt="">
-
 <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_thailand_tallest_hotel.jpg" alt="">
 <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_on_top_of_the_world.jpg" alt="">
 
@@ -74,16 +83,25 @@
 	</ul>
 </footer>
 
-<script src="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/libraries/jquery-1.11.3.min.js"></script>
-<script src="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/libraries/lazyload.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
 
 <script>
 
 $(function() {
+
     $("img").width("296").css("vertical-align","top").lazyload({
     	threshold: 500
     });
-    
+    $(".absolutelyCenter").ready(function(){
+        setTimeout(function(){
+            $(".mask").fadeOut();
+            $("#main").fadeIn(); 
+        },3000);
+    });
+    $("button[name='menu'], nav li#close").on("click", function(){
+        $("nav").toggleClass("slideInleft");
+    });
     $("footer ul li").on("click", function(){
     	$(".active").removeClass("active");
     	$(this).addClass("active");

@@ -16,7 +16,7 @@ body{
 }
 
 button[name='menu']{
-z-index: 99999;
+z-index: 1;
 float: left;
 position: fixed;
 left: 0;
@@ -156,3 +156,50 @@ opacity: .7;;
 	}
 }
 
+#main{
+	display: none;
+}
+ul{
+margin: 0;
+padding: 0;;
+
+}
+nav ul li{
+list-style: none;
+height: 50px;
+line-height: 50px;
+font-size: 16pt;
+text-align: left;
+cursor: pointer;
+padding-left: 24px;
+padding-right: 40px;;
+
+}
+nav{
+background-color: #FFF;
+position: absolute;
+z-index: 2;
+left: -100%;
+box-shadow: 0 2px 8px #5A5A5A;
+border-radius: 0 5px 5px 0;;;
+
+}
+nav ul li:hover{
+opacity: .8;
+background-color: #EFEFEF;;
+
+}
+.mask{
+position: absolute;
+width: 100%;
+background-color: #FFF;
+z-index: 1;
+top: 0;
+left: 0;
+bottom: 0;;;
+
+}
+nav.animated.slideInleft{
+left: 0;;
+
+}
