@@ -236,3 +236,12 @@ footer ul li:nth-child(3):hover, footer ul li:nth-child(3):active, footer ul li:
 border-radius: 0 16px;;
 
 }
+
+nav ul li:first-child:hover, nav ul li:first-child:active, nav ul li:first-child:focus{
+border-radius: 0 5px 0 0;;
+
+}
+nav ul li:last-child:hover, nav ul li:last-child:active, nav ul li:last-child:focus{
+border-radius: 0 0 5px 0;;
+
+}
