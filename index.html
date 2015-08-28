@@ -18,20 +18,24 @@
 </head>
 
 <body>
-<section class="mask">
-    <div class="absolutelyCenter animated zoomIn">Xaleo</div>
+<section class="overlay">
+    <div class="absolutelyCenter animated zoomIn splash">Xaleo</div>
 </section>
 <section id="main">
 
 <button type="button" name="menu"><i class="fa fa-bars fa-2x"></i></button>
+
 <nav class="animated">
+    <div class="mask"></div>
     <ul>
         <li id="close">Close</li>
         <li>Settings</li>
         <li>Sign Out</li>
     </ul>
 </nav>
+
 <article id="collections" class="active">
+
 <header>
     <span class="title">Xaleo</span>
     <i class="fa fa-plus"></i>
@@ -95,12 +99,13 @@ $(function() {
     });
     $(".absolutelyCenter").ready(function(){
         setTimeout(function(){
-            $(".mask").fadeOut();
+            $(".overlay").fadeOut();
             $("#main").fadeIn(); 
         },3000);
     });
-    $("button[name='menu'], nav li#close").on("click", function(){
+    $("button[name='menu'], nav li#close, .mask").on("click", function(){
         $("nav").toggleClass("slideInleft");
+        $(".mask").toggle();
     });
     $("footer ul li").on("click", function(){
     	$(".active").removeClass("active");
