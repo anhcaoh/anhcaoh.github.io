@@ -76,8 +76,8 @@ footer{
 	line-height: 50px;
 	padding: 0;
 	left: 0;
+	border-bottom: 4px solid #54C090;
 	background-color: rgba(238, 238, 238, 0.9);
-	border-bottom: 8px solid #54C090;
 }
 footer ul{
 margin: 0;
@@ -130,7 +130,7 @@ overflow: hidden;;;
 }
 
 footer ul li:hover, footer ul li:active, footer ul li:focus, footer ul li.active{
-border-radius: 30px 0;
+border-radius: 24px 0;
 background-color: #63C59A;
 color: rgb(255, 255, 255);;
 
@@ -151,14 +151,6 @@ opacity: .7;;
 
 #main{
 	display: none;
-}
-ul{
-margin: 0;
-padding: 0;
-z-index: 2;
-background-color: #FFF;
-border-radius: 0 5px 5px 0;;
-
 }
 nav ul li{
 list-style: none;
@@ -208,6 +200,7 @@ top: 0;
 left: 0;
 bottom: 0;
 right: 0;
+z-index: 1;
 
 
 }
@@ -233,7 +226,7 @@ font-weight: 600;;;
 
 
 footer ul li:nth-child(3):hover, footer ul li:nth-child(3):active, footer ul li:nth-child(3):focus, footer ul li:nth-child(3).active, footer ul li:nth-child(4):hover, footer ul li:nth-child(4):active, footer ul li:nth-child(4):focus, footer ul li:nth-child(4).active{
-border-radius: 0 16px;;
+border-radius: 0 24px;;
 
 }
 
@@ -243,5 +236,13 @@ border-radius: 0 5px 0 0;;
 }
 nav ul li:last-child:hover, nav ul li:last-child:active, nav ul li:last-child:focus{
 border-radius: 0 0 5px 0;;
+
+}
+nav ul{
+margin: 0;
+padding: 0;
+z-index: 2;
+background-color: #FFF;
+border-radius: 0 5px 5px 0;;
 
 }
