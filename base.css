@@ -247,25 +247,26 @@ background-color: #FFF;;;
 
 
 h2{
-height: 50px;
-line-height: 50px;
 color: inherit;
 font-weight: 300;
 margin: 0;
-padding: 16px 0;;
+padding: 16px;
+text-align: left;
+height: 50px;
+line-height: 50px;;
 
 }
 input, button{
 padding: 12px;
 font-size: 16pt;
-border-radius: 8px;
-border: 1px solid #C1C1C1;
+border: 0;
 outline: 0;
 margin: 16px;
 margin-bottom: 0;
 background-color: #FFF;
 color: rgba(0, 0, 0, 0.7);
-width: calc(100% - 64px);;
+width: calc(100% - 64px);
+border-bottom: 1px solid #C1C1C1;;
 
 }
 
@@ -274,7 +275,9 @@ width: initial;
 margin: 0;
 cursor: pointer;
 color: inherit;
-font-weight: inherit;;
+font-weight: inherit;
+border: 0;
+z-index: 999999;;
 }
 
 button i.fa-angle-left{
@@ -331,11 +334,7 @@ margin: 0 32px 0 16px;
 
 }
 button[name='back']{
-float: left;
-margin-left: 16px;
-margin-right: -108px;
-width: 92px;
-border: 0;;
+position: absolute;;
 
 }
 button[name='createUser'],
@@ -367,5 +366,17 @@ margin-left: 8px;;
 button[name='signIn']{
 color: #63C59A;
 border-color: #63C59A;;
+
+}
+
+
+
+
+h2 .title{
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+text-align: center;;
 
 }
