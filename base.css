@@ -266,7 +266,8 @@ margin-bottom: 0;
 background-color: #FFF;
 color: rgba(0, 0, 0, 0.7);
 width: calc(100% - 64px);
-border-bottom: 1px solid #C1C1C1;;
+border-bottom: 1px solid #C1C1C1;
+border-radius: 0;;
 
 }
 
