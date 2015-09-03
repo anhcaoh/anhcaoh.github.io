@@ -229,7 +229,10 @@ margin: 0;
 padding: 0;
 z-index: 2;
 height: inherit;
-background-color: #FFF;;;
+background-color: #FFF;
+-webkit-user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;;;
 
 }
 
@@ -276,7 +279,10 @@ color: inherit;
 font-weight: inherit;
 border: 0;
 z-index: 999999;
-border-radius: 8px;;;
+border-radius: 8px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;;;;
 }
 
 button i.fa-angle-left{
@@ -375,3 +381,8 @@ border: 1px solid #63C59A;;
 
 }
 
+
+::selection{
+background-color: transparent;;
+
+}
