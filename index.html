@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Xaleo Collections</title>
+<title>Xaleo</title>
 <meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta name="copyright" content="xaleo is the yet-registered trademark of xaleoeo, Inc." />
@@ -12,18 +12,45 @@
 <link rel="stylesheet" type="text/css" href="base.css" />
 <link rel="stylesheet" type="text/css" href="animate.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+<script>
+
+</script>
 <!-- <script src="/libraries/react.js"></script> -->
 <!-- <script src="/libraries/JSXTransformer.js"></script> -->
 
 </head>
 
 <body>
-<section class="overlay">
-    <div class="absolutelyCenter animated zoomIn splash">Xaleo</div>
+<section id="startup">
+    <div class="absolutelyCenter">
+        <span class="branding"><b>Xa</b>leo</span>
+        <div class="frontdoor">
+            <button type="button" name="createNew" class="createNew">Create New</button>
+            <span class="pipe"></span>
+            <button type="button" name="signIn" class="signIn">Sign In</button>
+        </div>
+    </div>
+    
+    <form id="signIn" name="signIn" autocomplete="off">
+        <h2><button type="button" name="back" class="back"><i class="fa fa-angle-left"></i><span>Back</span></button><span>Hey, I'm back</span></h2>
+        <input type="email" name="email" placeholder="Enter e-mail (username)" autofocus required/>
+        <input type="password" name="password" placeholder="Enter password" required/>
+        <button type="button" name="signInNow">Sign In <i class="fa fa-angle-right"></i></button>
+    </form>
+
+    <form id="createNew" name="createNew" autocomplete="off">
+        <h2><button type="button" name="back" class="back"><i class="fa fa-angle-left"></i><span>Back</span></button><span>I am new here</span></h2>
+        <input type="email" name="email" placeholder="Enter e-mail (username)" autofocus required />
+        <input type="password" name="password" placeholder="Enter password" required />
+        <input type="password" name="passwordAgain" placeholder="Enter password again" required />
+        <button type="button" name="createUser">Create My Username</button>
+    </form>
+
 </section>
 <section id="main">
 
-<button type="button" name="menu"><i class="fa fa-bars fa-2x"></i></button>
+<button type="button" name="menu"><i class="fa fa-bars"></i></button>
 
 <nav class="animated">
     <div class="mask"></div>
@@ -34,12 +61,11 @@
     </ul>
 </nav>
 
-<article id="collections" class="active">
-
-<header>
+<article id="collections">
+    <header>
     <span class="title">Xaleo</span>
     <i class="fa fa-plus"></i>
-</header>
+    </header>
 <div>
 <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny.jpg" alt="Thailand 2015">
 <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_and_brenny.jpg" alt="Thailand 2015">
@@ -70,53 +96,23 @@
 </header>
 <div class="absolutelyCenter">Sample</div>
 </article>
-<article id="profile">
+<article id="profile" class="active">
 <header>
 <span class="title">Profile</span>
 <i class="fa fa-user"></i>
 </header>
-<div class="absolutelyCenter">Sample</div>
 </article>
 </section>
 <footer>
 	<ul>
-		<li name="collections" class="active" ><i class="fa fa-home"></i></li>
-		<li name="camera"><i class="fa fa-camera"></i></li>
-		<li name="discover"><i class="fa fa-search"></i></li>
-		<li name="profile"><i class="fa fa-user"></i></li>
+		<li name="collections"><i class="fa fa-home"></i></li><li name="camera"><i class="fa fa-camera"></i></li><li name="discover"><i class="fa fa-search"></i></li><li name="profile" class="active"><i class="fa fa-user"></i></li>
 	</ul>
 </footer>
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
 
-<script>
-
-$(function() {
-
-    $("img").width("296").css("vertical-align","top").lazyload({
-    	threshold: 500
-    });
-    $(".absolutelyCenter").ready(function(){
-        setTimeout(function(){
-            $(".overlay").fadeOut();
-            $("#main").fadeIn(); 
-        },3000);
-    });
-    $("button[name='menu'], nav li#close, .mask").on("click", function(){
-        $("nav").toggleClass("slideInleft");
-        $(".mask").toggle();
-    });
-    $("footer ul li").on("click", function(){
-    	$(".active").removeClass("active");
-    	$(this).addClass("active");
-    	var name = "#" + $(this).attr("name");
-    	$("article" + name).addClass("active");
-    });
-
-});
-</script>
-<!-- <script type="text/jsx" src="/scripts/jsx.js"></script> -->
+<script src="/scripts/init.js"></script>
 
 </body>
 </html>

@@ -1,22 +1,25 @@
 
 html{
-background-color: rgb(238, 238, 238);
+background-color: rgb(255, 255, 255);
 text-align: center;
 font-family: "Helvetica";
-color: rgba(65, 185, 132, 0.9);
 width: 100%;
 height: 100%;
--webkit-font-smoothing: antialiased;;
+-webkit-font-smoothing: antialiased;
+color: #C1C1C1;
+font-weight: 300;;
 
 }
 
 body{
 
 	touch-action: pan-y;
+	height: 100%;
+	margin: 0;
 }
 
 button[name='menu']{
-z-index: 1;
+z-index: 3;
 float: left;
 position: fixed;
 left: 0;
@@ -24,22 +27,19 @@ background-color: transparent;
 border: 0;
 width: 40px;
 height: 40px;
-line-height: 45px;
+line-height: 40px;
 outline: none;
 color: #FFF;
 cursor: pointer;
 padding: 0;
 margin: 0;
-margin-left: 8px;
+margin-left: 16px;
+margin-top: 8px;
 }
 
 section article{
-	background-color: #FFF;
 	border-radius: 2px;
-	margin-bottom: 50px;
-	height: 100%;
-	position: absolute;
-	width: calc(100% - 16px);;
+	height: 100%;;
 }
 section article:not(.active){
 	display: none;
@@ -54,19 +54,18 @@ section article img:last-child{
 }
 header{
 
-	position: fixed;
 	width: 100%;
-	top: 0;
-	left: 0;
 	background-color: rgba(83, 191, 143, 0.9);
 	color: #FFF;
 	text-align: center;
 	padding: 8px 0;
-	line-height: 36px;
-	height: 36px;
+	line-height: 40px;
+	height: 40px;
 	box-shadow: 0 2px 2px rgba(53, 52, 52, 0.5);
 	-webkit-box-shadow: 0 2px 2px rgba(53, 52, 52, 0.5);
 	-moz-box-shadow: 0 2px 2px rgba(53, 52, 52, 0.5);
+	z-index: 2;
+	position: relative;
 }
 footer{
 	position: fixed;
@@ -76,8 +75,7 @@ footer{
 	line-height: 50px;
 	padding: 0;
 	left: 0;
-	border-bottom: 4px solid #54C090;
-	background-color: rgba(238, 238, 238, 0.9);
+	background-color: #FFF;
 }
 footer ul{
 margin: 0;
@@ -86,12 +84,12 @@ height: 50px;
 }
 footer ul li{
 list-style: none;
-display: inline-block;
-cursor: pointer;
 font-size: x-large;
-width: 50px;
+width: 25%;
 height: 50px;
-line-height: 50px;;
+line-height: 50px;
+cursor: pointer;
+display: inline-block;;
 }
 footer ul li:active{
 }
@@ -102,13 +100,13 @@ line-height: 40px;
 width: 40px;
 font-size: 20pt;
 border-radius: 8px;
-margin-right: 8px;
-cursor: pointer;;
+cursor: pointer;
+margin-top: 4px;
+margin-right: 8px;;
 
 }
 
 article div{
-margin: 66px auto;
 
 }
 .scrollable{
@@ -121,16 +119,19 @@ overflow-y: scroll;;
 top: 0;
 bottom: 0;
 position: absolute;
-width: 100%;
-line-height: 50px;
-height: 50px;
 margin: auto;
-overflow: hidden;;;
-
+overflow: hidden;
+z-index: 0;
+left: 0;
+right: 0;
+height: 250px;
+line-height: 250px;
 }
 
-footer ul li:hover, footer ul li:active, footer ul li:focus, footer ul li.active{
-border-radius: 24px 0;
+footer ul li:hover,
+footer ul li:active,
+footer ul li:focus,
+footer ul li.active{
 background-color: #63C59A;
 color: rgb(255, 255, 255);;
 
@@ -151,6 +152,8 @@ opacity: .7;;
 
 #main{
 	display: none;
+	height: 100%;
+	position: relative;;
 }
 nav ul li{
 list-style: none;
@@ -166,22 +169,25 @@ padding-right: 40px;;;
 nav{
 background-color: #FFF;
 position: fixed;
-z-index: 2;
+z-index: 3;
 left: -100%;
 box-shadow: 0 2px 8px #5A5A5A;
 border-radius: 0 5px 5px 0;;;
--webkit-transition: all 50ms;
--o-transition: all 50ms;
-transition: all 50ms;
+-webkit-transition: all 25ms;
+-o-transition: all 25ms;
+transition: all 25ms;
+top: 2%;
+width: 98%;
+height: 100%;
 }
 
 nav.animated.slideInleft{
-	left: 0;
-	-webkit-transition-timing-function: linear;
-	transition-timing-function: linear;
-	-webkit-transition: all 50ms;
+	-webkit-transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+	transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+	-webkit-transition: all 25ms;
 	-0-transition: all 50ms;
-	transition: all 50ms;
+	transition: all 25ms;
+	left: 0;;
 
 }
 
@@ -200,7 +206,7 @@ top: 0;
 left: 0;
 bottom: 0;
 right: 0;
-z-index: 1;
+z-index: 3;
 
 
 }
@@ -208,6 +214,7 @@ z-index: 1;
 	background-color: rgba(0, 0, 0, 0.5);
 	display: none;
 	z-index: -1;
+	transition: all 0s;
 }
 .splash, header span.title{
 font-weight: 200;
@@ -216,17 +223,7 @@ margin-left: 58px;;
 
 }
 
-.splash{
-margin-left: 0;
-font-size: xx-large;
-font-weight: 600;;;
-
-}
-
-
-
-footer ul li:nth-child(3):hover, footer ul li:nth-child(3):active, footer ul li:nth-child(3):focus, footer ul li:nth-child(3).active, footer ul li:nth-child(4):hover, footer ul li:nth-child(4):active, footer ul li:nth-child(4):focus, footer ul li:nth-child(4).active{
-border-radius: 0 24px;;
+footer ul li:nth-child(3):hover, footer ul li:nth-child(3):active, footer ul li:nth-child(3):focus, footer ul li:nth-child(3).active, footer ul li:nth-child(4):hover, footer ul li:nth-child(4):active, footer ul li:nth-child(4):focus, footer ul li:nth-child(4).active{;
 
 }
 
@@ -242,7 +239,128 @@ nav ul{
 margin: 0;
 padding: 0;
 z-index: 2;
+border-radius: 0 5px 5px 0;
+height: inherit;
+background-color: #FFF;;;
+
+}
+
+
+h2{
+height: 50px;
+line-height: 50px;
+color: inherit;
+font-weight: 300;
+margin: 0;
+padding: 16px 0;;
+
+}
+input, button{
+padding: 12px;
+font-size: 16pt;
+border-radius: 8px;
+border: 1px solid #C1C1C1;
+outline: 0;
+margin: 16px;
+margin-bottom: 0;
 background-color: #FFF;
-border-radius: 0 5px 5px 0;;
+color: rgba(0, 0, 0, 0.7);
+width: calc(100% - 64px);;
+
+}
+
+button{
+width: initial;
+margin: 0;
+cursor: pointer;
+color: inherit;
+font-weight: inherit;;
+}
+
+button i.fa-angle-left{
+margin-right: 8px;;
+}
+
+input:focus{
+border-color: #63C59A;
+color: #63C59A;
+}
+button:hover, button:active, button:focus{
+opacity: .7;;
+
+}
+.branding{
+vertical-align: top;
+position: relative;
+z-index: 2;
+display: block;
+clear: both;
+cursor: ne-resize;
+line-height: 50px;
+font-size: 16pt;;;
+
+}
+section#startup{
+position: absolute;
+z-index: 2;
+background-color: #FFF;
+height: 100%;
+width: 100%;;
+
+}
+section#startup form{
+height: 100%;
+position: relative;
+display: none;
+z-index: 9;
+background-color: #FFF;;
+
+}
+.frontdoor{
+position: absolute;
+width: 100%;
+top: 0;
+vertical-align: bottom;;
+
+}
+
+.pipe:after{
+content: "|";
+opacity: .5;
+margin: 0 16px;
+
+}
+button[name='back']{
+float: left;
+margin-left: 16px;
+margin-right: -108px;
+width: 92px;
+border: 0;;
+
+}
+button[name='createUser'],
+button[name='createNew'],
+button[name='signInNow']{
+cursor: pointer;
+color: #63C59A;
+position: relative;
+margin: 32px auto;
+border: 0;;
+
+}
+.round{
+width: 55px;
+height: 55px;
+border-radius: 50%;
+display: block;
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+line-height: 56px;;
+
+}
+button i.fa-angle-right{
+margin-left: 8px;;
 
 }
