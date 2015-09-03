@@ -19,6 +19,23 @@ body{
 	margin: 0;
 }
 
+::selection{
+background-color: transparent;;
+}
+::-webkit-input-placeholder{
+font-weight: 300;
+opacity: .7;;
+
+}
+::-moz-placeholder{
+font-weight: 300;
+opacity: .7;;
+}
+:-ms-input-placeholder{
+font-weight: 300;
+opacity: .7;;
+}
+
 button[name='menu']{
 z-index: 3;
 float: left;
@@ -381,8 +398,3 @@ border: 1px solid #63C59A;;
 
 }
 
-
-::selection{
-background-color: transparent;;
-
-}
