@@ -90,11 +90,11 @@ $(function() {
     	var element = event.currentTarget;
 
     	if ( $(element).is(".signIn") ){
-    		$("form[name='signIn']").show();
+    		$("form[name='signIn']").addClass("onCanvas");
     	} else if ( $(element).is(".createNew") ){
-    		$("form[name='createNew']").show();
+    		$("form[name='createNew']").addClass("onCanvas");
     	} else if ( $(element).is(".back") ){
-    		$("#startup form").hide();
+    		$("#startup form").removeClass("onCanvas");
     	} else { return }
     });
 
