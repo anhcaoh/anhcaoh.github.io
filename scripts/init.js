@@ -49,7 +49,7 @@ Parse.initialize("kmruS7yf8yy5zTkjsBFq3O9Ixmj2inJIvySPeEjr", "hbKSasn2habkodoFNQ
     Xaleo.User.creatingUser = function(){
 		
 		$("button[name='createUser']").on("click", function(){
-
+			var newUser = {};
 	        newUser.username = $("#createNew input[name='email']").val();
 	        newUser.password = $("#createNew input[name='password']").val();
 	        newUser.passwordAgain = $("#createNew input[name='passwordAgain']").val();
