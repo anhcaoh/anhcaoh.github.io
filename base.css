@@ -143,11 +143,6 @@ opacity: .7;;
 
 }
 
-@media (max-width: 320px){
-
-
-}
-
 #main{
 	display: none;
 	height: 100%;
@@ -371,4 +366,12 @@ border: 1px solid #63C59A;;
 
 }
 
+
+@media (max-width: 320px){
+
+	.pipe:after{
+		margin: 0 16px 0 0px;
+	}
+
+}
 
