@@ -71,10 +71,17 @@ $(function() {
 	    Parse.User.logIn( existingUser.username, existingUser.password,{
 	    	success: function(user){
 	    		$("#startup").hide();
+	    		$("#main").show();
 	    	},
 	    	error: function(user, error){
 	    		console.log(error);
 	    	}
+	    });
+    };
+    Xaleo.User.signOut = function(){
+	    Parse.User.logOut().then(function(){
+	    	$("#main").hide();
+	    	$("#startup").show();
 	    });
     };
 
@@ -100,6 +107,9 @@ $(function() {
     	existingUser.username = $("#signIn input[name='email']").val();
 	    existingUser.password = $("#signIn input[name='password']").val();
     	Xaleo.User.signIn(existingUser);
+    });
+    $("nav ul li#sign-out").on("click", function(){
+    	Xaleo.User.signOut();
     });
 
     $("img").width("296").css("vertical-align","top").lazyload({});

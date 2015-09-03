@@ -7,7 +7,8 @@ width: 100%;
 height: 100%;
 -webkit-font-smoothing: antialiased;
 color: rgb(173, 173, 173);
-font-weight: 300;;
+font-weight: 300;
+font-size: 18pt;;
 
 }
 
@@ -144,10 +145,7 @@ opacity: .7;;
 
 @media (max-width: 320px){
 
-	footer ul li{
 
-		margin: 0 4%;
-	}
 }
 
 #main{
@@ -157,13 +155,11 @@ opacity: .7;;
 }
 nav ul li{
 list-style: none;
-height: 50px;
-line-height: 50px;
-font-size: 16pt;
 text-align: left;
 cursor: pointer;
-padding-left: 24px;
-padding-right: 40px;;;
+padding-left: 32px;
+height: 50px;
+line-height: 50px;;;
 
 }
 nav{
@@ -171,13 +167,11 @@ background-color: #FFF;
 position: fixed;
 z-index: 3;
 left: -100%;
-box-shadow: 0 2px 8px #5A5A5A;
-border-radius: 0 5px 5px 0;;;
+border-radius: 0;;;
 -webkit-transition: all 25ms;
 -o-transition: all 25ms;
 transition: all 25ms;
-top: 2%;
-width: 98%;
+width: 90%;
 height: 100%;
 }
 
@@ -239,7 +233,6 @@ nav ul{
 margin: 0;
 padding: 0;
 z-index: 2;
-border-radius: 0 5px 5px 0;
 height: inherit;
 background-color: #FFF;;;
 
@@ -253,7 +246,8 @@ margin: 0;
 padding: 8px;
 text-align: left;
 height: 50px;
-line-height: 50px;;
+line-height: 50px;
+font-size: inherit;;
 
 }
 h2 .title{
@@ -267,7 +261,6 @@ margin-right: 16px;;
 }
 input, button{
 padding: 12px;
-font-size: 18pt;
 border: 0;
 outline: 0;
 margin: 16px 8px;
@@ -275,7 +268,8 @@ background-color: #FFF;
 color: rgba(0, 0, 0, 0.7);
 width: calc(100% - 40px);
 border-bottom: 1px solid #C1C1C1;
-border-radius: 3px;;
+border-radius: 0;
+font-size: 18pt;;
 
 }
 
@@ -309,8 +303,7 @@ z-index: 2;
 display: block;
 clear: both;
 cursor: ne-resize;
-line-height: 50px;
-font-size: 16pt;;;
+line-height: 50px;;;
 
 }
 section#startup{
