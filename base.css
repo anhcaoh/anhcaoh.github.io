@@ -349,7 +349,7 @@ vertical-align: bottom;;
 
 .pipe:after{
 content: "|";
-opacity: .5;
+opacity: .3;
 margin: 0 32px 0 16px;
 
 }
