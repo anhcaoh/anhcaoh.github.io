@@ -3,7 +3,7 @@
 $(function() {
 
     
-Parse.initialize("kmruS7yf8yy5zTkjsBFq3O9Ixmj2inJIvySPeEjr", "hbKSasn2habkodoFNQBUK4mJ8mtXR4DZluvDrRK0");
+	Parse.initialize("kmruS7yf8yy5zTkjsBFq3O9Ixmj2inJIvySPeEjr", "hbKSasn2habkodoFNQBUK4mJ8mtXR4DZluvDrRK0");
 
 	var Xaleo = {
 		User : { 
@@ -39,7 +39,6 @@ Parse.initialize("kmruS7yf8yy5zTkjsBFq3O9Ixmj2inJIvySPeEjr", "hbKSasn2habkodoFNQ
 	        username : newUser.username,
 	        password : newUser.password,
 	        email : newUser.username,
-	        emailverified : true
 
 	    }).then(function(response){
 	    	$("form[name='signIn']").show();
@@ -69,11 +68,11 @@ Parse.initialize("kmruS7yf8yy5zTkjsBFq3O9Ixmj2inJIvySPeEjr", "hbKSasn2habkodoFNQ
     };
     Xaleo.User.signIn = function( existingUser ){
     	var user = new Parse.User(existingUser);
-	    Xaleo.User.ParseUser.logIn(user,{
-	    	success: function(){
-	    		console.log("In!");
+	    Parse.User.logIn( existingUser.username, existingUser.password,{
+	    	success: function(user){
+	    		$("#startup").hide();
 	    	},
-	    	error: function(error){
+	    	error: function(user, error){
 	    		console.log(error);
 	    	}
 	    });
