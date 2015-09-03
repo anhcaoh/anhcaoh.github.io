@@ -256,9 +256,18 @@ height: 50px;
 line-height: 50px;;
 
 }
+h2 .title{
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+text-align: right;
+margin-right: 16px;;
+
+}
 input, button{
 padding: 12px;
-font-size: 16pt;
+font-size: 18pt;
 border: 0;
 outline: 0;
 margin: 16px 8px;
@@ -288,7 +297,6 @@ margin-right: 8px;;
 input:focus{
 border-color: #63C59A;
 color: #63C59A;
-border-left: 2px solid;
 }
 button:hover, button:active, button:focus{
 opacity: .7;;
@@ -371,19 +379,3 @@ border: 1px solid #63C59A;;
 }
 
 
-
-
-h2 .title{
-position: absolute;
-left: 0;
-right: 0;
-margin: auto;
-text-align: right;
-margin-right: 16px;;
-
-}
-input{
-border-left: 2px solid transparent;
-font-size: 18pt;;
-
-}
