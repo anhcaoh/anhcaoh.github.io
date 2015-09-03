@@ -365,7 +365,8 @@ margin-left: 8px;;
 }
 button[name='signIn']{
 color: #63C59A;
-border-color: #63C59A;;
+border: 1px solid #63C59A;
+border-radius: 8px;;
 
 }
 
