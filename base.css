@@ -6,7 +6,7 @@ font-family: "Helvetica";
 width: 100%;
 height: 100%;
 -webkit-font-smoothing: antialiased;
-color: rgb(173, 173, 173);
+color: rgba(0, 0, 0, 0.7);
 font-weight: 300;
 font-size: 18pt;;
 
@@ -340,7 +340,8 @@ background-color: #FFF;
 left: -1000%;
 transition: all 0.25s;
 top: 0;
-width: 100%;;;
+width: 80%;
+margin: 0 10%;;;
 
 }
 .frontdoor{
@@ -352,24 +353,14 @@ vertical-align: bottom;;
 }
 
 .pipe:after{
-content: "|";
-opacity: .3;
-margin: 0 32px 0 16px;
+content: "or";
+opacity: .7;
+margin: 0 16px;
+font-size: smaller;
 
 }
 button[name='back']{
-position: absolute;;;
-
-}
-button[name='createUser'],
-button[name='createNew'],
-button[name='signInNow']{
-cursor: pointer;
-color: #63C59A;
-position: relative;
-margin: 32px auto;
-border: 0;;
-
+position: absolute;
 }
 .round{
 width: 55px;
@@ -387,9 +378,7 @@ button i.fa-angle-right{
 margin-left: 8px;;
 
 }
-button[name='signIn']{
-color: #63C59A;
-border: 1px solid #63C59A;;
+button[name='signIn']{;
 
 }
 
@@ -407,5 +396,13 @@ border: 1px solid #63C59A;;
 section#startup .onCanvas{
 left: 0;
 transition: all 0.25s;;
+
+}
+button[name='createUser'], button[name='createNew'], button[name='signIn']{
+cursor: pointer;
+color: #63C59A;
+position: relative;
+margin: 32px auto;
+border: 0;;
 
 }
