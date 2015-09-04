@@ -114,8 +114,8 @@ $(function() {
 
     $("img").width("296").css("vertical-align","top").lazyload({});
     $("button[name='menu'], nav li#close, .mask").on("click", function(){
-        $("nav").toggleClass("slideInleft");
-        $(".mask").toggle();
+        $("nav").toggleClass("onCanvas");
+        // $(".mask").toggle();
     });
     $("footer ul li").on("click", function(){
     	$(".active").removeClass("active");
