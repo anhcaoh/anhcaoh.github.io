@@ -317,7 +317,7 @@ width: 100%;;
 
 }
 section#startup form{
-height: 100%;
+height: 50%;
 position: absolute;
 background-color: #FFF;
 left: -1000%;
@@ -370,7 +370,6 @@ button[name='signIn']{;
 @media (max-width: 320px){
 
 	.pipe:after{
-		margin: 0 16px 0 0px;
 	}
 
 }
