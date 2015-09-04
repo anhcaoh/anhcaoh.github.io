@@ -8,7 +8,7 @@ height: 100%;
 -webkit-font-smoothing: antialiased;
 color: rgba(0, 0, 0, 0.7);
 font-weight: 300;
-font-size: 18pt;;
+font-size: 14pt;;
 
 }
 
@@ -249,33 +249,26 @@ h2{
 color: inherit;
 font-weight: 300;
 margin: 0;
-padding: 8px;
-text-align: left;
-height: 50px;
-line-height: 50px;
-font-size: inherit;;
+text-align: center;
+font-size: inherit;
+height: 38px;
+line-height: 38px;;
 
 }
-h2 .title{
-position: absolute;
-left: 0;
-right: 0;
-margin: auto;
-text-align: right;
-margin-right: 16px;;
+h2 .title{;
 
 }
 input, button{
-padding: 12px;
+padding: 8px;
 border: 0;
 outline: 0;
-margin: 16px 8px;
+margin: 8px;
 background-color: #FFF;
 color: rgba(0, 0, 0, 0.7);
 width: calc(100% - 40px);
 border-bottom: 1px solid #C1C1C1;
 border-radius: 0;
-font-size: 18pt;;
+font-size: inherit;;
 
 }
 
@@ -286,7 +279,7 @@ cursor: pointer;
 color: inherit;
 font-weight: inherit;
 border: 0;
-z-index: 999999;
+z-index: 999;
 border-radius: 8px;
 -webkit-user-select: none;
 -moz-user-select: none;
@@ -331,7 +324,7 @@ left: -1000%;
 transition: all 0.25s;
 top: 0;
 width: 80%;
-margin: 0 10%;;;
+padding: 0 10%;;;
 
 }
 .frontdoor{
@@ -351,6 +344,7 @@ font-size: smaller;
 }
 button[name='back']{
 position: absolute;
+left: 8px;
 }
 .round{
 width: 55px;
@@ -395,7 +389,7 @@ button[name='signIn']{
 cursor: pointer;
 color: #63C59A;
 position: relative;
-margin: 32px auto;
+margin: 16px auto;
 border: 0;;
 
 }
