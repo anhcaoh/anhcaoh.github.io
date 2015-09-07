@@ -248,25 +248,23 @@ background-color: #FFF;
 
 
 h2{
+margin: 0;
+text-align: center;
 color: inherit;
 font-weight: 300;
-margin: 0;
 padding: 8px;
-text-align: center;
-height: 50px;
-line-height: 50px;
-font-size: inherit;;
+font-size: 16pt;;;
 
 }
 h2 .title{;
 
 }
 input, button{
-padding: 12px;
+padding: 8px;
 border: 0;
 outline: 0;
 margin: 4px;
-width: calc(100% - 40px);
+width: calc(100% - 24px);
 font-size: 16pt;
 border-radius: 3px;
 color: inherit;;
