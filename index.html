@@ -35,20 +35,26 @@
     </div>
     
     <form id="signIn" name="signIn" autocomplete="off">
-        <h2><button type="button" name="back" class="back"><i class="fa fa-angle-left"></i><span>Back</span></button><span class="title">Welcome Back!</span></h2>
+        <h2><span class="title">Welcome Back!</span></h2>
         <input type="email" name="email" placeholder="Enter e-mail (username)" autofocus required/>
         <input type="password" name="password" placeholder="Enter password" required/>
+        <div class="buttons-wrapper">
         <button type="button" name="signInNow">Sign In <i class="fa fa-angle-right"></i></button>
+        <button type="button" name="back" class="back"><i class="fa fa-angle-left"></i><span>Back</span></button>
+        </div>
     </form>
 
+
     <form id="createNew" name="createNew" autocomplete="off">
-        <h2><button type="button" name="back" class="back"><i class="fa fa-angle-left"></i><span>Back</span></button><span class="title">Welcome!</span></h2>
+        <h2><span class="title">Creating User Account...</span></h2>
         <input type="email" name="email" placeholder="Enter e-mail (username)" autofocus required />
         <input type="password" name="password" placeholder="Enter password" required />
         <input type="password" name="passwordAgain" placeholder="Enter password again" required />
-        <button type="button" name="createUser">Create My Username</button>
+        <div class="buttons-wrapper">
+        <button type="button" name="createUser">Create My Account</button>
+        <button type="button" name="back" class="back"><i class="fa fa-angle-left"></i><span>Back</span></button>
+        </div>
     </form>
-
 </section>
 <section id="main">
 
