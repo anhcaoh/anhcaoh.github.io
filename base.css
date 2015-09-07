@@ -13,13 +13,6 @@ background-color: rgba(29, 202, 105, 0.89);;
 
 }
 
-body{
-
-	touch-action: pan-y;
-	margin: 0;
-	overflow: hidden;
-}
-
 ::selection{
 background-color: rgba(83, 191, 143, 0.9);
 color: #FFF;
@@ -392,5 +385,11 @@ color: #35CF79;;
 bottom: 0;
 position: absolute;
 width: calc(100% - 16px);;
+
+}
+body, html{
+touch-action: pan-y;
+margin: 0;
+overflow: hidden;;
 
 }
