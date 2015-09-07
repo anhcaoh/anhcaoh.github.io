@@ -127,7 +127,7 @@ $(function() {
     	$("article" + name).addClass("active");
     });
     $("input").on("focus", function(event) {
-        $("form").css("height","50%");
+        // $("form").css("height","50%");
         console.log("form");
         event.preventDefault();
         event.stopPropagation();
