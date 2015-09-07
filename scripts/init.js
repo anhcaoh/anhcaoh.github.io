@@ -131,9 +131,6 @@ $(function() {
         event.stopPropagation();
     });
 
-
-$('input,select').bind('focus',function(e) { 
-  $('html, body').animate({scrollTop:0,scrollLeft:0}); 
-});
+    $(document).on("touchmove", function(event) { event.preventDefault() });
 
 });
