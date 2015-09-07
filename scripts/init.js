@@ -134,4 +134,9 @@ $(function() {
         window.scrollTo(0,0); //the second 0 marks the Y scroll pos. Setting this to i.e. 100 will push the screen up by 100px. 
     });
 
+    $(function() {
+        $(document).on("touchmove", function(evt) { evt.preventDefault() });
+        $(document).on("touchmove", ".scrollable", function(evt) { evt.stopPropagation() });
+    });
+
 });
