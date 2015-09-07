@@ -133,7 +133,7 @@ $(function() {
 
 
 $('input,select').bind('focus',function(e) { 
-  $('html, body').animate({scrollTop:0,scrollLeft:0}, 'slow'); 
+  $('html, body').animate({scrollTop:0,scrollLeft:0}); 
 });
 
 });
