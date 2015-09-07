@@ -244,8 +244,10 @@ margin: 0;
 text-align: center;
 color: inherit;
 font-weight: 300;
-padding: 8px;
-font-size: 16pt;;;
+font-size: 16pt;
+width: 50%;
+float: left;
+line-height: 50px;;;
 
 }
 h2 .title{;
@@ -256,7 +258,7 @@ padding: 8px;
 border: 0;
 outline: 0;
 margin: 4px;
-width: calc(100% - 24px);
+width: calc(50% - 24px);
 font-size: 16pt;
 border-radius: 3px;
 color: inherit;;
@@ -378,7 +380,7 @@ position: fixed;
 
 }
 input{
-color: #35CF79;;
+color: #35CF79;;;;;
 
 }
 .buttons-wrapper{
@@ -395,6 +397,6 @@ overflow: hidden;;
 }
 input[type="password"]{
 width: calc(50% - 24px);
-float: left;;
+float: right;;
 
 }
