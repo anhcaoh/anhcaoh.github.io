@@ -131,10 +131,9 @@ $(function() {
         event.stopPropagation();
     });
 
-    $(document).on("touchmove", function(event) { event.preventDefault() });
-var currentScrollPosition = 0;
-$(document).scroll(function(){
-    currentScrollPosition = $(this).scrollTop();
+
+$('input,select').bind('focus',function(e) { 
+  $('html, body').animate({scrollTop:0,scrollLeft:0}, 'slow'); 
 });
 
 });
