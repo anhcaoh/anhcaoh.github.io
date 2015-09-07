@@ -335,7 +335,7 @@ vertical-align: bottom;;
 
 .pipe:after{
 content: "or";
-margin: 0 16px;
+margin: 0 8px;
 font-size: smaller;
 
 }
@@ -359,17 +359,13 @@ button i.fa-angle-right{
 margin-left: 8px;;
 
 }
-button[name='signIn']{;
-
-}
-
 
 @media (max-width: 320px){
 
 	.pipe:after{
-		margin: 0 16px 0 0px;
+		margin: 0;
+		display: none;;
 	}
-
 }
 
 
@@ -387,7 +383,7 @@ button[name='createNew'],
 button[name='signIn']{
 cursor: pointer;
 position: relative;
-border: 0;;
+border: 0;
 
 }
 .onCanvas .mask{
