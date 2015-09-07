@@ -127,6 +127,8 @@ $(function() {
     	$("article" + name).addClass("active");
     });
     $("input").on("focus", function(event) {
+        $("form").css("height","50%");
+        console.log("form");
         event.preventDefault();
         event.stopPropagation();
         window.scrollTo(0,0); //the second 0 marks the Y scroll pos. Setting this to i.e. 100 will push the screen up by 100px. 
