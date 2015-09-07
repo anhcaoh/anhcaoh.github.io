@@ -94,10 +94,13 @@ $(function() {
 
     	if ( $(element).is(".signIn") ){
     		$("form[name='signIn']").addClass("onCanvas");
+            $(".absolutelyCenter").hide();
     	} else if ( $(element).is(".createNew") ){
     		$("form[name='createNew']").addClass("onCanvas");
+            $(".absolutelyCenter").hide();
     	} else if ( $(element).is(".back") ){
     		$("#startup form").removeClass("onCanvas");
+            $(".absolutelyCenter").show();
     	} else { return }
     });
     $("button[name='createNew']").on("click", function(){
