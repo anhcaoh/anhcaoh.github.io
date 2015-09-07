@@ -33,7 +33,7 @@ $(function() {
     };
 
 	Xaleo.User.createUser = function( newUser ){
-	    
+
 	    Xaleo.User.ParseUser.save({
 	        
 	        username : newUser.username,
@@ -47,6 +47,7 @@ $(function() {
 
     Xaleo.User.creatingUser = function(){
 		
+        $("#create-user input[name='email']").focus();
 		$("button[name='createUser']").on("click", function(){
 			var newUser = {};
 	        newUser.username = $("#createNew input[name='email']").val();
@@ -62,11 +63,14 @@ $(function() {
     };
     Xaleo.User.signingIn = function(){
 
+        $("#sign-in input[name='email']").focus();
+
     	var existingUser = {};
-    	existingUser.username = $("#signIn input[name='email']").val();
-	    existingUser.password = $("#signIn input[name='password']").val();
+    	existingUser.username = $("#sign-in input[name='email']").val();
+	    existingUser.password = $("#sign-in input[name='password']").val();
     };
     Xaleo.User.signIn = function( existingUser ){
+
     	var user = new Parse.User(existingUser);
 	    Parse.User.logIn( existingUser.username, existingUser.password,{
 	    	success: function(user){
@@ -84,7 +88,6 @@ $(function() {
 	    	$("#startup").show();
 	    });
     };
-
     $("#startup button").on("click", function(event){
     	
     	var element = event.currentTarget;
@@ -97,11 +100,9 @@ $(function() {
     		$("#startup form").removeClass("onCanvas");
     	} else { return }
     });
-
     $("button[name='createNew']").on("click", function(){
     	Xaleo.User.creatingUser();
-    });    
-
+    });
     $("button[name='signInNow']").on("click", function(){
     	var existingUser = {};
     	existingUser.username = $("#signIn input[name='email']").val();
@@ -111,7 +112,6 @@ $(function() {
     $("nav ul li#sign-out").on("click", function(){
     	Xaleo.User.signOut();
     });
-
     $("img").width("296").css("vertical-align","top").lazyload({});
     $("button[name='menu'], nav li#close, .mask").on("click", function(){
         $("nav").toggleClass("onCanvas");
@@ -123,7 +123,6 @@ $(function() {
     	var name = "#" + $(this).attr("name");
     	$("article" + name).addClass("active");
     });
-
     $("input").on("focus", function(event) {
         event.preventDefault();
         event.stopPropagation();
