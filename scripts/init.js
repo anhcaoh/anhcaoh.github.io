@@ -131,8 +131,10 @@ $(function() {
         event.stopPropagation();
     });
 
-    $(function() {
-        $(document).on("touchmove", function(event) { event.preventDefault() });
-    });
+    $(document).on("touchmove", function(event) { event.preventDefault() });
+var currentScrollPosition = 0;
+$(document).scroll(function(){
+    currentScrollPosition = $(this).scrollTop();
+});
 
 });
