@@ -127,16 +127,12 @@ $(function() {
     	$("article" + name).addClass("active");
     });
     $("input").on("focus", function(event) {
-        // $("form").css("height","50%");
-        console.log("form");
         event.preventDefault();
         event.stopPropagation();
-        window.scrollTo(0,0); //the second 0 marks the Y scroll pos. Setting this to i.e. 100 will push the screen up by 100px. 
     });
 
     $(function() {
-        $(document).on("touchmove", function(evt) { evt.preventDefault() });
-        $(document).on("touchmove", ".scrollable", function(evt) { evt.stopPropagation() });
+        $(document).on("touchmove", function(event) { event.preventDefault() });
     });
 
 });
