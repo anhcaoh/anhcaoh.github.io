@@ -8,7 +8,7 @@ $(function() {
 	var Xaleo = {
 		User : { 
 
-			ParseUser : {}
+		  ParseUser : {}
 		}
 	};
 	
@@ -18,6 +18,15 @@ $(function() {
 	};
 
 	Xaleo.ParseIntegerate();
+
+    Xaleo.User.bind = function(){
+
+        Xaleo.User.New =  {
+            username : $("#create-user input[name='email']").val(),
+            password : $("#create-user input[name='password']").val(),
+            passwordAgain : $("#create-user input[name='passwordAgain']").val()
+        };
+    };
 
 	Xaleo.User.isValid = function( value1, value2 ){
 
@@ -32,6 +41,29 @@ $(function() {
         }
     };
 
+    Xaleo.User.checkPasswordMatching = function(){
+        
+        Xaleo.User.bind();
+
+        var password = $("input[name='[password']").val();
+
+        if ( password !== 'undefined' ){ 
+            
+            switch( Xaleo.User.isValid( Xaleo.User.New.password, Xaleo.User.New.passwordAgain ) ){
+                case false:
+                $("#password-no-match").addClass("shown");
+                $("button[name='createUser']").attr("disabled", "disabled");
+                break;
+
+                case true:
+                $("#password-no-match").removeClass("shown");
+                $("button[name='createUser']").removeAttr("disabled");
+                break;
+            };
+
+        } else {return; }
+    };
+
 	Xaleo.User.createUser = function( newUser ){
 
 	    Xaleo.User.ParseUser.save({
@@ -44,20 +76,18 @@ $(function() {
 	    	$("form[name='signIn']").show();
 	    });
 	};
-
+    
     Xaleo.User.creatingUser = function(){
 		
         $("#create-user input[name='email']").focus();
 		$("button[name='createUser']").on("click", function(){
-			var newUser = {};
-	        newUser.username = $("#createNew input[name='email']").val();
-	        newUser.password = $("#createNew input[name='password']").val();
-	        newUser.passwordAgain = $("#createNew input[name='passwordAgain']").val();
+	
+            Xaleo.User.bind();
 			
-		    if ( Xaleo.User.isValid(newUser.password, newUser.passwordAgain) ){
-	            Xaleo.User.createUser(newUser);
+		    if ( Xaleo.User.isValid( Xaleo.User.New.password,  Xaleo.User.New.passwordAgain) ){
+	            Xaleo.User.createUser( Xaleo.User.New );
 	        } else{
-	            console.log("Passwords need to match.")
+	            $("#password-no-match").show();
 	        }
     	});
     };
@@ -91,6 +121,7 @@ $(function() {
 	    	$("#startup").show();
 	    });
     };
+
     $("#startup button").on("click", function(event){
     	
     	var element = event.currentTarget;
@@ -106,6 +137,7 @@ $(function() {
             $(".absolutelyCenter").show();
     	} else { return }
     });
+
     $("button[name='createNew']").on("click", function(){
     	Xaleo.User.creatingUser();
     });
@@ -115,17 +147,26 @@ $(function() {
     $("nav ul li#sign-out").on("click", function(){
     	Xaleo.User.signOut();
     });
+
     $("img").width("296").css("vertical-align","top").lazyload({});
+
     $("button[name='menu'], nav li#close, .mask").on("click", function(){
         $("nav").toggleClass("onCanvas");
-        // $(".mask").toggle();
     });
+
     $("footer ul li").on("click", function(){
     	$(".active").removeClass("active");
     	$(this).addClass("active");
     	var name = "#" + $(this).attr("name");
     	$("article" + name).addClass("active");
     });
+
+    $("input[name='password'], input[name='passwordAgain']").on("keyup", function(event){
+        
+        Xaleo.User.checkPasswordMatching();
+       
+    });
+
     $("input").on("focus", function(event) {
         event.preventDefault();
         event.stopPropagation();
