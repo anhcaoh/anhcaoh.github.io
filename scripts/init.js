@@ -22,7 +22,8 @@ $(function() {
     Xaleo.User.bind = function(){
 
         Xaleo.User.New =  {
-            username : $("#create-user input[name='email']").val(),
+            username : $("#create-user input[name='email']").val() + "@" + 
+                        $("#create-user select[name='email-provider']").val() + ".com",
             password : $("#create-user input[name='password']").val(),
             passwordAgain : $("#create-user input[name='passwordAgain']").val()
         };
@@ -61,7 +62,7 @@ $(function() {
                 break;
             };
 
-        } else {return; }
+        } else { return; }
     };
 
 	Xaleo.User.createUser = function( newUser ){
@@ -80,6 +81,7 @@ $(function() {
     Xaleo.User.creatingUser = function(){
 		
         $("#create-user input[name='email']").focus();
+
 		$("button[name='createUser']").on("click", function(){
 	
             Xaleo.User.bind();
@@ -104,8 +106,13 @@ $(function() {
         existingUser.username = $("#sign-in input[name='email']").val();
         existingUser.password = $("#sign-in input[name='password']").val();
 
-    	// var user = new Parse.User(existingUser);
-	    Parse.User.logIn( existingUser.username, existingUser.password,{
+            Xaleo.User.Existing =  {
+                username : $("#sign-in input[name='email']").val() + "@" + 
+                            $("#sign-in select[name='email-provider']").val() + ".com",
+                password : $("#sign-in input[name='password']").val()
+            };
+
+	    Parse.User.logIn( Xaleo.User.Existing.username, Xaleo.User.Existing.password,{
 	    	success: function(user){
 	    		$("#startup").hide();
 	    		$("#main").show();
@@ -128,13 +135,13 @@ $(function() {
 
     	if ( $(element).is(".signIn") ){
     		$("form[name='signIn']").addClass("onCanvas");
-            $(".absolutelyCenter").hide();
+            $(".frontdoor").hide();
     	} else if ( $(element).is(".createNew") ){
     		$("form[name='createNew']").addClass("onCanvas");
-            $(".absolutelyCenter").hide();
+            $(".frontdoor").hide();
     	} else if ( $(element).is(".back") ){
     		$("#startup form").removeClass("onCanvas");
-            $(".absolutelyCenter").show();
+            $(".frontdoor").show();
     	} else { return }
     });
 
@@ -161,10 +168,19 @@ $(function() {
     	$("article" + name).addClass("active");
     });
 
-    $("input[name='password'], input[name='passwordAgain']").on("keyup", function(event){
+    $("#create-new input[name='password'], #create-new input[name='passwordAgain']").on("keyup", function(event){
         
+        var requirements = {
+
+            "email" : $("input[name='email']").val(),
+            "password" : $("input[name='password']").val()
+        };
+
         Xaleo.User.checkPasswordMatching();
-       
+    });
+
+    $("#sign-in input[name='password']").on("keyup", function(){
+        $("button[name='signInNow").removeAttr("disabled");
     });
 
     $("input").on("focus", function(event) {

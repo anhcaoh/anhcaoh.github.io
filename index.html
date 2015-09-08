@@ -25,18 +25,25 @@
 
 <body>
 <section id="startup">
-    <div class="absolutelyCenter">
-        <span class="branding"><b>Xa</b>leo</span>
-        <div class="frontdoor">
-            <button type="button" name="createNew" class="createNew">Create</button>
-            <span class="pipe"></span>
-            <button type="button" name="signIn" class="signIn">Sign In</button>
-        </div>
-    </div>
     
+    <span class="branding"><b>Xa</b>leo</span>
+    <div class="frontdoor">
+
+        <button type="button" name="createNew" class="createNew">Create</button>
+        <span class="pipe"></span>
+        <button type="button" name="signIn" class="signIn">Sign In</button>
+    </div>
+        
     <form id="sign-in" name="signIn" autocomplete="off">
         <h2><span class="title">Welcome Back!</span></h2>
         <input type="email" name="email" placeholder="Enter e-mail (username)" required/>
+        <div class="selector">
+            <select name="email-provider">
+                <option value="gmail">@ Gmail</option>
+                <option value="yahoo">@ Yahoo</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
         <input type="password" name="password" placeholder="Enter password" required/>
         <div class="buttons-wrapper">
         <button type="button" name="back" class="back">Back</button>
@@ -46,9 +53,19 @@
 
     <form id="create-user" name="createNew" autocomplete="off">
         <h2><span class="title">Creating Account</span></h2>
-        <input type="email" name="email" placeholder="Enter e-mail (username)" required />
-        <input type="password" name="password" placeholder="Enter password" required />
-        <input type="password" name="passwordAgain" placeholder="Enter password again" required />
+        <div class="email">
+        <input type="email" name="email" placeholder="Enter e-mail (username)" required="required" />
+        <div class="selector">
+            <select name="email-provider">
+                <option value="gmail">@ Gmail</option>
+                <option value="yahoo">@ Yahoo</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        </div>
+        <!-- <input type="email" name="email" placeholder="Enter e-mail (username)" required="required" /> -->
+        <input type="password" name="password" placeholder="Enter password" required="required" />
+        <input type="password" name="passwordAgain" placeholder="Enter password again" required="required" />
         <span id="password-no-match" class="warning">Passwords need to match.</span>
         <div class="buttons-wrapper">
         <button type="button" name="back" class="back">Back</button>
@@ -60,7 +77,7 @@
 <section id="main">
 
 <button type="button" name="menu"><i class="fa fa-bars"></i></button>
-<nav class="animated">
+<nav>
     <ul>
         <li id="close">Close</li>
         <li id="settings">Settings</li>

@@ -68,7 +68,7 @@ section article img:last-child{
 header{
 
 	width: 100%;
-	background-color: rgba(83, 191, 143, 0.9);
+	background-color: rgb(38, 183, 102);
 	color: #FFF;
 	text-align: center;
 	padding: 8px 0;
@@ -88,7 +88,7 @@ footer{
 	line-height: 50px;
 	padding: 0;
 	left: 0;
-	background-color: #FFF;
+	background-color: rgb(38, 183, 102);
 }
 footer ul{
 margin: 0;
@@ -127,25 +127,13 @@ overflow-y: scroll;;
 
 }
 
-.absolutelyCenter{
-top: 0;
-bottom: 0;
-position: absolute;
-margin: auto;
-overflow: hidden;
-z-index: 0;
-left: 0;
-right: 0;
-height: 250px;
-line-height: 250px;
-}
 
 footer ul li:hover,
 footer ul li:active,
 footer ul li:focus,
 footer ul li.active{
-background-color: #63C59A;
-color: rgb(255, 255, 255);;
+opacity: .7;
+background-color: rgb(46, 158, 95);;
 
 }
 
@@ -163,28 +151,28 @@ nav ul li{
 list-style: none;
 text-align: left;
 cursor: pointer;
-padding-left: 32px;
+padding-left: 24px;
 height: 56px;
 line-height: 56px;;;
 
 }
 nav{
-background-color: #FFF;
 position: fixed;
 z-index: 3;
-left: -100%;
 border-radius: 0;;;
--webkit-transition: all 25ms;
--o-transition: all 25ms;
-transition: all 25ms;
+-webkit-transition: all 1ms;
+-o-transition: all 1ms;
+transition: all 1ms;
 width: 90%;
 height: 100%;
+left: -100%;
+background-color: #FFF;
 }
 
 
 nav ul li:hover{
 opacity: .8;
-background-color: #EFEFEF;;
+background-color: #606060;;
 
 }
 
@@ -231,7 +219,7 @@ margin: 0;
 padding: 0;
 z-index: 2;
 height: inherit;
-background-color: #FFF;
+background-color: rgba(47, 47, 47, 0.84);
 -webkit-user-select: none;
 -moz-user-select: none;
 -khtml-user-select: none;;;
@@ -306,17 +294,15 @@ position: absolute;
 transition: all 0.25s ease-in-out;
 width: calc( 100% - 16px);
 padding: 0 8px;
-animation: shown 0.5s;
+/*animation: shown 0.5s;*/
 height: 50%;
 top: -100%;
 background-color: #2EC370;
+z-index: 2;
 }
 
 .frontdoor{
-position: absolute;
-width: 100%;
-top: 0;
-vertical-align: bottom;;
+padding: 0 10%;;
 
 }
 
@@ -359,10 +345,11 @@ margin-left: 8px;;
 
 section#startup .onCanvas,
 .onCanvas{
-transition: all 0.25s ease-in-out;
+transition: all 0.05s ease-in-out;
 overflow: hidden;
-animation: shown 0.5s;
+animation: shown 0.05s;
 top: 0;
+left: 0;
 
 }
 button[name='createUser'], 
@@ -411,5 +398,51 @@ overflow: hidden;;
 button:disabled{
 cursor: not-allowed;
 opacity: .7;;;;
+
+}
+select{
+	background: transparent;
+	-webkit-appearance: none;
+	border: 0;
+	font-size: 18px;
+	color: #35CF79;
+	height: inherit;
+	outline: 0;
+	cursor: pointer;;;;
+}
+
+.selector{
+	background-color: rgb(245, 245, 245);
+	border-radius: 0 3px 3px 0;
+	float: left;
+	height: 42px;
+	margin: 4px 0;
+	width: 130px;
+	padding: 0 4px;;
+}
+input[type="email"]{
+width: calc(100% - 154px);
+float: left;
+border-radius: 3px 0 0 3px;;
+
+}
+
+.selector:before{
+content: "@";
+color: #555;
+padding-left: 5px;
+display: none;
+
+}
+
+
+.selector:after{
+content: "▾";
+color: rgba(85, 85, 85, 0.3);
+line-height: 42px;
+font-size: 18px;
+}
+
+select:focus{;
 
 }
