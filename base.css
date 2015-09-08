@@ -255,11 +255,11 @@ input, button{
 padding: 8px;
 border: 0;
 outline: 0;
-margin: 4px;
+margin: 4px 0;
 border-radius: 3px;
 color: inherit;
 font-size: 16pt;
-width: calc(100% - 24px);;
+width: calc(100% - 16px);;
 
 }
 
@@ -296,11 +296,9 @@ line-height: 50px;;;
 
 }
 section#startup{
-position: absolute;
 z-index: 2;
 width: 100%;
-overflow: hidden;
-height: 50%;;
+overflow: hidden;;
 
 }
 section#startup form{
@@ -308,9 +306,9 @@ position: absolute;
 transition: all 0.25s ease-in-out;
 width: calc( 100% - 16px);
 padding: 0 8px;
-background-color: rgb(52, 188, 112);
-top: -100%;
+animation: shown 0.5s;
 height: 100%;
+top: -100%;
 }
 
 .frontdoor{
@@ -361,8 +359,9 @@ margin-left: 8px;;
 section#startup .onCanvas,
 .onCanvas{
 transition: all 0.25s ease-in-out;
-top: 0;;
 overflow: hidden;
+animation: shown 0.5s;
+top: 0;
 
 }
 button[name='createUser'], 
@@ -378,13 +377,10 @@ position: fixed;
 
 }
 input{
-color: #35CF79;;;;;
+color: #35CF79;;;;;;
 
 }
-.buttons-wrapper{
-bottom: 0;
-position: absolute;
-width: calc(100% - 16px);;
+.buttons-wrapper{;
 
 }
 body, html{
@@ -393,6 +389,8 @@ margin: 0;
 overflow: hidden;;
 
 }
-input[type="password"]{;
 
+@-webkit-keyframes shown {
+  0%   { top: 0%; opacity: 0; }
+  100% { top: 0%; opacity: 1;}
 }

@@ -64,14 +64,17 @@ $(function() {
     Xaleo.User.signingIn = function(){
 
         $("#sign-in input[name='email']").focus();
-
-    	var existingUser = {};
-    	existingUser.username = $("#sign-in input[name='email']").val();
-	    existingUser.password = $("#sign-in input[name='password']").val();
+        $("button[name='signInNow']").on("click", function(){
+            Xaleo.User.signIn();
+        });
     };
     Xaleo.User.signIn = function( existingUser ){
+        
+        var existingUser = {};
+        existingUser.username = $("#sign-in input[name='email']").val();
+        existingUser.password = $("#sign-in input[name='password']").val();
 
-    	var user = new Parse.User(existingUser);
+    	// var user = new Parse.User(existingUser);
 	    Parse.User.logIn( existingUser.username, existingUser.password,{
 	    	success: function(user){
 	    		$("#startup").hide();
@@ -106,11 +109,8 @@ $(function() {
     $("button[name='createNew']").on("click", function(){
     	Xaleo.User.creatingUser();
     });
-    $("button[name='signInNow']").on("click", function(){
-    	var existingUser = {};
-    	existingUser.username = $("#signIn input[name='email']").val();
-	    existingUser.password = $("#signIn input[name='password']").val();
-    	Xaleo.User.signIn(existingUser);
+    $("button[name='signIn']").on("click", function(){
+    	Xaleo.User.signingIn();
     });
     $("nav ul li#sign-out").on("click", function(){
     	Xaleo.User.signOut();
