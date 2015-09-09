@@ -166,11 +166,15 @@ $(function() {
             video.src = window.URL.createObjectURL(stream);
             // video.play();
         },
-        error = function(){
-
+        error = function( error ){
+            console.log(error);
         };
 
-        navigator.webkitGetUserMedia({video:true}, success, error)
+        navigator.getUserMedia = ( navigator.getUserMedia || 
+        navigator.webkitGetUserMedia || 
+        navigator.mozGetUserMedia);
+
+        navigator.getUserMedia({video:true}, success, error);
 
     });
 
