@@ -14,7 +14,7 @@ background-color: rgba(29, 202, 105, 0.89);;
 }
 
 ::selection{
-background-color: rgba(83, 191, 143, 0.9);
+background-color: transparent;
 color: #FFF;
 }
 ::-webkit-input-placeholder{
@@ -78,7 +78,7 @@ header{
 	-webkit-box-shadow: 0 2px 2px rgba(53, 52, 52, 0.5);
 	-moz-box-shadow: 0 2px 2px rgba(53, 52, 52, 0.5);
 	z-index: 2;
-	position: relative;
+	position: fixed;;
 }
 footer{
 	position: fixed;
@@ -99,8 +99,7 @@ width: 25%;
 cursor: pointer;
 display: inline-block;;
 }
-footer ul li:active{
-}
+
 header i.fa{
 float: right;
 height: 40px;
@@ -121,7 +120,6 @@ overflow: hidden;
 overflow-y: scroll;;
 
 }
-
 
 header i.fa:hover, header i.fa:active, header i.fa:focus, button[name='menu']:hover, button[name='menu']:active, button[name='menu']:focus{
 background-color: rgb(34, 171, 94);
@@ -189,10 +187,6 @@ margin-left: 58px;;
 
 }
 
-footer ul li:nth-child(3):hover, footer ul li:nth-child(3):active, footer ul li:nth-child(3):focus, footer ul li:nth-child(3).active, footer ul li:nth-child(4):hover, footer ul li:nth-child(4):active, footer ul li:nth-child(4):focus, footer ul li:nth-child(4).active{;
-
-}
-
 nav ul li:first-child:hover, nav ul li:first-child:active, nav ul li:first-child:focus{
 border-radius: 0 5px 0 0;;
 
@@ -223,9 +217,7 @@ font-size: 16pt;
 line-height: 50px;;;
 
 }
-h2 .title{;
 
-}
 input, button{
 padding: 8px;
 border: 0;
@@ -378,8 +370,8 @@ overflow: hidden;;
 }
 
 @-webkit-keyframes shown {
-  0%   { top: 0%; opacity: 0; }
-  100% { top: 0%; opacity: 1;}
+  0%   { opacity: 0; }
+  100% { opacity: 1;}
 }
 
 button:disabled{
@@ -443,5 +435,10 @@ margin: 5px;;;;;;;;
 footer ul li:hover button, footer ul li:active, footer ul li:focus, footer ul li.active button{
 opacity: 1;
 background-color: rgb(46, 158, 95);;
+
+}
+nav ul li button{
+width: 100%;
+text-align: left;;;
 
 }
