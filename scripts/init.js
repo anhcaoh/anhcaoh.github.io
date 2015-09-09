@@ -188,6 +188,4 @@ $(function() {
         event.stopPropagation();
     });
 
-    $(document).on("touchmove", function(event) { event.preventDefault() });
-
 });
