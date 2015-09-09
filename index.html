@@ -39,15 +39,15 @@
         <input type="email" name="email" placeholder="Enter e-mail (username)" required/>
         <div class="selector">
             <select name="email-provider">
-                <option value="gmail">@ Gmail</option>
-                <option value="yahoo">@ Yahoo</option>
+                <option value="gmail">@gmail.com</option>
+                <option value="yahoo">@yahoo.com</option>
                 <option value="other">Other</option>
             </select>
         </div>
         <input type="password" name="password" placeholder="Enter password" required/>
         <div class="buttons-wrapper">
-        <button type="button" name="back" class="back">Back</button>
         <button type="button" name="signInNow">Sign In <i class="fa fa-angle-right"></i></button>
+        <button type="button" name="back" class="back">Back</button>
         </div>
     </form>
 
@@ -57,8 +57,8 @@
         <input type="email" name="email" placeholder="Enter e-mail (username)" required="required" />
         <div class="selector">
             <select name="email-provider">
-                <option value="gmail">@ Gmail</option>
-                <option value="yahoo">@ Yahoo</option>
+                <option value="gmail">@gmail.com</option>
+                <option value="yahoo">@yahoo.com</option>
                 <option value="other">Other</option>
             </select>
         </div>
@@ -68,8 +68,8 @@
         <input type="password" name="passwordAgain" placeholder="Enter password again" required="required" />
         <span id="password-no-match" class="warning">Passwords need to match.</span>
         <div class="buttons-wrapper">
-        <button type="button" name="back" class="back">Back</button>
         <button type="button" name="createUser">Create Account </button>
+        <button type="button" name="back" class="back">Back</button>
 
         </div>
     </form>
@@ -79,9 +79,9 @@
 <button type="button" name="menu"><i class="fa fa-bars"></i></button>
 <nav>
     <ul>
-        <li id="close">Close</li>
-        <li id="settings">Settings</li>
-        <li id="sign-out">Sign Out</li>
+        <li><button name="button" id="close">Close</button></li>
+        <li><button name="button" id="settings">Settings</button></li>
+        <li><button name="button" id="sign-out">Sign Out</button></li>
     </ul>
     <div class="mask"></div>
 </nav>
@@ -129,7 +129,15 @@
 </article>
 <footer>
 	<ul>
-		<li name="collections"><i class="fa fa-home"></i></li><li name="camera"><i class="fa fa-camera"></i></li><li name="discover"><i class="fa fa-search"></i></li><li name="profile" class="active"><i class="fa fa-user"></i></li>
+		<li>
+            <button name="collections"><i class="fa fa-home"></i></button>
+        </li><li>
+            <button name="camera"><i class="fa fa-camera"></i></button>
+        </li><li>
+            <button name="discover"><i class="fa fa-search"></i></button>
+        </li><li>
+            <button name="profile" class="active"><i class="fa fa-user"></i></button>
+        </li>
 	</ul>
 </footer>
 </section>

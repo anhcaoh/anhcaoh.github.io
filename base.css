@@ -35,8 +35,7 @@ button[name='menu']{
 z-index: 3;
 float: left;
 position: fixed;
-left: 0;
-background-color: transparent;
+left: 0;;
 border: 0;
 width: 40px;
 height: 40px;
@@ -48,6 +47,7 @@ padding: 0;
 margin: 0;
 margin-left: 16px;
 margin-top: 8px;
+border-radius: 50%;
 }
 
 section article{
@@ -84,8 +84,6 @@ footer{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 50px;
-	line-height: 50px;
 	padding: 0;
 	left: 0;
 	background-color: rgb(38, 183, 102);
@@ -93,14 +91,11 @@ footer{
 footer ul{
 margin: 0;
 padding: 0;
-height: 50px;
 }
 footer ul li{
 list-style: none;
 font-size: x-large;
 width: 25%;
-height: 57px;
-line-height: 57px;
 cursor: pointer;
 display: inline-block;;
 }
@@ -112,7 +107,7 @@ height: 40px;
 line-height: 40px;
 width: 40px;
 font-size: 20pt;
-border-radius: 8px;
+border-radius: 50%;
 cursor: pointer;
 margin-right: 8px;;
 
@@ -128,17 +123,9 @@ overflow-y: scroll;;
 }
 
 
-footer ul li:hover,
-footer ul li:active,
-footer ul li:focus,
-footer ul li.active{
-opacity: .7;
-background-color: rgb(46, 158, 95);;
-
-}
-
 header i.fa:hover, header i.fa:active, header i.fa:focus, button[name='menu']:hover, button[name='menu']:active, button[name='menu']:focus{
-opacity: .7;;
+background-color: rgb(34, 171, 94);
+opacity: .8;;
 
 }
 
@@ -417,11 +404,11 @@ select{
 	float: left;
 	height: 42px;
 	margin: 4px 0;
-	width: 130px;
-	padding: 0 4px;;
+	width: 135px;
+	padding: 0;;
 }
 input[type="email"]{
-width: calc(100% - 154px);
+width: calc(100% - 151px);
 float: left;
 border-radius: 3px 0 0 3px;;
 
@@ -440,9 +427,21 @@ display: none;
 content: "▾";
 color: rgba(85, 85, 85, 0.3);
 line-height: 42px;
-font-size: 18px;
+font-size: 18px;;
 }
 
 select:focus{;
+
+}
+footer ul li button{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin: 5px;;;;;;;;
+
+}
+footer ul li:hover button, footer ul li:active, footer ul li:focus, footer ul li.active button{
+opacity: 1;
+background-color: rgb(46, 158, 95);;
 
 }

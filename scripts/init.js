@@ -151,17 +151,17 @@ $(function() {
     $("button[name='signIn']").on("click", function(){
     	Xaleo.User.signingIn();
     });
-    $("nav ul li#sign-out").on("click", function(){
+    $("nav ul li #sign-out").on("click", function(){
     	Xaleo.User.signOut();
     });
 
     $("img").width("296").css("vertical-align","top").lazyload({});
 
-    $("button[name='menu'], nav li#close, .mask").on("click", function(){
+    $("button[name='menu'], nav li #close, .mask").on("click", function(){
         $("nav").toggleClass("onCanvas");
     });
 
-    $("footer ul li").on("click", function(){
+    $("footer ul li button").on("click", function(){
     	$(".active").removeClass("active");
     	$(this).addClass("active");
     	var name = "#" + $(this).attr("name");
