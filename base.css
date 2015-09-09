@@ -45,7 +45,7 @@ color: #FFF;
 cursor: pointer;
 padding: 0;
 margin: 0;
-margin-left: 16px;
+margin-left: 8px;
 margin-top: 8px;
 border-radius: 50%;
 }
@@ -75,7 +75,7 @@ header{
 	-webkit-box-shadow: 0 2px 2px rgba(53, 52, 52, 0.5);
 	-moz-box-shadow: 0 2px 2px rgba(53, 52, 52, 0.5);
 	z-index: 2;
-	position: fixed;;
+	position: fixed;;;
 }
 footer{
 	position: fixed;
@@ -125,7 +125,6 @@ opacity: .8;;
 }
 
 #main{
-	display: none;
 	height: 100%;
 	position: relative;;
 }
@@ -253,7 +252,7 @@ opacity: .7;;
 vertical-align: top;
 position: relative;
 z-index: 2;
-display: block;
+display: none;
 clear: both;
 cursor: ne-resize;
 line-height: 50px;;;
@@ -278,7 +277,8 @@ z-index: 2;
 }
 
 .frontdoor{
-padding: 0 10%;;
+padding: 0 10%;
+display: none;;
 
 }
 
@@ -384,7 +384,9 @@ select{
 	color: #35CF79;
 	height: inherit;
 	outline: 0;
-	cursor: pointer;;;;
+	cursor: pointer;
+	width: inherit;
+	padding: 0 8px;;;;
 }
 
 .selector{
@@ -393,11 +395,11 @@ select{
 	float: left;
 	height: 42px;
 	margin: 4px 0;
-	width: 135px;
+	width: 130px;
 	padding: 0;;
 }
 input[type="email"]{
-width: calc(100% - 151px);
+width: calc(100% - 146px);
 float: left;
 border-radius: 3px 0 0 3px;;
 
@@ -413,7 +415,6 @@ display: none;
 
 
 .selector:after{
-content: "▾";
 color: rgba(85, 85, 85, 0.3);
 line-height: 42px;
 font-size: 18px;;
@@ -445,5 +446,10 @@ margin-bottom: 74px;;
 footer ul li:hover button, footer ul li:active, footer ul li:focus, footer ul li button.active{
 opacity: 1;
 background-color: rgb(46, 158, 95);;
+
+}
+video#camera{
+position: relative;
+margin-top: 100px;;;
 
 }

@@ -155,6 +155,25 @@ $(function() {
     	Xaleo.User.signOut();
     });
 
+    $("button[name='camera']").on("click", function(){
+        
+        var success = function(stream){
+
+            console.log(stream);
+            var video = document.querySelector("video");
+            var url = window.URL || window.webkitURL;
+
+            video.src = window.URL.createObjectURL(stream);
+            // video.play();
+        },
+        error = function(){
+
+        };
+
+        navigator.webkitGetUserMedia({video:true}, success, error)
+
+    });
+
     $("img").width("296").css("vertical-align","top").lazyload({});
 
     $("button[name='menu'], nav li #close, .mask").on("click", function(){
