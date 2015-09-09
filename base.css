@@ -429,11 +429,6 @@ border-radius: 50%;
 margin: 5px;;;;;;;;
 
 }
-footer ul li:hover button, footer ul li:active, footer ul li:focus, footer ul li.active button{
-opacity: 1;
-background-color: rgb(46, 158, 95);;
-
-}
 nav ul li button{
 width: 100%;
 text-align: left;;;
@@ -445,4 +440,10 @@ margin-top: 74px;
 }
 section article img:last-child{
 margin-bottom: 74px;;
+}
+
+footer ul li:hover button, footer ul li:active, footer ul li:focus, footer ul li button.active{
+opacity: 1;
+background-color: rgb(46, 158, 95);;
+
 }
