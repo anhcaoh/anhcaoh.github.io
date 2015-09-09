@@ -440,11 +440,9 @@ text-align: left;;;
 
 }
 
-section article img:last-child{
-margin-bottom: 74px;;
-
-}
 section article img:first-child{
 margin-top: 74px;
-
+}
+section article img:last-child{
+margin-bottom: 74px;;
 }
