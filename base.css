@@ -439,7 +439,12 @@ width: 100%;
 text-align: left;;;
 
 }
-section article img:first-child, section article img:last-child{
+
+section article img:last-child{
 margin-bottom: 74px;;
+
+}
+section article img:first-child{
+margin-top: 74px;
 
 }
