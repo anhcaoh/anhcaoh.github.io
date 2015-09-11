@@ -9,6 +9,7 @@ width: 100%;
 /*color: rgba(0, 0, 0, 0.7);*/
 font-weight: 300;
 font-size: 18pt;
+background-color: #CCC;
 /*background-color: rgba(29, 202, 105, 0.89);;
 */
 }
@@ -87,8 +88,12 @@ cursor: pointer;;
 }
 
 article div:not(.scrollable){
-height: 100%;
+height: calc(100% - 68px);
 position: relative;
+margin: 8px;
+background-color: #FFF;
+border-radius: 4px;
+border: 1px solid #C6C6C6;
 
 }
 .scrollable{
