@@ -82,9 +82,9 @@ display: inline-block;;
 
 header i.fa{
 float: right;
-height: 30px;
-line-height: 30px;
-width: 30px;
+height: 35px;
+line-height: 35px;
+width: 35px;
 font-size: initial;
 border-radius: 50%;
 cursor: pointer;;
@@ -164,7 +164,8 @@ z-index: 3;
 }
 .splash, header span.title{
 font-weight: 200;
-margin-left: 58px;;
+margin-left: 58px;
+font-size: inherit;;
 
 }
 
@@ -468,5 +469,10 @@ width: 30px;
 padding: 10px;
 background-color: #26B766;
 z-index: 9;;;;;
+
+}
+.animate{
+transition: al 50ms ease-in-out;
+-webkit-transition: all 50ms ease-in-out;;
 
 }
