@@ -463,8 +463,8 @@ z-index: 9;;
 
 body > header{
 position: absolute;
-height: 20px;
-width: 20px;
+height: 30px;
+width: 30px;
 padding: 10px;
 background-color: #26B766;
 z-index: 9;;;;;
