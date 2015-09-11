@@ -364,8 +364,7 @@ body, html{
 touch-action: pan-y;
 margin: 0;
 overflow: hidden;
-height: 100%;
-position: relative;;;;
+height: 100%;;;;
 
 }
 
@@ -466,6 +465,5 @@ overflow: hidden;
   -ms-transform: translate3d(0,0,0);
   -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  position: fixed;
   -webkit-transform: translate3d(0,0,0);
 }
