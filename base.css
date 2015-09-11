@@ -37,9 +37,9 @@ float: left;
 position: fixed;
 left: 0;;
 border: 0;
-width: 40px;
-height: 40px;
-line-height: 40px;
+width: 50px;
+height: 50px;
+line-height: 50px;
 outline: none;
 color: #FFF;
 cursor: pointer;
@@ -52,11 +52,12 @@ border-radius: 50%;
 
 section article{
 	border-radius: 2px;
-	height: 100%;;
+	height: inherit;
+	float: left;
+	width: 25%;
+	display: block;;;;
 }
-section article:not(.active){
-	display: none;
-}
+
 section article img{
 border-radius: 3px;
 margin: 4px;;
@@ -64,18 +65,16 @@ margin: 4px;;
 }
 header{
 
-	width: 100%;
 	background-color: rgb(38, 183, 102);
 	color: #FFF;
 	text-align: center;
 	padding: 8px 0;
-	line-height: 40px;
-	height: 40px;
+	line-height: 50px;
+	height: 50px;
 	box-shadow: 0 2px 2px rgba(53, 52, 52, 0.5);
 	-webkit-box-shadow: 0 2px 2px rgba(53, 52, 52, 0.5);
 	-moz-box-shadow: 0 2px 2px rgba(53, 52, 52, 0.5);
-	z-index: 2;
-	position: fixed;;;
+	z-index: 9;;;;
 }
 footer{
 	position: fixed;
@@ -99,9 +98,9 @@ display: inline-block;;
 
 header i.fa{
 float: right;
-height: 40px;
-line-height: 40px;
-width: 40px;
+height: 50px;
+line-height: 50px;
+width: 50px;
 font-size: 20pt;
 border-radius: 50%;
 cursor: pointer;
@@ -109,12 +108,18 @@ margin-right: 8px;;
 
 }
 
-article div{
+article div:not(.scrollable){
+height: 100%;
+position: relative;
 
 }
 .scrollable{
 overflow: hidden;
-overflow-y: scroll;;
+background-image: url(https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_thailand_tallest_hotel.jpg);
+height: 100%;
+background-size: cover;
+
+background-repeat: no-repeat;;;;
 
 }
 
@@ -126,15 +131,17 @@ opacity: .8;;
 
 #main{
 	height: 100%;
-	position: relative;;
+	width: 100%;
+	transition: all 50ms ease-in-out;
+	-webkit-transition: all 50ms ease-in-out;
 }
 nav ul li{
 list-style: none;
 text-align: left;
 cursor: pointer;
 padding-left: 24px;
-height: 56px;
-line-height: 56px;;;
+height: 66px;
+line-height: 66px;;;
 
 }
 nav{
@@ -171,10 +178,10 @@ z-index: 3;
 
 }
 .mask{
-	background-color: rgba(0, 0, 0, 0.2);
 	z-index: -1;
 	transition: all 0s;
-	position: relative;;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.1);;
 }
 .splash, header span.title{
 font-weight: 200;
@@ -261,7 +268,7 @@ line-height: 50px;;;
 section#startup{
 z-index: 2;
 width: 100%;
-overflow: hidden;;
+overflow: hidden;;;
 
 }
 section#startup form{
@@ -362,7 +369,10 @@ width: inherit;;;
 body, html{
 touch-action: pan-y;
 margin: 0;
-overflow: hidden;;
+overflow: hidden;
+height: 100%;
+position: relative;
+width: 414px;;;;
 
 }
 
@@ -443,13 +453,17 @@ section article img:last-child{
 margin-bottom: 74px;;
 }
 
-footer ul li:hover button, footer ul li:active, footer ul li:focus, footer ul li button.active{
+video#camera{
+position: relative;;;
+
+}
+footer ul li:hover button, footer ul li button.active{
 opacity: 1;
 background-color: rgb(46, 158, 95);;
 
 }
-video#camera{
-position: relative;
-margin-top: 100px;;;
+#slider{
+width: 400%;
+height: 100%;
 
 }

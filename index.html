@@ -77,7 +77,7 @@
 <section id="main">
 
 <button type="button" name="menu"><i class="fa fa-bars"></i></button>
-<nav>
+<nav id="nav">
     <ul>
         <li><button name="button" id="close">Close</button></li>
         <li><button name="button" id="settings">Settings</button></li>
@@ -85,52 +85,57 @@
     </ul>
     <div class="mask"></div>
 </nav>
+<div id="slider">
+    <article id="collections" class="active">
+        <header>
 
-<article id="collections" class="active">
-    <header>
-    <span class="title">Xaleo</span>
-    <i class="fa fa-plus"></i>
+            <span class="title">Xaleo</span>
+            <i class="fa fa-plus"></i>
         </header>
-    <div>
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny.jpg" alt="Thailand 2015">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_and_brenny.jpg" alt="Thailand 2015">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_gives_a_hand.jpg" alt="">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_bows.jpg" alt="">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us.jpg" alt="">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_and_monkey.jpg" alt="">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_on_top_of_the_world.jpg" alt="">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_palace.jpg" alt="">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_and_puppy.jpg" alt=""><img data-original="/images/brenny_on_boat.jpg" alt="">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_in_bangkok.jpg" alt=""><img data-original="/images/us_on_top_of_the_world.jpg" alt="">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_thailand_tallest_hotel.jpg" alt="">
-        <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_on_top_of_the_world.jpg" alt="">
+        <div class="scrollable">
+            <!-- <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny.jpg" alt="Thailand 2015"> -->
+       <!--      <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_and_brenny.jpg" alt="Thailand 2015">
+            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_gives_a_hand.jpg" alt="">
+            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_bows.jpg" alt="">
+            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us.jpg" alt="">
+            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_and_monkey.jpg" alt="">
+            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_on_top_of_the_world.jpg" alt="">
+            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_palace.jpg" alt="">
+            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_and_puppy.jpg" alt=""><img data-original="/images/brenny_on_boat.jpg" alt="">
+            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_in_bangkok.jpg" alt=""><img data-original="/images/us_on_top_of_the_world.jpg" alt="">
+            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_thailand_tallest_hotel.jpg" alt="">
+            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_on_top_of_the_world.jpg" alt="">
+     -->
+            </div>
+    </article> 
+    <article id="camera">
+    <header>
+    <span class="title">Camera</span>
+    <i class="fa fa-camera"></i>
+    </header>
+    <div><video id="camera" autoplay></video></div>
+    </article>
+    <article id="discover">
+    <header>
+    <span class="title">Discover</span>
+    <i class="fa fa-search"></i>
+    </header>
 
-        </div>
-</article> 
-<article id="camera">
-<header>
-<span class="title">Camera</span>
-<i class="fa fa-camera"></i>
-</header>
-<div><video id="camera" autoplay></video></div>
-</article>
-<article id="discover">
-<header>
-<span class="title">Discover</span>
-<i class="fa fa-search"></i>
-</header>
-Sample
-</article>
-<article id="profile">
-<header>
-<span class="title">Profile</span>
-<i class="fa fa-user"></i>
-</header>
-Sample
-</article>
+    <div>
+    <span id="coords"></span>
+    </div>
+    </article>
+    <article id="profile">
+    <header>
+    <span class="title">Profile</span>
+    <i class="fa fa-user"></i>
+    </header>
+    </article>
+</div>
+</section>
 <footer>
-	<ul>
-		<li>
+    <ul>
+        <li>
             <button name="collections" class="active"><i class="fa fa-home"></i></button>
         </li><li>
             <button name="camera"><i class="fa fa-camera"></i></button>
@@ -139,13 +144,11 @@ Sample
         </li><li>
             <button name="profile"><i class="fa fa-user"></i></button>
         </li>
-	</ul>
+    </ul>
 </footer>
-</section>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
 
 <script src="scripts/init.js"></script>
-
 </body>
 </html>

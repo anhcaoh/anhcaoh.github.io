@@ -125,7 +125,8 @@ $(function() {
     Xaleo.User.signOut = function(){
 	    Parse.User.logOut().then(function(){
 	    	$("#main").hide();
-	    	$("#startup").show();
+	    	$("#startup, .branding, .frontdoor").show();
+            $(".onCanvas").toggleClass("onCanvas");
 	    });
     };
 
@@ -209,6 +210,70 @@ $(function() {
     $("input").on("focus", function(event) {
         event.preventDefault();
         event.stopPropagation();
+    });
+
+    var globalCoords =  {
+
+        startX : 0,
+        startY : 0,
+    };
+
+    var slider = { 
+        
+        el: {
+            slider: $("body"),
+            holder: $("#main"),
+            imgSlide: $("article")
+        },
+        slideWidth: $("#main").width(),
+        touchstartx: undefined,
+        touchmovex: undefined,
+        movex: undefined,
+        index: 0,
+        longTouch: undefined,
+        start: function(event){
+            this.touchstartx = event.originalEvent.touches[0].pageX;
+            $('.animate').removeClass('animate');
+
+        },
+        move: function(event){
+
+            this.touchmovex =  event.originalEvent.touches[0].pageX;
+              // Calculate distance to translate holder.
+            this.movex = this.index*this.slideWidth + (this.touchstartx - this.touchmovex);
+              // Defines the speed the images should move at.
+            var panx = 100-this.movex/6;
+            if (this.movex < 600) { // Makes the holder stop moving when there is no more content.
+            this.el.holder.css('transform','translate3d(-' + this.movex + 'px,0,0)');
+            }
+            // if (panx < 100) { // Corrects an edge-case problem where the background image moves without the container moving.
+            // this.el.imgSlide.css('transform','translate3d(-' + panx + 'px,0,0)');
+            // }
+        },
+        end: function(event){
+            
+            var absMove = Math.abs(this.index*this.slideWidth - this.movex);
+            // Calculate the index. All other calculations are based on the index.
+            if (absMove > this.slideWidth/2 || this.longTouch === false) {
+            if (this.movex > this.index*this.slideWidth && this.index < 2) {
+                this.index++;
+            } else if (this.movex < this.index*this.slideWidth && this.index > 0) {
+                this.index--;
+                }
+            }   
+            // Move and animate the elements.
+            this.el.holder.addClass('animate').css('transform', 'translate3d(-' + this.index*this.slideWidth + 'px,0,0)');
+            // this.el.imgSlide.addClass('animate').css('transform', 'translate3d(-' + 100-this.index*50 + 'px,0,0)');
+        }
+    }
+    $("#main").on("touchstart", function(event){
+        slider.start(event);
+    });
+    $("#main").on("touchmove", function(event){
+        slider.move(event);
+    });
+    $("#main").on("touchend", function(event){
+        slider.end(event);    
     });
 
 });
