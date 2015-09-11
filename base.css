@@ -345,10 +345,9 @@ width: inherit;;;
 
 }
 body, html{
-touch-action: pan-y;
 margin: 0;
 overflow: hidden;
-height: 568px;;;;
+height: 100%
 
 }
 
