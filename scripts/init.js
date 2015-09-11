@@ -126,7 +126,7 @@ $(function() {
 	    Parse.User.logOut().then(function(){
 	    	$("#main").hide();
 	    	$("#startup, .branding, .frontdoor").show();
-            $(".onCanvas").toggleClass("onCanvas");
+            $(".onCanvas").removeClass("onCanvas");
 	    });
     };
 
@@ -181,8 +181,12 @@ $(function() {
 
     $("img").width("296").css("vertical-align","top").lazyload({});
 
-    $("button[name='menu'], nav li #close, .mask").on("click", function(){
-        $("nav").toggleClass("onCanvas");
+    $("button[name='menu']").on("click", function(){
+        $("nav").css({"transform":"translate3d(0, 0, 0)"}).toggleClass("onCanvas");
+    });
+
+    $("nav lu button#close, .mask").on("click", function(){
+        $("nav").css({"transform":"translate3d(-100%, 0, 0)"}).removeClass("onCanvas");
     });
 
     $("footer ul li button").on("click", function(){
@@ -280,6 +284,33 @@ $(function() {
     });
     $("#main").on("touchend", function(event){
         slider.end(event);    
+    });
+
+    var Nav = {
+
+        touchstartx : undefined
+    };
+
+    $("nav").on("touchstart", function(event){
+
+        Nav.touchstartx = event.originalEvent.touches[0].pageX;
+    });
+    $("nav").on("touchmove", function(event){
+
+        var touchmovex = event.originalEvent.touches[0].pageX;
+
+        var movex = $(this).width() + (Nav.touchstartx - touchmovex);
+        
+        $(this).css({
+            '-webkit-transform':'translate3d(-' + movex + 'px,0,0)'
+        });
+
+    });
+
+    $("nav").on("touchend", function(event){        
+        $(this).css({
+            '-webkit-transform':'translate3d(-' + 100   + '%,0,0)'
+        }).removeClass("onCanvas");
     });
 
     document.ontouchmove = function ( event ) {

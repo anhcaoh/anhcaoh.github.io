@@ -162,9 +162,6 @@ font-size: inherit;;
 
 }
 
-nav ul li:first-child:hover, nav ul li:first-child:active, nav ul li:first-child:focus{;
-
-}
 nav ul li:last-child:hover, nav ul li:last-child:active, nav ul li:last-child:focus{
 border-radius: 0 0 5px 0;;
 
@@ -299,11 +296,12 @@ margin-left: 8px;;
 
 section#startup .onCanvas,
 .onCanvas{
-transition: all 0.05s ease-in-out;
+transition: all .25s ease-in-out;
 overflow: hidden;
 animation: shown 0.05s;
 top: 0;
-left: 0;;
+left: 0;
+z-index: 10;;
 
 }
 button[name='createUser'], 
