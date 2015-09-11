@@ -33,8 +33,7 @@ opacity: .7;;
 
 button[name='menu']{
 z-index: 3;
-float: left;
-left: 0;;
+float: left;;
 border: 0;
 width: 30px;
 height: 30px;
@@ -48,6 +47,8 @@ margin-left: 8px;
 margin-top: 8px;
 border-radius: 50%;
 font-size: initial;
+position: absolute;
+left: 0;
 }
 
 section article{
@@ -78,7 +79,6 @@ footer{
 	bottom: 0;
 	width: 100%;
 	padding: 0;
-	left: 0;
 	background-color: rgb(38, 183, 102);
 }
 footer ul{
@@ -126,7 +126,7 @@ opacity: .8;;
 }
 
 #main{
-	height: 100%;
+height: calc(100% - 50px);;
 }
 nav ul li{
 list-style: none;
@@ -457,7 +457,7 @@ background-color: rgb(46, 158, 95);;
 }
 #slider{
 width: 400%;
-height: calc(100% - 50px);
+height: 100%;
 overflow: hidden;
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
