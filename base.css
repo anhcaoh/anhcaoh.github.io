@@ -413,9 +413,10 @@ padding: 5px;;;;;;;;;
 
 }
 nav ul li button{
-width: calc(100% - 24px);
-text-align: left;
-margin-left: 24px;;;
+width: 100%;
+/* text-align: left; */
+
+text-align: left;;;
 
 }
 
@@ -475,5 +476,12 @@ float: right;
 height: 30px;
 width: 30px;
 padding: 10px;;;
+
+}
+span{;
+
+}
+nav ul li button span{
+margin-left: 24px;;
 
 }
