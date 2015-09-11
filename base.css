@@ -87,7 +87,7 @@ cursor: pointer;;
 
 }
 
-article div:not(.scrollable){
+article div{
 height: calc(100% - 68px);
 position: relative;
 margin: 8px;
@@ -99,9 +99,7 @@ border: 1px solid #C6C6C6;
 .scrollable{
 background-image: url(https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_thailand_tallest_hotel.jpg);
 background-size: cover;
-
 background-repeat: no-repeat;
-height: 100%;;;;;;
 
 }
 
