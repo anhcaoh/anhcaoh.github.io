@@ -130,6 +130,8 @@ opacity: .8;;
 
 #main{
 	height: 100%;
+	transition: all 10ms ease-in-out;
+	-webkit-transition: all 10ms ease-in-out;
 }
 nav ul li{
 list-style: none;
