@@ -222,7 +222,7 @@ $(function() {
         startY : 0,
     };
 
-    var slider = { 
+    var slider = {
         
         el: {
             slider: $("body"),
@@ -235,14 +235,14 @@ $(function() {
         movex: undefined,
         index: 0,
         longTouch: undefined,
-        start: function(event){
-            this.touchstartx = event.originalEvent.touches[0].pageX;
+        start: function(pageX){
+            this.touchstartx = pageX;
             $('.animate').removeClass('animate');
 
         },
-        move: function(event){
+        move: function(pageX){
 
-            this.touchmovex =  event.originalEvent.touches[0].pageX;
+            this.touchmovex =  pageX;
               // Calculate distance to translate holder.
             this.movex = this.index*this.slideWidth + (this.touchstartx - this.touchmovex);
               // Defines the speed the images should move at.
@@ -276,14 +276,32 @@ $(function() {
             // this.el.imgSlide.addClass('animate').css('transform', 'translate3d(-' + 100-this.index*50 + 'px,0,0)');
         }
     }
-    $("#main").on("touchstart mouseenter", function(event){
-        slider.start(event);
+
+    // finger
+    $("#main").on("touchstart", function(event){
+        slider.start(event.originalEvent.touches[0].pageX);
     });
-    $("#main").on("touchmove mousemove", function(event){
-        slider.move(event);
+
+    $("#main").on("touchmove", function(event){
+        slider.move(event.originalEvent.touches[0].pageX);
     });
-    $("#main").on("touchend mouseleave", function(event){
+
+    $("#main").on("touchend", function(event){
         slider.end(event);    
+    });
+
+
+    // keyboard
+    $("#main").on("mousedown", function(event){
+        slider.start(event.originalEvent.pageX);
+    });
+
+    $("#main").on("mousemove", function(event){
+        slider.move(event.originalEvent.pageX);
+    });
+    
+    $("#main").on("mouseup", function(event){
+        slider.end(event.originalEvent.pageX);    
     });
 
     var Nav = {
