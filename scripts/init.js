@@ -185,7 +185,7 @@ $(function() {
         $("nav").css({"transform":"translate3d(0, 0, 0)"}).toggleClass("onCanvas");
     });
 
-    $("nav lu button#close, .mask").on("click", function(){
+    $("nav ul li button#close, .mask").on("click", function(){
         $("nav").css({"transform":"translate3d(-100%, 0, 0)"}).removeClass("onCanvas");
     });
 
@@ -276,13 +276,13 @@ $(function() {
             // this.el.imgSlide.addClass('animate').css('transform', 'translate3d(-' + 100-this.index*50 + 'px,0,0)');
         }
     }
-    $("#main").on("touchstart", function(event){
+    $("#main").on("touchstart mouseenter", function(event){
         slider.start(event);
     });
-    $("#main").on("touchmove", function(event){
+    $("#main").on("touchmove mousemove", function(event){
         slider.move(event);
     });
-    $("#main").on("touchend", function(event){
+    $("#main").on("touchend mouseleave", function(event){
         slider.end(event);    
     });
 
