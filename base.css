@@ -471,9 +471,10 @@ transition: al .25s ease-in-out;
 }
 article header i{
 float: right;
-height: 30px;
-width: 30px;
-padding: 10px;;;
+height: 15px;
+padding: 10px;
+width: 15px;
+margin-right: 8px;;;;;
 
 }
 span{;
