@@ -87,15 +87,6 @@ cursor: pointer;;
 
 }
 
-article div{
-height: calc(100% - 68px);
-position: relative;
-margin: 8px;
-background-color: #FFF;
-border-radius: 4px;
-border: 1px solid #C6C6C6;
-
-}
 .scrollable{
 background-image: url(https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_thailand_tallest_hotel.jpg);
 background-size: cover;
@@ -110,7 +101,9 @@ opacity: .8;;
 }
 
 #main{
-height: calc(100% - 50px);;
+height: calc(100% - 50px);
+color: #a1a1a1;
+font-size: 16pt;;
 }
 nav ul li{
 list-style: none;
@@ -483,4 +476,34 @@ span{;
 nav ul li button span{
 margin-left: 24px;;
 
+}
+
+article > div:before{;;;
+/*background-color: rgba(29, 202, 105, 0.89);;
+*/
+}
+.absolutelyCenter{
+position: absolute;
+margin: auto;
+top: 0;
+bottom: 0;
+width: 100%;
+border: 0;
+/*background-color: rgba(29, 202, 105, 0.89);;
+*/
+}
+article > div{
+height: calc(100% - 68px);
+position: relative;
+margin: 8px;
+background-color: #FFF;
+border-radius: 4px;
+border: 1px solid #C6C6C6;
+/*background-color: rgba(29, 202, 105, 0.89);;
+*/
+}
+#discover .absolutelyCenter{
+height: 25px;
+/*background-color: rgba(29, 202, 105, 0.89);;
+*/
 }
