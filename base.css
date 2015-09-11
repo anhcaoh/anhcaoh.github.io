@@ -129,8 +129,6 @@ opacity: .8;;
 
 #main{
 	height: 100%;
-	transition: all 50ms ease-in-out;
-	-webkit-transition: all 50ms ease-in-out;
 }
 nav ul li{
 list-style: none;
@@ -464,10 +462,10 @@ background-color: rgb(46, 158, 95);;
 width: 400%;
 height: calc(100% - 50px);
 overflow: hidden;
-  -webkit-transform: translate3d(0,0,0);
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   position: fixed;
+  -webkit-transform: translate3d(0,0,0);
 }
