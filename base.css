@@ -472,7 +472,7 @@ z-index: 9;;;;;
 
 }
 .animate{
-transition: al 50ms ease-in-out;
--webkit-transition: all 50ms ease-in-out;;
+transition: al .25s ease-in-out;
+-webkit-transition: all .25s ease-in-out;;
 
 }
