@@ -162,8 +162,7 @@ font-size: inherit;;
 
 }
 
-nav ul li:first-child:hover, nav ul li:first-child:active, nav ul li:first-child:focus{
-border-radius: 0 5px 0 0;;
+nav ul li:first-child:hover, nav ul li:first-child:active, nav ul li:first-child:focus{;
 
 }
 nav ul li:last-child:hover, nav ul li:last-child:active, nav ul li:last-child:focus{
