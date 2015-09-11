@@ -34,7 +34,6 @@ opacity: .7;;
 button[name='menu']{
 z-index: 3;
 float: left;
-position: fixed;
 left: 0;;
 border: 0;
 width: 30px;
@@ -76,7 +75,6 @@ header{
 	z-index: 9;;;;
 }
 footer{
-	position: fixed;
 	bottom: 0;
 	width: 100%;
 	padding: 0;
