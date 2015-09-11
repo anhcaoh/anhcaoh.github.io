@@ -246,7 +246,7 @@ $(function() {
             if (this.movex < 600) { // Makes the holder stop moving when there is no more content.
             this.el.holder.css({
                 // 'transform':'translate3d(-' + this.movex + 'px,0,0)',
-                '-webkit-transform':'translate3d(-' + this.movex + 'px,0,0)'
+                '-webkit-transform':'translate(-' + this.movex + 'px,0,0)'
                 });
             }
             // if (panx < 100) { // Corrects an edge-case problem where the background image moves without the container moving.
@@ -267,7 +267,7 @@ $(function() {
             // Move and animate the elements.
             this.el.holder.addClass('animate').css({
                 // 'transform': 'translate3d(-' + this.index*this.slideWidth + 'px,0,0)',
-                '-webkit-transform': 'translate3d(-' + this.index*this.slideWidth + 'px,0,0)'
+                '-webkit-transform': 'translate(-' + this.index*this.slideWidth + 'px,0,0)'
                 });
             // this.el.imgSlide.addClass('animate').css('transform', 'translate3d(-' + 100-this.index*50 + 'px,0,0)');
         }
