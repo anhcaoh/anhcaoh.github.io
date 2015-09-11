@@ -470,4 +470,5 @@ overflow: hidden;
   -ms-transform: translate3d(0,0,0);
   -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+  overflow-y: hidden;
 }
