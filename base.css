@@ -43,10 +43,9 @@ border-radius: 50%;
 font-size: initial;
 background-color: rgba(38, 183, 102, 0.92);
 outline: none;
-position: absolute;
 margin: 0;
 padding: 0;
-left: 8px;
+text-align: center;
 }
 
 section article{
@@ -81,10 +80,6 @@ display: inline-block;;
 }
 
 header i.fa{
-float: right;
-height: 35px;
-line-height: 35px;
-width: 35px;
 font-size: initial;
 border-radius: 50%;
 cursor: pointer;;
@@ -474,5 +469,12 @@ z-index: 9;;;;;
 .animate{
 transition: al .25s ease-in-out;
 -webkit-transition: all .25s ease-in-out;;
+
+}
+article header i{
+float: right;
+height: 30px;
+width: 30px;
+padding: 10px;;;
 
 }
