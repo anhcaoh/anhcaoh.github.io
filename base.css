@@ -416,7 +416,8 @@ nav ul li button{
 width: 100%;
 /* text-align: left; */
 
-text-align: left;;;
+text-align: left;
+border-radius: 0;;;
 
 }
 
