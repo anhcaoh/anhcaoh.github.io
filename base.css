@@ -9,8 +9,8 @@ width: 100%;
 /*color: rgba(0, 0, 0, 0.7);*/
 font-weight: 300;
 font-size: 18pt;
-background-color: rgba(29, 202, 105, 0.89);;
-
+/*background-color: rgba(29, 202, 105, 0.89);;
+*/
 }
 
 ::selection{
@@ -396,9 +396,6 @@ line-height: 42px;
 font-size: 18px;;
 }
 
-select:focus{;
-
-}
 footer ul li button{
 width: 40px;
 height: 40px;
