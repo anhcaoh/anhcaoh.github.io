@@ -502,7 +502,9 @@ border: 1px solid #C6C6C6;
 /*background-color: rgba(29, 202, 105, 0.89);;
 */
 }
-#discover .absolutelyCenter{
+
+
+#slider div div.absolutelyCenter{
 height: 25px;
 /*background-color: rgba(29, 202, 105, 0.89);;
 */
