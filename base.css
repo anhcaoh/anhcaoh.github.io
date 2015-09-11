@@ -53,10 +53,11 @@ font-size: initial;
 
 section article{
 	border-radius: 2px;
-	height: 100%;
 	float: left;
 	width: 25%;
-	display: block;;;;
+	display: block;
+	height: inherit;
+	overflow: hidden;;;;
 }
 
 section article img{
@@ -115,10 +116,10 @@ position: relative;
 .scrollable{
 overflow: hidden;
 background-image: url(https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_thailand_tallest_hotel.jpg);
-height: 100%;
 background-size: cover;
 
-background-repeat: no-repeat;;;;
+background-repeat: no-repeat;
+height: 100%;;;;
 
 }
 
