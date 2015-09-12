@@ -9,7 +9,10 @@ $(function() {
 		User : { 
 
 		  ParseUser : {}
-		}
+		},
+        Video : {
+
+        }
 	};
 	
 	Xaleo.ParseIntegerate = function(){
@@ -82,7 +85,7 @@ $(function() {
 		
         $("#create-user input[name='email']").focus();
 
-		$("button[name='createUser']").on("click", function(){
+		$("button[name='createUser']").on("click touchstart", function(){
 	
             Xaleo.User.bind();
 			
@@ -96,7 +99,7 @@ $(function() {
     Xaleo.User.signingIn = function(){
 
         $("#sign-in input[name='email']").focus();
-        $("button[name='signInNow']").on("click", function(){
+        $("button[name='signInNow']").on("click touchstart", function(){
             Xaleo.User.signIn();
         });
     };
@@ -130,7 +133,7 @@ $(function() {
 	    });
     };
 
-    $("#startup button").on("click", function(event){
+    $("#startup button").on("click touchstart", function(event){
     	
     	var element = event.currentTarget;
 
@@ -146,26 +149,24 @@ $(function() {
     	} else { return }
     });
 
-    $("button[name='createNew']").on("click", function(){
+    $("button[name='createNew']").on("click touchstart", function(){
     	Xaleo.User.creatingUser();
     });
-    $("button[name='signIn']").on("click", function(){
+    $("button[name='signIn']").on("click touchstart", function(){
     	Xaleo.User.signingIn();
     });
-    $("nav ul li #sign-out").on("click", function(){
+    $("nav ul li #sign-out").on("click touchstart", function(){
     	Xaleo.User.signOut();
     });
 
-    $("button[name='camera']").on("click", function(){
+    $("button[name='camera']").on("click touchstart", function(){
         
         var success = function(stream){
 
-            console.log(stream);
-            var video = document.querySelector("video");
-            var url = window.URL || window.webkitURL;
-
-            video.src = window.URL.createObjectURL(stream);
-            // video.play();
+            Xaleo.Video = document.querySelector("video");
+            Xaleo.Video.stream = stream;
+            // var url = window.URL || window.webkitURL;
+            Xaleo.Video.src = window.URL.createObjectURL(stream);
         },
         error = function( error ){
             console.log(error);
@@ -179,21 +180,37 @@ $(function() {
 
     });
 
+    $("button[name='stopCamera']").on("click touchstart", function(){
+        Xaleo.Video.stream.stop();
+        Xaleo.Video.src = "";
+    });
     // $("img").width("296").css("vertical-align","top").lazyload({});
 
-    $("button[name='menu']").on("click", function(){
-        $("nav").css({"transform":"translate3d(0, 0, 0)"}).toggleClass("onCanvas");
-    });
-
-    $("nav ul li button#close, .mask").on("click", function(){
-        $("nav").css({"transform":"translate3d(-100%, 0, 0)"}).removeClass("onCanvas");
-    });
-
-    $("footer ul li button").on("click", function(){
-    	$(".active").removeClass("active");
+    $("footer ul li button").on("click touchstart", function(){
+    	$("button.active").removeClass("active");
     	$(this).addClass("active");
     	var name = "#" + $(this).attr("name");
     	$("article" + name).addClass("active");
+        
+        var canvasWidth = $(document).width();
+        console.log(canvasWidth);
+        switch(this.name){
+             case "about":
+            $("#main").css({transform:"translate3d(0, 0, 0)"});
+            break;
+
+            case "project":
+            $("#main").css({transform:"translate3d(-" + canvasWidth + "px, 0, 0)"});
+            break;
+           
+            case "talk":
+            $("#main").css({transform:"translate3d(-" + (canvasWidth*2) + "px, 0, 0)"});
+            break;
+
+            case "contact":
+            $("#main").css({transform:"translate3d(-" + (canvasWidth*3) + "px, 0, 0)"});
+            break;
+        }
     });
 
     $("#create-new input[name='password'], #create-new input[name='passwordAgain']").on("keyup", function(event){
@@ -295,38 +312,39 @@ $(function() {
 
 
     // keyboard
-    $("#main").on("mousedown", function(event){
-        slider.start(event.originalEvent.pageX);
-    });
+    // $("#main").on("mousedown", function(event){
+    //     slider.start(event.originalEvent.pageX);
+    // });
 
-    $("#main").on("mousemove", function(event){
-        slider.move(event.originalEvent.pageX);
-    });
+    // $("#main").on("mousemove", function(event){
+    //     slider.move(event.originalEvent.pageX);
+    // });
     
-    $("#main").on("mouseup", function(event){
-        slider.end(event.originalEvent.pageX);    
-    });
+    // $("#main").on("mouseup", function(event){
+    //     slider.end(event.originalEvent.pageX);    
+    // });
 
     var Nav = {
 
         touchstartx : undefined
     };
 
+    // remove rubber band scrolling
     document.ontouchmove = function ( event ) {
 
-    var isTouchMoveAllowed = true, target = event.target;
+        var isTouchMoveAllowed = true, target = event.target;
 
-    while ( target !== null ) {
-        if ( target.classList && target.classList.contains( 'disable-scrolling' ) ) {
-            isTouchMoveAllowed = false;
-            break;
+        while ( target !== null ) {
+            if ( target.classList && target.classList.contains( 'disable-scrolling' ) ) {
+                isTouchMoveAllowed = false;
+                break;
+            }
+            target = target.parentNode;
         }
-        target = target.parentNode;
-    }
 
-    if ( !isTouchMoveAllowed ) {
-        event.preventDefault();
-    }
+        if ( !isTouchMoveAllowed ) {
+            event.preventDefault();
+        }
 
 };
 
