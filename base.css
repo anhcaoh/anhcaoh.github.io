@@ -244,8 +244,8 @@ float: left;
 }
 .round{
 border-radius: 50%;
-width: 50px;
-height: 50px;;;
+width: 100px;
+height: 100px;;;
 
 }
 button i.fa-angle-right{
@@ -417,7 +417,8 @@ text-align: center;
 padding: 8px 0;
 line-height: 34px;
 height: 34px;
-z-index: 9;;
+z-index: 9;
+margin-top: 8px;;
 
 }
 
@@ -455,9 +456,9 @@ position: relative;
 margin: 8px;;;
 border-radius: 4px;
 background-color: #FFF;
-box-shadow: 0 0 1px rgb(168, 168, 168);
--webkit-box-shadow: 0 0 1px rgb(168, 168, 168);
--moz-box-shadow: 0 0 1px rgb(168, 168, 168);
+box-shadow: 0 1px 1px rgba(115, 115, 115, 0.5);
+-webkit-box-shadow: 0 1px 1px rgba(115, 115, 115, 0.5);
+-moz-box-shadow: 0 1px 1px rgba(115, 115, 115, 0.5);
 }
 
 #slider div div.absolutelyCenter{
@@ -465,9 +466,12 @@ height: 25px;
 }
 header#me{
 height: 20%;
+box-shadow: 0 1px 1px #737373;
+-webkit-box-shadow: 0 1px 1px rgba(115, 115, 115, 0.25);
+-moz-box-shadow: 0 1px 1px #737373;
 }
 
 #me img{
-top: calc(50% - 25px);
+top: calc(50% - 50px);
 position: relative;
 }
