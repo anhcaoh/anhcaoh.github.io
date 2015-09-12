@@ -6,12 +6,9 @@ font-family: 'Varela Round', sans-serif;
 color: #FFF;
 width: 100%;
 -webkit-font-smoothing: antialiased;
-/*color: rgba(0, 0, 0, 0.7);*/
 font-weight: 300;
-font-size: 18pt;
-background-color: #CCC;
-/*background-color: rgba(29, 202, 105, 0.89);;
-*/
+background-color: rgba(255, 255, 255, 0.69);
+
 }
 
 ::selection{
@@ -31,24 +28,6 @@ opacity: .7;;
 font-weight: 300;
 opacity: .7;;
 }
-
-button[name='menu']{
-z-index: 3;;
-border: 0;
-width: 30px;
-height: 30px;
-line-height: 30px;
-color: #FFF;
-cursor: pointer;
-border-radius: 50%;
-font-size: initial;
-background-color: rgba(38, 183, 102, 0.92);
-outline: none;
-margin: 0;
-padding: 0;
-text-align: center;
-}
-
 section article{
 	border-radius: 2px;
 	float: left;
@@ -66,7 +45,7 @@ footer{
 	bottom: 0;
 	width: 100%;
 	padding: 0;
-	background-color: rgb(38, 183, 102);
+	color: inherit;
 }
 footer ul{
 margin: 0;
@@ -77,7 +56,7 @@ list-style: none;
 font-size: x-large;
 width: 25%;
 cursor: pointer;
-display: inline-block;;
+display: inline-block;;;
 }
 
 header i.fa{
@@ -101,9 +80,9 @@ opacity: .8;;
 }
 
 #main{
-height: calc(100% - 50px);
-color: #a1a1a1;
-font-size: 16pt;;
+height: calc(100% - 164px);
+font-size: 12pt;
+color: #333333;;
 }
 nav ul li{
 list-style: none;
@@ -261,18 +240,12 @@ font-size: 14px;;
 }
 button[name='back']{
 bottom: 8px;
-float: left;;;;/* right: 0; */;
+float: left;
 }
 .round{
-width: 55px;
-height: 55px;
 border-radius: 50%;
-display: block;
-position: absolute;
-left: 0;
-right: 0;
-margin: auto;
-line-height: 56px;;
+width: 50px;
+height: 50px;;;
 
 }
 button i.fa-angle-right{
@@ -333,8 +306,11 @@ width: inherit;;;
 }
 body, html{
 margin: 0;
+height: 100%;
 overflow: hidden;
-height: 100%
+overflow-y: auto;
+color: #333;
+background-color: rgb(240, 240, 240);
 
 }
 
@@ -399,13 +375,11 @@ margin: 5px;
 font-size: initial;
 border-radius: 50%;
 line-height: 15px;
-padding: 5px;;;;;;;;;
+padding: 5px;;;;
 
 }
 nav ul li button{
 width: 100%;
-/* text-align: left; */
-
 text-align: left;
 border-radius: 0;;;
 
@@ -424,7 +398,8 @@ position: relative;;;
 }
 footer ul li:hover button, footer ul li button.active{
 opacity: 1;
-background-color: rgb(46, 158, 95);;
+background-color: rgb(240, 240, 240);
+color: rgb(46, 158, 95);;
 
 }
 #slider{
@@ -438,8 +413,6 @@ overflow: hidden;
   -webkit-transform: translate3d(0,0,0);
 }
 article header{
-background-color: rgb(38, 183, 102);
-color: #FFF;
 text-align: center;
 padding: 8px 0;
 line-height: 34px;
@@ -448,15 +421,6 @@ z-index: 9;;
 
 }
 
-body > header{
-position: absolute;
-height: 30px;
-width: 30px;
-padding: 10px;
-background-color: #26B766;
-z-index: 9;;;;;
-
-}
 .animate{
 transition: al .25s ease-in-out;
 -webkit-transition: all .25s ease-in-out;;
@@ -470,18 +434,12 @@ width: 15px;
 margin-right: 8px;;;;;
 
 }
-span{;
 
-}
 nav ul li button span{
 margin-left: 8px;;
 
 }
 
-article > div:before{;;;
-/*background-color: rgba(29, 202, 105, 0.89);;
-*/
-}
 .absolutelyCenter{
 position: absolute;
 margin: auto;
@@ -489,23 +447,27 @@ top: 0;
 bottom: 0;
 width: 100%;
 border: 0;
-/*background-color: rgba(29, 202, 105, 0.89);;
-*/
+
 }
 article > div{
 height: calc(100% - 68px);
 position: relative;
-margin: 8px;
-background-color: #FFF;
+margin: 8px;;;
 border-radius: 4px;
-border: 1px solid #C6C6C6;
-/*background-color: rgba(29, 202, 105, 0.89);;
-*/
+background-color: #FFF;
+box-shadow: 0 0 1px rgb(168, 168, 168);
+-webkit-box-shadow: 0 0 1px rgb(168, 168, 168);
+-moz-box-shadow: 0 0 1px rgb(168, 168, 168);
 }
-
 
 #slider div div.absolutelyCenter{
 height: 25px;
-/*background-color: rgba(29, 202, 105, 0.89);;
-*/
+}
+header#me{
+height: 20%;
+}
+
+#me img{
+top: calc(50% - 25px);
+position: relative;
 }

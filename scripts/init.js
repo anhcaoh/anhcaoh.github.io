@@ -179,7 +179,7 @@ $(function() {
 
     });
 
-    $("img").width("296").css("vertical-align","top").lazyload({});
+    // $("img").width("296").css("vertical-align","top").lazyload({});
 
     $("button[name='menu']").on("click", function(){
         $("nav").css({"transform":"translate3d(0, 0, 0)"}).toggleClass("onCanvas");
