@@ -61,9 +61,7 @@ display: inline-block;;;
 }
 
 .scrollable{
-/*background-image: url(https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_thailand_tallest_hotel.jpg);*/;
-overflow-y: scroll;
-
+overflow-y: auto;
 }
 
 header i.fa:hover, header i.fa:active, header i.fa:focus, button[name='menu']:hover, button[name='menu']:active, button[name='menu']:focus{
@@ -210,7 +208,6 @@ position: absolute;
 transition: all 0.25s ease-in-out;
 width: calc( 100% - 16px);
 padding: 0 8px;
-/*animation: shown 0.5s;*/
 height: 50%;
 top: -100%;
 background-color: #2EC370;
@@ -302,6 +299,7 @@ overflow: hidden;
 overflow-y: auto;
 color: #333;
 background-color: rgb(240, 240, 240);
+width: 100%;
 
 }
 
@@ -443,7 +441,6 @@ border: 0;
 padding: 16px;
 width: calc(100% - 32px);
 position: absolute;
-overflow: hidden;
 
 }
 article > div{
@@ -497,90 +494,6 @@ margin-left: 8px;
 text-align: left;
 }
 
-.json:after{
-content: "}";
-float: right;
-}
-.key:after{
-content: ":";
-padding: 0 8px;
-}
-.key{
-text-align: left;
-color: #B68113;;
-}
-.object:before, .object:after{
-padding: 0 8px;
-color: #e1e1e1;
-
-}
-.object:before{
-	text-align: left;;
-}
-.json {
-	text-align: left;
-}
-.json > .object:first-child:before{
-text-align: left;
-display: block;
-
-}
-
-.value > .object:after{
-
-}
-.json .parentObject{
-text-align: center;
-padding: 8px;;
-
-}
-.json:before{
-content: "{";
-text-align: left;
-
-}
-.json:before, .json:after{
-color: #e1e1e1;;;
-
-}
 .inlineBlock{
 	display: inline-block;
-}
-.value:before{
-content: "[";
-padding-right: 8px;
-
-}
-
-
-.object .value:after{
-padding-left: 8px;;
-
-}
-.object:after{;
-
-}
-.value:before, .value:after{
-color: #e1e1e1;
-}
-.object:last-child .value:after{
-content: "]";
-
-}
-.value:after{
-content: "],";;
-
-}
-
-.value .object:before{
-content: "{";
-
-}
-.value .object:after{
-content: "}";
-
-}
-.value{
-color: #188CAB;
-
 }

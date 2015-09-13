@@ -335,10 +335,11 @@ $(function() {
         var isTouchMoveAllowed = true, target = event.target;
 
         while ( target !== null ) {
-            if ( target.classList && target.classList.contains( 'disable-scrolling' ) ) {
+            if ( target.classList && target.classList.contains( 'disable-scrolling' ) ){
                 isTouchMoveAllowed = false;
                 break;
             }
+
             target = target.parentNode;
         }
 
@@ -346,9 +347,19 @@ $(function() {
             event.preventDefault();
         }
 
+   
+
     };
 
-    $(".scrollable").on("touchmove",function(event){
-        return true;
+    $(".scrollable").on("touchmove", function(event){
+
+        event.stopPropagation();
+
+        if ( $(".scrollable").scrollTop() + $(".scrollable").innerHeight() === ( ( $(".scrollable")[0].scrollHeight ) - 1 ) ){
+            event.preventDefault();
+        } else {
+            event.stopPropagation();
+        }
+
     });
 });
