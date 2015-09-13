@@ -508,3 +508,13 @@ margin-left: -15px;
 width: 50px;;;;;;;;;
 
 }
+
+.absolutelyCenter:after {
+    content: "〉";
+    float: right;
+    position: inherit;
+    height: 100%;
+    right: -8px;
+    top: 35%;
+    opacity: .5
+}
