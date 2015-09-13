@@ -507,11 +507,11 @@ padding: 0 8px;
 }
 .key{
 text-align: left;
+color: #B68113;;
 }
 .object:before, .object:after{
-color: #188CAB;
-font-weight: 800;
 padding: 0 8px;
+color: #e1e1e1;
 
 }
 .object:before{
@@ -540,8 +540,7 @@ text-align: left;
 
 }
 .json:before, .json:after{
-font-weight: 800;
-color: #188CAB;
+color: #e1e1e1;;;
 
 }
 .inlineBlock{
@@ -562,9 +561,7 @@ padding-left: 8px;;
 
 }
 .value:before, .value:after{
-color: #B68113;
-font-weight: 800;
-
+color: #e1e1e1;
 }
 .object:last-child .value:after{
 content: "]";
@@ -583,7 +580,7 @@ content: "{";
 content: "}";
 
 }
-.parentObject > .object{
-margin: 32px 0;
+.value{
+color: #188CAB;
 
 }
