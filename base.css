@@ -500,7 +500,8 @@ text-align: left;
 .inlineBlock{
 	display: inline-block;
 }
-button:active:before{
+footer button:hover:before,
+footer button:active:before{
 content: attr(title);
 position: absolute;
 margin-top: -40px;
