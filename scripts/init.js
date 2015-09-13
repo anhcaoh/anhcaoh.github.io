@@ -346,6 +346,9 @@ $(function() {
             event.preventDefault();
         }
 
-};
+    };
 
+    $(".scrollable").on("touchmove",function(event){
+        return true;
+    });
 });
