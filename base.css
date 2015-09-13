@@ -509,7 +509,17 @@ width: 50px;;;;;;;;;
 
 }
 
-.absolutelyCenter:after {
+
+article:not(:first-child) .absolutelyCenter:before {
+    content: "〈";
+    float: left;
+    position: inherit;
+    height: 100%;
+    left: -8px;
+    top: 35%;
+    opacity: .5
+}
+article:not(:last-child) .absolutelyCenter:after {
     content: "〉";
     float: right;
     position: inherit;
