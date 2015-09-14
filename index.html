@@ -1,167 +1,90 @@
 <!DOCTYPE html>
-<html class="disable-scrolling">
+<html lang="en" data-ng-app="meApp">
 <head>
-<title>Hi, I'm Anh - an experience designer and developer</title>
-<meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
-<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, user-scalable=no">
-<meta name="copyright" content="Anh Cao, an experience designer and developer." />
-<meta name="description" content="Anh Cao, an experience designer and developer." />
-<meta name="keywords" content="user interface, user experience, ui, ux, design, software, web app, website design, website development, atlanta, atl, georgia, ga" />
-<meta name="robots" content="index, follow" />
-<meta name="DC.title" content="Anh Cao, an experience designer and developer." />
-<link rel="stylesheet" type="text/css" href="base.css" />
-<link rel="stylesheet" type="text/css" href="animate.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="../images/AnhIcon.jpg">
 
-<script src="libraries/parse-1.5.0.js"></script>
-<script>
+  <title>Hi, I'm Anh. I speak HTML, CSS, and JavaScript. I am a UI/UX designer and developer. I breathe user experience!</title>
+  <meta name="description" content="Hi, I'm Anh. I speak HTML, CSS, and JavaScript. I am a designer and developer, and I breathe user experience!" />
+  <meta name="copyright" content="Anh Cao is a personal brand, and all things designs are open for inspiration" />
+  <meta name="keywords" content="user interface, user experience, designer, developer, atlanta, georgia, atl, ga, UI, UX, human centric design, human computer interaction, user research" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-</script>
+  <link rel="stylesheet" href="./styles/minimal.css">
+  <link rel="stylesheet" href="./styles/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="./images/AnhIcon.jpg">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-<section id="startup">
-    
-    <span class="branding"><b>Xa</b>leo</span>
-    <div class="frontdoor">
+  <header>
+    <figure class="animated fadeIn">
+    <img src="images/Anh-Cao.jpg" alt="My name is Anh Cao.">
+    <figcaption>Hi, I'm Anh</figcaption>
+    </figure>
+    <article class="monospace"><p class="relativelyCenter animated fadeInDown">{I speak: [<\HTML>, CSS, & JavaScript]}</p></article>
+  </header>
+  <section id="all-things-design">
+    <h2 class="heading" title="Projects">Projects</h2>
+    <article class="absolutelyCenter">
+      <div class="verticallyCenter">
+        <ul>
+          <li><a href="/xaleo" title="Horizontal Carousel">Horizontal Carousel UI</a></li>
+          <li><a href="/LetsBuildaHouse" title="Let's Build a House">Let's Build a House</a></li>
+          <li><a href="/Photogram" title="Photogram">Photogram</a></li>
+        </ul>
+       
+      </div>
+    </article>
+  </section>
+  <section id="talks">
+    <h2 class="heading">Talks</h2>
+    <article class="absolutelyCenter">
+      <div class="verticallyCenter">
+          <a href="https://docs.google.com/presentation/d/1WqfExK7N03hUEmVuobiXDO6_gqS-pMfM7A4N1l5NBns/pub?start=false&loop=false&delayms=3000" target="_blank" title="Design is...">Design is...</a>
+      </div>
+    </article>
+  </section>
 
-        <button type="button" name="createNew" class="createNew" title="Create">Create</button>
-        <span class="pipe"></span>
-        <button type="button" name="signIn" class="signIn" title="Sign In">Sign In</button>
-    </div>
+  <section id="contact-me">
+    <h2 id="lets-talk" class="heading" title="Let's talk">Let's talk</h2>
+    <article class="absolutelyCenter">
+      <div class="verticallyCenter">
+      <ul>
+        <li><a href="tel:6786021591"><i class="fa fa-phone"></i> <span>(678) 602-1591</span></a></li>
+        <li><a href="mailto:anhcaoh@gmail.com"><i class="fa fa-envelope"></i><span>anhcaoh@gmail.com</span></a></li>
+      </ul>
         
-    <form id="sign-in" name="signIn" autocomplete="off">
-        <h2><span class="title">Welcome Back!</span></h2>
-        <input type="email" name="email" placeholder="Enter e-mail (username)" required/>
-        <div class="selector">
-            <select name="email-provider">
-                <option value="gmail">@gmail.com</option>
-                <option value="yahoo">@yahoo.com</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-        <input type="password" name="password" placeholder="Enter password" required/>
-        <div class="buttons-wrapper">
-        <button type="button" name="signInNow" title="Sign In">Sign In <i class="fa fa-angle-right"></i></button>
-        <button type="button" name="back" class="back" title="Back">Back</button>
-        </div>
-    </form>
-
-    <form id="create-user" name="createNew" autocomplete="off">
-        <h2><span class="title">Creating Account</span></h2>
-        <div class="email">
-        <input type="email" name="email" placeholder="Enter e-mail (username)" required="required" />
-        <div class="selector">
-            <select name="email-provider">
-                <option value="gmail">@gmail.com</option>
-                <option value="yahoo">@yahoo.com</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-        </div>
-        <!-- <input type="email" name="email" placeholder="Enter e-mail (username)" required="required" /> -->
-        <input type="password" name="password" placeholder="Enter password" required="required" />
-        <input type="password" name="passwordAgain" placeholder="Enter password again" required="required" />
-        <span id="password-no-match" class="warning">Passwords need to match.</span>
-        <div class="buttons-wrapper">
-        <button type="button" name="createUser" title="Create Account">Create Account </button>
-        <button type="button" name="back" class="back" title="Back">Back</button>
-
-        </div>
-    </form>
-</section>
-
-<header id="me" class="disable-scrolling" >
-
-<img class="round photo" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/20f/0d6/1eba86d.jpg" alt="me"></header>
-<span>Hi, I'm Anh</span>
-<section id="main">
-<div id="slider">
-
-    <article id="profile" class="active">
-    <header><span class="title">An Experience Designer</span>
-    </header>
-    <div>
-        <div class="absolutelyCenter singleLine">
-            <span>{ I speak: [ HTML, CSS, JavaScript ]}</span>
-        </div>
-    </div>
-    </article>
-    <article id="project">
-        <header><span class="title">Projects</span>
-        </header>
-        <div>
-            <div class="absolutelyCenter doubleLine">
-                <ul>
-                    <li><button name="button" title="Interactive activity comparing with front-end technologies and design ideas"><a href="/LetsBuildaHouse"><i class="fa fa-home"></i><span>Let's Build a House</span></a></button></li><li>
-                    <button name="button" title="Search Instagram Photos by Tag"><a href="/Photogram"><i class="fa fa-instagram"></i><span>Photogram</span></a></button></li>
-            </div>
-        </div>
-            <!-- <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny.jpg" alt="Thailand 2015"> -->
-            <!--      <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_and_brenny.jpg" alt="Thailand 2015">
-            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_gives_a_hand.jpg" alt="">
-            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_bows.jpg" alt="">
-            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us.jpg" alt="">
-            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_and_monkey.jpg" alt="">
-            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_on_top_of_the_world.jpg" alt="">
-            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_palace.jpg" alt="">
-            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/brenny_and_puppy.jpg" alt=""><img data-original="/images/brenny_on_boat.jpg" alt="">
-            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_in_bangkok.jpg" alt=""><img data-original="/images/us_on_top_of_the_world.jpg" alt="">
-            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/us_at_thailand_tallest_hotel.jpg" alt="">
-            <img data-original="https://raw.githubusercontent.com/anhcaoh/xaleo/gh-pages/images/anh_on_top_of_the_world.jpg" alt="">
-            -->
-    </article> 
-    <article id="talk">
-        <header>
-            <span class="title">Talk</span>
-        </header>
-        <div>
-            <div class="absolutelyCenter singleLine">
-                <button name="button" title="A Slideshare Talk"><a href="http://www.slideshare.net/MrAnhCao/design-is" target="_blank"><i class="fa fa-slideshare"></i><span>Design is...</span></a></button>
-            </div>
-        </div>
-    </article>
-<!--     <article id="camera">
-    <header><span class="title">Camera</span>
-    <i class="fa fa-camera"></i>
-    </header>
-    <div>
-        <button name="stopCamera">Stop Camera</button>
-        <video id="camera" autoplay></video>
-    </div>
-    </article> -->
-    <article id="discover">
-    <header><span class="title">Let's talk</span>
-    </header>
-    <div>
-        <div class="absolutelyCenter tripleLine">
-            <ul>
-                <li><button name="button" title="My Cell Phone"><a href="tel:+16786021591"><i class="fa fa-phone"></i><span>(678) 602-1691</span></a></button></li><li>
-                <button name="button" title="My E-mail"><a href="mailto:anhcaoh@gmail.com"><i class="fa fa-envelope"></i><span>anhcaoh@gmail.com</span></a></button></li><li><li>
-                <button name="button" title="Let's Connect via LinkedIn"><a href="https://www.linkedin.com/in/anhcao" target="_blank"><i class="fa fa-linkedin"></i><span>anhcaoh</span></a></button></li>
-            </ul>
-        </div>
-    </div>
+      </div>
     </article>
 
-</div>
-</section>
-<footer>
-    <ul>
-        <li>
-            <button name="about" class="active" title="About"><i class="fa fa-user"></i></button>
-        </li><li>
-            <button name="project" title="Projects"><i class="fa fa-wrench"></i></button>
-        </li><li>
-            <button name="talk" title="Talk"><i class="fa fa-slideshare"></i></button>
-        </li><li>
-            <button name="contact" title="Contact"><i class="fa fa-phone"></i></button>
-        </li>
-    </ul>
-</footer>
+  </section>
+<!--   <section>
+    <h2 class="heading" style="color: #CCC" title="My smart, beautiful wife, Brenny">My smart, beautiful wife, Brenny</h2>
+    <article class="bao-chau" title="My smart, beautiful wife, Brenny"></article>
+  </section>
+  <section>
+  <h2 class="heading" title="Meet Xali & Leo">Meet Xali & Leo</h2>
+    <article class="absolutelyCenter">
+      <div class=" xali-leo verticallyCenter">
+        <img src="images/Xali.jpg" alt="Meet Xali" title="Meet Xali">
+        <img src="images/Leo.jpg" alt="& Leo" title="& Leo">
+      </div>
+    </article>
+  </section> -->
+  <footer>@2015</footer>
 
-<script src="libraries/jquery-1.11.3.min.js"></script>
-<script src="scripts/init.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-52619134-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="scripts/jquery-1.11.0.js"></script>
 </body>
 </html>
