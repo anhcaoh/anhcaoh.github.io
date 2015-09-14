@@ -1,145 +1,366 @@
 
-angular.module("meApp", [])
+"use strict"
 
-.controller("ContentController", ["$scope",function($scope){
+$(function() {
 
-  $scope.aboutMe = [
+    
+	Parse.initialize("kmruS7yf8yy5zTkjsBFq3O9Ixmj2inJIvySPeEjr", "hbKSasn2habkodoFNQBUK4mJ8mtXR4DZluvDrRK0");
 
-    {"nameId":"hello","name":"brand", "imgSrc": "./images/Anh-Cao.jpg","content":"hi, I'm Anh"},
+	var Xaleo = {
+		User : { 
 
-    {"nameId":"who", "name":"BaoChau", "imgSrc":"", "imgSrc":"","content":"I and my smart, beautiful wife, Brenny."},
+		  ParseUser : {}
+		},
+        Video : {
 
-    {"nameId":"meet-Xali-Leo" ,"name":"Xalieo","imgSrc":"","content":""},
+        }
+	};
+	
+	Xaleo.ParseIntegerate = function(){
+		var ParseUser = Parse.Object.extend("User");
+		Xaleo.User.ParseUser = new ParseUser();
+	};
 
-    {"nameId":"where-and-when","name":"globe", "imgSrc":"./images/Vietnam-to-USA.jpg", "content":""},
+	Xaleo.ParseIntegerate();
 
-    {"nameId":"what", "imgSrc":"","content":"{I speak: [JavaScript, </HTML>, CSS]}", "fontFamily":"monospace"},
+    Xaleo.User.bind = function(){
 
-    {"nameId":"why","name":"globe", "imgSrc":"", "content":"I breathe user experience."},
+        Xaleo.User.New =  {
+            username : $("#create-user input[name='email']").val() + "@" + 
+                        $("#create-user select[name='email-provider']").val() + ".com",
+            password : $("#create-user input[name='password']").val(),
+            passwordAgain : $("#create-user input[name='passwordAgain']").val()
+        };
+    };
 
-    {"nameId":"other", "imgSrc":"","content":"I design things, and I break-dance."}
+	Xaleo.User.isValid = function( value1, value2 ){
 
-  ];
+        switch( value1 === value2 ){
+            case true:
+            return true;
+            break;
 
-  $scope.contactMe = {
+            case false:
+            return false;
+            break;
+        }
+    };
 
-    "email":"AnhCaoH@gmail.com",
-    "phone":"(678) 602-1591"
-  }
+    Xaleo.User.checkPasswordMatching = function(){
+        
+        Xaleo.User.bind();
 
-  $scope.slideLeft = function(){
+        var password = $("input[name='[password']").val();
 
-        var more = -33.3;
+        if ( password !== 'undefined' ){ 
+            
+            switch( Xaleo.User.isValid( Xaleo.User.New.password, Xaleo.User.New.passwordAgain ) ){
+                case false:
+                $("#password-no-match").addClass("shown");
+                $("button[name='createUser']").attr("disabled", "disabled");
+                break;
 
-        $("section#window").css('transform','translate(-' + more + '%,0)');
+                case true:
+                $("#password-no-match").removeClass("shown");
+                $("button[name='createUser']").removeAttr("disabled");
+                break;
+            };
 
+        } else { return; }
+    };
 
-  };
+	Xaleo.User.createUser = function( newUser ){
 
+	    Xaleo.User.ParseUser.save({
+	        
+	        username : newUser.username,
+	        password : newUser.password,
+	        email : newUser.username,
 
-  $scope.slideRight = function(){
+	    }).then(function(response){
+	    	$("form[name='signIn']").show();
+	    });
+	};
+    
+    Xaleo.User.creatingUser = function(){
+		
+        $("#create-user input[name='email']").focus();
 
-      var more = +33.3;
+		$("button[name='createUser']").on("click touchstart", function(){
+	
+            Xaleo.User.bind();
+			
+		    if ( Xaleo.User.isValid( Xaleo.User.New.password,  Xaleo.User.New.passwordAgain) ){
+	            Xaleo.User.createUser( Xaleo.User.New );
+	        } else{
+	            $("#password-no-match").show();
+	        }
+    	});
+    };
+    Xaleo.User.signingIn = function(){
 
-      $("section#window").css('transform','translate(-' + more + '%,0)');
+        $("#sign-in input[name='email']").focus();
+        $("button[name='signInNow']").on("click touchstart", function(){
+            Xaleo.User.signIn();
+        });
+    };
+    Xaleo.User.signIn = function( existingUser ){
+        
+        var existingUser = {};
+        existingUser.username = $("#sign-in input[name='email']").val();
+        existingUser.password = $("#sign-in input[name='password']").val();
 
-  };
+            Xaleo.User.Existing =  {
+                username : $("#sign-in input[name='email']").val() + "@" + 
+                            $("#sign-in select[name='email-provider']").val() + ".com",
+                password : $("#sign-in input[name='password']").val()
+            };
 
-  $(function(){
+	    Parse.User.logIn( Xaleo.User.Existing.username, Xaleo.User.Existing.password,{
+	    	success: function(user){
+	    		$("#startup").hide();
+	    		$("#main").show();
+	    	},
+	    	error: function(user, error){
+	    		console.log(error);
+	    	}
+	    });
+    };
+    Xaleo.User.signOut = function(){
+	    Parse.User.logOut().then(function(){
+	    	$("#main").hide();
+	    	$("#startup, .branding, .frontdoor").show();
+            $(".onCanvas").removeClass("onCanvas");
+	    });
+    };
 
-    $("#where-and-when p").html("I flew from <span style='color:#e3801c'>Vietnam</span> to the <span style='color:#008000;'>USA</span> in 2005.");
-    $("#meet-Xali-Leo").prepend("<img src='./images/Xali.jpg'>");
-    $("#meet-Xali-Leo").append("<img src='./images/Leo.jpg'>");
-    $("#other p").html("I design things, and <a href='http://youtu.be/EhWxvWB0e5g?t=6m23s' target='_blank'>I break-dance.</a>");
-    setTimeout(function(){
+    $("#startup button").on("click touchstart", function(event){
+    	
+    	var element = event.currentTarget;
 
-      $("#hello").addClass("fadingIn");
+    	if ( $(element).is(".signIn") ){
+    		$("form[name='signIn']").addClass("onCanvas");
+            $(".frontdoor").hide();
+    	} else if ( $(element).is(".createNew") ){
+    		$("form[name='createNew']").addClass("onCanvas");
+            $(".frontdoor").hide();
+    	} else if ( $(element).is(".back") ){
+    		$("#startup form").removeClass("onCanvas");
+            $(".frontdoor").show();
+    	} else { return }
+    });
 
-    },1000);
+    $("button[name='createNew']").on("click touchstart", function(){
+    	Xaleo.User.creatingUser();
+    });
+    $("button[name='signIn']").on("click touchstart", function(){
+    	Xaleo.User.signingIn();
+    });
+    $("nav ul li #sign-out").on("click touchstart", function(){
+    	Xaleo.User.signOut();
+    });
 
+    $("button[name='camera']").on("click touchstart", function(){
+        
+        var success = function(stream){
 
+            Xaleo.Video = document.querySelector("video");
+            Xaleo.Video.stream = stream;
+            // var url = window.URL || window.webkitURL;
+            Xaleo.Video.src = window.URL.createObjectURL(stream);
+        },
+        error = function( error ){
+            console.log(error);
+        };
 
-    //
-    // $(window).bind("scroll", function(){
-    //
-    // var windowScrollPosition = $(window).scrollTop();
-    //
-    // if (windowScrollPosition == 0){
-    //
-    //   $("section#hi-im-Anh").css("opacity","1");
-    //
-    // };
-    //
-    // $("section#hi-im-Anh").css({"opacity": (300 - windowScrollPosition) / 300 });
-    //
+        navigator.getUserMedia = ( navigator.getUserMedia || 
+        navigator.webkitGetUserMedia || 
+        navigator.mozGetUserMedia);
 
-        // $("section").each(function(){
-        //
-        //   var currentSection = $(this);
-        //   var currentSectionPosition = currentSection.position().top - $(window).scrollTop();
-        //
-        //   console.log(currentSectionPosition);
-        //
-        //   if (currentSectionPosition <= 0){
-        //
-        //       $(currentSection).addClass("hero");
-        //
-        // } else{
-        //
-        //       $(currentSection).removeClass("hero");
-        //   }
-        //
-        // });
+        navigator.getUserMedia({video:true}, success, error);
 
+    });
 
-    // });
+    $("button[name='stopCamera']").on("click touchstart", function(){
+        Xaleo.Video.stream.stop();
+        Xaleo.Video.src = "";
+    });
+    // $("img").width("296").css("vertical-align","top").lazyload({});
 
+    $("footer ul li button").on("click touchstart", function(){
+    	$("button.active").removeClass("active");
+    	$(this).addClass("active");
+    	var name = "#" + $(this).attr("name");
+    	$("article" + name).addClass("active");
+        
+        var canvasWidth = $(document).width();
+        console.log(canvasWidth);
+        switch(this.name){
+             case "about":
+            $("#main").css({transform:"translate3d(0, 0, 0)"});
+            break;
 
-  });
+            case "project":
+            $("#main").css({transform:"translate3d(-" + canvasWidth + "px, 0, 0)"});
+            break;
+           
+            case "talk":
+            $("#main").css({transform:"translate3d(-" + (canvasWidth*2) + "px, 0, 0)"});
+            break;
 
-}])
+            case "contact":
+            $("#main").css({transform:"translate3d(-" + (canvasWidth*3) + "px, 0, 0)"});
+            break;
+        }
+    });
 
-.filter("orderObjectBy", function(){
+    $("#create-new input[name='password'], #create-new input[name='passwordAgain']").on("keyup", function(event){
+        
+        var requirements = {
 
-    return function ( input, attribute ){
+            "email" : $("input[name='email']").val(),
+            "password" : $("input[name='password']").val()
+        };
 
-      if (!angular.isObject(input)) return input;
+        Xaleo.User.checkPasswordMatching();
+    });
 
-      var array = [];
+    $("#sign-in input[name='password']").on("keyup", function(){
+        $("button[name='signInNow").removeAttr("disabled");
+    });
 
-      for (var objectKey in input){
+    $("input").on("focus", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+    });
 
-         array.push(input[objectKey]);
-      }
+    var globalCoords =  {
 
-      array.sort(function(a, b){
+        startX : 0,
+        startY : 0,
+    };
 
-          a = parseInt(a[attribute]);
-          b = parseInt(b[attribute]);
-          return a - b;
+    var slider = {
+        
+        el: {
+            slider: $("body"),
+            holder: $("#main"),
+            imgSlide: $("article")
+        },
+        slideWidth: $("#main").width(),
+        touchstartx: undefined,
+        touchmovex: undefined,
+        movex: undefined,
+        index: 0,
+        longTouch: undefined,
+        start: function(pageX){
+            this.touchstartx = pageX;
+            $('.animate').removeClass('animate');
 
-      });
+        },
+        move: function(pageX){
 
-      return array;
+            this.touchmovex =  pageX;
+              // Calculate distance to translate holder.
+            this.movex = this.index*this.slideWidth + (this.touchstartx - this.touchmovex);
+              // Defines the speed the images should move at.
+            var panx = 100-this.movex/6;
+            if (this.movex < 960) { // Makes the holder stop moving when there is no more content.
+            this.el.holder.css({
+                '-webkit-transform':'translate3d(-' + this.movex + 'px,0,0)'
+                });
+            }
+            this.el.imgSlide.find("header span, header i").css({
+                "opacity": .5
+            });
 
+        },
+        end: function(event){
+            
+            var absMove = Math.abs(this.index*this.slideWidth - this.movex);
+            // Calculate the index. All other calculations are based on the index.
+            if (absMove > this.slideWidth/2 || this.longTouch === false) {
+            if (this.movex > this.index*this.slideWidth && this.index < 3) {
+                this.index++;
+            } else if (this.movex < this.index*this.slideWidth && this.index > 0) {
+                this.index--;
+                }
+            }   
+            // Move and animate the elements.
+            this.el.holder.addClass('animate').css({
+                // 'transform': 'translate3d(-' + this.index*this.slideWidth + 'px,0,0)',
+                '-webkit-transform': 'translate3d(-' + this.index*this.slideWidth + 'px,0,0)'
+                });
+            this.el.imgSlide.find("header span, header i").css({
+                "opacity" : 1
+            })
+            // this.el.imgSlide.addClass('animate').css('transform', 'translate3d(-' + 100-this.index*50 + 'px,0,0)');
+        }
     }
 
+    // finger
+    $("#main").on("touchstart", function(event){
+        slider.start(event.originalEvent.touches[0].pageX);
+    });
+
+    $("#main").on("touchmove", function(event){
+        slider.move(event.originalEvent.touches[0].pageX);
+    });
+
+    $("#main").on("touchend", function(event){
+        slider.end(event);    
+    });
+
+
+    // keyboard
+    // $("#main").on("mousedown", function(event){
+    //     slider.start(event.originalEvent.pageX);
+    // });
+
+    // $("#main").on("mousemove", function(event){
+    //     slider.move(event.originalEvent.pageX);
+    // });
+    
+    // $("#main").on("mouseup", function(event){
+    //     slider.end(event.originalEvent.pageX);    
+    // });
+
+    var Nav = {
+
+        touchstartx : undefined
+    };
+
+    // remove rubber band scrolling
+    document.ontouchmove = function ( event ) {
+
+        var isTouchMoveAllowed = true, target = event.target;
+
+        while ( target !== null ) {
+            if ( target.classList && target.classList.contains( 'disable-scrolling' ) ){
+                isTouchMoveAllowed = false;
+                break;
+            }
+
+            target = target.parentNode;
+        }
+
+        if ( !isTouchMoveAllowed ) {
+            event.preventDefault();
+        }
+
+   
+
+    };
+
+    $(".scrollable").on("touchmove", function(event){
+
+        event.stopPropagation();
+
+        if ( $(".scrollable").scrollTop() + $(".scrollable").innerHeight() === ( ( $(".scrollable")[0].scrollHeight ) - 1 ) ){
+            event.preventDefault();
+        } else {
+            event.stopPropagation();
+        }
+
+    });
 });
-
-
-//
-// function compress(){
-//
-//   if ( $("button i").is(".fa-expand") ) {
-//
-//     $("button i").removeClass("fa-expand").addClass("fa-compress")
-//
-//   } else if ( $("button i").is(".fa-compress") ){
-//
-//     $("button i").removeClass("fa-compress").addClass("fa-expand")
-//
-//   };
-//
-//   $("section").toggleClass("compressed");
-//   $("*").toggleClass("smaller");
-// }
