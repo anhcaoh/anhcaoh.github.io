@@ -1,0 +1,403 @@
+
+body, html{
+
+  outline: 0;
+  height: 100%;
+  font-family: "Helvetica Neue", 'Lato', Sans-serif;
+  font-size: 32pt;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  color: #6F6F6F;
+
+}
+header{
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+  header,section{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+    height: 100%;
+
+  }
+  section#all-things-design{
+    margin-top: 80%;
+    background-image: url(https://static.pexels.com/photos/4749/black-and-white-lights-light-bulb-idea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+  }
+  section{
+    z-index: 0;
+    background-color: #FFF;
+  }
+figure{
+  height: 70%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+
+  h2{
+
+    margin: 0;
+  }
+  .monospace{
+    font-size: medium;
+    height: 30%;
+    font-family: "monospace";
+    background-color: rgba(237, 236, 236, 0.5);;
+  }
+  .bao-chau{
+    background-image: url("/images/Bao-Chau.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .relativelyCenter{
+    position: relative;
+    top: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .absolutelyCenter{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .verticallyCenter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;;
+  }
+  a:link, a:visited, a:active{
+
+     text-decoration: none;
+     font-size: initial;
+     color: inherit;
+  }
+  a:hover{
+    color: #000;
+    transition: all 50ms;
+    -webkit-transition: all 50ms;
+    -moz-transition: all 50ms;
+  }
+  p{
+  font-size: inherit;
+
+  }
+  .small{
+    font-size: small;
+  }
+  #hero{
+
+      opacity: 0;
+  }
+  #hello h2{
+
+      margin: 0;
+
+  }
+
+  section:nth-child(odd){
+
+  }
+
+    #hello{
+
+      opacity: 0;
+      background-color: #f7f7f7;
+      color: initial;
+      height: 50%;
+    }
+
+    #hello.fadingIn{
+
+      opacity: 1;
+      -webkit-transition: opacity 1s, background-color 3s, color 2s;
+      transition: opacity 1s, background-color 3s, color 2s;
+
+    }
+  
+
+
+    .css-typing {
+
+        width: 30em;
+        white-space:nowrap;
+        overflow:hidden;
+        -webkit-animation: type 5s steps(50, end);
+        animation: type 5s steps(50, end);
+    }
+
+    @keyframes type{
+        from { width: 0; }
+    }
+
+    @-webkit-keyframes type{
+        from { width: 0; }
+    }
+
+
+    section div{
+
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0;
+      top: 0;
+      margin: 0 auto;
+    }
+
+    #hello h2{
+
+      opacity: 0;
+    }
+
+    #who{
+
+      background-color: #EAEAEA;
+      background-image: url(../images/Bao-Chau.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+    }
+
+    #who h2{
+
+      text-align: center;
+      color: rgba(247, 247, 247, 0.63);
+      width: 55px;
+      float: right;
+      left: calc(100% - 87px);
+    
+
+      /* background-color: rgba(239, 239, 239, 0.5); */;
+    }
+
+      #who div p{
+
+        float: right;
+        text-align: right;
+        padding-right: 5%;
+
+      }
+
+    #meet-Xali-Leo{
+  height: 50%;
+
+
+    }
+
+
+      #meet-Xali-Leo h2{
+  margin: 0;;;
+
+      }
+
+      #meet-Xali-Leo img{;
+  width: 200px;
+  margin: 30px 32px;;
+
+
+      }
+
+      #where-and-when img{
+
+        width: 35%;
+      }
+
+
+      section h2.heading {
+
+        font-weight: 400;
+        color:inherit;
+        font-size:initial;
+        z-index:1;
+        float:left;
+        position:absolute;
+        margin:32px 0 0 32px;
+      }
+
+      img{
+
+        border-radius: 50%;
+        height: 200px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;;;;;;
+      }
+
+      section div p{
+
+        font-weight: 300;
+        display: block;
+        width: 66%;
+        margin: auto;
+
+        padding: 32px;
+      }
+
+    footer{
+      text-align: center;
+      background-color: #FFF;
+      font-size: small;
+      height: 15%;
+      line-height: 100px;
+      }
+
+        div#arrows i{
+
+            font-size: 40pt;
+            position: absolute;
+            z-index:99;
+            top:47%;
+            color: lightskyblue;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            margin: 0;
+
+        }
+
+        div#arrows i.leftArrow{
+
+          float: left;
+          left:0;
+        }
+
+
+        div#arrows i.rightArrow{
+
+          float: right;
+          right:0;
+        }
+
+    i{
+
+      margin-right: 15px;
+
+    }
+    @media screen and (min-width: 1280px){
+      
+      .bao-chau{
+          background-position-y: -250px;
+      }
+
+    }
+    @media screen and (max-width: 593px){
+      section#all-things-design {
+  margin-top: 150%;
+      }
+    }
+    @media screen and (max-width: 523px){
+
+      .xali-leo{
+
+        height: 80%;
+      }
+    }
+  
+
+#meet-Xali-Leo div img{
+  display: none;
+
+}
+section#meet-Xali-Leo > div{
+  display: none;
+
+}
+
+figcaption{
+  font-size: initial;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 85%;;;
+
+}
+ul{
+  padding: 0;
+  position: absolute;
+  margin: auto;
+  height: 155px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+ul li{
+  line-height: 20px;
+  height: 20px;
+  margin: 32px 0;;;;;;;;;;;
+
+}
+#talks article div a{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  margin: auto;
+
+}
+
+
+img:after{
+  content: attr(title);
+  position: absolute;
+
+}
+.backgroundHero{
+  height: 100%;
+  background-image: url(../images/Anh-Cao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+  -moz-filter: blur(15px);
+
+}
+.colorMasked{
+height: 100%;
+    background-color: rgba(251, 249, 250, 0.2);
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+
+}
+.darkMask{
+  overflow: hidden;
+  height: 100%;
+  background-color: rgb(65, 65, 61);
+
+}
+#talks{
+  background-image: url(https://static.pexels.com/photos/425/apple-iphone-desk-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #FFF;
+
+}

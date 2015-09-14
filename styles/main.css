@@ -11,18 +11,20 @@ html, body{
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: subpixel-antialiased;
 
 }
+
 .ui-page-active{
 
 	outline: 0;
 }
 .ui-loader{
-	
+
 	display: none;
 }
+
 h2{
 
 	font-size: 1.5em;
@@ -45,17 +47,18 @@ h3{
 }
 
 section{
-	
+
 	margin: 0 auto;
 	display: table;
 	width: 100%;
-	height: 640px;	
+	height: 640px;
 	padding-bottom: 80px;
 }
 
 	section div p, section p{
-	
+
 		padding: 20px;
+		margin: 0;
 		background-color: #fff;
 
 	}
@@ -63,7 +66,7 @@ section{
 	#be{
 
 		width: 50px;
-		height: 50px;	
+		height: 50px;
 		border: 2px solid #000;
 
 	}
@@ -73,20 +76,32 @@ section{
 	margin: auto;
 	padding: 0px;
 	border: 0px;
-	height: 160px;
-	
+	height: 50%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 
 }
-	#header .branding{
-		
-		display: table-cell;
-		font-weight: 400;
+	header{
+
+		height: 30%;
 	}
-	
+
+	.branding{
+
+		font-weight: 100;
+		text-align: center;
+		padding: 10%;
+		margin: 0;
+		line-height: initial;
+
+	}
+
 	.branding img{
 
 		max-width: 125px;
-		margin: 30px auto;
+		margin: 15% auto;
 		display: block;
 	}
 
@@ -101,12 +116,13 @@ section{
 	padding: 0px;
 	border: 0px;
 	height: 320px;
-}	
+	background-color: #F7F7F7;
+}
 	#work #slider{
 
 		height: 200px;
 
-	}	
+	}
 		ul#controls li{
 			cursor: pointer;
 		}
@@ -136,7 +152,7 @@ section{
 		    -moz-transition: opacity 0.4s ease-out;
 		    -webkit-transition: opacity 0.4s ease-out;
 		}
-	
+
 		#work #slider div p{
 
 			position: relative;
@@ -183,70 +199,111 @@ section{
 
 			#client-works{
 
-				display: table;
 				margin: 10% auto;
 			}
 
+
 				#client-works figure{
 
-					display: table-cell;
+			/*		display: inline-block;
 					width: 30%;
+					padding: 0px 20px 20px 20px;
+					vertical-align: text-top;
+					-webkit-margin-start: 5px;
+					-webkit-margin-end: 5px;
+					border: 1px solid #f1f1f1;
+					border-top-right-radius: 10px;
+					border-top-left-radius: 10px;
+					border-bottom-left-radius: 10px;
+					border-bottom-right-radius: 10px;
+*/
+					display: inline-block;
+					margin: 0;
+					padding: 10px;
+					vertical-align: text-top;
+					-webkit-margin-start: 0px;
+					-webkit-margin-end: 0px;
+
 				}
 
+					#client-works figure.expanded{
+
+						background-color: #fff;
+						width: auto;
+						position: fixed;
+						z-index: 2;
+						top: 0;
+						right: 0;
+						left: 0;
+					}
+						#client-works figure.expanded figcaption {
+
+							padding: 20px;
+
+						}
+
+						#client-works figure.expanded figcaption p{
+
+							display: block;
+							text-align: left;
+							line-height: initial;
+							margin-top: 10px;
+							margin-bottom: 10px;
+						}
+
+						#client-works figure.expanded img{
+
+							float: inherit;
+							width: 50%;
+						}
+
+
+
 					#client-works figure img{
-						
-						height: 47px;
-						-webkit-filter: grayscale(100%);
-						-moz-filter: grayscale(100%);
-						filter: grayscale(100%);
-						
-						opacity: .8;
 
-						/* IE 8 */
-						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-						/* IE 5-7 */
-						filter: alpha(opacity=50);
-
-						/* Netscape */
-						-moz-opacity: 0.5;
-
-						/* Safari 1.x */
-						-khtml-opacity: 0.5;
+						width: 125px;
+						float: left;
+						/*-webkit-filter: grayscale(100%);
+						filter: grayscale(100%);				*/
 					}
 
 					#client-works figure figcaption{
-						
-						font-weight: regular;
-						margin: 10% auto 0 auto;
 
+						font-weight: normal;
+						padding-bottom: 10px;
+						font-size: large;
+						line-height: initial;
 					}
 
-			#work ul{
+						#client-works figure figcaption p{
 
-			}
+							padding: 0px;
+							background-color: #fff;
+							font-size: large;
+						}
 
-			#work ul li {
+						.hidden{
 
-				display: inline !important;
-				font-weight: bold;
-			}
-			
-			li.active {
+							display: none;
+						}
+						.shown{
 
-				font-weight: bold;
-				color: green;
-			}
+							display: block !important;
+							opacity: 1 !important;
+						}
+
 
 	a:link, a:visited, a:active{
 
 		text-decoration: none;
 		color: #000;
+		border-bottom: 1px dotted #000;
 	}
 
 nav{
 
 	display: none;
-	position: absolute !important;
+	position: fixed;
 	top: 0px;
 	width: 100%;
 	z-index: 99;
@@ -268,6 +325,7 @@ nav a {
 	border-top: 1px solid #e1e1e1;
 	background-color: #fff;
 	font-weight: 700;
+	border: 0 !important;
 
 }
 	nav a:hover{
@@ -278,7 +336,7 @@ nav a {
 ul{
 
 	padding-left: 0px;
-	
+
 }
 
 ul li{
@@ -288,10 +346,14 @@ ul li{
 	display: inline-block;
 
 }
+	#close{
+
+		z-index: 3;
+	}
 
 	#menu, #close{
 
-		margin: 0;
+		margin: auto;
 		display: table;
 		position: relative;
 		background-color: #C0E3F3;
@@ -302,7 +364,9 @@ ul li{
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
+
 	}
+
 	#menu{
 
 		border: 5px solid #E5F6FD;
@@ -311,11 +375,11 @@ ul li{
 	}
 
 	#menu:hover, #menu:active, #menu:visited, #close:hover, #close:active, #close:visited{
-		
+
 		background-color: #9CD7F1;
 	}
 		.float-right{
-			
+
 			float: right;
 			right: 20px;
 			position: absolute;
@@ -323,18 +387,18 @@ ul li{
 		}
 
 		#menu span, #close span{
-			
+
 			display: table-cell;
 			vertical-align: middle;
 		}
-	
+
 		.center{
-			
+
 			margin: 0 auto !important;
 		}
 
 		.mask{
-			
+
 			display: none;
 			background-color: #424242;
 			position: fixed;
@@ -351,12 +415,10 @@ ul li{
 		#mobile-focused, #goal-oriented, #simply-aesthetic{
 
 			display: none;
-			
-		}
-			#simply-aesthetic{
+			margin-top: 0;
+			padding-top: 0;
 
-				margin-top: 15%;
-			}
+		}
 
 	.absolutelyCenter{
 
@@ -381,12 +443,24 @@ ul li{
 		font-weight: bold;
 	}
 
+	.bottom{
+
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin-bottom: 25px;
+		margin: auto;
+		position: absolute;
+		opacity: 1;
+	}
+
 	.bottomCenter{
 
 		z-index: 1;
 		position: fixed !important;
-		bottom: 10%;
-		right: 40%;
+		bottom: 5%;
+		right: 0;
+		left: 0;
 		font-weight: bold;
 		color: red;
 		width: 50px;
@@ -400,7 +474,7 @@ ul li{
 	}
 
 	#close span img{
-		
+
 		max-width: 25%;
 		margin-top: 5px;
 	}
@@ -408,18 +482,24 @@ ul li{
 #about{
 
 	border: 0px;
-	margin-top: 0px;	
+	margin-top: 0px;
 	height: 320px;
-	background-color: #FAFAFA;
 }
+
+	#about p{
+
+		width: 80%;
+		margin: auto;
+		background-color: inherit;
+	}
 
 	#Anh-Cao{
 
 		height: 150px;
 		overflow: hidden;
-		box-shadow: 0 4px 6px -2px #313131;
+		/*box-shadow: 0 4px 6px -2px #313131;
 		border-bottom-left-radius: 20px;
-		border-bottom-right-radius: 20px;
+		border-bottom-right-radius: 20px;*/
 	}
 
 	.viewFull{
@@ -430,8 +510,7 @@ ul li{
 #services{
 
 	height: 320px;
-	background-color: #2E82DD;
-	color: #fff;
+	background-color: #F7F7F7;
 
 }
 
@@ -443,7 +522,8 @@ ul li{
 		#services div ul{
 
 			display: none;
-			background-color: #106CCF;
+			background-color: #fff;
+			color: #000;
 			margin: 0px;
 			padding: 5px;
 		}
@@ -452,7 +532,7 @@ ul li{
 
 			display: block;
 			margin: 20px;
-			color: #FFF;
+			color: #000;
 		}
 
 		.arrow-down {
@@ -461,63 +541,45 @@ ul li{
 			height: 0;
 			border-left: 5px solid transparent;
 			border-right: 5px solid transparent;
-			border-top: 5px solid #fff;
+			border-top: 5px solid #000;
 			margin-top: 15px;
 			margin-left: 20px;
 			position: absolute;
 			display: none;
-		}
-		
-		.arrow-down-down {
-
-			display: block; 
-			width: 0;
-			height: 0;
-			position: relative;
-			border-top: 15px solid rgb(223, 223, 223); 
-			border-right: 15px solid transparent;
-			border-left: 15px solid transparent;
-			margin-left: 50%;
-			margin-top: 15px;
-		}
-		
-		.arrow-up-up {
-			width: 0;
-			height: 0;
-
-			display: block;
-			border-left: 15px solid transparent !important;
-			border-right: 15px solid transparent !important;
-			border-bottom: 15px solid rgb(223, 223, 223) !important;
-			margin-top: 15px;
-			margin-left: 50%;
-			position: relative;
 		}
 
 			.getInline{
 
 				display: inline-block;
 			}
+		.readMore{
+
+			position: absolute;
+			left: 0;
+			right: 0;
+		}
 
 		.arrow-up {
-			width: 0; 
-			height: 0; 
-			border-left: 12px solid transparent;
-			border-right: 12px solid transparent;
-			border-bottom: 12px solid #106CCF;
+
+			width: 0;
+			height: 0;
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
+			border-bottom: 7px solid #fff;
 			left: 0;
 			right: 0;
 			margin: auto;
-			margin-top: -17px;
+			margin-top: -11px;
 		}
 
 #contact{
 
+	height: auto;
 }
 
 	#contact .number{
 
-		font-size: inherit;
+		font-size: 1.20em;
 		margin-top: 50px;
 		margin-bottom: 50px;
 		display: block;
@@ -533,7 +595,7 @@ ul li{
 	margin-right: auto;
 	width: 280px;
 }
-	
+
 
 	#contact-form div{
 
@@ -559,45 +621,34 @@ ul li{
 		width: 248px;
 	}
 
-	input[type="submit"]{
-
+	 button, button:active, button:hover, button:visited{
+	 	outline: 0;
+		background-color: transparent;
+		padding: 20px;
+		cursor: pointer;
 		width: 280px !important;
-		border: 2px solid #000 !important;
+		border: 2px solid #000;
 		color: #000 !important;
 		border-radius: 10px;
-		margin-bottom: 0px !important;
+		margin-bottom: 0px;
+		font-size: 15pt;
 	}
-		.shadow {
-		
-			-webkit-box-shadow: 0 8px 6px -6px black;
-     		-moz-box-shadow: 0 8px 6px -6px black;
-        	box-shadow: 0 8px 6px -6px black;
+/*	button:active{
+
+		background-color: #2E82DD;
+	}
+
+*/	.shadow {
+
+		-webkit-box-shadow: 0 8px 6px -6px black;
+ 		-moz-box-shadow: 0 8px 6px -6px black;
+    	box-shadow: 0 8px 6px -6px black;
+	}
+		.effect4{
+
+	 		position: relative;
+
 		}
-		.effect4
-{
-  position: relative;
-}
-.effect4:after
-{
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  right: 10px;
-  left: auto;
-  width: 50%;
-  top: 80%;
-  max-width:300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-}
 
 
 #copyright{
@@ -608,5 +659,11 @@ ul li{
 	bottom: 5%;
 	position: relative;
 	padding: 50px;
-	background-color: #FAFAFA;
+	background-color: #F7F7F7;;
+}
+
+
+.fixed{
+
+	overflow: hidden;
 }

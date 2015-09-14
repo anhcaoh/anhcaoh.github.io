@@ -1,223 +1,90 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1">
+<html lang="en" data-ng-app="meApp">
 <head>
 
-	<title>Beyond element</title>
-	<meta name="description" content="Mobile-focused website designs">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="./styles/main.css">
+  <title>Hi, I'm Anh. I speak HTML, CSS, and JavaScript. I am a UI/UX designer and developer. I breathe user experience!</title>
+  <meta name="description" content="Hi, I'm Anh. I speak HTML, CSS, and JavaScript. I am a designer and developer, and I breathe user experience!" />
+  <meta name="copyright" content="Anh Cao is a personal brand, and all things designs are open for inspiration" />
+  <meta name="keywords" content="user interface, user experience, designer, developer, atlanta, georgia, atl, ga, UI, UX, human centric design, human computer interaction, user research" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="./styles/minimal.css">
+  <link rel="stylesheet" href="./styles/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="./images/AnhIcon.jpg">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
 <body>
+  <header>
+    <figure class="animated fadeIn">
+    <img src="images/Anh-Cao.jpg" alt="My name is Anh Cao.">
+    <figcaption>Hi, I'm Anh</figcaption>
+    </figure>
+    <article class="monospace"><p class="relativelyCenter animated fadeInDown">{I speak: [<\HTML>, CSS, & JavaScript]}</p></article>
+  </header>
+  <section id="all-things-design">
+    <h2 class="heading" title="Projects">Projects</h2>
+    <article class="absolutelyCenter">
+      <div class="verticallyCenter">
+        <ul>
+          <li><a href="/xaleo" title="Photogram">Xaleo</a></li>
+          <li><a href="/LetsBuildaHouse" title="Let's Build a House">Let's Build a House</a></li>
+          <li><a href="/Photogram" title="Photogram">Photogram</a></li>
+        </ul>
+       
+      </div>
+    </article>
+  </section>
+  <section id="talks">
+    <h2 class="heading">Talks</h2>
+    <article class="absolutelyCenter">
+      <div class="verticallyCenter">
+          <a href="https://docs.google.com/presentation/d/1WqfExK7N03hUEmVuobiXDO6_gqS-pMfM7A4N1l5NBns/pub?start=false&loop=false&delayms=3000" target="_blank" title="Design is...">Design is...</a>
+      </div>
+    </article>
+  </section>
 
-	<nav class="shadow">
-			
-		<a href="#">
-			<img src="./images/Home.png"> HOME
-		</a>
+  <section id="contact-me">
+    <h2 id="lets-talk" class="heading" title="Let's talk">Let's talk</h2>
+    <article class="absolutelyCenter">
+      <div class="verticallyCenter">
+      <ul>
+        <li><a href="tel:6786021591"><i class="fa fa-phone"></i> <span>(678) 602-1591</span></a></li>
+        <li><a href="mailto:anhcaoh@gmail.com"><i class="fa fa-envelope"></i><span>anhcaoh@gmail.com</span></a></li>
+      </ul>
+        
+      </div>
+    </article>
 
-		<a href="#work">
-			<img src="./images/Works.png"> WORKS
-		</a>
-
-		<a href="#about">
-			<img src="./images/About.png"> ABOUT
-		</a>
-		
-		<a href="#services">
-			<img src="./images/Services.png"> SERVICES
-		</a>
-		
-		<a href="#contact">
-			<img src="./images/LetsTalk.png"> CONTACT
-		</a>
-				
-	</nav>
-
-	<section id="header">
-
-		<div class="branding">
-			<img src="./images/Be_logo_web.png">
-		</div>
-
-	</section>
-
-	<section id="work">
-
-		<div id="client-works">
-
-			<figure id="1">
-
-				<img src="./slider/HoangChauWeddingWebsite.png">
-				 
-				 <figcaption style="font-weight: bolder">Wedding</figcaption>
-				
-			</figure>
-
-			<figure id="2">
-
-				<img src="./images/Works/BuckShotsPromoLogo.jpg">
-			
-				<figcaption>B-boy</figcaption>
-			
-			</figure>
-
-			<figure id="3">
-
-				<img src="./images/Works/PowerShootPromo.jpg">
-			  
-				<figcaption>PowerShoot</figcaption>
-			
-			</figure>
-
-		</div>
-
-		<div id="slider">
-			
-			<div id ="1" class="active">
-
-				<img src="./slider/HoangChauWeddingWebsite.png">
-			</div>
-
-			<div id="2" style="background-color:#000;">
-				
-				<img src="./images/Works/BuckShotsPromoLogo.jpg">
-				
-			</div>
-
-			<div id="3">
-
-				<img src="./images/Works/PowerShootPromo.jpg">
-
-			</div>		
-	</div>
-	<!-- 
-	<ul id="controls">
-
-		<li id="1" class="active">Wedding</li>
-		<li id="2">B-boy</li>
-		<li id="3">PowerShoot</li>
-	
-	</ul> -->
-		
-	<!-- 
-		<div id="previous"> Previous </div>
-		<div id ="next"> Next </div> -->
-	
-	</section>
-	
-	<section id="about">
-		
-		<h2>ABOUT</h2>
-		
-		<p><be>Beyond element</be> is a <a href="" onClick="toggles[0].mobileFocused(); return false"><b>mobile-focused</b></a>, <a href="" onClick="toggles[0].goalOriented(); return false"><b>goal-oriented</b></a> and <a href="" onclick="toggles[0].simplyAesthetic(); return false"><b>simply-aesthetic</b></a> graphic & website design agency founded by Anh Cao in 2014. We are based in Atlanta, GA and branching out to Athens, GA.
-		</p>
-		<div id="Anh-Cao" onClick="$(this).addClass('viewFull').next('.arrow-down-down').addClass('arrow-up-up').removeClass('arrow-down-down'); return false;">
-		<p><b>Anh Cao</b>, designer, developer, and user experience professional, <br/> has more than 8 years of experience of working with the web technologies. Anh specializes in content management system, SharePoint, front-end development, and website design. His passion for contributing to a more beautiful world wide web is the motivation drives him to work everyday.</p>
-
-		<p>When Anh is not designing, he is dancing. He dances to express his feelings, to appreciate the music rhythm, to re-focus for a purpose, and to test his ultimate potential. <a href="http://youtu.be/EhWxvWB0e5g?t=6m24s" target="_blank">Watch Anh dance</a> ›</p>
-		</div>
-		
-		<div class="arrow-down-down" onClick="$('#Anh-Cao').toggleClass('viewFull'); $(this).addClass('arrow-down-down').removeClass('arrow-up-up'); return false;"></div>
-		
-		<div class="mask"></div>
-
-		<div id="mobile-focused" class="absolutelyCenter shadow"><p><b>Mobile-focused.</b> Mobile devices become part of our life, part of your and our business. We design website with mobile-first apporach just for that reason.</p></div>
-
-		<div id="goal-oriented" class="absolutelyCenter shadow"><p><b>Goal-oriented.</b> We don't always design websites. But when we do, we do it for a purpose.</p></div>
-
-		<div id="simply-aesthetic" class="absolutelyCenter shadow"><p><b>Simply-aesthetic.</b> Website should be more than a toolset. Website is art, and website designer is artist. Designers sketch and design arts with a feeling and purpose to create the experience that more than its elements of colors and shapes. Art should be simple yet elegantly beautiful.</p></div>
-
-	</section>
-
-	<section id="services">
-		
-		<h2>SERVICES</h2>
-
-		<div id="web-designs"><h3> Website designs <span class="arrow-down getInline"></span></h3>
-		
-
-		<ul><div class="arrow-up"></div>
-
-			<li>Personalized wedding website</li>
-			<li>Photography</li>
-			<li>make-up</li>
-			<li>Small / medium business</li>
-
-		</ul>
-
-		</div>
-
-		<div id="graphic-designs"><h3>Graphic designs <span class="arrow-down getInline"></span></h3>
-
-			<ul><div class="arrow-up"></div>
-			<li>Logo</li>
-			<li>Banner</li>
-			<li>Poster</li>
-			<li>Business card</li>
-			</ul>
-		
-		</div>
-
-	</section>
-
-	<section id="contact">
-
-		<h2>LET'S TALK</h2>
-			
-			<span class="number">
-
-			<a href="tel:678-602-1591">(678) 602-1591</a>
-			
-			</span>
-
-			<form id="contact-form">
-				<label>E-mail</label>
-				<input type="email" name="email" placeholder="Your e-mail">
-				
-				<label>Messages</label>				
-				<textarea name="Messages" style="height: 75px" row="5" placeholder="Hi, I need a website for my business..."></textarea>
-				
-				<input type="submit">
-				
-				</div>
-			</form>
-
-	</section>
-	
-	<div id="menu" class="circle bottomRight shadow"><span>Menu</span></div>
-	<div id="close" class="circle bottomCenter"><span><img src="./images/Close.png"</span></div>
-
-	<footer id="copyright"> © 2014. </footer>
- 
-<script type="text/javascript" src="./scripts/jquery-1.11.0.js"></script>
-<!-- <script type="text/javascript" src="./scripts/jquery.mobile-1.4.1.min.js"></script> -->
-<script type="text/javascript" src="./scripts/jquery-ui.min.js"></script>
-
-<script type="text/javascript" src="./scripts/app.js"></script>
+  </section>
+<!--   <section>
+    <h2 class="heading" style="color: #CCC" title="My smart, beautiful wife, Brenny">My smart, beautiful wife, Brenny</h2>
+    <article class="bao-chau" title="My smart, beautiful wife, Brenny"></article>
+  </section>
+  <section>
+  <h2 class="heading" title="Meet Xali & Leo">Meet Xali & Leo</h2>
+    <article class="absolutelyCenter">
+      <div class=" xali-leo verticallyCenter">
+        <img src="images/Xali.jpg" alt="Meet Xali" title="Meet Xali">
+        <img src="images/Leo.jpg" alt="& Leo" title="& Leo">
+      </div>
+    </article>
+  </section> -->
+  <footer>@2015</footer>
 
 <script>
-
-	//smooth scrolling
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-52619134-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
-
+<script src="scripts/jquery-1.11.0.js"></script>
 </body>
 </html>

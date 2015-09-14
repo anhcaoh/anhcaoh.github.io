@@ -1,61 +1,88 @@
 	
-	var toggles = [{ mobileFocused : function toggleMobileFocused(){
+	var currentY = window.scrollY;
 
+	var toggles = [{ 
+
+		mobileFocused : function toggleMobileFocused(){
+
+		currentY = window.scrollY;
 		$('.mask').show("fast", "linear");
 		$('#mobile-focused').fadeIn('fast');
 		$('#close').css('display','table');
+		$("window, html, body").addClass("fixed");
 
 	}, goalOriented: function toggleGoalOriented(){
-
+		
+		currentY = window.scrollY;
 		$('.mask').show("fast");
 		$('#goal-oriented').fadeIn('fast');
 		$('#close').css('display','table');
+		$("window, html, body").addClass("fixed");
 
 	},	simplyAesthetic: function toggleSimplyAesthetic(){
 
+		currentY = window.scrollY;
 		$('.mask').show("fast");
 		$('#simply-aesthetic').fadeIn('fast');
 		$('#close').css('display','table');
+		$("window, html, body").addClass("fixed");
+			
+	},	clientWorks: function toggleClientWorks(event){
 
+		currentY = window.scrollY;
+
+		var targetedClient = $( event.target ).parent();
+
+		$(targetedClient).addClass("expanded");
+		$("window, html, body").addClass("fixed");	
+		$(".mask").show();
+		$("#close").css("display","table");
 	}
-
-
+	
 	}];
 
 $(document).ready( function(){
 	
-	$("#slider div p").on("click", function(){
-    
-    	$(this).next("div.more").slideToggle("fast");
-
-	});
 
 	$("#services div h3").on("click", function(){
 
 		$(this).next("ul").slideToggle("fast");
+
 		$(this).find(".arrow-down").toggleClass("getInline");
 	});
 
 	$("#menu").on( "click", toggleMenu );
 
+	$("figure img").on("click", function(event){
+
+		toggles[0].clientWorks(event);
+		console.log(currentY);
+
+	});
+
 	function toggleMenu( event ){
 
 		window.scrollTo(0,0);
-
-		console.log($("this"));
 
 		$(".mask").show();
 
 		$("nav").slideToggle("fast");
 		$("#close").css("display","table");
+		$("window, html, body").toggleClass("fixed");
+
+		currentY = window.scrollY;
 	}
 
 	$("nav a, .mask, #close").on("click", function(){
 		
 		$("nav, .mask, #close, .absolutelyCenter").hide();
+		$("window, html, body").removeAttr("class");
+		$(".expanded").removeAttr("class");
+
+		window.scrollTo(0, currentY);
+
 
 	});
-
 
   	var initialScrollPosition = 0;
 	
@@ -105,8 +132,6 @@ $(document).ready( function(){
 		// }
 	}
 
-
-
 	var goBack = function(){
 
 		// $("#next").fadeIn();
@@ -128,8 +153,8 @@ $(document).ready( function(){
 	// $("#previous").on("click", goBack );
 
 		// Bind the swipeleftHandler callback function to the swipe event on div.box
- 	$( "#slider div" ).on( "swipeleft", swipeleftHandler );
- 	$( "#slider div" ).on( "swiperight", swipeRightHandler );
+ 	$( "figure" ).on( "swipeleft", swipeleftHandler );
+ 	$( "figure" ).on( "swiperight", swipeRightHandler );
 	 
   	// Callback function references the event target and adds the 'swipeleft' class to it
   	function swipeleftHandler( event ){
@@ -155,27 +180,16 @@ $(document).ready( function(){
   		goBack();
   	}
 
-  	$("#client-works figure").on("click", function(){
-	
-		var match = $(this).context.id;
 
-		$("#client-works figure figcaption").css("font-weight","regular");
-		$(this).find("figcaption").css({"color":"#000","font-weight":"bolder"});
+	// $("button").on("click", function(event){
+		
+	// 	event.preventDefault();
 
-		$("#slider div").removeClass("active");
-		$("#slider div#" + match + ", li#"+match).addClass("active");
+	// 	alert("We received your message. We will contact you within 24 hours.");
 	
-	});
-
-	$("input[type='submit']").on("click", function(){
+	// 	submit();
 	
-		alert("We got your message. We will contact you within 24 hours.");
-	
-		return false;
-	
-	});
-
-
+	// });
 
 });
 
