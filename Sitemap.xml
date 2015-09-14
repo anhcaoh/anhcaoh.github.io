@@ -1,10 +1,25 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8366b19c62e878ada5e91afdb11134a0d2ae6205
 <?xml version="1.0" encoding="UTF-8"?>
  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
  <url>
+<<<<<<< HEAD
+   <loc>http://beyondelement.com</loc>
+   <image:image>
+<image:loc>http://beyondelement.com/images/Works/BuckShotsPromoLogo.jpg</image:loc>
+   </image:image>
+   <image:image>     <image:loc>beyondelement.com/images/Works/PowerShootPromo.jpg</image:loc>
+   </image:image>
+ </url> 
+</urlset> </sitemapindex>
+=======
  	<loc>www.anhcaoh.com</loc>
 	<image:image>
 		<image:loc>http://anhcaoh.github.io/images/Anh-Cao.jpg</image:loc>
 	</image:image>
  </url> 
 </urlset>
+>>>>>>> 8366b19c62e878ada5e91afdb11134a0d2ae6205
