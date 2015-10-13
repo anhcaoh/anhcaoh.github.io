@@ -25,11 +25,12 @@ header{
 
   }
   section#all-things-design{
-    margin-top: 80%;
-    background-image: url(https://static.pexels.com/photos/4749/black-and-white-lights-light-bulb-idea.jpg);
+    margin-top: 65%;
+    /*background-image: url(https://static.pexels.com/photos/4749/black-and-white-lights-light-bulb-idea.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
-    color: #FFF;
+    border-top: 1px solid #F6F6F6;
+    /*color: #FFF;*/
   }
   section{
     z-index: 0;
@@ -91,10 +92,7 @@ figure{
     -webkit-transition: all 50ms;
     -moz-transition: all 50ms;
   }
-  p{
-  font-size: inherit;
-
-  }
+ 
   .small{
     font-size: small;
   }
@@ -231,7 +229,7 @@ figure{
         margin:32px 0 0 32px;
       }
 
-      img{
+      header img{
 
         border-radius: 50%;
         height: 200px;
@@ -243,7 +241,7 @@ figure{
         left: 0;;;;;;
       }
 
-      section div p{
+     /* section div p{
 
         font-weight: 300;
         display: block;
@@ -251,7 +249,7 @@ figure{
         margin: auto;
 
         padding: 32px;
-      }
+      }*/
 
     footer{
       text-align: center;
@@ -335,21 +333,59 @@ figcaption{
 }
 ul{
   padding: 0;
+}
+ul li{
+  list-style: none;
+}
+
+#all-things-design ul{
+  height: calc(100% - 32px);
+  margin: 0;
+  padding: 16px;
+}
+#all-things-design ul li{
+     width: 50%;
+    height: 50%;
+    float: left;
+    list-style: none;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+
+}
+#all-things-design ul li a{
+  line-height: 24px;
   position: absolute;
-  margin: auto;
-  height: 155px;
-  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
 }
-ul li{
+ul li img{
+  border-radius: 5px;
+  height: 150px;
+}
+#contact-me ul{
+  height: 150px;
+  width: 100%;
+}
+#contact-me ul li{
   line-height: 20px;
-  height: 20px;
-  margin: 32px 0;;;;;;;;;;;
-
+    height: 20px;
+    margin: 32px 0;
 }
+#minimalist-mobile-design{
+  background-image: url("/images/iphone_canvas.png");
+  background-position: 40% 0;
+}
+#minimalist-mobile-design a{
+  top: 40%;
+  margin-left: 15%;
+  left: inherit;
+  right: inherit;
+}
+
 #talks article div a{
   position: absolute;
   top: 0;
@@ -360,7 +396,11 @@ ul li{
   margin: auto;
 
 }
+#talks article div a:hover{
+  color: inherit;
+  opacity: .5;
 
+}
 
 img:after{
   content: attr(title);
@@ -378,21 +418,26 @@ img:after{
   -moz-filter: blur(15px);
 
 }
-.colorMasked{
-height: 100%;
-    background-color: rgba(251, 249, 250, 0.2);
-    top: 0;
+.lightMask{
+    overflow: hidden;
     position: absolute;
     width: 100%;
-    z-index: 0;
+    height: 100%;
+    background-color: rgba(251, 249, 250, 0.2);
+    top: 0;
+  
 
 }
 .darkMask{
   overflow: hidden;
+  position: absolute;
+  width: 100%;
   height: 100%;
-  background-color: rgb(65, 65, 61);
-
+  background-color: rgba(28, 28, 28, 0.4);
+  top: 0;
+  
 }
+
 #talks{
   background-image: url(https://static.pexels.com/photos/425/apple-iphone-desk-office.jpg);
   background-repeat: no-repeat;

@@ -30,33 +30,51 @@
     <article class="absolutelyCenter">
       <div class="verticallyCenter">
         <ul>
-          <li><a href="/carousel" title="Carousel">Carousel Design</a></li>
-          <li><a href="/LetsBuildaHouse" title="Let's Build a House">Let's Build a House</a></li>
-          <li><a href="/Photogram" title="Photogram">Photogram</a></li>
+          <li id="minimalist-mobile-design">
+            <a href="/carousel" title="Minimalist Mobile Design">Minimalist<br/> Mobile Design</a>
+          </li>
+          <li id="envue">
+            <a href="http://www.envue.com" title="Photogram">
+            <img src="/images/envue_data_services.png" alt="enVue Data Virtualization">
+             <p>enVue Data virtualization</p>
+             </a>
+          </li>
+          <li id="photogram">
+            <a href="/Photogram" title="Photogram">
+            <img src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xpa1/t39.2365-6/851582_417171855069447_55288290_n.png" alt="Photogram: The missing Instagram slideshow." style="height:50px"><p>Photogram: <br/>The missing Instagram slideshow.</p></a>
+          </li>
+          <li id="lets-build-a-house">
+            <a href="/LetsBuildaHouse" title="Let's Build a House">
+            <img src="/images/lets_build_a_house.png" alt="UI/UX explained: Let's Build a House" style="width: 318px;">
+            <p>UI/UX explained: Let's Build a House</p>
+            </a>
+          </li>
+    
         </ul>
-       
       </div>
     </article>
   </section>
   <section id="talks">
+  <!-- <div class="darkMask"></div> -->
     <h2 class="heading">Talks</h2>
     <article class="absolutelyCenter">
+    <div class="darkMask">
       <div class="verticallyCenter">
           <a href="https://docs.google.com/presentation/d/1WqfExK7N03hUEmVuobiXDO6_gqS-pMfM7A4N1l5NBns/pub?start=false&loop=false&delayms=3000" target="_blank" title="Design is...">Design is...</a>
       </div>
+    </div>
     </article>
   </section>
 
   <section id="contact-me">
     <h2 id="lets-talk" class="heading" title="Let's talk">Let's talk</h2>
     <article class="absolutelyCenter">
-      <div class="verticallyCenter">
-      <ul>
+      <!-- <div class="verticallyCenter"> -->
+      <ul class="verticallyCenter">
         <li><a href="tel:6786021591"><i class="fa fa-phone"></i> <span>(678) 602-1591</span></a></li>
         <li><a href="mailto:anhcaoh@gmail.com"><i class="fa fa-envelope"></i><span>anhcaoh@gmail.com</span></a></li>
       </ul>
-        
-      </div>
+      <!-- </div> -->
     </article>
 
   </section>
@@ -68,8 +86,6 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   
-  ga(‘set’, ‘&uid’, {{USER_ID}}); // Set the user ID using signed-in user_id.
-
   ga('create', 'UA-52619134-1', 'auto');
   ga('send', 'pageview');
 
