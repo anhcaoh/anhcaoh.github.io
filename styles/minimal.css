@@ -293,26 +293,6 @@ figure{
       margin-right: 15px;
 
     }
-    @media screen and (min-width: 1280px){
-      
-      .bao-chau{
-          background-position-y: -250px;
-      }
-
-    }
-    @media screen and (max-width: 593px){
-      section#all-things-design {
-  margin-top: 150%;
-      }
-    }
-    @media screen and (max-width: 523px){
-
-      .xali-leo{
-
-        height: 80%;
-      }
-    }
-  
 
 #meet-Xali-Leo div img{
   display: none;
@@ -339,12 +319,12 @@ ul li{
 }
 
 #all-things-design ul{
-  height: calc(100% - 32px);
+  height: calc(100% - 142px);
   margin: 0;
-  padding: 16px;
+  padding: 8px;
 }
 #all-things-design ul li{
-     width: 50%;
+    width: calc(50% - 34px);
     height: 50%;
     float: left;
     list-style: none;
@@ -352,19 +332,25 @@ ul li{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 0;
-
-
+    border: 1px solid #F6F6F6;
+    border-radius: 5px;
+    margin: 16px;
+    display: table;
+}
+#all-things-design ul li:hover{
+  background-color: rgba(246, 246, 246, 0.3);
+    transition: all 50ms ease-in-out;
+  -webkit-transition: all 50ms ease-in-out;
+  -moz-transition: all 50ms ease-in-out;
 }
 #all-things-design ul li a{
-  line-height: 24px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  display: table-cell;
+  vertical-align: middle;
 }
 ul li img{
   border-radius: 5px;
   height: 150px;
+  margin-top: 16px;
 }
 #contact-me ul{
   height: 150px;
@@ -375,16 +361,7 @@ ul li img{
     height: 20px;
     margin: 32px 0;
 }
-#minimalist-mobile-design{
-  background-image: url("/images/iphone_canvas.png");
-  background-position: 40% 0;
-}
-#minimalist-mobile-design a{
-  top: 40%;
-  margin-left: 15%;
-  left: inherit;
-  right: inherit;
-}
+
 
 #talks article div a{
   position: absolute;
@@ -445,4 +422,24 @@ img:after{
   background-position: 0 0;
   color: #FFF;
 
+}
+ @media screen and (max-width: 735px){
+ 
+    #all-things-design ul li a img{
+      height: 82px;
+      width: inherit !important;
+    }
+  }
+ @media screen and (max-width: 440px){
+  #all-things-design ul{
+    height: calc(100% - 87px);
+  }
+  #all-things-design ul li{
+    height: initial;
+  }
+    #all-things-design ul li a img{
+      height: 50px;
+      width: inherit !important;
+  }
+  }
 }
