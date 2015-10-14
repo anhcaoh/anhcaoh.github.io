@@ -74,6 +74,7 @@ body, html{
 
      text-decoration: none;
      font-size: initial;
+     font-weight: 500;
      color: inherit;
   }
   a:hover{
@@ -216,6 +217,7 @@ body, html{
 
         border-radius: 50%;
         margin: 32px;
+        height: 150px;
      
       }
 
