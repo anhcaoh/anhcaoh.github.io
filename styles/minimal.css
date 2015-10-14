@@ -4,46 +4,32 @@ body, html{
   outline: 0;
   height: 100%;
   font-family: "Helvetica Neue", 'Lato', Sans-serif;
-  font-size: 32pt;
+  /*font-size: 32pt;*/
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   color: #6F6F6F;
 
 }
-header{
-  position: fixed;
-  top: 0;
-  z-index: -1;
-}
+
   header,section{
     width: 100%;
     margin: 0 auto;
     text-align: center;
     display: table;
-    height: 100%;
+    position: relative;
+    /*height: 100%;*/
 
   }
-  section#all-things-design{
-    margin-top: 65%;
-    /*background-image: url(https://static.pexels.com/photos/4749/black-and-white-lights-light-bulb-idea.jpg);*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 1px solid #F6F6F6;
-    /*color: #FFF;*/
-  }
+  
   section{
     z-index: 0;
     background-color: #FFF;
   }
-figure{
-  height: 70%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
+  header{
+    height: 70%;
+  }
 
-}
 
   h2{
 
@@ -106,10 +92,6 @@ figure{
 
   }
 
-  section:nth-child(odd){
-
-  }
-
     #hello{
 
       opacity: 0;
@@ -145,7 +127,7 @@ figure{
         from { width: 0; }
     }
 
-
+/*
     section div{
 
       right: 0;
@@ -157,7 +139,7 @@ figure{
       top: 0;
       margin: 0 auto;
     }
-
+*/
     #hello h2{
 
       opacity: 0;
@@ -219,37 +201,19 @@ figure{
 
 
       section h2.heading {
-
         font-weight: 400;
-        color:inherit;
-        font-size:initial;
-        z-index:1;
-        float:left;
-        position:absolute;
-        margin:32px 0 0 32px;
+        color: inherit;
+        font-size: initial;
+        padding: 32px;
+        text-align: left;
       }
 
       header img{
 
         border-radius: 50%;
-        height: 200px;
-        position: absolute;
-        margin: auto;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;;;;;;
+        margin: 32px;
+     
       }
-
-     /* section div p{
-
-        font-weight: 300;
-        display: block;
-        width: 66%;
-        margin: auto;
-
-        padding: 32px;
-      }*/
 
     footer{
       text-align: center;
@@ -303,13 +267,12 @@ section#meet-Xali-Leo > div{
 
 }
 
+figure{
+  margin: 0;
+}
+
 figcaption{
   font-size: initial;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 85%;;;
-
 }
 ul{
   padding: 0;
@@ -317,45 +280,100 @@ ul{
 ul li{
   list-style: none;
 }
+.left-side{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    line-height: 25px;
+}
+.media-object img{
+  margin-right: 16px;
+  height: inherit;
+  vertical-align: top;
+}
+.media-text{
+    display: inline-block;
+    text-align: left;
+    line-height: 25px;
+    margin: 0;
+}
+
+
+.left-aside{
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    background-color: rgba(238, 238, 238, 0.5);
+    transition: all 10ms ease-in-out;
+    -webkit-transition: all 10ms ease-in-out;
+    -moz-transition: all 10ms ease-in-out;
+    box-shadow: 0 1px 1px;
+    -moz-box-shadow: 0 1px 1px;
+}
+
+.right-aside{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(238, 238, 238, 0.5);
+    transition: all 10ms ease-in-out;
+    -webkit-transition: all 10ms ease-in-out;
+    -moz-transition: all 10ms ease-in-out;
+    box-shadow: 0 1px 1px;
+    -moz-box-shadow: 0 1px 1px;
+}
+.off-canvas{
+  left: -100%;
+}
+.media-text p{
+  margin: 0px;
+}
+.right-side{
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    line-height: 25px;
+}
+.border-top{
+    border-top: 1px solid rgba(201, 201, 201, 0.2);
+}
 
 #all-things-design ul{
-  height: calc(100% - 142px);
   margin: 0;
-  padding: 8px;
 }
 #all-things-design ul li{
-    width: calc(50% - 34px);
+    width: 100%;
+    /*width: calc(50% - 32px);*/
+    /*width: 300px;*/
     height: 50%;
-    float: left;
     list-style: none;
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    border: 1px solid #F6F6F6;
-    border-radius: 5px;
-    margin: 16px;
-    display: table;
+    margin: auto;
+    display: inline-block;
+    padding: 10% 0;
+    border-bottom: 2px solid rgb(228, 228, 228);
+    background-color: #F4F4F4;
 }
-#all-things-design ul li:hover{
-  background-color: rgba(246, 246, 246, 0.3);
-    transition: all 50ms ease-in-out;
-  -webkit-transition: all 50ms ease-in-out;
-  -moz-transition: all 50ms ease-in-out;
-}
+
 #all-things-design ul li a{
-  display: table-cell;
   vertical-align: middle;
+}
+#all-things-design ul li a:hover ~ .left-aside, .left-aside:hover{
+  left: 0;
+  transition: all 10ms ease-in-out;
+  -webkit-transition: all 10ms ease-in-out;
+  -moz-transition: all 10ms ease-in-out;
 }
 ul li img{
   border-radius: 5px;
-  height: 150px;
-  margin-top: 16px;
+  height: 450px;
 }
-#contact-me ul{
-  height: 150px;
-  width: 100%;
-}
+
 #contact-me ul li{
   line-height: 20px;
     height: 20px;
@@ -370,13 +388,12 @@ ul li img{
   bottom: 0;
   left: 0;
   height: 20px;
+  color: #FFF;
   margin: auto;
 
 }
 #talks article div a:hover{
-  color: inherit;
   opacity: .5;
-
 }
 
 img:after{
@@ -410,20 +427,20 @@ img:after{
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(28, 28, 28, 0.4);
+  background-color: rgba(251, 215, 191, 0.13);
   top: 0;
-  
+  z-index: -1;
 }
 
 #talks{
-  background-image: url(https://static.pexels.com/photos/425/apple-iphone-desk-office.jpg);
+  background-image: url(https://static.pexels.com/photos/2170/creative-desk-pens-school.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  color: #FFF;
+  height: 100%;
 
 }
- @media screen and (max-width: 735px){
+/* @media screen and (max-width: 735px){
  
     #all-things-design ul li a img{
       height: 82px;
@@ -441,5 +458,5 @@ img:after{
       height: 50px;
       width: inherit !important;
   }
-  }
-}
+  
+}*/
