@@ -344,7 +344,7 @@ ul li{
   margin: 0;
 }
 #all-things-design ul li{
-    width: 100%;
+    width: 80%;
     /*width: calc(50% - 32px);*/
     /*width: 300px;*/
     height: 50%;
@@ -355,9 +355,10 @@ ul li{
     background-position: 50% 0;
     margin: auto;
     display: inline-block;
+    margin: 0 10%;
     padding: 10% 0;
-    border-bottom: 2px solid rgb(228, 228, 228);
-    background-color: #F4F4F4;
+    border-bottom: 1px solid rgba(201, 201, 201, 0.2);
+    /*background-color: #F4F4F4;*/
 }
 
 #all-things-design ul li a{
