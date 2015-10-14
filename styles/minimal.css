@@ -438,9 +438,35 @@ img:after{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  height: 100%;
+  height: 50%;
 
 }
+@media screen and (max-width: 735px){
+ 
+    #all-things-design ul li a img{
+      width: 200px;
+      height: inherit !important;
+    }
+    #photogram a img{
+      width: inherit !important;
+    }
+  }
+
+  @media screen and (max-width: 647px){
+ 
+    #envue a img{
+      width: 100% !important;
+      height: inherit !important;
+    }
+    #photogram a img{
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+    #photogram a .media-text{
+      text-align: center;
+    }
+  }
+
 /* @media screen and (max-width: 735px){
  
     #all-things-design ul li a img{
