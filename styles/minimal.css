@@ -29,7 +29,7 @@ body, html{
   }
   header{
     height: 70%;
-    background-image: url(https://static.pexels.com/photos/4097/city-cars-traffic-lights.jpeg);
+    background-image: url(https://static.pexels.com/photos/2752/city-sunny-people-street-large.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -279,6 +279,7 @@ figure{
 
 figcaption{
   font-size: initial;
+  color: #FFF;
 }
 ul{
   padding: 0;
