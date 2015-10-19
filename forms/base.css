@@ -55,7 +55,7 @@ button{
 	border-color: #E2E2E2;
 	width: 100%;
 	border-radius: 8px;
-	width: 290px;
+	width: initial;
 	margin: auto;
 	margin-top: 32px;
 }
