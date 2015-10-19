@@ -1,0 +1,55 @@
+html,
+body,
+section{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	font-family: monospace;
+	background-color: #FFF;
+}
+img{
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin: 32px auto;
+}
+
+section{
+	/*width: 80%;*/
+	margin: auto;
+}
+
+article{
+	float: left;
+	width: 50%;
+	height: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.table{
+	display: table;
+	width: 100%;
+	height: 100%;
+	/*border-spacing: 8px;*/
+}
+	.table-cell{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;	
+		background: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77));
+		color: #ADADAD;
+		padding: 8px;
+		/*border-radius: 3px;*/
+		/*padding: 16px;*/
+	}
+	#who .table-cell{
+		background: linear-gradient(#FFF, #FFF);
+	}
+	#skills{
+		background-image: url(https://static.pexels.com/photos/164/man-person-apple-iphone-medium.jpg);
+	}
+	#design{
+		background-image: url(https://static.pexels.com/photos/2097/desk-office-pen-ruler-medium.jpg);
+	}
