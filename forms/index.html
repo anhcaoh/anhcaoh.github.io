@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form: user interactions with ease of use</title>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+<link rel="stylesheet" href="base.css" />
+</head>
+<body>
+<form name="custom-form" autocomplete="off" autocapitalize="off">
+	<div><label for="first-name">
+		<input type="text" name="first-name" placeholder="example: Anh" class="animated" autofocus required>
+		<span>First Name:</span>
+	</label>
+	</div>
+	<div>
+	<label for="last-name">
+		<input type="text" id="ln" name="last-name" placeholder="example: Cao" class="animated" required>
+		<span>Last Name:</span>
+	</label>
+	</div>
+	<button type="submit" name="lets-go" class="animated">Let's go</button>
+</form>
+<script>
+
+var ACForms = {};
+
+ACForms.scrollToTop = function (){
+	window.scrollTo(0, 0);
+};
+
+var lastName = document.getElementById("ln");
+lastName.addEventListener("focus", ACForms.scrollToTop);
+
+</script>
+</body>
+</html>
