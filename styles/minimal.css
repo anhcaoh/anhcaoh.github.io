@@ -4,8 +4,7 @@ body, html{
   outline: 0;
   height: 100%;
   font-family: "Helvetica Neue", 'Lato', Sans-serif;
-  /*font-size: 32pt;*/
-  background-color: #fff;
+  background-color: rgba(228, 228, 228, 0.3);
   -webkit-font-smoothing: antialiased;
   margin: 0;
   color: #6F6F6F;
@@ -31,7 +30,20 @@ body, html{
     background-size: cover;
     background-repeat: no-repeat;
   }
+  
+  .fixed-top{
+    position: fixed;
+    top : 16px;
+  }
+  ::selection{
+    background: orange;
+    color: #FFF;
+  }
 
+  ::-moz-selection{
+    background: orange;
+    color: #FFF;
+  }
 
   h2{
     margin: 0;
@@ -64,14 +76,20 @@ body, html{
   .verticallyCenter{
     position: absolute;
     top: 0;
+    right: 0;
     bottom: 0;
+    left: 0;
     margin: auto;;
+  }
+  .singleLine{
+    height: 20px;
+    line-height: 20px;
   }
   a:link, a:visited, a:active{
 
      text-decoration: none;
      font-size: initial;
-     font-weight: 500;
+     font-weight: 600;
      color: inherit;
   }
   a:hover{
@@ -161,8 +179,6 @@ body, html{
 
 
     }
-
-
       #meet-Xali-Leo h2{
   margin: 0;;;
 
@@ -191,7 +207,7 @@ body, html{
       header img{
 
         border-radius: 50%;
-        margin: 32px;
+        margin: 64px;
         height: 150px;
      
       }
@@ -199,9 +215,10 @@ body, html{
     footer{
       text-align: center;
       background-color: #FFF;
-      font-size: small;
-      height: 15%;
-      line-height: 100px;
+      font-size: 14px;
+      font-weight: 400;
+      height: 64px;
+      line-height: 64px;
       }
 
         div#arrows i{
@@ -257,17 +274,13 @@ figcaption{
   color: #FFF;
 }
 ul{
+  margin: 0;
   padding: 0;
 }
 ul li{
   list-style: none;
 }
-.left-side{
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    line-height: 25px;
-}
+
 .media-object img{
   margin-right: 16px;
   height: inherit;
@@ -334,7 +347,9 @@ ul li{
     display: inline-block;
     border-bottom: 1px solid rgba(201, 201, 201, 0.2);
 }
-
+#all-things-design ul li:last-child{
+  border: 0; 
+}
 #all-things-design ul li a{
   vertical-align: middle;
 }
@@ -346,7 +361,7 @@ ul li{
 }
 ul li img{
   border-radius: 5px;
-  width: 25%;
+  width: 200px;
   height: inherit;
 }
 
@@ -355,23 +370,6 @@ ul li img{
     height: 20px;
     margin: 32px 0;
 }
-
-
-#talks article div a{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 20px;
-  /*color: #FFF;*/
-  margin: auto;
-
-}
-#talks article div a:hover{
-  opacity: .5;
-}
-
 
 .light-mask{
     overflow: hidden;
@@ -391,13 +389,32 @@ ul li img{
 }
 
 #talks{
-  background-image: url(https://static.pexels.com/photos/6438/apple-iphone-technology-white.jpg);
+  background-image: url(https://static.pexels.com/photos/274/people-show-chairs-gym-medium.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
   height: 50%;
-
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #969696;
 }
+#contact-me{
+  background-color: rgb(10, 8, 6);
+ }
+ #talks h2{
+  padding: 16px;
+ }
+ #talks a:hover,
+ #talks a:active,
+ #talks a:focus,
+ #contact-me a:hover,
+ #contact-me a:active,
+ #contact-me a:focus{
+  color: inherit;
+  opacity: .7;
+ }
+ 
 @media screen and (max-width: 735px){
  
     #all-things-design ul li a img{
