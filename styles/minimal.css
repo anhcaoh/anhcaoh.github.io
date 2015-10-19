@@ -34,6 +34,9 @@ body, html{
   .fixed-top{
     position: fixed;
     top : 16px;
+    z-index: 1;
+    background: rgba(241, 241, 241, 0.8);
+    padding-right: 8px;
   }
   ::selection{
     background: orange;
