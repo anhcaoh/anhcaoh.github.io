@@ -6,7 +6,7 @@ section{
 	margin: 0;
 	overflow: hidden;
 	font-family: monospace;
-	background-color: #FFF;
+	background-color: #EDEDED;
 }
 img{
 	border-radius: 50%;
@@ -17,8 +17,9 @@ img{
 }
 
 section{
-	/*width: 80%;*/
-	margin: auto;
+	width: 80%;
+	height: 80%;
+	margin: 5% 10%;
 }
 
 article{
@@ -28,9 +29,13 @@ article{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+footer {
+	text-align: right;
+	padding-right: 10%;
+}
 .table{
 	display: table;
-	width: 100%;
+	width: 101%;
 	height: 100%;
 	/*border-spacing: 8px;*/
 }
@@ -38,11 +43,10 @@ article{
 		display: table-cell;
 		vertical-align: middle;
 		text-align: center;	
-		background: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77));
-		color: #ADADAD;
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.37), #000);
+		color: rgb(50, 50, 50);
 		padding: 8px;
-		/*border-radius: 3px;*/
-		/*padding: 16px;*/
+
 	}
 	#who .table-cell{
 		background: linear-gradient(#FFF, #FFF);
