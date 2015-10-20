@@ -33,10 +33,12 @@ body, html{
   
   .fixed-top{
     position: fixed;
-    top : 16px;
+    top : 0;
     z-index: 1;
-    background: rgba(241, 241, 241, 0.8);
-    padding-right: 8px;
+    background: rgba(241, 241, 241, 0.75);
+    padding: 16px 0 0 0;
+    width: 100%;
+    margin: 0;
   }
   ::selection{
     background: orange;
@@ -217,7 +219,7 @@ body, html{
 
     footer{
       text-align: center;
-      background-color: #FFF;
+      /*background-color: #FFF;*/
       font-size: 14px;
       font-weight: 400;
       height: 64px;
@@ -258,16 +260,6 @@ body, html{
       margin-right: 15px;
 
     }
-
-#meet-Xali-Leo div img{
-  display: none;
-
-}
-section#meet-Xali-Leo > div{
-  display: none;
-
-}
-
 figure{
   margin: 0;
 }
@@ -364,7 +356,7 @@ ul li{
 }
 ul li img{
   border-radius: 5px;
-  width: 200px;
+  width: 500px;
   height: inherit;
 }
 
@@ -420,26 +412,11 @@ ul li img{
  
 @media screen and (max-width: 735px){
  
-    #all-things-design ul li a img{
+    ul li a img{
       width: 50%;
     }
     #photogram a img{
       width: inherit !important;
-    }
-  }
-
-  @media screen and (max-width: 647px){
- 
-    #envue a img{
-      width: 100% !important;
-      height: inherit !important;
-    }
-    #photogram a img{
-      margin-right: 0;
-      margin-bottom: 32px;
-    }
-    #photogram a .media-text{
-      text-align: center;
     }
   }
 
