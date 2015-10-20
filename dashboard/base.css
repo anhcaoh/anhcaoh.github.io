@@ -66,4 +66,8 @@ footer {
 	    width: 100%;
 	    margin: 32px auto;	
 	}
+	.table-cell{
+		background: rgba(0, 0, 0, 0.5);
+    	color: #B1B1B1;
+	}
 }
