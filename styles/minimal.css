@@ -10,6 +10,7 @@ body, html{
   color: #6F6F6F;
   overflow-x: hidden;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
 }
 
@@ -282,15 +283,3 @@ article img{
   opacity: .7;
  }
  
-@media screen and (max-width: 735px){
-    header .dark-mask{
-      /*display: none;*/
-    }
-    #all-things-design ul li{
-      margin: 32px auto;
-      padding: 0;
-    }
-    ul li img{
-      width: inherit;
-    }
-  }
