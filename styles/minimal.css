@@ -56,8 +56,9 @@ body{
     top : 0;
     z-index: 1;
     background: rgba(241, 241, 241, 0.75);
-    padding: 16px 0;
-    width: calc(100% - 50px);
+    padding: 16px;
+    padding-left: 0;
+    width: calc(100% - 32px);
     margin: 0;
   }
   ::selection{
@@ -257,18 +258,14 @@ article img{
 
 #talks{
     height: 30%;
-    color: #FFF;
     z-index: 1;
-    background-color: rgba(198, 96, 25, 0.89);
+    background-color: #EAEAEA;
 }
 
- #talks h2{
-  /*padding: 16px;*/
- }
- #contact-me{
-  background-color: rgba(202, 111, 48, 0.95);
-  color: #FFF;
- }
+#contact-me{
+  background-color: #EAEAEA;
+}
+
  #talks a:hover,
  #talks a:active,
  #talks a:focus,
@@ -284,7 +281,7 @@ article img{
  @media screen and (max-width: 725px){
 
   .responsive{
-    width: 100%;
+    width: initial;
     display: block;
   }
 
