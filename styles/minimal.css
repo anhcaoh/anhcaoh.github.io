@@ -37,7 +37,7 @@ body{
     display: table;
     width: 100%;
     margin: 8px auto;
-    padding: 32px 0;
+    padding: 40px 0;
     border-bottom: 1px solid #E4E4E4;
   }
   .box-shadow{
@@ -289,6 +289,11 @@ article img{
   .responsive{
     width: 100%;
     display: block;
+  }
+  #envue-image ~ i{
+    position: absolute;
+    right: 50px;
+    margin: auto;
   }
  }
  
