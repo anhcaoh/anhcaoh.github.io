@@ -145,8 +145,8 @@ body{
       text-align: center;
       font-size: 14px;
       font-weight: 400;
-      height: 64px;
-      line-height: 64px;
+      height: 70px;
+      line-height: 70px;
       }
 
     
@@ -230,8 +230,7 @@ article img{
 }
   #envue-image ~ i {
     position: absolute;
-    right: 10px;
-    margin-top: -20px;
+    padding-left: 10px;
   }
 #contact-me ul li{
   line-height: 20px;
@@ -257,22 +256,18 @@ article img{
 }
 
 #talks{
-  background-image: url(https://static.pexels.com/photos/274/people-show-chairs-gym-medium.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
-  height: 50%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  color: #969696;
-  z-index: 1
+    height: 30%;
+    color: #FFF;
+    z-index: 1;
+    background-color: rgba(198, 96, 25, 0.89);
 }
-#contact-me{
-  background-color: rgb(10, 8, 6);
- }
+
  #talks h2{
-  padding: 16px;
+  /*padding: 16px;*/
+ }
+ #contact-me{
+  background-color: rgba(202, 111, 48, 0.95);
+  color: #FFF;
  }
  #talks a:hover,
  #talks a:active,
@@ -280,9 +275,11 @@ article img{
  #contact-me a:hover,
  #contact-me a:active,
  #contact-me a:focus{
-  color: inherit;
+  color: #FFF;
   opacity: .7;
  }
+
+
 
  @media screen and (max-width: 725px){
 
@@ -290,10 +287,6 @@ article img{
     width: 100%;
     display: block;
   }
-  #envue-image ~ i{
-    position: absolute;
-    right: 50px;
-    margin: auto;
-  }
+
  }
  

@@ -14,25 +14,27 @@
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="./images/AnhIcon.jpg">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="/libraries/lazysizes.min.js"></script>
 </head>
 
 <body>
-  <header>
-  <div class="dark-mask"></div>
-    <figure class="animated fadeIn">
-    <img src="images/Anh-Cao.jpg" alt="My name is Anh Cao.">
+  <header class="animated fadeIn">
+    <div class="dark-mask"></div>
+    <figure>
+    <img src="images/Anh-Cao.jpg" alt="My name is Anh Cao." class="animated fadeInDown">
     <figcaption class="animated fadeInUp">
     <p>Hi, I'm Anh</p>
     <p>{ I speak: [ <\HTML>, CSS, & JavaScript ] }</p></figcaption>
     </figure>
   </header>
-  <section id="all-things-design">
+  <section id="all-things-design" class="animated fadeIn">
     <h2 id="projects" class="heading" title="Projects">Projects</h2>
     <article>
         <!-- <ul> -->
           <!-- <li id="minimalist-mobile-design" class="animated"> -->
             <div class="responsive">
-              <a href="/carousel" target="_blank"><img src="/images/iphone-canvas.png" alt="iPhone Cancas" style="width: initial; height: 300px"></a>
+              <a href="/carousel" target="_blank">
+              <img src="/images/iphone-canvas.png" alt="iPhone Cancas"  style="width: initial; height: 300px"></a>
             </div>
             <div class="responsive">
               <a href="/carousel" title="Minimalist Mobile Design" target="_blank"><p>Mobile experience</p></a>
@@ -50,29 +52,31 @@
               <a href="/forms" target="_blank"><img src="/images/form.png" class="box-shadow" alt="Form"></a>
             </div>
     </article>
+
     <article>
+          <div class="responsive">
+            <a href="/images/envue-data-services.png" target="_blank"><img id="envue-image" src="/images/envue-data-services.png" class="box-shadow" alt="enVue Data Virtualization"><i class="fa fa-image"></i></a>
+          </div>
+          <div class="responsive">
+            <a href="/images/envue-data-services.png" title="enVue Data virtualization" target="_blank">enVue data virtualization</a>
+          <p>Most recent project!</p>
+          </div>
+      
+          <!-- </li> -->
+    </article> 
+    <article>
+        <div class="responsive">
+            <a href="/dashboard" title="Profile Dashboard" target="_blank">Profile Dashboard</a>
+            <p>Just another design</p>
+            </div>
           <!-- </li> -->
           <!-- <li id="profile-dashboard"> -->
           <div class="responsive">
             <a href="/dashboard" target="_blank"><img src="/images/profile-dashboard.png" class="box-shadow" alt="Profile Dashboard"></a>
           </div>
-          <div class="responsive">
-            <a href="/dashboard" title="Profile Dashboard" target="_blank">Profile Dashboard</a>
-            <p>Just another design</p>
-            </div>
+        
           <!-- </li> -->
           <!-- <li id="envue" class="animated"> -->
-    </article>
-    <article>
-       
-          <div class="responsive">
-            <a href="/images/envue-data-services.png" title="enVue Data virtualization" target="_blank">enVue data virtualization</a>
-          <p>Most recent project!</p>
-          </div>
-          <div class="responsive">
-            <a href="/images/envue-data-services.png" target="_blank"><img id="envue-image" src="/images/envue-data-services.png" class="box-shadow" alt="enVue Data Virtualization"><i class="fa fa-image"></i></a>
-          </div>
-          <!-- </li> -->
     </article>
     <article>
       <div class="responsive">
@@ -97,9 +101,7 @@
     </article>
   </section>
   <section id="talks">
-    <div class="dark-mask"></div>
-
-    <h2 class="heading">Talks</h2>
+    <h2 class="heading">Talk</h2>
     <article class="verticallyCenter singleLine" style="border: 0">
       <a href="https://docs.google.com/presentation/d/1WqfExK7N03hUEmVuobiXDO6_gqS-pMfM7A4N1l5NBns/pub?start=false&loop=false&delayms=3000" target="_blank" title="Design is...">Design is...</a>
     </article>
