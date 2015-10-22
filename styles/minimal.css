@@ -45,7 +45,7 @@ body{
     -webkit-box-shadow: 0px 0px 4px #CCC;
     -moz-box-shadow: 0px 0px 4px #CCC;
   }
-  .half-width{
+  .responsive{
     width: 50%;
     padding: 8px;
     display: table-cell;
@@ -282,5 +282,13 @@ article img{
  #contact-me a:focus{
   color: inherit;
   opacity: .7;
+ }
+
+ @media screen and (max-width: 725px){
+
+  .responsive{
+    width: 100%;
+    display: block;
+  }
  }
  
