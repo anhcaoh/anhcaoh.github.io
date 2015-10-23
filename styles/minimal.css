@@ -117,8 +117,7 @@ body{
     -moz-transition: all 50ms;
   }
 
-  #all-things-design h2.heading,
-  #services h2.heading {
+  h2.heading {
     font-weight: 400;
     font-size: initial;
     text-align: center;
@@ -150,10 +149,10 @@ body{
     footer{
       text-align: center;
       font-size: 10px;
-      font-weight: 400;
+      font-weight: 500;
       height: 70px;
       line-height: 70px;
-      color: #FC3030;
+      color: #2d97be;
       background: #eaeaea;
       }
 
@@ -279,15 +278,33 @@ p{
 #services{
   background-color: rgb(241, 241, 241);
   border-bottom: 1px solid #EAEAEA;
-  margin-bottom: 25px;
+  height: 50%;
 }
-#services h2{
-  top: -50px;
-  background-color: #43A0C4;
-  width: 50px;
-  height: 50px;
+#talks h2{
+  background-color: #309630;
 }
 
+#services h2,
+#talks h2,
+#contact h2{
+  top: -50px;
+  background: #F1F1F1;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: non;
+  color: #43A0C4;
+}
+#talks .media-object,
+#contact .media-object{
+    display: block;
+    width: initial;
+    margin: 50px 0;
+    padding: 0; 
+}
+#talks .media-object i,
+#contact .media-object i{
+  display: inline-block;
+}
 #services .media-object .object{
   background-color: #43A0C4;
 }
@@ -304,7 +321,7 @@ article img{
     position: absolute;
     padding-left: 10px;
   }
-#contact-me ul li{
+#contact ul li{
   line-height: 20px;
     height: 20px;
     margin: 32px 0;
@@ -328,28 +345,28 @@ article img{
 }
 
 #talks{
-    height: 30%;
-    z-index: 1;
+    height: 50%;
     background-color: rgba(234, 234, 234, 0);
-    color: #309630;
+    color: #43A0C4;
 }
 
-#contact-me{
+#contact{
+  height: 50%;
   background-color: rgba(234, 234, 234, 0.5);
-  color: #309630;
+  color: #43A0C4;
 }
 
 #talks a:link,
-#contact-me a:link{
-  color: #309630;
+#contact a:link{
+  color: #43A0C4;
 }
 
  #talks a:hover,
  #talks a:active,
  #talks a:focus,
- #contact-me a:hover,
- #contact-me a:active,
- #contact-me a:focus{
+ #contact a:hover,
+ #contact a:active,
+ #contact a:focus{
   opacity: .9;
  }
 
