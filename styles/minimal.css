@@ -377,5 +377,9 @@ article img{
     display: block;
   }
 
+  .dark-mask{
+    display: none;
+  }
+
  }
  
