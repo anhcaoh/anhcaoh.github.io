@@ -121,19 +121,21 @@ body{
     font-weight: 400;
     font-size: initial;
     text-align: center;
-    color: #FFFFFF;
+    /*color: #FFFFFF;*/
+    /*background: #2D97BE;*/
+    color: #2D97BE;
+    background-color: #F1F1F1;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     margin: auto;
     line-height: 100px;
-    background: #2D97BE;
     position: relative;
     margin-bottom: -50px;
     padding: 0;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  /*  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);*/
     transition: all .25s ease-in-out;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
