@@ -22,11 +22,7 @@ body{
     display: table;
     position: relative;
   }
-  
-/*  section{
-    padding: 16px;
-    width: calc(100% - 32px);
-  }*/
+
   header{
     height: 70%;
     background-image: url(https://static.pexels.com/photos/2752/city-sunny-people-street-large.jpg);
@@ -248,7 +244,7 @@ ul li{
     border-top: 1px solid rgba(201, 201, 201, 0.2);
 }
 p{
-  padding: 0 120px;
+  padding: 0 75px;
 }
 #all-things-design{
   margin-top: 50px;
