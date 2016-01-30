@@ -29,6 +29,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   article{
     display: table;
     width: 100%;
@@ -36,7 +37,19 @@ body{
     padding: 40px 0;
     /*border-bottom: 1px solid #E4E4E4;*/
   }
+  #about{
+    height: 30%;
+  }
 
+  .title-tip:hover:before{
+    content: attr(title);
+    position: absolute;
+    background: #ecf0f1;
+    color: #333;
+    padding: 8px;
+    margin: 0;
+    border-radius: 3px;
+  }
   .box-shadow{
     box-shadow: 0px 0px 4px #CCC;
     -webkit-box-shadow: 0px 0px 4px #CCC;
@@ -50,7 +63,7 @@ body{
   }
 
   ::selection{
-    background: orange;
+    background: #8e44ad;
     color: #FFF;
   }
 
@@ -98,6 +111,33 @@ body{
     bottom: 0;
     left: 0;
     margin: auto;;
+  }
+  .bold-text{
+    font-weight: bold;
+  }
+  .left-text{
+    text-align: left;
+  }
+  .center-text{
+    text-align: center;
+  }
+  .right-text{
+    text-align: right;
+  }
+  .half-page{
+    width: 50%;
+  }
+  .invisibile{
+    opacity: 0;
+  }
+  .no-margin{
+    margin: 0;
+  }
+  .no-padding{
+    padding: 0;
+  }
+  .no-padding-children *{
+    padding: 0;
   }
   .singleLine{
     height: 20px;
@@ -180,8 +220,18 @@ ul li{
   list-style: none;
 }
 
+.table{
+  display: table;
+}
+.table-cell{
+  display: table-cell;
+}
+.vertically-center{
+  vertical-align: middle;
+}
 .media-object{
     width: calc(33.33% - 16px);
+    height: 100%;
     margin: 0 8px;
     display: inline-block;
     border-radius: 2px;
@@ -201,6 +251,10 @@ ul li{
     vertical-align: middle;
 }
 
+#projects{
+    background: #2D97BE;
+    color: #FFF;
+}
 #experience-designer{
   color: rgba(0, 128, 0, 0.8);
 }
@@ -253,7 +307,7 @@ p{
   margin-top: 25px;
 }
 #all-things-design article{
-  background-color: rgba(24, 141, 185, 0.8);
+  background-color: #2980b9;
   padding: 100px 0;
 }
 #all-things-design article:nth-child(even){
@@ -323,11 +377,7 @@ article img{
     position: absolute;
     padding-left: 10px;
   }
-#contact ul li{
-  line-height: 20px;
-    height: 20px;
-    margin: 32px 0;
-}
+
 
 .light-mask{
     overflow: hidden;
@@ -354,13 +404,13 @@ article img{
 
 #contact{
   height: 50%;
-  background-color: rgba(234, 234, 234, 0.5);
-  color: #43A0C4;
+  background-color: #2980b9;
+  color: #FFF;
 }
 
 #talks a:link,
 #contact a:link{
-  color: #43A0C4;
+  /*color: #43A0C4;*/
 }
 
  #talks a:hover,
