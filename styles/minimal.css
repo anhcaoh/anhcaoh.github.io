@@ -3,7 +3,8 @@ html, body{
 
   outline: 0;
   height: 100%;
-  font-family: "Helvetica Neue", 'Lato', Sans-serif;
+  /*font-family: "Helvetica Neue", 'Lato', Sans-serif;*/
+  font-family: 'Finger Paint', cursive;
   background-color: rgba(228, 228, 228, 0.3);
   -webkit-font-smoothing: antialiased;
   margin: 0;
@@ -25,7 +26,7 @@ body{
 
   header{
     height: 70%;
-    background-image: url(https://static.pexels.com/photos/2752/city-sunny-people-street-large.jpg);
+    background-image: url(../images/pexels-photo-medium.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -47,7 +48,7 @@ body{
     left: 0;
     right: 0;
     top: -15px;
-    font-size: small;
+    font-size: medium;
     font-weight: 600;
     background: rgb(241, 241, 241);
     color: #454545;
@@ -151,6 +152,7 @@ body{
     height: 20px;
     line-height: 20px;
   }
+
   a:link, a:visited, a:active{
 
      text-decoration: none;
@@ -186,9 +188,7 @@ body{
       header img{
 
         border-radius: 50%;
-        margin-top: 64px;
         height: 150px;
-     
       }
 
     footer{
@@ -215,6 +215,7 @@ figure img{
 figcaption{
   font-size: initial;
   color: #FFF;
+  position: relative;
 }
 ul{
   margin: 0;
