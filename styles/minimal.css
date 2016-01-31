@@ -200,6 +200,9 @@ body{
 figure{
   margin: 0;
 }
+figure img{
+  border: 3px solid;
+}
 
 figcaption{
   font-size: initial;
