@@ -62,7 +62,7 @@
     <p><a href="https://www.linkedin.com/in/anhcao"><i class="fa fa-linkedin"></i> <span class="dashed-bottom">@AnhCao</span></a></p>
   </article>
   </section>
-  <footer>@2015 by Anh Cao. Design with Purpose</footer>  
+  <footer>@<span id="year"></span> by Anh Cao. Design with Purpose</footer>  
 <!--   <section id="talks">
     <h2 class="heading" title="Talk">Talk</h2>
     <article class="media-object">
@@ -154,23 +154,9 @@
 </script>
 <script src="scripts/jquery-1.11.0.js"></script>
 <script type="text/javascript">
-  // $("body").on("scroll", function(){
-
-  //   if ( $("#all-things-design").offset().top > 0){
-
-  //     $("#projects").removeClass("fixed-top");
-    
-  //   } else if ( $("#all-things-design").offset().top < 0 ){
-    
-  //      $("#projects").addClass("fixed-top");
-
-  //   } else {
-
-  //     $("#projects").removeClass("fixed-top");
-  //   }
-
-  // });
-
+  var date = new Date;
+  var year = date.getFullYear();
+  $("#year").html(year);
 </script>
 
 </body>
