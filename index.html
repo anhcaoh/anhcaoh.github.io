@@ -4,10 +4,6 @@
 
   <title>Hi, I'm Anh Cao. I am a website designer and developer from Atlanta, Georgia.</title>
   <div itemscope itemtype="http://schema.org/Product">
-    <span itemprop="brand">Anh Cao</span>
-    <span itemprop="name">Anh Cao - Website Designer</span>
-    <img itemprop="image" src="Anh-Cao.jpg" alt="Anh Cao" />
-    <span itemprop="description">Website (mobile web) designer and developer from Atlanta, Georgia.</span>
   
     <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
       <span itemprop="ratingValue">4.4</span> stars, based on <span itemprop="reviewCount">23</span> reviews
@@ -25,7 +21,6 @@
 
       <link itemprop="availability" href="http://schema.org/InStock"/>Available! Book now!</span>
     </span>
-    
   </div>
   <meta name="description" content="Hi, I'm Anh. I speak HTML, CSS, and JavaScript. I am a designer and developer, and I breathe user experience!" />
   <meta name="copyright" content="Anh Cao is a personal brand, and all things designs are open for inspiration" />
@@ -51,18 +46,18 @@
   </script>
 </head>
 
-<body>
+<body temscope itemtype="http://schema.org/Product">
   <header class="table">
     <div class="dark-mask"></div>
     <figure class="table-cell vertically-center">
-    <img src="images/Anh-Cao.jpg" alt="ANH CAO" class="animated fadeIn">
-    <figcaption class"animated fadeInDown bold-text">
-      <p>HI, I'M ANH</p>
-      <p>{ I SPEAK: [ <\HTML>, CSS, & JAVASCRIPT ] }</p>
+    <img itemprop="image" src="images/Anh-Cao.jpg" alt="ANH CAO" class="animated fadeIn">
+    <figcaption class"animated fadeInDown bold-text" >
+      <p itemprop="name">HI, I'M ANH</p>
+      <p itemprop="name">{ I SPEAK: [ <\HTML>, CSS, & JAVASCRIPT ] }</p>
     </figcaption>
     </figure>
   </header>
-  <section id="about">
+  <section id="about" itemprop="description">
     <article id="experience-designer" class="media-object tooltip" tooltip="I DESIGN THINGS AND EXPERIENCE.">
       <div class="object">
         <i class="fa fa-pencil"></i>
