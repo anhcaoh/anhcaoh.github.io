@@ -39,12 +39,27 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDls6nWdFxUqqF-SF1FOtjISR3aBONW7zY&libraries=geometry&callback=initMap" async defer type="text/javascript"></script>
 <style>
+	body{
+		color: #615F5F;
+	    background: #F7F7F7;
+	    font-family: sans-serif;
+    	font-size: 14pt;
+    	font-weight: 300;
+	}
 	span{
 		font-weight: bold;
-	};
+	}
+	textarea{
+		vertical-align: top;
+	}
 </style>
 <div id="content">
+	<h3>MY CURRENT LOCATION:</h3>
 	<p>Latitude: <span id="lat"></span></p>
 	<p>Longitude: <span id="lng"></span></p>
 	<p>Distance to HK: <span id="distance-to-hk"></span> mile(s)</p>
+
+	<h3>DESTINATION ADDRESS: <h3>
+	<textarea name="destination-address" id="destination-address" 
+	cols="20" rows="4"></textarea>
 </div>
