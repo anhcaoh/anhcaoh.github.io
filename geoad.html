@@ -1,0 +1,50 @@
+<script src="scripts/jquery-1.11.0.js"></script>
+
+ <script>
+
+  var myCoords, myLatLng,
+    wallmart = {lat:33.8946719, lng:-84.1951027 },
+    hk = {lat: 33.909206, lng: -84.20423060000002},
+    distanceToHk;
+
+  function initMap(){
+    wallmart = new google.maps.LatLng( wallmart );
+    hk = new google.maps.LatLng( hk );
+    navigator.geolocation.getCurrentPosition(function( position ){
+      myCoords = {"lat": position.coords.latitude,
+                "lng":position.coords.longitude };
+      myCoords = new google.maps.LatLng(myCoords);
+    });
+    var options = {
+  		enableHighAccuracy: false,
+  		timeout: 5000,
+		maximumAge: 0
+	};
+	function success( position ){
+		var myCoords = {"lat": position.coords.latitude,
+                "lng":position.coords.longitude };
+        myLatLng = new google.maps.LatLng(myCoords);
+        distanceToHk =  google.maps.geometry.spherical.computeDistanceBetween(myLatLng, hk);
+
+    	$("#lat").html((myCoords.lat).toFixed(3));
+    	$("#lng").html((myCoords.lng).toFixed(3));
+    	$("#distance-to-hk").html((0.000621371 * distanceToHk).toFixed(3));
+    };
+    function error(err) {
+  		console.warn('ERROR(' + err.code + '): ' + err.message);
+	};
+    navigator.geolocation.watchPosition(success, error, options);
+  };
+   
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDls6nWdFxUqqF-SF1FOtjISR3aBONW7zY&libraries=geometry&callback=initMap" async defer type="text/javascript"></script>
+<style>
+	span{
+		font-weight: bold;
+	};
+</style>
+<div id="content">
+	<p>Latitude: <span id="lat"></span></p>
+	<p>Longitude: <span id="lng"></span></p>
+	<p>Distance to HK: <span id="distance-to-hk"></span> mile(s)</p>
+</div>
