@@ -26,8 +26,16 @@
   		getLatestDestLatLng().then(function(result){
   			distanceToDest = google.maps.geometry.spherical.computeDistanceBetween(myLatLng, destLatLng);
   			$("#distance-to-destination").html((0.000621371 * distanceToDest).toFixed(3));
-
+  			checkDistanceToShowAd();
   		});
+  	};
+  	
+  	function checkDistanceToShowAd(){
+  		if((0.000621371 * distanceToDest).toFixed(3) < 2 ){
+  			$("#ad").show();
+  		} else{
+  			$("#ad").hide();
+  		}
   	};
 
   	var distanceToDest,
@@ -60,6 +68,8 @@
    
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDls6nWdFxUqqF-SF1FOtjISR3aBONW7zY&libraries=geometry&callback=initMap" async defer type="text/javascript"></script>
+<link rel="stylesheet" href="./styles/bootstrap.css">
+
 <style>
 	body{
 		color: #615F5F;
@@ -76,8 +86,27 @@
 		font-size: initial;
 	    padding: 8px;
 	}
+	#ad{
+		display: none;
+	}
+	.restaurant-ad{
+		background:#2980b9;
+		margin: 24px 0;
+		padding: 16px;
+		border-radius: 3px;
+		/*position: absolute;*/
+	}
+	.restaurant-ad p{
+		color: #f1f1f1;
+		padding: 0;
+		margin: 0;
+	}
+	large{
+		font-size: large;
+	}
 </style>
-<div id="content">
+<div id="geo-ad" class="col-sm-12 col-md-12">
+<div id="geo" class="col-sm-6 col-md-6">
 	<h3>MY CURRENT LOCATION:</h3>
 	<p>Latitude: <span id="lat"></span></p>
 	<p>Longitude: <span id="lng"></span></p>
@@ -86,4 +115,16 @@
 	<textarea name="destination-address" id="destination-address" 
 	cols="25" rows="3"></textarea>
 	<p>Distance to Destination <span id="distance-to-destination"></span> mile(s)</p>
+</div>
+<div id="ad" class="col-sm-6 col-md-6">
+	<div class="restaurant-ad col-md-12 col-md-offset-2">
+		<div class="col-sm-8 col-md-8">
+		<p><large><span>25% OFF</span></large></p>
+		<p>FIRST 10 CUSTOMERS</p>
+		</div>
+		<div class="col-sm-4 col-md-4">
+			<p><span>ALLU CNT EAT</span></p>
+		</div>
+	</div>
+</div>
 </div>
