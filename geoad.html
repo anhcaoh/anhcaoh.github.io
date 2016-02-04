@@ -5,35 +5,57 @@
   var myCoords, myLatLng,
     wallmart = {lat:33.8946719, lng:-84.1951027 },
     hk = {lat: 33.909206, lng: -84.20423060000002},
-    distanceToHk;
+    destLatLng = {};
 
-  function initMap(){
-    wallmart = new google.maps.LatLng( wallmart );
-    hk = new google.maps.LatLng( hk );
-    navigator.geolocation.getCurrentPosition(function( position ){
-      myCoords = {"lat": position.coords.latitude,
-                "lng":position.coords.longitude };
-      myCoords = new google.maps.LatLng(myCoords);
-    });
-    var options = {
-  		enableHighAccuracy: false,
-  		timeout: 5000,
-		maximumAge: 0
-	};
+	var geocoder,
+  	destinationAddress;
+	function getLatestDestLatLng(){
+		var promise = new Promise(function( resolve, reject ){
+
+	  		destinationAddress = $("textarea#destination-address").val();
+	  		geocoder.geocode({ "address" : destinationAddress }, function( results, status ){
+		  		if( status === google.maps.GeocoderStatus.OK ){
+		  			destLatLng = results[0].geometry.location;
+		  			resolve(destLatLng);
+		  		}
+	  		});
+	  	});
+		return promise;
+  	};
+  	function updateDistance(){
+  		getLatestDestLatLng().then(function(result){
+  			distanceToDest = google.maps.geometry.spherical.computeDistanceBetween(myLatLng, destLatLng);
+  			$("#distance-to-destination").html((0.000621371 * distanceToDest).toFixed(3));
+
+  		});
+  	};
+
+  	var distanceToDest,
+  		options = {
+  			enableHighAccuracy: false,
+  			timeout: 5000,
+			maximumAge: 0
+		};
+
+	function initMap(){
+  	geocoder = new google.maps.Geocoder();
+	
 	function success( position ){
 		var myCoords = {"lat": position.coords.latitude,
                 "lng":position.coords.longitude };
         myLatLng = new google.maps.LatLng(myCoords);
-        distanceToHk =  google.maps.geometry.spherical.computeDistanceBetween(myLatLng, hk);
 
     	$("#lat").html((myCoords.lat).toFixed(3));
     	$("#lng").html((myCoords.lng).toFixed(3));
-    	$("#distance-to-hk").html((0.000621371 * distanceToHk).toFixed(3));
+    	updateDistance();
     };
     function error(err) {
   		console.warn('ERROR(' + err.code + '): ' + err.message);
 	};
     navigator.geolocation.watchPosition(success, error, options);
+    var defaultDestAddress = "5495 Jimmy Carter Blvd, Norcross, GA 30093";
+    $("textarea#destination-address").val(defaultDestAddress);
+    $("textarea#destination-address").on("change", updateDistance);
   };
    
 </script>
@@ -51,15 +73,17 @@
 	}
 	textarea{
 		vertical-align: top;
+		font-size: initial;
+	    padding: 8px;
 	}
 </style>
 <div id="content">
 	<h3>MY CURRENT LOCATION:</h3>
 	<p>Latitude: <span id="lat"></span></p>
 	<p>Longitude: <span id="lng"></span></p>
-	<p>Distance to HK: <span id="distance-to-hk"></span> mile(s)</p>
+	<p>Distance to Destination <span id="distance-to-destination"></span> mile(s)</p>
 
 	<h3>DESTINATION ADDRESS: <h3>
 	<textarea name="destination-address" id="destination-address" 
-	cols="20" rows="4"></textarea>
+	cols="25" rows="3"></textarea>
 </div>
