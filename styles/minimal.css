@@ -2,28 +2,58 @@
 html, body{
 
   outline: 0;
-  height: 100%;
   /*font-family: "Helvetica Neue", 'Lato', Sans-serif;*/
   font-family: 'Finger Paint', cursive;
-  background-color: rgba(228, 228, 228, 0.3);
+  background-color: #ecf0f1;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   color: #f1f1f1;
-  overflow: auto;
-}
-body{
-  overflow-x: hidden;
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
   header, section{
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    display: table;
     position: relative;
   }
+  .amethyst{
+    color: #9b59b6;
+  }
+  .object{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 16px auto;
+    color: #FFF;
+  }
 
+  .no-padding{
+    padding: 0;
+  }
+  .padding{
+    padding: 8px;
+  }
+  .padding-16{
+    padding: 16px;
+  }
+  .no-margin{
+    margin: 0;
+  }
+  .margin{
+    margin: 8px;
+  }
+  .margin-16{
+    margin: 16px;
+  }
+  .margin-bottom-24{
+    margin-bottom: 24px;
+  }
+  .margin-top-bottom-16{
+    margin: 16px auto;
+  }
+  .margin-top-bottom-24{
+    margin: 24px auto;
+  }
   header{
     height: 70%;
     background-image: url(../images/pexels-photo-medium.jpeg);
@@ -32,25 +62,19 @@ body{
   }
 
   article{
-    display: table;
     width: 100%;
-    /*margin: 8px auto;*/
-    padding: 40px 0;
-    /*border-bottom: 1px solid #E4E4E4;*/
   }
-  #about{
-    height: 30%;
-  }
-
-  .tooltip:hover:before{
-    content: attr(tooltip);
+  .titletip:hover:before,
+  .titletip:active:before,
+  .titletip:focus:before{
+    content: attr(titletip);
     position: absolute;
     left: 0;
     right: 0;
-    top: -15px;
+    top: -24px;
     font-size: medium;
     font-weight: 600;
-    background: rgb(241, 241, 241);
+    background: rgba(241, 241, 241, .5);
     color: #454545;
     padding: 8px;
     margin: 0;
@@ -69,33 +93,13 @@ body{
   }
 
   ::selection{
-    background: #8e44ad;
+    background: #9b59b6;
     color: #FFF;
   }
 
   ::-moz-selection{
     background: orange;
     color: #FFF;
-  }
-
-  h2{
-    text-align: left;
-    font-size: inherit;
-    font-weight: 400;
-    padding: 16px;
-    margin: 0;
-  }
-  .monospace{
-    font-size: medium;
-    height: 30%;
-    font-family: "monospace";
-    background-color: rgba(237, 236, 236, 0.5);;
-  }
-  .bao-chau{
-    background-image: url("/images/Bao-Chau.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100%;
   }
   .relativelyCenter{
     position: relative;
@@ -156,7 +160,7 @@ body{
   a:link, a:visited, a:active{
 
      text-decoration: none;
-     font-size: inherit;
+     font-size: initial;
      font-weight: 500;
      color: #FFF;
   }
@@ -166,30 +170,17 @@ body{
     -webkit-transition: all 50ms;
     -moz-transition: all 50ms;
   }
-  
-  h2.heading {
-    font-weight: 400;
-    font-size: initial;
-    text-align: center;
-    color: #2D97BE;
-    background-color: #F1F1F1;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    line-height: 100px;
-    position: relative;
-    margin-bottom: -50px;
-    padding: 0;
-    transition: all .25s ease-in-out;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-  }
-      header img{
 
-        border-radius: 50%;
-        height: 150px;
-      }
+    a i{
+      width: 32px;
+      margin-left: 8px;
+    }
+  
+    header img{
+
+      border-radius: 50%;
+      height: 150px;
+    }
 
     footer{
       text-align: center;
@@ -200,11 +191,6 @@ body{
       color: #6CA5CA;
       background: #226EA1;
       }
-    i{
-
-      margin-right: 15px;
-
-    }
 figure{
   margin: 0;
 }
@@ -242,6 +228,12 @@ ul li{
 .padding-right-24{
   padding-right: 24px;
 }
+.padding-left-32{
+  padding-left: 32px;
+}
+.padding-left-34{
+  padding-left: 34px;
+}
 .table{
   display: table;
 }
@@ -251,29 +243,6 @@ ul li{
 .vertically-center{
   vertical-align: middle;
 }
-.media-object{
-    width: calc(33.33% - 16px);
-    height: 100%;
-    margin: 0 8px;
-    display: inline-block;
-    position: relative;
-    border-radius: 2px;
-    border: 0;
-}
-.media-object .object{
-    width: 50px;
-    height: 50px;
-    display: table;
-    margin: auto;
-    margin-bottom: 16px;
-    border-radius: 50%;
-    color: #f0f0f0;
-}
-.media-object i{
-    display: table-cell;
-    vertical-align: middle;
-}
-
 #projects{
     background: #2D97BE;
     color: #FFF;
@@ -324,70 +293,12 @@ ul li{
     border-top: 1px solid rgba(201, 201, 201, 0.2);
 }
 
-#all-things-design{
-  margin-top: 25px;
-}
-#all-things-design article{
-  background-color: #2980b9;
-  padding: 100px 0;
-}
-#all-things-design article:nth-child(even){
-  background-color: rgba(24, 141, 185, 0.9);
-}
-
-#all-things-design ul li{
-    width: calc(100% - 64px);
-    padding: 32px;
-    list-style: none;
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    margin: auto;
-    display: inline-block;
-}
-#all-things-design ul li:last-child{
-  border: 0; 
-}
-#all-things-design ul li a{
-  vertical-align: middle;
-}
 #services{
   background-color: rgb(241, 241, 241);
   border-bottom: 1px solid #EAEAEA;
   height: 60%;
 }
-#talks h2{
-  background-color: #309630;
-}
 
-#services h2,
-#talks h2,
-#contact h2{
-  top: -50px;
-  background: #F1F1F1;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: non;
-  color: #43A0C4;
-}
-#talks .media-object,
-#contact .media-object{
-    display: block;
-    width: initial;
-    margin: 50px 0;
-    padding: 0; 
-}
-#talks .media-object i,
-#contact .media-object i{
-  display: inline-block;
-}
-#services .media-object .object{
-  background-color: #43A0C4;
-}
-#services .media-object{
-  color: #43A0C4;
-}
 
 article img{
   border-radius: 5px;
@@ -411,10 +322,12 @@ article img{
 .dark-mask{
     overflow: hidden;
     position: absolute;
-    width: 100%;
     height: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) );
+    width: 100%;
     top: 0;
+    left: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) );
+
 }
 
 #talks{

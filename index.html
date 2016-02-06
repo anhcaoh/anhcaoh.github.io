@@ -30,6 +30,7 @@
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="alternative" hreflang="en" href="http://anhcaoh.com">
+  <link rel="stylesheet" href="./styles/bootstrap.css">
   <link rel="stylesheet" href="./styles/minimal.css">
   <link rel="stylesheet" href="./styles/animate.css">
   <link rel="shortcut icon" href="./images/anh-favicon.jpg">
@@ -52,49 +53,61 @@
 </head>
 
 <body temscope itemtype="http://schema.org/People">
-  <header class="table">
+  <header class="table col-md-12 col-lg-12 no-margin">
     <div class="dark-mask"></div>
     <figure class="table-cell vertically-center">
-    <img itemprop="image" src="images/Anh-Cao.jpg" alt="ANH CAO" class="animated fadeIn">
-    <figcaption class"animated fadeInDown bold-text" >
-      <p itemprop="brand">HI, I'M ANH</p>
-      <p>{ I SPEAK: [ <\HTML>, CSS, & JAVASCRIPT ] }</p>
-    </figcaption>
+      <img itemprop="image" src="images/Anh-Cao.jpg" alt="ANH CAO" class="animated fadeIn">
+      <figcaption class="animated fadeInDown bold-text margin-16">
+        <p itemprop="brand">HI, I'M ANH</p>
+        <p>{ I SPEAK: [ <\HTML>, CSS, & JAVASCRIPT ] }</p>
+      </figcaption>
     </figure>
   </header>
-  <section id="map">
-    
-  </section>
-  <section id="about" itemprop="description">
-    <article id="experience-designer" class="media-object tooltip" tooltip="I DESIGN THINGS AND EXPERIENCE.">
-      <div class="object">
-        <i class="fa fa-pencil"></i>
-      </div>
-      <span class="bold-text">EXPERIENCE DESIGNER</span>
+  <section id="about" class="col-md-12 no-padding" itemprop="description">
+    <article id="experience-designer" 
+      class="col-md-4 no-padding margin-top-bottom-24 titletip" titletip="I DESIGN THINGS AND EXPERIENCE.">
+        <div class="object table padding-16">
+          <i class="fa fa-pencil table-cell"></i>
+        </div>
+        <span class="bold-text">EXPERIENCE DESIGNER</span>
     </article>
-    <article id="front-end-developer" class="media-object tooltip" tooltip="WHEN I'M NOT DESIGNING, I'M DEVELOPING.">
-      <div class="object">
-        <i class="fa fa-code" style="font-weight: bold"></i>
+    <article id="front-end-developer" 
+    class="col-md-4 no-padding margin-top-bottom-24 titletip" titletip="WHEN I'M NOT DESIGNING, I'M DEVELOPING.">
+      <div class="object table padding-16">
+        <i class="fa fa-code table-cell bold-text"></i>
       </div>
       <span class="bold-text">FRONT-END DEVELOPER</span>
       </article>
-    <article id="dancer" class="media-object tooltip" tooltip="WHEN I'M NOT DEVELOPING, I'M DANCING.">
-      <div class="object">
-        <i class="fa fa-music"></i>
+    <article id="dancer" 
+    class="col-md-4 no-padding margin-top-bottom-24 titletip" titletip="WHEN I'M NOT DEVELOPING, I'M DANCING.">
+      <div class="object table padding-16">
+        <i class="fa fa-music table-cell"></i>
       </div>
       <span class="bold-text">DANCER THE B-BOY</span> 
     </article>
   </section>
-  <section id="contact" class="table left-text">
-    <article class="table-cell vertically-center half-page">
-      <p class="right-text bold-text padding-right-24">HIRE ME:</p>
-      <p class="invisibile">.</p>
-      <p class="invisibile">.</p>
-    </article>
-    <article class="table-cell vertically-center no-padding-children">
-      <p><a href="tel:6786021591"><i class="fa fa-phone"></i><span class="dashed-bottom">(678) 602-1591</span></a></p>
-      <p><a href="mailto:anhcaoh@gmail.com"><i class="fa fa-envelope"></i><span class="dashed-bottom">ANHCAOH@GMAIL.COM</span></a></p>
-      <p><a href="https://www.linkedin.com/in/anhcao"><i class="fa fa-linkedin"></i> <span class="dashed-bottom">ANHCAO</span></a></p>
+  <section id="contact" class="table no-margin">
+    <article class="table-cell vertically-center">
+      <h3 class="padding-left">HIRE ME:</h3>
+      <div class="col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-5 padding-left-34 left-text">
+        <p>
+          <a href="tel:6786021591">
+          <i class="fa fa-phone padding"></i>
+          <span class="dashed-bottom">(678) 602-1591</span>
+          </a>
+        </p>
+        <p>
+          <a href="mailto:anhcaoh@gmail.com">
+          <i class="fa fa-envelope padding"></i>
+          <span class="dashed-bottom">ANHCAOH@GMAIL.COM</span>
+          </a>
+        </p>
+        <p><a href="https://www.linkedin.com/in/anhcao">
+          <i class="fa fa-linkedin padding"></i>
+          <span class="dashed-bottom">ANHCAO</span>
+          </a>
+        </p>
+      <div>
     </article>
   </section>
   <footer>@<span id="year"></span> DESIGN BY ANH CAO.</footer>  
