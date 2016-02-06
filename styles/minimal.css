@@ -329,46 +329,4 @@ article img{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) );
 
 }
-
-#talks{
-    height: 50%;
-    background-color: rgba(234, 234, 234, 0);
-    color: #43A0C4;
-}
-
-#contact{
-  height: 50%;
-  background-color: #2980b9;
-  color: #FFF;
-}
-
-#talks a:link,
-#contact a:link{
-  /*color: #43A0C4;*/
-}
-
- #talks a:hover,
- #talks a:active,
- #talks a:focus,
- #contact a:hover,
- #contact a:active,
- #contact a:focus{
-  opacity: .9;
- }
-
- @media screen and (max-width: 375px){
-  
-  a i.fa{
-    display: block;
-  }
-  .responsive{
-    width: initial;
-    display: block;
-  }
-
-  .dark-mask{
-    display: none;
-  }
-
- }
  
