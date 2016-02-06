@@ -372,7 +372,8 @@ ul li{
   .dark-mask{
     display: none;
   }
-  i.fa-envelope ~ span{
+  i.fa-envelope ~ span,
+  i.fa-google-plus ~ span{
     font-size: 84%;
   }
 }
