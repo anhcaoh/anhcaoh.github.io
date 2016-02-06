@@ -372,6 +372,12 @@ ul li{
 
 
 @media all and (max-width: 375px) {
+  body{
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+  }
   .dark-mask{
     display: none;
   }
