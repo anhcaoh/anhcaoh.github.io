@@ -16,11 +16,20 @@ html, body{
     text-align: center;
     position: relative;
   }
+  .dark-text{
+    color: #2C3C47;
+  }
   .amethyst{
     color: #9b59b6;
   }
   .bg-belize-hole{
     background-color: #2980b9;
+  }
+  .bg-turquoise{
+    background-color: #1abc9c;
+  }
+  .bg-cloud{
+    background-color: #ecf0f1;
   }
   .object{
     border-radius: 50%;
@@ -39,6 +48,15 @@ html, body{
   .padding-16{
     padding: 16px;
   }
+  .padding-24{
+    padding: 24px;
+  }
+  .padding-32{
+    padding: 32px;
+  }
+  .padding-bottom-32{
+    padding-bottom: 32px;
+  }
   .padding-left-right-16{
     padding: 0 16px;
   }
@@ -54,11 +72,26 @@ html, body{
   .margin-16{
     margin: 16px;
   }
+  .margin-24{
+    margin: 24px;
+  }
+  .margin-32{
+    margin: 32px;
+  }
+  .margin-top-16{
+    margin-top: 16px;
+  }
+  .margin-top-24{
+    margin-top: 24px;
+  }
   .margin-bottom-16{
     margin-bottom: 16px;
   }
   .margin-bottom-24{
     margin-bottom: 24px;
+  }
+   .margin-bottom-32{
+    margin-bottom: 32px;
   }
   .margin-top-bottom-16{
     margin: 16px auto;
@@ -66,9 +99,16 @@ html, body{
   .margin-top-bottom-24{
     margin: 24px auto;
   }
+  .margin-top-bottom-32{
+    margin: 32px auto;
+  }
   .margin-top-bottom-38{
     margin: 38px auto;
   }
+  .margin-top-bottom-48{
+    margin: 48px auto;
+  }
+
   header{
     height: 70%;
     background-image: url(../images/pexels-photo-medium.jpeg);
@@ -100,13 +140,7 @@ html, body{
     -webkit-box-shadow: 0px 0px 4px #CCC;
     -moz-box-shadow: 0px 0px 4px #CCC;
   }
-  .responsive{
-    width: 50%;
-    padding: 8px;
-    display: table-cell;
-    vertical-align: middle;
-  }
-
+  
   ::selection{
     background: #9b59b6;
     color: #FFF;
@@ -152,9 +186,6 @@ html, body{
   .right-text{
     text-align: right;
   }
-  .half-page{
-    width: 50%;
-  }
   .invisibile{
     opacity: 0;
   }
@@ -171,13 +202,17 @@ html, body{
     height: 20px;
     line-height: 20px;
   }
-
+  
+  article img{
+    height: 100px;
+    border-radius: 3px;
+  }
   a:link, a:visited, a:active{
 
      text-decoration: none;
      font-size: initial;
      font-weight: 500;
-     color: #FFF;
+     color: inherit;
   }
   a:hover{
     opacity: .8;
@@ -192,7 +227,6 @@ html, body{
     }
   
     header img{
-
       border-radius: 50%;
       height: 150px;
     }
@@ -203,8 +237,8 @@ html, body{
       font-weight: 500;
       height: 70px;
       line-height: 70px;
-      color: #6CA5CA;
-      background: #226EA1;
+      color: #FFF;
+      background: #34495e;
       }
 figure{
   margin: 0;
@@ -298,34 +332,12 @@ ul li{
 .media-text p{
   margin: 0px;
 }
-.right-side{
-    position: absolute;
-    top: 40%;
-    right: 15%;
-    line-height: 25px;
-}
 .border-top{
     border-top: 1px solid rgba(201, 201, 201, 0.2);
 }
-
-#services{
-  background-color: rgb(241, 241, 241);
-  border-bottom: 1px solid #EAEAEA;
-  height: 60%;
+.round{
+  border-radius: 50%;
 }
-
-
-article img{
-  border-radius: 5px;
-  width: 70%;
-  height: inherit;
-}
-  #envue-image ~ i {
-    position: absolute;
-    padding-left: 10px;
-  }
-
-
 .light-mask{
     overflow: hidden;
     position: absolute;
@@ -345,7 +357,8 @@ article img{
 
 }
 
-@media all and (min-width: 375px) {
+
+@media all and (max-width: 375px) {
   .dark-mask{
     display: none;
   }
