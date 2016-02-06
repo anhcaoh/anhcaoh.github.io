@@ -19,6 +19,9 @@ html, body{
   .amethyst{
     color: #9b59b6;
   }
+  .bg-belize-hole{
+    background-color: #2980b9;
+  }
   .object{
     border-radius: 50%;
     width: 50px;
@@ -36,6 +39,12 @@ html, body{
   .padding-16{
     padding: 16px;
   }
+  .padding-left-right-16{
+    padding: 0 16px;
+  }
+  .padding-left-right-32{
+    padding: 0 32px;
+  }
   .no-margin{
     margin: 0;
   }
@@ -45,6 +54,9 @@ html, body{
   .margin-16{
     margin: 16px;
   }
+  .margin-bottom-16{
+    margin-bottom: 16px;
+  }
   .margin-bottom-24{
     margin-bottom: 24px;
   }
@@ -53,6 +65,9 @@ html, body{
   }
   .margin-top-bottom-24{
     margin: 24px auto;
+  }
+  .margin-top-bottom-38{
+    margin: 38px auto;
   }
   header{
     height: 70%;
@@ -71,11 +86,11 @@ html, body{
     position: absolute;
     left: 0;
     right: 0;
-    top: -24px;
+    top: -32px;
     font-size: medium;
-    font-weight: 600;
+    font-weight: 500;
     background: rgba(241, 241, 241, .5);
-    color: #454545;
+    color: #9b59b6;
     padding: 8px;
     margin: 0;
     border-radius: 3px;
@@ -328,5 +343,11 @@ article img{
     left: 0;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) );
 
+}
+
+@media all and (min-width: 375px) {
+  .dark-mask{
+    display: none;
+  }
 }
  
