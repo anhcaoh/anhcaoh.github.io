@@ -237,6 +237,18 @@ html, body{
       color: #FFF;
       background: #2C3C47;
       }
+      .go-to-top{
+        float: left;
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .go-to-top:hover,
+      .go-to-top:active{
+        color: inherit;
+        font-size: inherit;
+        text-decoration: none;
+      }
 figure{
   margin: 0;
 }
