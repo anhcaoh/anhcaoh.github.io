@@ -372,6 +372,7 @@ ul li{
   .dark-mask{
     display: none;
   }
+  a i.fa-external-link,
   i.fa-envelope ~ span,
   i.fa-google-plus ~ span{
     font-size: 84%;
