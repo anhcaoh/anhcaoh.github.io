@@ -372,15 +372,16 @@ ul li{
 
 
 @media all and (max-width: 375px) {
-  body{
+/*  body{
     -webkit-user-select: none;
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
-  }
+  }*/
   a:active,
   a:focus{
     opacity: .7;
+    font-size: 99%;
   }
   .dark-mask{
     display: none;
