@@ -378,6 +378,10 @@ ul li{
     -ms-user-select: none; 
     user-select: none;
   }
+  a:active,
+  a:focus{
+    opacity: .7;
+  }
   .dark-mask{
     display: none;
   }
