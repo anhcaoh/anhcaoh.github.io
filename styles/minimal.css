@@ -258,6 +258,7 @@ figure{
 }
 figure img{
   border: 3px solid;
+  position: relative;
 }
 
 figcaption{
