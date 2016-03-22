@@ -88,13 +88,16 @@ html, body{
   .margin-top-24{
     margin-top: 24px;
   }
+  .margin-top-minus-24{
+    margin-top: -24px;
+  }
   .margin-bottom-16{
     margin-bottom: 16px;
   }
   .margin-bottom-24{
     margin-bottom: 24px;
   }
-   .margin-bottom-32{
+  .margin-bottom-32{
     margin-bottom: 32px;
   }
   .margin-top-bottom-16{
@@ -109,14 +112,24 @@ html, body{
   .margin-top-bottom-40{
     margin: 40px auto;
   }
-
+  .border-top-bottom-left{
+    border-radius: 3px 0 0 3px;
+  }
+  .border-top-bottom-right{
+    border-radius: 0 3px 3px 0;
+  }  
   header{
     height: 70%;
     background-image: url(https://static.pexels.com/photos/4831/hands-coffee-smartphone-technology-medium.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
-
+  section#about article{
+    background-color: #FFF;
+    border: 1px solid rgba(138, 137, 137, 0.1);
+    margin: 52px 0;
+    min-height: 144px;
+  }
   article{
     width: 100%;
   }
