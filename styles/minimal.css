@@ -32,6 +32,9 @@ html, body{
   .bg-cloud{
     background-color: #ecf0f1;
   }
+  .bg-clear{
+    background-color: #fff;
+  }
   .object{
     border-radius: 50%;
     width: 50px;
@@ -126,8 +129,8 @@ html, body{
   }
   section#about article{
     background-color: #FFF;
-    border: 1px solid rgba(138, 137, 137, 0.1);
-    margin: 52px 0;
+    /*border: 1px solid rgba(138, 137, 137, 0.1);*/
+    padding: 52px 0;
     min-height: 144px;
   }
   article{
