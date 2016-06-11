@@ -2,10 +2,11 @@
 html, body{
 
   outline: 0;
-  /*font-family: "Helvetica Neue", 'Lato', Sans-serif;*/
-  font-family: 'Finger Paint', cursive;
+ font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Finger Paint', cursive;*/
   background-color: #ecf0f1;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   color: #f1f1f1;
@@ -17,6 +18,9 @@ html, body{
     margin: 0 auto;
     text-align: center;
     position: relative;
+  }
+  h3{
+    font-weight: bolder;
   }
   .dark-text{
     color: #2C3C47;
@@ -115,8 +119,8 @@ html, body{
     border-radius: 0 3px 3px 0;
   }  
   header{
-    height: 70%;
-    background-image: url(https://static.pexels.com/photos/6469/red-hands-woman-creative-medium.jpg);
+    height: 100%;
+    background-image: url(https://static.pexels.com/photos/1380/black-and-white-city-skyline-buildings-medium.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -221,7 +225,7 @@ html, body{
 
      text-decoration: none;
      font-size: initial;
-     font-weight: 500;
+     font-weight: bolder;
      color: inherit;
   }
   a:hover{
@@ -271,7 +275,6 @@ figure img{
 }
 
 figcaption{
-  font-size: initial;
   color: #FFF;
   position: relative;
 }
@@ -322,8 +325,7 @@ ul li{
   vertical-align: middle;
 }
 #projects{
-    background: #2D97BE;
-    color: #FFF;
+    color: initial;
 }
 #experience-designer{
   color: rgba(0, 128, 0, 0.8);
@@ -376,6 +378,9 @@ ul li{
 }
 .border-top{
     border-top: 1px solid rgba(201, 201, 201, 0.2);
+}
+.border-bottom{
+    border-bottom: 1px solid rgba(201, 201, 201, 0.2);
 }
 .round{
   border-radius: 50%;
