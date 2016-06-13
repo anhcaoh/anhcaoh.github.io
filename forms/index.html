@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Form: user interactions with ease of use</title>
+<title>Form: where user and experience meet</title>
 <meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+<link rel="shortcut icon" href="./images/anh-cao-favicon.ico" />
+<link rel="stylesheet" href="../styles/bootstrap.min.css" />
 <link rel="stylesheet" href="base.css" />
 </head>
 <body>
-<form name="custom-form" autocomplete="off" autocapitalize="off">
-	<div>
-	<label for="first-name" class="half">
+<form name="custom-form" class="col-md-offset-3 col-md-6" autocomplete="off" autocapitalize="off">
+	<label for="first-name">
 		<span>First Name:</span>
 		<input type="text" name="first-name" placeholder="e.g. Anh" class="animated" autofocus required>
 	</label>
-	<label for="last-name" class="half">
+	<label for="last-name">
 		<span>Last Name:</span>
 		<input type="text" id="ln" name="last-name" placeholder="e.g. Cao" class="animated" required>
-
 	</label>
-	</div>
-	<div>
 	<label for="email">
 		<span>Email:</span>
 		<input type="email" name="email" placeholder="e.g. anhcaoh@gmail.com" class="animated" required>
 	</label>
-	</div>
-	<div>
 	<label for="email">
 		<span>Phone:</span>
 		<input type="tel" name="phone" placeholder="e.g. 6786021591" class="animated" required>
 	</label>
+	<div>
+	<button type="submit" name="submit" class="animated">Submit</button>
 	</div>
-	<button type="submit" name="lets-go" class="animated">Let's go</button>
 </form>
 </body>
 </html>

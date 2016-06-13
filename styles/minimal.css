@@ -9,7 +9,6 @@ html, body{
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  color: #f1f1f1;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -156,15 +155,7 @@ html, body{
     background-image: url(https://static.pexels.com/photos/1380/black-and-white-city-skyline-buildings-medium.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  section#about article{
-    background-color: #FFF;
-    /*border: 1px solid rgba(138, 137, 137, 0.1);*/
-    padding: 52px 0;
-    min-height: 144px;
-  }
-  article{
-    width: 100%;
+    color: #f1f1f1;
   }
   .titletip:hover:before,
   .titletip:active:before,
@@ -358,27 +349,7 @@ ul li{
 .vertically-center{
   vertical-align: middle;
 }
-#projects{
-    color: initial;
-}
-#experience-designer{
-  color: rgba(0, 128, 0, 0.8);
-}
-#experience-designer > div{
-  background-color: rgba(0, 128, 0, 0.8);
-}
-#front-end-developer{
-  color: rgba(255, 165, 0, 0.8);
-}
-#front-end-developer > div{
-  background-color: rgba(255, 165, 0, 0.8);
-}
-#dancer{
-  color: rgba(255, 0, 0, 0.8);
-}
-#dancer > div{
-  background-color: rgba(255, 0, 0, 0.8);
-}
+
 .media-object{
   text-align: left;
 }
