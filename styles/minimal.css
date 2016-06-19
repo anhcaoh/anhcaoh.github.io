@@ -178,12 +178,13 @@ html, body{
   }
   
   ::selection{
-    background: #9b59b6;
+    background-color: #000;
+    /*background: #9b59b6;*/
     color: #FFF;
   }
 
   ::-moz-selection{
-    background: orange;
+    background-color: #000;
     color: #FFF;
   }
   .relativelyCenter{
