@@ -12,6 +12,12 @@ html, body{
   -webkit-overflow-scrolling: touch;
 }
 
+  @media screen and (max-width: 320px){
+    #list-design *{
+      font-size: 90%;
+    }
+  }
+
   header, section{
     width: 100%;
     margin: 0 auto;
