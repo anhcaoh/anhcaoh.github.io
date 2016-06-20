@@ -5,7 +5,7 @@ body{
 	margin: 0;
 	background-color: #FFF;
 	-webkit-font-smoothing: antialiased;
-	color: #ACACAC;
+	color: #333;
 	font-family: "BlinkMacSystemFont", Helvetica;
 }
 h3{
@@ -23,7 +23,7 @@ h3{
     border-left: 1px solid rgba(201, 201, 201, 0.3);
 }
 ::-webkit-input-placeholder{
-	color: #D9D9D9;
+	color: #e1e1e1;
 };
 form{
 	padding: 16px;
@@ -68,14 +68,11 @@ button{
 button{
 	cursor: pointer;
 	background: transparent;
-	border-color: #E2E2E2;
+	border-color: #333;
 	border-radius: 16px;
 	width: initial;
 	margin: auto;
 	padding: 3px 8px;
-}
-input{
-	min-width: 320px;
 }
 input:active,
 input:focus{
