@@ -4,7 +4,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>http://www.anhcaoh.com/</loc>
-  <xhtml:link rel="alternate" hreflang="http:///www.anhcaoh.com"/>
+  <xhtml:link rel="alternate" hreflang="en" href="http:///www.anhcaoh.com"/>
   <image:image>
     <image:loc>http://anhcaoh.github.io/images/Anh-Cao.jpg</image:loc>
     <image:caption>Hi, I'm Anh. I'm a web experience designer and developer.</image:caption>
