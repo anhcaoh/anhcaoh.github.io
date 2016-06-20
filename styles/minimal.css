@@ -375,8 +375,8 @@ ul li{
 .media-text:after{
     content: ".";
     border-bottom: 1px solid #f0efef;
-    width: calc(100% - 140px);
-    left: 126px;
+    width: calc(100% - 125px);
+    left: 110px;
     color: transparent;
     margin-top: 17px;
     position: absolute;
@@ -452,7 +452,7 @@ ul li{
  
   @media screen and (max-width: 375px){
     section{
-      padding: 0;
+      padding: 0 !important;
     }
     #list-design *{
       font-size: 90%;
