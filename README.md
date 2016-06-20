@@ -1,5 +1,6 @@
-Anh Cao's porfolios:
+Anh Cao's porfolio:
 Web App
+Front End Development
 User Interface
 User Interaction
-Experience Designs
+Experience Design
