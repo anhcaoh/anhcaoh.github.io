@@ -1,11 +1,16 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
+	<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <sitemap>
+      <loc>http://www.anhcaoh.com/sitemap.xml</loc>
+      <lastmod>2016-06-19</lastmod>
+   </sitemap>
  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
  <url>
- 	<loc>http://anhcaoh.com</loc>
+ 	<loc>http://www.anhcaoh.com</loc>
 	<image:image>
 		<image:loc>http://anhcaoh.github.io/images/Anh-Cao.jpg</image:loc>
+		<image:caption>Hi, I'm Anh. I'm a web experience designer and developer.</image:caption>
 	</image:image>
  </url> 
 </urlset>
