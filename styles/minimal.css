@@ -36,11 +36,17 @@ html, body{
   .amethyst{
     color: #9b59b6;
   }
+  .bg-amethyst{
+    background-color: #9b59b6;
+  }
   .bg-belize-hole{
     background-color: #2980b9;
   }
   .bg-turquoise{
     background-color: #1abc9c;
+  }
+  .bg-alizarin{
+    background-color: #e74c3c;
   }
   .bg-cloud{
     background-color: #ecf0f1;
@@ -208,7 +214,7 @@ html, body{
   .full-height{
     height: 100%;
   }
-  
+
   .dashed-bottom{
     border-bottom: 1px dashed;
   }
@@ -235,6 +241,21 @@ html, body{
   }
   .no-padding-children *{
     padding: 0;
+  }
+  .no-border-top{
+    border-top: 0px !important;
+  }
+   .no-border-bottom{
+    border-bottom: 0px !important;
+  }
+  .no-border-left{
+    border-left: 0px !important;
+  }
+  .no-border-right{
+    border-right: 0px !important;
+  }
+  .no-border{
+    border: 0px !important;
   }
   .singleLine{
     height: 20px;
