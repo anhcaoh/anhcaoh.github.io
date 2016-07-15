@@ -323,6 +323,9 @@ html, body{
         font-size: inherit;
         text-decoration: none;
       }
+      .pointer{
+        cursor: pointer;
+      }
 figure{
   margin: 0;
 }

@@ -4,8 +4,8 @@ header img{
 section#i-love-standing{
 }
 #hero-ilovestanding{
-
-	background-image: url(https://static.pexels.com/photos/162/man-person-apple-iphone-large.jpg);
+	
+	/*background-image: url(https://static.pexels.com/photos/162/man-person-apple-iphone-large.jpg);*/
 	position: absolute;
 	background-size: cover;
 	height: 100%;
@@ -35,17 +35,16 @@ section#i-love-standing{
 	text-shadow: 0 1px 2px #000;
 }
 .btn-pill{
-	border-radius: 15px;
+	border-radius: 16px;
 }
 .promotion{
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #f0f0f0;
-	position: fixed;
-	bottom: 0;
-	right: 0;
+	text-align: left;
 }
 .view-sample-video{
-	font-size: 14px !important;
+	font-size: 16px !important;
 	color: #337ab7 !important;
+	margin-left: 22px;
 }
