@@ -441,24 +441,24 @@ ul li{
   border: 1px solid rgba(201, 201, 201, 0.3);
 }
 .border-top{
-    border-top: 1px solid rgba(201, 201, 201, 0.3);
+    border-top: 1px solid rgba(201, 201, 201, 0.69);
 }
 .border-right{
-    border-right: 1px solid rgba(201, 201, 201, 0.3);
+    border-right: 1px solid rgba(201, 201, 201, 0.69);
 }
 .border-bottom{
-    border-bottom: 1px solid rgba(201, 201, 201, 0.3);
+    border-bottom: 1px solid rgba(201, 201, 201, 0.69);
 }
 .border-left{
-    border-left: 1px solid rgba(201, 201, 201, 0.3);
+    border-left: 1px solid rgba(201, 201, 201, 0.69);
 }
 .border-right-left{
-    border-right: 1px solid rgba(201, 201, 201, 0.3);
-    border-left: 1px solid rgba(201, 201, 201, 0.3);
+    border-right: 1px solid rgba(201, 201, 201, 0.69);
+    border-left: 1px solid rgba(201, 201, 201, 0.69);
 }
 .border-top-bottom{
-    border-top: 1px solid rgba(201, 201, 201, 0.3);
-    border-bottom: 1px solid rgba(201, 201, 201, 0.3);
+    border-top: 1px solid rgba(201, 201, 201, 0.69);
+    border-bottom: 1px solid rgba(201, 201, 201, 0.69);
 }
 .round{
   border-radius: 50%;
