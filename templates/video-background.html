@@ -15,17 +15,28 @@
 body{
   margin: auto;
   font-size: 14pt;
-  font-weight:600;
+  font-weight:400;
   color: #f1f1f1;
   outline: 0;
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+#branding{
+  margin: 10px 0 0 20px;
+  position: absolute;
+  z-index: 2;
+}
+.branding-logo{
+  width: 55px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
 nav{
   position: absolute;
+  top: 0;
   right: 0;
   z-index: 2;
-  margin: 20px 10px;
+  margin: 25px 10px 0 10px;
 }
 nav a:link,
 nav a:hover,
@@ -79,13 +90,21 @@ video{
   transition: 1s opacity;
 }
 main{
-  margin: 30px auto;
-  width: 950px;
-  border-radius: 4px;
-  background: rgba(209, 145, 60, 0.7);
-  background: -webkit-linear-gradient(to right,rgba(209, 145, 60, 0.7), rgba(255, 209, 148, 0.7));
-  background: linear-gradient(to right, rgba(209, 145, 60, 0.7), rgba(255, 209, 148, 0.7));
+  margin: 20px;
+  border-radius: 3px;
   padding: 1px 30px;
+
+  background: rgba(0, 210, 255, 0.7);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(58, 123, 213, 0.7), rgba(0, 210, 255, 0.7));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(58, 123, 213, 0.7), rgba(0, 210, 255, 0.7));
+
+  /*background: #83a4d4;
+  background: -webkit-linear-gradient(to right, #83a4d4, #b6fbff); 
+  background: linear-gradient(to right, #83a4d4, #b6fbff);*/
+
+  /*background: rgba(209, 145, 60, 0.7);
+  background: -webkit-linear-gradient(to right,rgba(209, 145, 60, 0.7), rgba(255, 209, 148, 0.7));
+  background: linear-gradient(to right, rgba(209, 145, 60, 0.7), rgba(255, 209, 148, 0.7)); */
 }
 footer{
   position: relative;
@@ -96,15 +115,24 @@ footer{
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
+
 </style>
-    </head>
-    <body>
+</head>
+<body>
+<header>
+  <div id="branding">
+    <image class="branding-logo" src="../images/Be_favicon_blue.png"></image>
+    <span style="color: rgb(63, 169, 245)">[Your logo here]</span>
+  </div>
 <nav>
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#contact">Contact</a>
 </nav>
-<h2 class="hero">Hello World!</h2>
+</header>
+<h2 class="hero">
+  <span>A hero message</span>
+</h2>
 <div id="hero-video">
   <video src="https://static.videezy.com/system/resources/previews/000/002/313/original/electric-bulb-hd-stock-video.mp4" autoplay loop muted></video>
 </div>
@@ -118,22 +146,25 @@ footer{
 <div id="services">
   <h2>Services</h2>
   <p>
-    We prodive full-services digital experiences:
+    We provide full-services digital experiences:
   </p>
   <ul>
     <li>Website design</li>
     <li>Brand development</li>
-    <li>Movile web app development</li>
+    <li>Mobile web app development</li>
     <li>Social media engagement</li>
+    <li>Email marketing campaign</li>
     <li>Search Engine Optimization (SEO)</li>
   </ul>
   </p>
 </div>
 <div id="contact">
   <h2>Contact</h2>
-  <p>Anh Cao</p>
-  <p>(678) 602-1591</p>
-  <p>anhcaoh@gmail.com</p>
+  <p>
+    <div>Anh Cao</div>
+    <div>(678) 602-1591</div>
+    <div>anhcaoh@gmail.com</div>
+  </p>
 </div>
 </main>
 <footer>
