@@ -283,7 +283,11 @@ html, body{
     -webkit-transition: all 50ms;
     -moz-transition: all 50ms;
   }
-
+  a *{
+    font-weight: bold;
+    color: rgba(0, 208, 255, 0.69);
+    font-size: inherit;
+  }
     a i{
       width: 32px;
       margin-left: 8px;
