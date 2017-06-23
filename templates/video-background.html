@@ -55,6 +55,7 @@ nav a:hover{
 }
 h2{
   font-size: 22pt;
+  margin-top: 15px;
 }
 #hero-video{
   position: relative;
@@ -92,11 +93,12 @@ video{
 main{
   margin: 10px;
   border-radius: 3px;
-  padding: 1px 30px;
+  padding: 10px;
+  padding-top: 1px;
 
-  background: rgba(0, 210, 255, 0.7);  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(58, 123, 213, 0.7), rgba(0, 210, 255, 0.7));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(58, 123, 213, 0.7), rgba(0, 210, 255, 0.7));
+  /*background: rgba(0, 210, 255, 0.7);  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, rgba(58, 123, 213, 0.7), rgba(0, 210, 255, 0.7));   Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, rgba(58, 123, 213, 0.7), rgba(0, 210, 255, 0.7));*/*/
 
   /*background: #83a4d4;
   background: -webkit-linear-gradient(to right, #83a4d4, #b6fbff); 
@@ -105,6 +107,16 @@ main{
   /*background: rgba(209, 145, 60, 0.7);
   background: -webkit-linear-gradient(to right,rgba(209, 145, 60, 0.7), rgba(255, 209, 148, 0.7));
   background: linear-gradient(to right, rgba(209, 145, 60, 0.7), rgba(255, 209, 148, 0.7)); */
+}
+#panels{
+    max-width: 500px;
+    margin: auto;
+}
+#panels > div{
+  background-color: rgba(11, 7, 7, 0.4);
+  padding: 1px 20px 20px 20px;
+  margin-top: 9px;
+  border-radius: 3px;
 }
 footer{
   position: relative;
@@ -137,34 +149,36 @@ footer{
   <video src="https://static.videezy.com/system/resources/previews/000/002/313/original/electric-bulb-hd-stock-video.mp4" autoplay loop muted></video>
 </div>
 <main>
-<div id="about">
-  <h2>About</h2>
-  <p>
-    We're website design agency from Atlanta, Georgia.
-  </p>
-</div>
-<div id="services">
-  <h2>Services</h2>
-  <p>
-    We provide full-services digital experiences:
-  </p>
-  <ul>
-    <li>Website design</li>
-    <li>Brand development</li>
-    <li>Mobile web app development</li>
-    <li>Social media engagement</li>
-    <li>Email marketing campaign</li>
-    <li>Search Engine Optimization (SEO)</li>
-  </ul>
-  </p>
-</div>
-<div id="contact">
-  <h2>Contact</h2>
-  <p>
-    <div>Anh Cao</div>
-    <div>(678) 602-1591</div>
-    <div>anhcaoh@gmail.com</div>
-  </p>
+  <div id="panels">
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        We're website design agency from Atlanta, Georgia.
+      </p>
+    </div>
+    <div id="services">
+      <h2>Services</h2>
+      <p>
+        We provide full-services digital experiences:
+      </p>
+      <ul>
+        <li>Website design</li>
+        <li>Brand development</li>
+        <li>Mobile web app development</li>
+        <li>Social media engagement</li>
+        <li>Email marketing campaign</li>
+        <li>Search Engine Optimization (SEO)</li>
+      </ul>
+      </p>
+    </div>
+    <div id="contact">
+      <h2>Contact</h2>
+      <p>
+        <div>Anh Cao</div>
+        <div>(678) 602-1591</div>
+        <div>anhcaoh@gmail.com</div>
+      </p>
+    </div>
 </div>
 </main>
 <footer>
