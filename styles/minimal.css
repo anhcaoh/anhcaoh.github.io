@@ -285,7 +285,7 @@ html, body{
   }
   a *{
     font-weight: bold;
-    color: rgba(0, 208, 255, 0.69);
+    color: rgba(0, 0, 0, 0.9);
     font-size: inherit;
     margin-top: 0;
   }
