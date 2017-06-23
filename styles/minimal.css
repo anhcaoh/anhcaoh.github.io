@@ -276,8 +276,9 @@ html, body{
      font-weight: bolder;
      color: inherit;
   }
-  a:hover{
-    opacity: .8;
+  a:hover,
+  a:hover *{
+    opacity: .69;
     transition: all 50ms;
     -webkit-transition: all 50ms;
     -moz-transition: all 50ms;
