@@ -11,7 +11,7 @@ class Contact extends Component {
             action: 'mailto:anhcaoh@gmail.com'}
         ];
         return (
-            <div className="contact text-center mb-3 mt-3">
+            <section className="contact text-center mb-3 mt-3">
                 <div className="col-md-6 offset-md-3 d-flex flex-wrap">
                     <div className="col-md-7">
                     <div className="badge-profile-md badge-profile-handshake 
@@ -34,7 +34,7 @@ class Contact extends Component {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }

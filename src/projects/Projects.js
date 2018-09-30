@@ -20,8 +20,8 @@ class Projects extends Component {
             { name: 'GoLawCase',
             description: 'Legal Management and Marketing',
             link: 'https://anhcaoh.github.io/GoLawCase',
-            tags: ['Entrepreneur', 'Consulting', 'User Interface', 
-            'User Experience', 'HTML5', 'CSS3', '3D', 'Digital', 'Design', 'Development']
+            tags: ['Entrepreneur', 'Consulting', '3D', 'User Interface', 
+            'User Experience', 'HTML5', 'CSS3', 'Design']
             }
         ];
         let getSkillClass = ( skill ) => {
@@ -48,24 +48,16 @@ class Projects extends Component {
             skillChecking === 'messaging' ) {
                 skillClass = 'badge-danger';
             }
-            return 'badge ' + skillClass + ' m-1 p-2'
+            return 'badge ' + skillClass + ' mr-2 mb-2 p-2'
         }
         return (
-            <div className="projects">
-            <h2 className="p-3 m-0 text-dark">Projects</h2>
-            <div className="d-flex flex-wrap mt-2 mb-2">
+            <section className="projects">
+            <h2 className="p-4 m-0 text-dark">Projects</h2>
+            <div className="d-flex flex-wrap mb-2">
                 { projects.map( (project) => 
                     <div key={ project.name } className="col-md-4">
-                    <div className="card m-1">
-                        <div className="tags skills applications m-1 text-light"> 
-                            { project.tags.map( skill => 
-                                <span key={ skill } 
-                                className={ getSkillClass( skill ) }>
-                                { skill }
-                                </span>
-                            )} 
-                        </div>
-                        <div className="card-body project">
+                    <div className="card mb-3 bg-light">
+                        <div className="card-body project p-3">
                             <h6 className="card-title">
                                 <a name="bitter" href={ project.link } 
                                 target="_blank"  
@@ -74,13 +66,21 @@ class Projects extends Component {
                             <p className="card-text">
                                 { project.description }
                             </p>
+                            <div className="tags skills applications text-light"> 
+                                { project.tags.map( skill => 
+                                    <span key={ skill } 
+                                    className={ getSkillClass( skill ) }>
+                                    { skill }
+                                    </span>
+                                )} 
+                            </div>
                         </div>
                     </div>
                 </div>
                 )
                 }
             </div>
-            </div>
+            </section>
         );
     }
 }

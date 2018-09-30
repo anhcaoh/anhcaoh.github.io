@@ -28,6 +28,36 @@ p{
 footer {
   color: #999;
 }
+[tooltip]{
+  margin:20px;
+  position:relative;
+}
+[tooltip]:hover::before{
+    content: "";
+    position: absolute;
+    top: -0.35rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 4px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.7) transparent transparent     transparent;
+    z-index: 100;
+}
+[tooltip]:hover::after{
+    content: attr(tooltip);
+    position: absolute;
+    left:50%;
+    top: -0.35rem;
+    transform: translateX(-50%)   translateY(-100%);
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    color: #fff;
+    padding: 0.35rem;
+    font-size: 0.75rem;
+    min-width: 12rem;
+    border-radius: 0.25rem;
+    pointer-events: none;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
