@@ -52,9 +52,6 @@ class Projects extends Component {
         }
         let getProjectClass = (projectIndex) => {
             let projectClass = 'card-body project p-3';
-            // if( projectIndex < projects.length - 1 ){
-            //     projectClass += ' border-right';
-            // }
             return projectClass;
         }
         return (
