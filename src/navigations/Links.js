@@ -26,7 +26,7 @@ class Links extends Component {
         ];
         return (
             <div className="fixed-top bg-light">
-                <nav className="navbar float-right">
+                <nav className="navbar float-right pb-0 pl-0 pr-0 col-md-auto col-sm-12">
                     { navLinks.map( (link) => 
                         <Link key={ link.name.toLowerCase() }
                         to={ link.path }

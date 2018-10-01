@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Team extends Component {
     render() {
         return (
-            <div id="team" className="team bg-grad-electric-violet text-light p-4">
+            <section id="team" className="team bg-grad-electric-violet text-light p-4">
                 <h2 className="text-center font-weight-bold">Our Team</h2>  
                 <div className="row">
                     <div className="card bg-transparent border-0 text-center p-4 col-md-6">
@@ -25,7 +25,7 @@ class Team extends Component {
                         <p className="card-text">Co-Founder / COO</p></div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

@@ -16,6 +16,9 @@
   background-image: url('./img/handshake.jpg');
   background-size: cover;
 }
+.badge-profile-hexagon {
+  background-image: url('https://media.istockphoto.com/photos/honeycomb-technology-concept-picture-id498890538?s=2048x2048');
+}
 .bg-light {
   background-color: #f8f9fa!important;
 }

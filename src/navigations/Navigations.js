@@ -13,7 +13,7 @@ class Navigations extends Component {
         <BrowserRouter>
             <section id="main-navigation">
                 <Links />
-                <div style={{ 'marginTop' : 40 }}>
+                <div style={{ 'marginTop' : 34 }}>
                 <Switch>
                     <Route path="/services" component={ Services } />          
                     <Route path="/projects" component={ Projects } />
