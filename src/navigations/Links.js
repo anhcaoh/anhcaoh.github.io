@@ -36,5 +36,18 @@ class Links extends Component {
             </div>
         )
     }
+    scrollToTop(){
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth' 
+        });
+    }
+    componentDidMount(){
+        this.scrollToTop();   
+    }
+    componentDidUpdate(){
+        this.scrollToTop();
+    }
 }
 export default Links

@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <main className="App">
         <Navigations />
-        <footer className="text-center mt-4 mb-1">
+        <footer className="text-center mt-3 mb-3">
           <small>Design and Develop by 3D Consulting @{ new Date().getFullYear() }.</small>
         </footer>
       </main>
