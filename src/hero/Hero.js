@@ -15,7 +15,7 @@ class Hero extends Component {
             <section id="about" className="hero p-4">
                 <div className="card text-left offset-md-1 col-md-6"
                     style={ styles }>
-                    <div className="card-body">
+                    <div className="card-body pl-0 pr-0">
                         <h5 className="card-title d-inline font-weight-bold" 
                         title={ title } tooltip={ title }>
                         { companyName }
