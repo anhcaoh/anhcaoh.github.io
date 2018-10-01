@@ -32,7 +32,7 @@ class Contact extends Component {
         }
     
         return (
-            <section className="contact text-center p-4">
+            <section id="contact" className="contact text-center p-4">
                 <div className="col-md-6 offset-md-3 d-flex flex-wrap">
                     <div className="col-md-6">
                     <div className="badge-profile-md badge-profile-handshake 

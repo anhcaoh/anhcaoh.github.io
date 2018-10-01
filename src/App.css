@@ -88,7 +88,7 @@ footer {
   color: #999;
 }
 [tooltip]{
-  margin:20px;
+  /* margin:20px; */
   position:relative;
 }
 [tooltip]:hover::before{

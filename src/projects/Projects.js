@@ -58,35 +58,35 @@ class Projects extends Component {
             return projectClass;
         }
         return (
-            <section className="projects p-4">
-            <h2 className="p-4 ml-2 mr-2 mb-0 text-dark font-weight-bold">Projects</h2>
-            <div className="d-flex flex-wrap mb-2">
-                { projects.map( (project, i) => 
-                    <div key={ project.name } className="col-md-4">
-                    <div className="card mb-3 border-0">
-                        <div className={ getProjectClass( i ) }>
-                            <h6 className="card-title">
-                                <a name="bitter" href={ project.link } 
-                                target="_blank"  
-                                title="bitter">{ project.name }</a>
-                            </h6>
-                            <p className="card-text">
-                                { project.description }
-                            </p>
-                            <div className="tags skills applications text-light pl-3 border-left"> 
-                                { project.tags.map( skill => 
-                                    <span key={ skill } 
-                                    className={ getSkillClass( skill ) }>
-                                    { skill }
-                                    </span>
-                                )} 
+            <section id="projects" className="projects p-4">
+                <h2 className="p-4 ml-2 mr-2 mb-0 text-dark font-weight-bold">Projects</h2>
+                <div className="d-flex flex-wrap mb-2">
+                    { projects.map( (project, i) => 
+                        <div key={ project.name } className="col-md-4">
+                        <div className="card mb-3 border-0">
+                            <div className={ getProjectClass( i ) }>
+                                <h6 className="card-title">
+                                    <a name="bitter" href={ project.link } 
+                                    target="_blank"  
+                                    title="bitter">{ project.name }</a>
+                                </h6>
+                                <p className="card-text">
+                                    { project.description }
+                                </p>
+                                <div className="tags skills applications text-light pl-3 border-left"> 
+                                    { project.tags.map( skill => 
+                                        <span key={ skill } 
+                                        className={ getSkillClass( skill ) }>
+                                        { skill }
+                                        </span>
+                                    )} 
+                                </div>
                             </div>
                         </div>
                     </div>
+                    )
+                    }
                 </div>
-                )
-                }
-            </div>
             </section>
         );
     }
