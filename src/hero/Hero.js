@@ -6,7 +6,7 @@ class Hero extends Component {
         const companyName = '3D Consulting';
         const title = 'Digital Design & Development';
         const about = 'Our consultants have many years experienced working for organizations ranging from startups to medium & large corporations. \
-        We undestand and have what it takes to design, architect & implement successsful enterprise application software (EAS) projects.';
+        We undestand and have what it takes to design, architect and implement successful enterprise application software (EAS) projects.';
         const message = 'We don\'t accept many projects at a time; so, we can focus on delivering true value to our clients.';
         const styles = {
             border: 0,

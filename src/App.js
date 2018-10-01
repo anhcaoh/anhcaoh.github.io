@@ -9,11 +9,11 @@ class App extends Component {
     return (
       <main className="App">
         <Hero />
-        <Services />
         <Projects />
+        <Services />
         <Contact />
         <footer className="text-center m-3">
-          <small>Design and Develop by Anh Cao @2018.</small>
+          <small>Design and Develop by 3D Consulting @{ new Date().getFullYear() }.</small>
         </footer>
       </main>
     );

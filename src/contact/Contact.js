@@ -32,11 +32,11 @@ class Contact extends Component {
         }
     
         return (
-            <section className="contact text-center p-4 bg-light">
+            <section className="contact text-center p-4">
                 <div className="col-md-6 offset-md-3 d-flex flex-wrap">
                     <div className="col-md-6">
                     <div className="badge-profile-md badge-profile-handshake 
-                        mt-4 ml-auto mr-auto rounded-circle"></div>
+                        mt-5 ml-auto mr-auto rounded-circle"></div>
                     </div>
                     <div className="col-md-6 text-left">
                         <h2 className="pt-4 pb-4 m-0 font-weight-bold">

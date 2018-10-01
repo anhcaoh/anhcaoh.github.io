@@ -48,8 +48,8 @@
 }
 .bg-grad-mojito{
   background: #1D976C;  /* fallback for old browsers */
-  background-image: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: -webkit-linear-gradient(to left, #89f7b2db, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to left, #89f7b2db, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .bg-grad-juicy-orange{
   background: #FF8008;  /* fallback for old browsers */
@@ -66,6 +66,12 @@
   background-image: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
   background-image: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.icon-md{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 6rem;
+  height: 6rem;
+}
 h5{
   font-size: 3rem;
 }
@@ -73,7 +79,7 @@ h6{
   font-size: 1.75rem;
 }
 p{
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 footer {
   color: #999;

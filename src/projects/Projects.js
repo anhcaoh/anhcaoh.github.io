@@ -58,7 +58,7 @@ class Projects extends Component {
             return projectClass;
         }
         return (
-            <section className="projects">
+            <section className="projects p-4">
             <h2 className="p-4 ml-2 mr-2 mb-0 text-dark font-weight-bold">Projects</h2>
             <div className="d-flex flex-wrap mb-2">
                 { projects.map( (project, i) => 
