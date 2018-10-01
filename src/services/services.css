@@ -1,0 +1,17 @@
+.pencil-icon{
+    -webkit-mask-box-image: url('../img/pencil.svg');
+    mask: url('../img/pencil.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 6rem;
+}
+.code-icon{
+    -webkit-mask-box-image: url('../img/code.svg');
+    mask: url('../img/code.svg');
+    /* background-image: url('../img/code.svg') no-repeat ; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 6rem;
+}

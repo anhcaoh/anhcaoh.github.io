@@ -12,7 +12,7 @@ class App extends Component {
         <Services />
         <Projects />
         <Contact />
-        <footer className="text-center mt-3 mb-1">
+        <footer className="text-center m-3">
           <small>Design and Develop by Anh Cao @2018.</small>
         </footer>
       </main>

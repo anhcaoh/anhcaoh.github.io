@@ -50,14 +50,21 @@ class Projects extends Component {
             }
             return 'badge ' + skillClass + ' mr-2 mb-2 p-2'
         }
+        let getProjectClass = (projectIndex) => {
+            let projectClass = 'card-body project p-3';
+            if( projectIndex < projects.length - 1 ){
+                projectClass += ' border-right';
+            }
+            return projectClass;
+        }
         return (
             <section className="projects">
-            <h2 className="p-4 m-0 text-dark">Projects</h2>
+            <h2 className="p-4 ml-2 mr-2 mb-0 text-dark font-weight-bold">Projects</h2>
             <div className="d-flex flex-wrap mb-2">
-                { projects.map( (project) => 
+                { projects.map( (project, i) => 
                     <div key={ project.name } className="col-md-4">
-                    <div className="card mb-3 bg-light">
-                        <div className="card-body project p-3">
+                    <div className="card mb-3 border-0">
+                        <div className={ getProjectClass( i ) }>
                             <h6 className="card-title">
                                 <a name="bitter" href={ project.link } 
                                 target="_blank"  

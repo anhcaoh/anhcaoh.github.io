@@ -8,18 +8,21 @@ class Contact extends Component {
             action: 'tel:+16786021591'},
             { name: 'E-mail', 
             display: 'anhcaoh@gmail.com',
-            action: 'mailto:anhcaoh@gmail.com'}
+            action: 'mailto:anhcaoh@gmail.com'},
+            { name: 'Address', 
+            display: 'Atlanta, Georgia',
+            action: 'https://www.google.com/maps?q=atlanta+ga&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiv4qPVgeTdAhVn8IMKHe8PDYsQ_AUIDigB'}
         ];
         return (
-            <section className="contact text-center mb-3 mt-3">
+            <section className="contact text-center p-4 bg-light">
                 <div className="col-md-6 offset-md-3 d-flex flex-wrap">
                     <div className="col-md-7">
                     <div className="badge-profile-md badge-profile-handshake 
-                        mt-3 ml-auto mr-auto rounded-circle"></div>
+                        mt-4 ml-auto mr-auto rounded-circle"></div>
                     </div>
                     <div className="col-md-5 text-left">
-                        <h2 className="p-3 m-0">
-                        Let's chat</h2>
+                        <h2 className="p-3 m-0 font-weight-bold">
+                        Let's Chat</h2>
                         <ul className="list-group list-group-flush">
                             { contactMethods.map( method => 
                             <li key={ method.name } 

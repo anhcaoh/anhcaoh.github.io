@@ -1,22 +1,60 @@
 import React, { Component } from 'react';
-
+import './services.css';
 class Services extends Component {
     render() {
         const skills = 'Angular, React, TypeScript, JavaScript, NodeJS, MongoDB';
         return (
-            <section className="services">
-                <h2 class="p-4 m-0 text-dark">Services</h2>
-                <div className="p-4">
-                    <h6>Design</h6>
-                    <p>
-                        We have the passion for design. From project conceupture to the finishing touch. We
-                    </p>
-                    <h6>Development</h6>
-                    <p>
+            <section className="services p-4 bg-light">
+            <h2 className="text-center text-dark font-weight-bold">Services</h2>
+            <div className="m-4 row">
+                <div className="col-md-4 col-sm-12 p-4 m-auto d-sm-none">
+                    <div className="pencil-icon m-auto bg-grad-skyline"></div>
+                </div>
+                <div className="offset-md-2 col-md-4 col-sm-12">
+                    <h2 className="bg-grad bg-grad-skyline">
+                    <span>Design</span>
+                    </h2>
+                    <p className="bg-grad bg-grad-skyline">
+                    From project conceptual to the finishing touch, we put (UI/UX) mobile-first design first and foremost in every aspects of customer experiences.
                     </p>
                 </div>
+                <div className="col-md-4 col-sm-12 p-4 m-auto d-none d-sm-block">
+                <div className="pencil-icon m-auto bg-grad-skyline"></div>
+                </div>
+            </div>
+            <div className="offset-md-2 col-md-8 p-4 border-bottom"></div>
+            <div className="m-4 row p-4">
+                <div className="offset-md-5 col-md-4 col-sm-12 p-4 m-auto">
+                <div className="code-icon m-auto bg-grad-dimigo"></div>
+                </div>
+                <div className="col-md-6 col-sm-12">
+                    <h2 className="bg-grad bg-grad-dimigo">
+                    <span>Enterprise Software Development</span>
+                    </h2>
+                    <p className="bg-grad bg-grad-dimigo">Modern and data-driven enterprise application software (EAS) development; leveraging the latest and greatest web technologies: {skills}</p>
+                </div>
+            </div>
+            {/* <div className="offset-md-2 col-md-8 p-4 border-bottom"></div>
+            <div className="m-4 row p-4">
+                <div className="col-md-4 col-sm-12 p-4 m-auto d-sm-none">
+                    <div className="pencil-icon m-auto bg-grad-skyline"></div>
+                </div>
+                <div className="offset-md-2 col-md-4 col-sm-12">
+                    <h2 className="bg-grad bg-grad-skyline">
+                    <span>Strategy</span>
+                    </h2>
+                    <p className="bg-grad bg-grad-skyline">
+                    Stategy
+                    </p>
+                </div>
+                <div className="col-md-4 col-sm-12 p-4 m-auto d-none d-sm-block">
+                <div className="pencil-icon m-auto bg-grad-skyline"></div>
+                </div>
+            </div> */}
             </section>
         )
     }
 }
 export default Services;
+
+
