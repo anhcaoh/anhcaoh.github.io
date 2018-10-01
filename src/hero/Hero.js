@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './hero.css';
-
 class Hero extends Component {
     render() {
         const companyName = '3D Consulting';
@@ -12,19 +11,9 @@ class Hero extends Component {
             border: 0,
             background: 'transparent',
         };
-        const navs = [
-            {name:'Projects',
-            href:'#projects'},
-            {name:'Services',
-            href:'#services'},
-            {name:'Our Team',
-            href:'#team'},
-            {name:'Contact',
-            href:'#contact'}
-        ];
         return (
-            <section id="about" className="hero p-4 row">
-                <div className="card text-left offset-md-1 col-md-6 mt-5" 
+            <section id="about" className="hero p-4">
+                <div className="card text-left offset-md-1 col-md-6"
                     style={ styles }>
                     <div className="card-body">
                         <h5 className="card-title d-inline font-weight-bold" 
@@ -33,16 +22,6 @@ class Hero extends Component {
                         </h5>
                         <p className="card-text pb-3">{ about }</p>
                     </div>
-                </div>
-                <div className="col-md-5">
-                    <nav className="navbar">
-                    { navs.map( ( nav ) => 
-                        <a key={ nav.name.toLowerCase() } name={nav.name.toLowerCase()}
-                        className="text-light"
-                        href={nav.href}>{ nav.name }</a>
-                    )}
-                    </nav>
-                    <div className="card-img-top badge-profile badge-profile-md badge-profile-anh-cao mt-5 mb-3 ml-auto mr-auto"></div>
                 </div>
             </section>
         );

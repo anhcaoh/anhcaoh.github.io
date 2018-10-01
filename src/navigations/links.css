@@ -1,0 +1,16 @@
+a.link{
+    padding: 0 0.5rem;
+    border-bottom: 2px solid transparent;
+}
+a.link:hover,
+a.link:active,
+a.link:focus{
+    text-decoration: none;
+    border-bottom: 2px solid #0056b3;
+    font-weight: bold;
+}
+.link.active{
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    font-weight: bold;
+}
