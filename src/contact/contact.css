@@ -1,0 +1,18 @@
+.icon-contact {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: inline-block !important;
+    vertical-align: middle;
+    color: blue;
+}
+.icon-mobile{
+    background-image: url('../img/baseline-phone-24px.svg');
+}
+.icon-email{
+    background-image: url('../img/baseline-email-24px.svg');
+}
+.icon-location{
+    background-image: url('../img/baseline-location_on-24px.svg');
+}

@@ -8,36 +8,36 @@ class Services extends Component {
             <h2 className="text-center text-dark font-weight-bold">Services</h2>
             <div className="m-4 row">
                 <div className="col-md-4 col-sm-12 p-4 m-auto d-sm-none">
-                    <div className="pencil-icon m-auto bg-grad-skyline"></div>
+                    <div className="icon-pencil m-auto bg-grad-skyline"></div>
                 </div>
-                <div className="offset-md-2 col-md-4 col-sm-12">
+                <div className="offset-md-2 col-md-5 col-sm-12">
                     <h2 className="bg-grad bg-grad-skyline">
-                    <span>Design</span>
+                    <span>UI/UX Design</span>
                     </h2>
                     <p className="bg-grad bg-grad-skyline">
-                    From project conceptual to the finishing touch, we put (UI/UX) mobile-first design first and foremost in every aspects of customer experiences.
+                    From project conceptual to the finishing touch, we put design first and foremost in every aspects of customer experiences.
                     </p>
                 </div>
                 <div className="col-md-4 col-sm-12 p-4 m-auto d-none d-sm-block">
-                <div className="pencil-icon m-auto bg-grad-skyline"></div>
+                <div className="icon-pencil m-auto bg-grad-skyline"></div>
                 </div>
             </div>
             <div className="offset-md-2 col-md-8 p-4 border-bottom"></div>
             <div className="m-4 row p-4">
                 <div className="offset-md-5 col-md-4 col-sm-12 p-4 m-auto">
-                <div className="code-icon m-auto bg-grad-dimigo"></div>
+                <div className="icon-code m-auto bg-grad-dimigo"></div>
                 </div>
                 <div className="col-md-6 col-sm-12">
                     <h2 className="bg-grad bg-grad-dimigo">
                     <span>Enterprise Software Development</span>
                     </h2>
-                    <p className="bg-grad bg-grad-dimigo">Modern and data-driven enterprise application software (EAS) development; leveraging the latest and greatest web technologies: {skills}</p>
+                    <p className="bg-grad bg-grad-dimigo">Mobile, modern and data-driven EAS development; solving complex business requirements and leveraging the latest and greatest technologies: {skills}</p>
                 </div>
             </div>
             {/* <div className="offset-md-2 col-md-8 p-4 border-bottom"></div>
             <div className="m-4 row p-4">
                 <div className="col-md-4 col-sm-12 p-4 m-auto d-sm-none">
-                    <div className="pencil-icon m-auto bg-grad-skyline"></div>
+                    <div className="icon-pencil m-auto bg-grad-skyline"></div>
                 </div>
                 <div className="offset-md-2 col-md-4 col-sm-12">
                     <h2 className="bg-grad bg-grad-skyline">
@@ -48,7 +48,7 @@ class Services extends Component {
                     </p>
                 </div>
                 <div className="col-md-4 col-sm-12 p-4 m-auto d-none d-sm-block">
-                <div className="pencil-icon m-auto bg-grad-skyline"></div>
+                <div className="icon-pencil m-auto bg-grad-skyline"></div>
                 </div>
             </div> */}
             </section>
