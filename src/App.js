@@ -3,6 +3,7 @@ import './App.css';
 import Hero from './hero/Hero';
 import Services from './services/Services';
 import Projects from './projects/Projects';
+import Team from './team/Team';
 import Contact from './contact/Contact';
 class App extends Component {
   render() {
@@ -11,8 +12,9 @@ class App extends Component {
         <Hero />
         <Projects />
         <Services />
+        <Team />
         <Contact />
-        <footer className="text-center m-3">
+        <footer className="text-center mt-4 mb-1">
           <small>Design and Develop by 3D Consulting @{ new Date().getFullYear() }.</small>
         </footer>
       </main>

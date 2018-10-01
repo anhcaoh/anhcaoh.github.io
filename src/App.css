@@ -1,5 +1,6 @@
 .badge-profile {
   border-radius: 50%;
+  background-size: contain;
 }
 .badge-profile-md{
   width: 9rem;
@@ -7,7 +8,9 @@
 }
 .badge-profile-anh-cao {
   background-image: url('./img/Anh-Cao-Polygons.jpg');
-  background-size: contain;
+}
+.badge-profile-brenny-nguyen {
+  background-image: url('https://scontent.fatl1-1.fna.fbcdn.net/v/t1.0-1/p320x320/36996928_10216090097916192_6299463227789017088_n.jpg?_nc_cat=111&oh=fcd071780aa9d5b33779ef1956703708&oe=5C53EAD3');
 }
 .badge-profile-handshake {
   background-image: url('./img/handshake.jpg');
@@ -58,8 +61,8 @@
 }
 .bg-grad-electric-violet{
   background: #4776E6;  /* fallback for old browsers */
-  background-image: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: -webkit-linear-gradient(to left, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to left, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .bg-grad-steel-grey{
   background: #1F1C2C;  /* fallback for old browsers */

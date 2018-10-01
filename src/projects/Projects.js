@@ -52,9 +52,9 @@ class Projects extends Component {
         }
         let getProjectClass = (projectIndex) => {
             let projectClass = 'card-body project p-3';
-            if( projectIndex < projects.length - 1 ){
-                projectClass += ' border-right';
-            }
+            // if( projectIndex < projects.length - 1 ){
+            //     projectClass += ' border-right';
+            // }
             return projectClass;
         }
         return (
@@ -73,7 +73,7 @@ class Projects extends Component {
                             <p className="card-text">
                                 { project.description }
                             </p>
-                            <div className="tags skills applications text-light"> 
+                            <div className="tags skills applications text-light pl-3 border-left"> 
                                 { project.tags.map( skill => 
                                     <span key={ skill } 
                                     className={ getSkillClass( skill ) }>

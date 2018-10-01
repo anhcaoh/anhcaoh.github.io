@@ -44,7 +44,7 @@ class Services extends Component {
                         <div className={['m-auto', service.icon, service.class].join(' ')}></div>
                     </div>
                 }
-                <div className={[ isOdd(index) ? '' : 'offset-md-1', 'col-md-5 col-sm-12'].join(' ')}>
+                <div className={[ isOdd(index) ? 'col-md-6' : 'offset-md-1 col-md-5', 'col-sm-12'].join(' ')}>
                     <h2 className={['bg-grad', service.class].join(' ')}>{ service.name }</h2>
                     <p className={['bg-grad', service.class].join(' ')}>{ service.description }</p>
                     { (service.principles || service.technologies || service.works ) && 
