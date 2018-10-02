@@ -16,15 +16,15 @@ class Hero extends Component {
                 <div className="row p-4">
                 <div className="col-md-5 m-auto d-block d-sm-none" title={ title } tooltip={ title }>
                     <div className="badge-profile badge-profile-md m-auto bg-grad-clouds d-table">
-                        <span className="d-table-cell align-middle bg-grad bg-grad-electric-violet"
-                        style={{ fontSize: '3.5rem',
+                        <span className="d-table-cell align-middle bg-grad bg-3d"
+                        style={{ fontSize: '4.5rem',
                         letterSpacing: '-6px'}}>3D</span>
                     </div>
-                    <small className="bg-grad bg-grad-electric-violet" style={{
+                    <small className="bg-grad bg-3d" style={{
                         position: 'absolute',
                         bottom: '1.5rem',
                         margin: 'auto',
-                        marginLeft: '-1.7rem'}}>Consulting</small>
+                        marginLeft: '-1.9rem'}}>Consulting</small>
                 </div>
                 <div className="card text-left offset-md-2 col-md-5"
                     style={ styles }>
@@ -37,15 +37,15 @@ class Hero extends Component {
                 </div>
                 <div className="col-md-5 m-auto d-none d-sm-block" title={ title } tooltip={ title }>
                     <div className="badge-profile badge-profile-md m-auto bg-grad-clouds d-table relative">
-                        <span className="d-table-cell align-middle bg-grad bg-grad-electric-violet text-center"
-                        style={{ fontSize: '3.5rem',
+                        <span className="d-table-cell align-middle bg-grad bg-3d text-center"
+                        style={{ fontSize: '4.5rem',
                         letterSpacing: '-6px'}}>3D</span>
                     </div>
-                    <small className="bg-grad bg-grad-electric-violet" style={{
+                    <small className="bg-grad bg-3d" style={{
                         position: 'absolute',
                         bottom: '1.5rem',
                         margin: 'auto',
-                        marginLeft: '-1.7rem'}}>Consulting</small>
+                        marginLeft: '-1.9rem'}}>Consulting</small>
                 </div>
                 </div>
             </section>

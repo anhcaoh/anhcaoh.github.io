@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Team extends Component {
     render() {
         return (
-            <section id="team" className="team bg-grad-electric-violet text-light p-4">
+            <section id="team" className="team bg-3d text-light p-4">
                 <h2 className="text-center font-weight-bold">Our Team</h2>  
                 <div className="row">
                     <div className="card bg-transparent border-0 text-center p-4 col-md-6">

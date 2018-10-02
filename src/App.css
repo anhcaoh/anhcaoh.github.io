@@ -6,6 +6,10 @@
   width: 9rem;
   height: 9rem;
 }
+.badge-profile-sm{
+  width: 4rem;
+  height: 4rem;
+}
 .badge-profile-anh-cao {
   background-image: url('./img/Anh-Cao-Polygons.jpg');
 }
@@ -18,6 +22,14 @@
 }
 .badge-profile-hexagon {
   background-image: url('https://media.istockphoto.com/photos/honeycomb-technology-concept-picture-id498890538?s=2048x2048');
+}
+.bg-3d{
+  background: #4776e6;
+  background: -webkit-gradient(linear,left top, right top,from(#8e54e9),to(#4776e6));
+  background: -webkit-linear-gradient(left,#8e54e9,#4776e6);
+  background: -o-linear-gradient(left,#8e54e9,#4776e6);
+  background: linear-gradient(to right,#8e54e9,#4776e6);
+  color: #f1f1f1;
 }
 .bg-light {
   background-color: #f8f9fa!important;
@@ -61,11 +73,6 @@
   background: #FF8008;  /* fallback for old browsers */
   background-image: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
   background-image: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.bg-grad-electric-violet{
-  background: #4776E6;  /* fallback for old browsers */
-  background-image: -webkit-linear-gradient(to left, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: linear-gradient(to left, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .bg-grad-steel-grey{
   background: #1F1C2C;  /* fallback for old browsers */
