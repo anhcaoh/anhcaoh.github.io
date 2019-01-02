@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import './hero.css';
 class Hero extends Component {
     render() {
-        const headline = 'Value Delivered.';
-        const title = 'Digital Design & Development';
-        const about = 'Our consultants have many years experienced working for organizations ranging from startups to medium & large corporations. \
-        We undestand and have what it takes to design, architect and implement successful enterprise application software (EAS) projects.';
+        const headline = 'Design Focus.';
+        const title = 'Cao Design';
+        const about = 'Finishing touch matters';
         // const message = 'We don\'t accept many projects at a time; so, we can focus on delivering true value to our clients.';
         const styles = {
             border: 0,
@@ -17,14 +16,15 @@ class Hero extends Component {
                 <div className="col-md-5 m-auto d-block d-sm-none" title={ title } tooltip={ title }>
                     <div className="badge-profile badge-profile-md m-auto bg-grad-clouds d-table">
                         <span className="d-table-cell align-middle bg-grad bg-3d"
-                        style={{ fontSize: '4.5rem',
-                        letterSpacing: '-6px'}}>3D</span>
+                        style={{ fontSize: '4rem',
+                        letterSpacing: '-6px'}}>cao</span>
                     </div>
-                    <small className="bg-grad bg-3d" style={{
+                    <span className="bg-grad bg-3d" style={{
                         position: 'absolute',
                         bottom: '1.5rem',
-                        margin: 'auto',
-                        marginLeft: '-1.9rem'}}>Consulting</small>
+                        left: 0,
+                        right: 0,
+                        margin: 'auto'}}>design</span>
                 </div>
                 <div className="card text-left offset-md-2 col-md-5"
                     style={ styles }>
@@ -38,14 +38,15 @@ class Hero extends Component {
                 <div className="col-md-5 m-auto d-none d-sm-block" title={ title } tooltip={ title }>
                     <div className="badge-profile badge-profile-md m-auto bg-grad-clouds d-table relative">
                         <span className="d-table-cell align-middle bg-grad bg-3d text-center"
-                        style={{ fontSize: '4.5rem',
-                        letterSpacing: '-6px'}}>3D</span>
+                        style={{ fontSize: '4rem',
+                        letterSpacing: '-6px'}}>cao</span>
                     </div>
-                    <small className="bg-grad bg-3d" style={{
+                    <span className="bg-grad bg-3d" style={{
                         position: 'absolute',
                         bottom: '1.5rem',
-                        margin: 'auto',
-                        marginLeft: '-1.9rem'}}>Consulting</small>
+                        left: 0,
+                        right: 0,
+                        margin: 'auto'}}>design</span>
                 </div>
                 </div>
             </section>

@@ -7,7 +7,7 @@ class App extends Component {
       <main className="App">
         <Navigations />
         <footer className="text-center mt-3 mb-3">
-          <small>Design and Develop by 3D Consulting @{ new Date().getFullYear() }.</small>
+          <small>Design with &hearts; by Cao Design Agency @ { new Date().getFullYear() }.</small>
         </footer>
       </main>
     );
