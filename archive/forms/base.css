@@ -1,0 +1,94 @@
+html,
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: #FFF;
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	font-family: "BlinkMacSystemFont", Helvetica;
+}
+h3{
+	margin-bottom: 16px;
+}
+.animated{
+	-webkit-transition: background-color border-color .1s ease-in-out;
+	transition: background-color border-color .1s ease-in-out;
+	-moz-transition: background-color border-color .1s ease-in-out;
+}
+.padding-left-72{
+  padding-left: 72px;
+}
+.border-left{
+    border-left: 1px solid rgba(201, 201, 201, 0.3);
+}
+::-webkit-input-placeholder{
+	color: #e1e1e1;
+};
+form{
+	padding: 16px;
+    border-radius: 2px;
+    margin: auto;
+    text-align: center;
+}
+.submit{
+	margin-top: 32px;
+}
+form[name=inline] label span{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+form[name=stack] label{
+	padding-bottom: 8px;
+}
+label,
+form[name=stack] label,
+form[name=stack] label span{
+	display: block;
+}
+form[name=stack] label span{
+	padding-left: 4px;
+}
+form[name=stack] label input{
+	padding-top: 0;
+	border-left: 0;
+}
+input,
+button{
+	outline: 0;
+	padding: 4px;
+	border: 2px solid transparent;
+	border-bottom-color: #E2E2E2;
+	border-radius: 2px;
+	font-size: 18pt;
+	font-weight: 400;
+	color: inherit;
+}
+button{
+	cursor: pointer;
+	background: transparent;
+	border-color: #333;
+	border-radius: 16px;
+	width: initial;
+	margin: auto;
+	padding: 3px 12px;
+}
+input:active,
+input:focus{
+	border-bottom-color: rgb(251, 131, 17);
+	color: initial;
+}
+input:active ~ span,
+input:focus ~ span {
+	opacity: 1;
+}
+
+button:hover,
+button:active,
+button:focus{
+	border-color: rgb(251, 131, 17);
+	background: rgb(251, 131, 17);
+	color: #F3F3F3;
+}
+

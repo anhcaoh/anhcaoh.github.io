@@ -1,0 +1,194 @@
+
+<style>
+
+#slider{
+
+	position: absolute;
+	overflow: hidden;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+}
+	#instafeed {
+
+		width: 900%;
+		margin-left: -40px;
+
+	}
+
+	#instafeed li{
+
+		list-style: none;
+		display: inline;
+		float: left;
+		width: 500px;
+
+	}
+
+		#instafeed li img{
+
+			width: 100%;
+		}
+
+		button{
+
+			width: 55px;
+			height: 25px;
+		}
+
+		#stop{
+
+			display: none;
+		}
+
+	.arrows{
+		
+		position: fixed;
+	    font-size: 1em;
+	    color: #000;
+	    height: 459px;
+	    background-color: #fff;
+	}
+
+
+	#backward {
+
+	    float: left;
+	    left: 10;
+	   
+	}
+		#backward:hover{
+
+			background-color: #fafafa;
+		}
+
+	#forward{
+
+		float: right;    
+		right: 10;
+	}
+		#forward:hover{
+
+			background-color: #fafafa;
+		}
+
+
+
+</style>
+
+<div id="slider">
+<input id='tag' value="Vietnam2014">
+<button id="start" onclick="startCycle(); return false">start</button>
+<button id="stop" onclick="stopCycle(); return false">stop</button>
+
+<ul id="instafeed">
+<div id="backward" class="arrows"><< Fast backward</div>
+<div id="forward" class="arrows" style="">Fast backward >></div>
+
+
+</ul>
+</div>
+
+<script type="text/javascript" src="./scripts/jquery-1.11.0.js"></script>
+<script src="http://anhcaoh.github.io/HoangChauWedding/javascripts/instafeed.min.js"></script>
+<script>
+
+"use strict";
+
+var tag = $("#tag").val();
+
+$("#tag").on("change", function(){
+
+	tag = $("tag").val();
+	console.log("New tag");
+})
+
+var promise = new Promise( function(resolve, reject){
+
+	var feed = new Instafeed({
+
+			get: "tagged",
+			tagName: tag,
+			sortBy: "random",
+			limit: 60,
+			clientId: "aa746025d09d490186ac6f8762dccac8",
+			accessToken: "290432393.aa74602.6da2b3f4f9404d00ad3838a9880b062f",
+			resolution: "standard_resolution",
+			template: "<li><a href='{{link}}'><img src='{{image}}'></a></li>"
+
+		});
+
+
+	resolve(feed.run());
+	
+});
+
+promise.then(function(){
+
+	// alert("Promise resolved!");
+
+	// $("#instafeed").append('<div id="forward" style="position: fixed;    font-size: 1em;    float: right;    right: 10;    color: white;    height: 459px;    background-color: red;">Fast backward >></div>');
+
+});
+
+
+var currentSlide = 1;
+var marginLeft = -500;
+var pause = 3000;
+var cycle;
+
+var startCycle = function startCycle(){
+
+	cycle = setInterval( function(){
+
+		$("#instafeed").animate({"margin-left": "+=" + marginLeft},1000,function(){	
+
+			currentSlide++;
+			
+			if (currentSlide === $("#instafeed li").length){
+			
+				currentSlide = 1;
+			
+				$("#instafeed").css("margin-left", "-40px");
+			}
+			
+		});
+
+	}, pause);
+
+};
+
+var stopCycle = function stopCycle(){
+
+	clearInterval( cycle );
+
+};
+
+
+$("button").on("click", function(){
+
+	$("button").toggle();
+});
+
+$(".arrows").mouseenter(function(){
+
+	pause = 2000;
+	startCycle();
+	$("button").toggle();
+	
+}).mouseleave(function(){
+
+	pause = 3000;
+	stopCycle();
+	$("button").toggle();
+});
+
+</script>
+
+
+
