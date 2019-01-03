@@ -31,8 +31,20 @@ class Links extends Component {
                     'left': '.5rem',
                     'top': '.5rem' }}
                 className="badge-profile badge-profile-sm m-auto bg-grad-clouds d-table relative">
-                <span className="d-table-cell align-middle bg-grad bg-3d text-center" 
-                style={{'fontSize': '2rem', 'letterSpacing':'-3px'}}>cao</span></div>
+                {/* <span className="d-table-cell align-middle bg-grad bg-3d text-center" 
+                style={{'fontSize': '2rem', 'letterSpacing':'-3px'}}>cao</span> */}
+                <span class="d-table-cell align-middle bg-grad bg-3d" 
+                style="font-size: 4rem;font-weight: bold;">
+                <span style="
+                margin-right: -12px;">c</span>
+                <span 
+                style="
+                margin-right: -14px;
+                transform: rotateX(8deg);">a</span>
+                <span style="
+                padding-right: m;
+                margin-right: -7px;">o</span></span>
+                </div>
                 </div>
                 <nav className="navbar float-right pb-0 pl-0 pr-0 col-md-auto col-sm-12">
                     { navLinks.map( (link) => 

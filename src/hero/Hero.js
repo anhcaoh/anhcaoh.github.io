@@ -15,9 +15,20 @@ class Hero extends Component {
                 <div className="row p-4">
                 <div className="col-md-5 m-auto d-block d-sm-none" title={ title } tooltip={ title }>
                     <div className="badge-profile badge-profile-md m-auto bg-grad-clouds d-table">
-                        <span className="d-table-cell align-middle bg-grad bg-3d"
+                        {/* <span className="d-table-cell align-middle bg-grad bg-3d"
                         style={{ fontSize: '4rem',
-                        letterSpacing: '-6px'}}>cao</span>
+                        letterSpacing: '-6px'}}>cao</span> */}
+                        <span class="d-table-cell align-middle bg-grad bg-3d" 
+                        style="font-size: 4rem;font-weight: bold;">
+                        <span style="
+                        margin-right: -12px;">c</span>
+                        <span 
+                        style="
+                        margin-right: -14px;
+                        transform: rotateX(8deg);">a</span>
+                        <span style="
+                        padding-right: m;
+                        margin-right: -7px;">o</span></span>
                     </div>
                     <span className="bg-grad bg-3d" style={{
                         position: 'absolute',
@@ -37,9 +48,20 @@ class Hero extends Component {
                 </div>
                 <div className="col-md-5 m-auto d-none d-sm-block" title={ title } tooltip={ title }>
                     <div className="badge-profile badge-profile-md m-auto bg-grad-clouds d-table relative">
-                        <span className="d-table-cell align-middle bg-grad bg-3d text-center"
+                        {/* <span className="d-table-cell align-middle bg-grad bg-3d text-center"
                         style={{ fontSize: '4rem',
-                        letterSpacing: '-6px'}}>cao</span>
+                        letterSpacing: '-6px'}}>cao</span> */}
+                        <span class="d-table-cell align-middle bg-grad bg-3d" 
+                        style="font-size: 4rem;font-weight: bold;">
+                        <span style="
+                        margin-right: -12px;">c</span>
+                        <span 
+                        style="
+                        margin-right: -14px;
+                        transform: rotateX(8deg);">a</span>
+                        <span style="
+                        padding-right: m;
+                        margin-right: -7px;">o</span></span>
                     </div>
                     <span className="bg-grad bg-3d" style={{
                         position: 'absolute',
