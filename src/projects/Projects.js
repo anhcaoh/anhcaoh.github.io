@@ -8,19 +8,25 @@ class Projects extends Component {
             link: 'https://bitter-ui.herokuapp.com/',
             tags: ['POC', 'Startup', 'Fullstack', 
             'Engineering', 'Data Manipulation', 
-            'ETL', 'User Interface'],
+            'ETL', 'User Interface','JSON', 'CSV'],
             },
             { name: 'RntHub.com',
             description: 'Person-to-person rental marketplace',
             link: 'https://rnthub.herokuapp.com/',
             tags: ['Entrepreneur', 'Startup', 'Fullstack', 
-            'Engineering', 'SaaS', 'Cloud', 
+            'Engineering', 'SaaS', 'Cloud', 'Web',
             'Payment', 'Wallet', 'Stripe', 'Chat', 'Messaging'],
             },
             { name: 'GoLawCase',
             description: 'Legal Management and Marketing',
             link: 'https://anhcaoh.github.io/GoLawCase',
-            tags: ['Entrepreneur', 'Consulting', '3D', 'User Interface', 
+            tags: ['Entrepreneur', 'Consulting', 'Website', 'User Interface', 
+            'User Experience', 'HTML5', 'CSS3', 'Design']
+            },
+            { name: '#ChallengeOfTheDay',
+            description: 'Gamification: Daily challenge (Mobile Web)',
+            link: 'https://challenge-of-the-day.herokuapp.com',
+            tags: ['Entrepreneur', 'Gaming', 'Mobile', 'Web', 'User Interface', 
             'User Experience', 'HTML5', 'CSS3', 'Design']
             }
         ];
@@ -51,7 +57,7 @@ class Projects extends Component {
             return 'badge ' + skillClass + ' mr-2 mb-2 p-2'
         }
         let getProjectClass = (projectIndex) => {
-            let projectClass = 'card-body project p-3';
+            let projectClass = 'card-body project p-4';
             return projectClass;
         }
         return (
@@ -60,7 +66,7 @@ class Projects extends Component {
                 <h2 className="p-4 ml-2 mr-2 mb-0 text-dark font-weight-bold">Projects</h2>
                 <div className="d-flex flex-wrap mb-2">
                     { projects.map( (project, i) => 
-                        <div key={ project.name } className="col-md-4">
+                        <div key={ project.name } className="col-md-6">
                         <div className="card mb-3 border-0 shadow-sm">
                             <div className={ getProjectClass( i ) }>
                                 <h6 className="card-title">
@@ -71,7 +77,7 @@ class Projects extends Component {
                                 <p className="card-text">
                                     { project.description }
                                 </p>
-                                <div className="tags skills applications text-light pl-3 border-left"> 
+                                <div className="tags skills applications text-light col-sm-12 col-md-7 col-lg-6 pl-3  border-left"> 
                                     { project.tags.map( skill => 
                                         <span key={ skill } 
                                         className={ getSkillClass( skill ) }>
