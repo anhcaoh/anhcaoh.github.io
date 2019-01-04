@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <main className="App">
         <Navigations />
-        <footer className="text-center mt-3 mb-3">
+        <footer className="bg-grad-clouds text-center pt-4 pb-4">
           <small>Design with &hearts; by Cao Design Agency @ { new Date().getFullYear() }.</small>
         </footer>
       </main>
