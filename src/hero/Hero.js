@@ -13,7 +13,7 @@ class Hero extends Component {
         return (
             <section id="about" className="hero p-4">
                 <div className="card-body mt-5 text-center">
-                    <div className="ico-md icon-mbile-web bg-grad-clouds" 
+                    {/* <div className="ico-md icon-mbile-web bg-grad-clouds" 
                     style={{
                     position: 'absolute',
                     transform: 'rotate(39.4deg)',
@@ -33,7 +33,7 @@ class Hero extends Component {
                     top: '-40.5rem',
                     width: '55%',
                     opacity: '.05'}}
-                    ></div>
+                    ></div> */}
                     <h5 style={{ padding: '0.25rem 0.5rem'}}
                     className="card-title d-inline rounded font-weight-bold text-shadow-sm shadow">
                     { headline }
