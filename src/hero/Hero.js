@@ -35,7 +35,7 @@ class Hero extends Component {
                     opacity: '.05'}}
                     ></div> */}
                     <h5 style={{ padding: '0.25rem 0.5rem'}}
-                    className="card-title d-inline rounded font-weight-bold text-shadow-sm shadow">
+                    className="card-title d-inline rounded font-weight-bold text-shadow-sm">
                     { headline }
                     </h5>
                     <div id="finishing-touch" className="icon-md icon-mobile-web bg-grad-clouds"></div>
