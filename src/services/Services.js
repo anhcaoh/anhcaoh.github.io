@@ -14,7 +14,7 @@ class Services extends Component {
             icon: 'icon-md icon-mobile-web',
             class: 'bg-grad-mojito',
             description: 'To our favorite local mom and pop businesses; coffee shops & tea house, restaurants & bar, hair & nail salons, we are here to help reaching your tech-savvy customers.',
-            works: 'Mobile Order • Appointment Scheduling • Point of Sale'},
+            works: 'Mobile Web • Online Order • Appointment Scheduling'},
             { id: 'development', 
             name: 'Enterprise Software Development',
             icon: 'icon-md icon-code', 

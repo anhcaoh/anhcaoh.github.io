@@ -6,6 +6,38 @@ class Links extends Component {
     getActiveLinkClass = ( link ) => {
         return window.location.pathname === link.path ? 'active link' : 'link text-light';
     }
+    renderBranding() {
+        return (
+            <div className="branding d-none d-lg-block">
+            <div style={{ 
+            'position':'absolute',
+            'left': '.5rem',
+            'top': '.5rem' }}
+            className="badge-profile badge-profile-sm shadow-sm m-auto bg-grad-clouds d-table relative">
+            <span className="d-table-cell align-middle bg-grad bg-3d text-center" 
+            style={{"fontSize": '2rem', 'fontWeight': 'bold'}}>
+            <span style={{ marginRight: '-6px', marginLeft: '-6px'}}>c</span>
+            <span style={{ marginRight: '-6px'}}>a</span>
+            <span style={{ marginRight: '-7px'}}>o</span></span>
+            </div>
+            </div>
+        )
+    }
+    goToTop(){
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        })
+      }
+    renderGoToTop() {
+        return (
+            <div id="go-to-top" className="shadow m-auto bg-grad-clouds d-table" 
+            onClick={ this.goToTop }>
+            <div className="m-auto d-table-cell align-middle">
+                <div className="m-auto icon-arrow-up"></div></div>
+            </div>
+        )
+    }
     render() {
         const navLinks = [
             {name:'Home',
@@ -25,21 +57,8 @@ class Links extends Component {
             component: 'contact'}
         ];
         return (
-            <div className="fixed-top bg-3d">
-                <div className="d-none d-sm-block">
-                <div style={{ 'position':'absolute',
-                    'left': '.5rem',
-                    'top': '.5rem' }}
-                className="badge-profile badge-profile-sm m-auto bg-grad-clouds d-table relative">
-                {/* <span className="d-table-cell align-middle bg-grad bg-3d text-center" 
-                style={{'fontSize': '2rem', 'letterSpacing':'-3px'}}>cao</span> */}
-                <span className="d-table-cell align-middle bg-grad bg-3d text-center" 
-                style={{"fontSize": '2rem', 'fontWeight': 'bold'}}>
-                <span style={{ marginRight: '-6px', marginLeft: '-6px'}}>c</span>
-                <span style={{ marginRight: '-6px'}}>a</span>
-                <span style={{ marginRight: '-7px'}}>o</span></span>
-                </div>
-                </div>
+            <React.Fragment><div className="fixed-top bg-3d">
+                { this.renderBranding() }
                 <nav className="navbar float-right pb-0 pl-0 pr-0 col-md-auto col-sm-12">
                     { navLinks.map( (link) => 
                         <Link key={ link.name.toLowerCase() }
@@ -48,6 +67,8 @@ class Links extends Component {
                     )}
                 </nav>
             </div>
+            { this.renderGoToTop() }
+            </React.Fragment>
         )
     }
     scrollToTop(){

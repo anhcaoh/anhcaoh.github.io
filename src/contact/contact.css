@@ -22,3 +22,9 @@
     width: 1.5rem;
     height: 1.5rem;
 }
+.icon-arrow-up{
+    background-image: url('../img/baseline-arrow_upward-24px.svg');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
