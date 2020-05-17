@@ -1,0 +1,23 @@
+.collage{
+	height: 592px;
+	border: 8px solid #FFF;	
+}
+.half-collage{
+	height: 50%;
+	border: 8px solid #FFF;	
+}
+.bg-image{
+	background-size: cover;
+}
+.image-1{
+	background-image:url(../images/Anh-Cao.jpg);
+}
+.image-2{
+	background-image:url(../images/Bao-Chau.jpg);
+}
+.image-3{
+	background-image:url(../images/Xali.jpg);
+}
+.image-4{
+	background-image:url(../images/Leo.jpg);
+}

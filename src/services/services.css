@@ -1,0 +1,17 @@
+.icon-pencil{
+    -webkit-mask-box-image: url('../img/pencil.svg');
+    mask: url('../img/pencil.svg');
+}
+.icon-code{
+    -webkit-mask-box-image: url('../img/code.svg');
+    mask: url('../img/code.svg');
+    /* background-image: url('../img/code.svg') no-repeat ; */
+}
+.icon-web{
+    -webkit-mask-box-image: url('../img/baseline-laptop_mac-24px.svg');
+    mask: url('../img/baseline-laptop_mac-24px.svg');
+}
+.icon-mobile-web{
+    -webkit-mask-box-image: url('../img/baseline-touch_app-24px.svg');
+    /* mask: url('../img/baseline-touch_app-24px.svg'); */
+}

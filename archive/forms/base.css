@@ -20,7 +20,7 @@ h3{
   padding-left: 72px;
 }
 .border-left{
-    border-left: 1px solid rgba(201, 201, 201, 0.3);
+    border-left: 3px solid rgba(201, 201, 201, 0.3) !important;
 }
 ::-webkit-input-placeholder{
 	color: #e1e1e1;

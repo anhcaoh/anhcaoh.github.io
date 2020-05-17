@@ -1,0 +1,17 @@
+a.link{
+    font-weight: bold;
+    padding: 0 0 4px 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid transparent;
+}
+a.link:hover,
+a.link:active,
+a.link:focus{
+    text-decoration: none;
+    border-bottom: 2px solid ;
+    color: inherit !important;
+}
+.link.active{
+    color: inherit;
+    border-bottom: 2px solid;
+}

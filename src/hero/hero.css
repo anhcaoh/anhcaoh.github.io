@@ -1,0 +1,18 @@
+.hero{
+    width: 100%;
+    text-align: center;
+    background: #4776e6;
+    background: linear-gradient(to right,#8e54e9,#4776e6);
+    color: #f1f1f1;
+}
+#finishing-touch{
+    transform: rotateZ(25deg);
+    height: 7rem;
+    position: absolute;
+    width: 8rem;
+    opacity: .05;
+    left: 0;
+    right: 0;
+    margin: -1rem auto;
+    z-index: 0;
+}

@@ -1,0 +1,30 @@
+.icon-contact {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: inline-block !important;
+    vertical-align: middle;
+    color: blue;
+}
+.icon-mobile{
+    background-image: url('../img/baseline-phone-24px.svg');
+}
+.icon-email{
+    background-image: url('../img/baseline-email-24px.svg');
+}
+.icon-location{
+    background-image: url('../img/baseline-location_on-24px.svg');
+}
+.icon-facebook{
+    background-image: url('../img/iconmonstr-facebook-6.svg');
+    margin-left: 0.125rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.icon-arrow-up{
+    background-image: url('../img/baseline-arrow_upward-24px.svg');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
