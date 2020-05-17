@@ -46,7 +46,7 @@
   background-image: url('./img/Anh-Cao-Polygons.jpg');
 }
 .badge-profile-brenny-nguyen {
-  background-image: url('https://scontent.fatl1-1.fna.fbcdn.net/v/t1.0-1/p320x320/36996928_10216090097916192_6299463227789017088_n.jpg?_nc_cat=111&oh=fcd071780aa9d5b33779ef1956703708&oe=5C53EAD3');
+  background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQFSxrNGxD_rrw/profile-displayphoto-shrink_400_400/0?e=1595462400&v=beta&t=qeYDrfz_Ou1-DwJo-3GZ_OWa2bOoLJ3q2SeI7tnxrGc');
 }
 .badge-profile-handshake {
   background-image: url('./img/handshake.jpg');
@@ -62,6 +62,9 @@
   background: -o-linear-gradient(left,#8e54e9,#4776e6);
   background: linear-gradient(to right,#8e54e9,#4776e6);
   color: #f1f1f1;
+}
+.border-left { 
+  border-left-width: 3px !important;
 }
 .bg-light {
   background-color: #f8f9fa!important;

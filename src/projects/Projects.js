@@ -54,20 +54,20 @@ class Projects extends Component {
             skillChecking === 'messaging' ) {
                 skillClass = 'badge-danger';
             }
-            return 'badge ' + skillClass + ' mr-2 mb-2 p-2'
+            return 'badge ' + skillClass + ' mr-2 mt-1 mb-1 p-2'
         }
         let getProjectClass = (projectIndex) => {
             let projectClass = 'card-body project p-4';
             return projectClass;
         }
         return (
-            <section id="projects" className="projects pr-4 pb-4 pl-4 bg-grad-clouds"
+            <section id="projects" className="projects pl-0 pr-0 pb-4 container"
             style={{ paddingTop: '8rem'}}>
-                <h2 className="p-4 ml-2 mr-2 mb-0 text-dark font-weight-bold">Projects</h2>
+                <h2 className="p-4 ml-0 mb-0 text-light font-weight-bold">Projects</h2>
                 <div className="d-flex flex-wrap mb-2">
                     { projects.map( (project, i) => 
-                        <div key={ project.name } className="col-md-6">
-                        <div className="card mb-3 border-0 shadow-sm">
+                        <div key={ project.name } className="col-md-6 pl-0">
+                        <div className="card mb-5 mr-4 border-0 shadow-sm">
                             <div className={ getProjectClass( i ) }>
                                 <h6 className="card-title">
                                     <a name="bitter" href={ project.link } 
@@ -77,7 +77,7 @@ class Projects extends Component {
                                 <p className="card-text">
                                     { project.description }
                                 </p>
-                                <div className="tags skills applications text-light col-sm-12 col-md-7 col-lg-6 pl-3  border-left"> 
+                                <div className="tags skills applications text-light col-lg-12 pl-3 border-left"> 
                                     { project.tags.map( skill => 
                                         <span key={ skill } 
                                         className={ getSkillClass( skill ) }>

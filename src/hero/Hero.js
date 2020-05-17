@@ -45,10 +45,15 @@ class Hero extends Component {
                     className="badge-profile badge-profile-md shadow ml-auto mr-auto mt-5 bg-grad-clouds d-table">
                     <span className="d-table-cell align-middle bg-grad bg-3d" 
                     style={{"fontSize": '4rem', 'fontWeight': 'bold'}}>
-                    <span style={{marginRight: '-12px',
-                    marginLeft: '-8px'}}>c</span>
-                    <span style={{ marginRight: '-14px'}}>a</span>
-                    <span style={{ marginRight: '-7px'}}>o</span></span>
+                    <span 
+                    // style={{marginRight: '-12px',marginLeft: '-8px'}}
+                    >c</span>
+                    <span 
+                    // style={{ marginRight: '-14px'}}
+                    >a</span>
+                    <span 
+                    // style={{ marginRight: '-7px'}} 
+                    >o</span></span>
                     <span className="bg-grad bg-3d" style={{
                     position: 'absolute',
                     bottom: '1.5rem',

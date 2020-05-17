@@ -16,9 +16,15 @@ class Links extends Component {
             className="badge-profile badge-profile-sm shadow-sm m-auto bg-grad-clouds d-table relative">
             <span className="d-table-cell align-middle bg-grad bg-3d text-center" 
             style={{"fontSize": '2rem', 'fontWeight': 'bold'}}>
-            <span style={{ marginRight: '-6px', marginLeft: '-6px'}}>c</span>
-            <span style={{ marginRight: '-6px'}}>a</span>
-            <span style={{ marginRight: '-7px'}}>o</span></span>
+            <span 
+            // style={{ marginRight: '-6px', marginLeft: '-6px'}}
+            >c</span>
+            <span 
+            // style={{ marginRight: '-6px'}}
+            >a</span>
+            <span 
+            // style={{ marginRight: '-7px'}}
+            >o</span></span>
             </div>
             </div>
         )
